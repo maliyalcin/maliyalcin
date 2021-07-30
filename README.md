@@ -1,4 +1,4 @@
-<h3 align='center'> Hi there 👋, I'm Muhammet Ali YALÇIN </h3>
+<h3 align='center'> Hi there 👋, I'm Ali YALÇIN </h3>
 
 [![GitHub followers](https://img.shields.io/github/followers/maliyalcin?style=social)](https://github.com/maliyalcin?tab=followers)
 ![GitHub stars](https://img.shields.io/github/stars/maliyalcin?style=social)
