@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ai-mekanik-tasarim",
+    "title": "Yapay Zeka × Mekanik Tasarım",
+    "icon": "🤖",
+    "scope": "Generative design, AI destekli CAD, tasarım otomasyonu, AI ile parça/montaj tasarımı, mühendislik için yapay zeka modelleri ve ajanları."
+  },
+  {
+    "id": "cad-yazilim",
+    "title": "CAD / CAM / CAE Yazılımları",
+    "icon": "🖥️",
+    "scope": "Autodesk Inventor, AutoCAD, Fusion, Vault; SolidWorks, Creo, NX, CATIA, Onshape; ANSYS, Abaqus vb. sürüm, güncelleme, yeni özellik ve AI eklentileri. Inventor ve AutoCAD haberleri öncelikli."
+  },
+  {
+    "id": "endustriyel-tasarim",
+    "title": "Endüstriyel Tasarım",
+    "icon": "✏️",
+    "scope": "Ürün/endüstriyel tasarım trendleri, tasarım ödülleri, ergonomi, malzeme ve form, AI ile konsept/render üretimi."
+  },
+  {
+    "id": "imalata-hazirlik",
+    "title": "İmalata Hazırlık & Üretim Teknolojileri",
+    "icon": "🏭",
+    "scope": "DFM/DFA, teknik resim ve toleranslandırma (GD&T), CNC/CAM, sac metal, kaynak, eklemeli imalat (3D baskı), kalite kontrol, üretimde yapay zeka, dijital ikiz."
+  },
+  {
+    "id": "makine-sektoru",
+    "title": "Makine Sektörü (Dünya)",
+    "icon": "⚙️",
+    "scope": "Küresel makine imalat sanayi: şirket haberleri, yatırımlar, fuarlar, yeni makineler, robotik ve otomasyon, sektör raporları."
+  },
+  {
+    "id": "turkiye-makine",
+    "title": "Türkiye Makine Sektörü",
+    "icon": "🇹🇷",
+    "scope": "Türkiye makine sanayi: MAKFED/MİB/MAİB açıklamaları, ihracat verileri, teşvikler, yerli üreticiler, fuarlar (WIN Eurasia vb.), sanayide yapay zeka ve dijital dönüşüm."
+  }
+]

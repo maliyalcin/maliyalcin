@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1f2a37"/>
+  <g transform="translate(256 256)" fill="#e8711a">
+    <path d="M-22-150h44l8 38a118 118 0 0 1 30 12l33-21 31 31-21 33a118 118 0 0 1 12 30l38 8v44l-38 8a118 118 0 0 1-12 30l21 33-31 31-33-21a118 118 0 0 1-30 12l-8 38h-44l-8-38a118 118 0 0 1-30-12l-33 21-31-31 21-33a118 118 0 0 1-12-30l-38-8v-44l38-8a118 118 0 0 1 12-30l-21-33 31-31 33 21a118 118 0 0 1 30-12z"/>
+    <circle r="62" fill="#1f2a37"/>
+  </g>
+  <g fill="#fff">
+    <rect x="226" y="228" width="60" height="9" rx="4"/>
+    <rect x="226" y="251" width="60" height="9" rx="4"/>
+    <rect x="226" y="274" width="40" height="9" rx="4"/>
+  </g>
+</svg>
