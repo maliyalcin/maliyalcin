@@ -16,8 +16,12 @@ uygulama yalnızca bu görevin ürettiği hazır JSON dosyalarını okur.
 `model: "sonnet"`, hepsi paralel/arka planda). Her alt ajana şunu ver:
 - kategori başlığı + `scope` metni,
 - hedef gün D,
-- görev: D tarihinde (±1 gün tolerans) yayımlanmış, o kapsamdaki **gerçek** haberleri web'de araştır
-  (Türkçe ve İngilizce kaynaklar), her haberin sayfasını açıp tarihini ve içeriğini teyit et,
+- görev: D tarihinde (±1 gün tolerans) yayımlanmış, o kapsamdaki **gerçek** haberleri **WebSearch** ile araştır
+  (Türkçe ve İngilizce, kategori başına en az 6-8 farklı arama; sorgulara ay/yıl ekle, ör. "Autodesk Inventor November 2026"),
+- **ÖNEMLİ — ağ kısıtı:** Bu bulut ortamı çoğu haber sitesinin sayfasını açmaya (WebFetch/curl) izin vermez
+  (ENOTFOUND / 403). Bu normaldir. Sayfayı açmayı en fazla bir kez dene; açılmazsa **haberi eleme**:
+  teyidi WebSearch sonucundaki başlık, kaynak, URL, tarih ve özet metniyle yap. Sayfa açılamadı diye boş liste döndürme.
+  Bir haberi yalnızca tarihi D±1 değilse, konu kapsam dışıysa ya da arama sonucunda gerçekten yoksa ele,
 - en fazla 8, en az 0 haber; uydurma yok, tarih tutmuyorsa alma, basın bülteni tekrarlarını tek habere indir,
 - dönüş biçimi: yalnızca JSON dizi —
   `[{"title": "...(Türkçe başlık)", "summary": "2-3 cümle Türkçe özet; makine tasarımcısı için neden önemli",
@@ -27,8 +31,11 @@ uygulama yalnızca bu görevin ürettiği hazır JSON dosyalarını okur.
 
 ### 2) Kontrol — Opus (bu oturumun kendisi)
 Alt ajanlar dönünce, orkestratör (Opus) her kategoriyi kendisi denetler:
-- Her haberin URL'sini aç/teyit et (gerekirse kısa bir arama); tarih D±1 değilse, kaynak güvenilmezse
-  veya içerik özetle uyuşmuyorsa **çıkar**.
+- Her haberi teyit et: URL'yi açmak mümkün değilse (ağ kısıtı) haberin başlığıyla kısa bir WebSearch yap ve
+  aynı kaynak/URL/tarihin sonuçlarda göründüğünü doğrula. Tarih D±1 değilse, kaynak güvenilmezse veya içerik
+  özetle uyuşmuyorsa **çıkar**. Sayfanın açılamaması tek başına çıkarma nedeni değildir.
+- Tüm kategoriler boş kaldıysa bu bir arıza işaretidir: bir kez daha, kendin WebSearch ile her kategori için
+  2-3 arama yaparak boşlukları doldurmayı dene. Yine de boşsa dosyayı yazma ve nedeni özetle bildir.
 - Kategoriler arası tekrarları kaldır (haber en uygun tek kategoride kalsın).
 - Özetleri sadeleştir, Türkçesini düzelt, `importance` değerlerini tutarlı hale getir, her kategoride
   önem sırasına göre sırala.
