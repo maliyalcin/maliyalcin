@@ -1,0 +1,248 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-22T01:45:00+03:00",
+  "verified_by": "opus",
+  "headline": "MİB: Türkiye'de makine üretimi ilk 9 ayda %5,8 geriledi; dünyada ise Formnext'te yapay zekâ ajanları tasarımdan imalata hazırlığa kadar uzanıyor.",
+  "categories": [
+    {
+      "id": "ai-mekanik-tasarim",
+      "title": "Yapay Zeka × Mekanik Tasarım",
+      "icon": "🤖",
+      "brief": "Formnext'te ajan tabanlı tasarım: metinden parçaya, simülasyondan teste otomatik döngüler.",
+      "items": [
+        {
+          "title": "Siemens ve AGIBOT: metin komutundan 3D baskıya hazır robot tutucu tasarlayan yapay zekâ ajanı",
+          "summary": "Ajan, görev tanımından tutucu tipini seçiyor, geometriyi Siemens Designcenter'da uyarlıyor, simüle ediyor ve eklemeli imalata hazırlıyor; yazılım fonksiyonlarına MCP ile erişiyor. Tasarımdan imalata hazırlığa uzanan ajan zincirinin somut bir örneği; kalite ve izlenebilirlik sorumluluğu mühendiste kalıyor.",
+          "source": "3D Printing Industry",
+          "url": "https://3dprintingindustry.com/news/siemens-and-agibot-show-ai-agent-that-designs-3d-printed-humanoid-robot-grippers-from-a-text-prompt-256961/",
+          "published": "2026-11-18",
+          "importance": 3,
+          "tags": [
+            "Siemens",
+            "AI ajan",
+            "MCP",
+            "Formnext"
+          ]
+        },
+        {
+          "title": "SimScale ve Nominal: simülasyon ve fiziksel testi tek bir ajan döngüsünde birleştirdi",
+          "summary": "Nominal her simüle edilen tasarımı test gereksinimlerine göre denetliyor; başarısız olursa SimScale'in AI ajanı geometriyi revize edip simülasyonu yeniden çalıştırıyor. Basılan parçanın test sonucu da aynı gereksinimlerle kıyaslanıyor — tasarım-analiz-test döngüsünü otomatikleştirmek isteyenler için örnek.",
+          "source": "DailyCADCAM",
+          "url": "https://dailycadcam.com/simscale-nominal-put-simulated-design-test-into-one-agentic-loop/",
+          "published": "2026-11-19",
+          "importance": 2,
+          "tags": [
+            "SimScale",
+            "Simülasyon",
+            "AI ajan"
+          ]
+        },
+        {
+          "title": "Cognitive Design Systems 2.3: konsept aşamasında otomatik Deney Tasarımı (DoE)",
+          "summary": "Mühendis parametre aralıklarını tanımlıyor; yazılım varyantları üretip yapısal performans, imalat uygunluğu, maliyet ve CO2 açısından kıyaslıyor. Eklemeli, talaşlı ve kalıplama yöntemleri ortak kriterlerle karşılaştırılıyor. (Kaynak üretici açıklamasına dayanıyor.)",
+          "source": "Foro3D",
+          "url": "https://foro3d.com/2026/noviembre/cognitive-design-systems-incorpora-planificacion-automatica-de-experim.html",
+          "published": "2026-11-18",
+          "importance": 2,
+          "tags": [
+            "Generative design",
+            "DoE",
+            "DfAM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cad-yazilim",
+      "title": "CAD / CAM / CAE Yazılımları",
+      "icon": "🖥️",
+      "brief": "SOLIDWORKS 2027 çıkış eşiğinde; Creo'ya Ansys simülasyonu, Onshape'e konfigürasyon iyileştirmeleri.",
+      "items": [
+        {
+          "title": "SOLIDWORKS 2027 (SP0) genel çıkışı bu hafta sonuna denk geliyor",
+          "summary": "Dassault'nun teknik uyarı arşivi SOLIDWORKS 2027 SP0'ı 20 Kasım tarihli ve abonelere açık gösteriyor; GA tarihi 21 Kasım olarak geçiyor. Bazı üçüncü taraf kaynaklar henüz üretim sürümü olmadığını söylediğinden, indirmeden önce resmi sürüm notlarını kontrol edin. Simülasyonda zaman tabanlı cıvata ön yüklemesi gibi yenilikler bekleniyor.",
+          "source": "Dassault Systèmes – SOLIDWORKS",
+          "url": "https://www.solidworks.com/sw/support/customerbulletins.html",
+          "published": "2026-11-20",
+          "importance": 2,
+          "tags": [
+            "SOLIDWORKS",
+            "2027",
+            "Sürüm"
+          ]
+        },
+        {
+          "title": "PTC Creo'nun son sürümüne Ansys destekli simülasyon: daha hızlı mesh, ince geometri iyileştirmesi",
+          "summary": "Creo Simulation Live, Creo Ansys Simulation ve Advanced seçenekleri daha hızlı mesh ve ince cidarlı geometrilerde iyileşme vaat ediyor. CAD içinde erken CAE doğrulaması yapan tasarımcılar için analiz döngüsünü kısaltıyor.",
+          "source": "ENGtechnica",
+          "url": "https://engtechnica.com/ansys-powered-creo-brings-faster-simulation-to-product-design/",
+          "published": "2026-11-18",
+          "importance": 2,
+          "tags": [
+            "Creo",
+            "Ansys",
+            "CAE"
+          ]
+        },
+        {
+          "title": "Onshape 20 Kasım güncellemesi: konfigürasyon klasörü bastırma ve Part Studio Context Manager",
+          "summary": "Haftalık güncellemede konfigürasyon klasörlerinin bastırılması ve Part Studio'ya yeni Context Manager sekmesi geldi. Çok konfigürasyonlu parça aileleri ve bağlam tabanlı tasarımda yönetimi kolaylaştırıyor — Inventor'daki iPart/iAssembly mantığıyla kıyaslanabilir.",
+          "source": "Onshape Forum",
+          "url": "https://forum.onshape.com/discussion/32165/improvements-to-onshape-november-20th-2026",
+          "published": "2026-11-20",
+          "importance": 1,
+          "tags": [
+            "Onshape",
+            "Konfigürasyon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endustriyel-tasarim",
+      "title": "Endüstriyel Tasarım",
+      "icon": "✏️",
+      "brief": "",
+      "items": []
+    },
+    {
+      "id": "imalata-hazirlik",
+      "title": "İmalata Hazırlık & Üretim Teknolojileri",
+      "icon": "🏭",
+      "brief": "Sac metalde tek hat otomasyonu, metal binder jetting'de yeni malzemeler ve masaüstü CNC.",
+      "items": [
+        {
+          "title": "Hymson, FABTECH 2026'da lazer kesim-bükme-kaynağı birleştiren otomatik sac metal hatları tanıttı",
+          "summary": "Hymson'un hatları lazer kesme, bükme, kaynak ve muayeneyi tek akışta birleştiriyor; istasyonlar arası taşıma gecikmesini azaltmayı hedefliyor. Kabin/kasa tasarlayan mühendis için bükme sırası, tolerans ve kaynak erişimi gibi DFM kararlarının tek hat mantığıyla düşünülmesi gerektiğini gösteriyor.",
+          "source": "Manila Times (GlobeNewswire)",
+          "url": "https://www.manilatimes.net/2026/11/20/tmt-newswire/globenewswire/hymson-laser-machinery-introduces-automated-sheet-metal-solutions-for-ai-data-centers/2475179",
+          "published": "2026-11-20",
+          "importance": 2,
+          "tags": [
+            "Sac metal",
+            "Lazer",
+            "Kaynak",
+            "FABTECH"
+          ]
+        },
+        {
+          "title": "HP, Formnext 2026'da Metal Jet için nikel süper alaşım, saf bakır ve tungsten karbür duyurdu",
+          "summary": "HP binder jetting malzeme yelpazesini genişletiyor ve yapay zekâyı yerinde proses izleme ve hata tahmini için araştırıyor. Seri metal parça tasarımında eklemeli imalat ile CNC arasındaki maliyet kıyasını etkileyebilir.",
+          "source": "Metal AM",
+          "url": "https://www.metal-am.com/hp-announces-metal-jet-material-developments-and-ai-initiatives-at-formnext-2026/",
+          "published": "2026-11-18",
+          "importance": 2,
+          "tags": [
+            "Metal Jet",
+            "Eklemeli imalat",
+            "Malzeme"
+          ]
+        },
+        {
+          "title": "Protolabs MJF kapasitesini artırıyor; Callaway titanyum baskı tesisine 15 milyon $ yatırıyor",
+          "summary": "3DPrint.com'un 21 Kasım bülteni, Protolabs'ın drone talebi nedeniyle MJF kapasitesini artırdığını ve 3D baskı gelirinin yıllık %11,4 büyüdüğünü bildiriyor. Hızlı prototip ve küçük seri parça sipariş edenler için tedarik kapasitesi açısından olumlu.",
+          "source": "3DPrint.com",
+          "url": "https://3dprint.com/337449/3d-printing-news-briefs-11-21-2026/",
+          "published": "2026-11-21",
+          "importance": 1,
+          "tags": [
+            "Protolabs",
+            "MJF",
+            "Titanyum"
+          ]
+        },
+        {
+          "title": "Makera A1S masaüstü CNC: otomatik takım değiştirme ve MQL seçeneği",
+          "summary": "Makera'nın Formnext'te tanıttığı A1S, otomatik takım değiştiricili ve hızlı takım değişimli iki konfigürasyonla geliyor, minimum miktarda yağlama (MQL) sunuyor. Prototip ve fikstür parçalarını atölyede frezelemek isteyen tasarımcılar için erişilebilir bir seçenek.",
+          "source": "OC3D",
+          "url": "https://overclock3d.net/news/misc/the-new-makera-a1s-desktop-cnc-punches-above-its-weight/",
+          "published": "2026-11-20",
+          "importance": 1,
+          "tags": [
+            "CNC",
+            "Prototip"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "makine-sektoru",
+      "title": "Makine Sektörü (Dünya)",
+      "icon": "⚙️",
+      "brief": "Döküm kapasitesine yatırım, Hindistan'da takım tezgâhı yerlileştirme talebi, ağır makinede piyasa baskısı.",
+      "items": [
+        {
+          "title": "Hadrian, 160 yıllık Kutztown Foundry & Machine'i satın aldı; 300 milyon $ modernizasyon planlıyor",
+          "summary": "Savunma odaklı üretim girişimi Hadrian, Pennsylvania'daki çelik döküm tesisini satın alarak 300 milyon dolarlık yükseltme ve kapasite artışı planlıyor. Büyük döküm parçalarda otomasyonlu yeni bir tedarik kaynağı doğuyor.",
+          "source": "Manufacturing Dive",
+          "url": "https://www.manufacturingdive.com/news/hadrian-acquiring-kutztown-foundry-machine-f6-upgrade-expand-pennsylvania/874947/",
+          "published": "2026-11-18",
+          "importance": 2,
+          "tags": [
+            "Satın alma",
+            "Döküm",
+            "ABD"
+          ]
+        },
+        {
+          "title": "Hint takım tezgâhı üreticileri yabancı teknoloji edinimi için 3.000 crore rupilik fon istiyor",
+          "summary": "IMTMA, artan ithalat nedeniyle yabancı teknoloji satın alımı için fon ve çekirdek teknolojilerin yerlileştirilmesi için teşvik programı talep etti. Büyüyen ama ithalata bağımlı Hindistan pazarı, takım tezgâhı ve CNC bileşeni tedarikçileri için fırsat.",
+          "source": "Business Standard",
+          "url": "https://www.business-standard.com/amp/industry/news/machine-tool-makers-seek-3-000-crore-fund-to-cut-dependence-on-imports-126112001017_1.html",
+          "published": "2026-11-20",
+          "importance": 2,
+          "tags": [
+            "Takım tezgâhı",
+            "Hindistan"
+          ]
+        },
+        {
+          "title": "Caterpillar hissesi 52 haftalık dipte; 78 milyar $ sipariş birikimine rağmen 3 ayda %35 düştü",
+          "summary": "Düşüş, güçlü çeyrek sonuçlarına rağmen yapay zekâ altyapısı temasının zayıflamasına bağlanıyor. Ağır makine ve enerji ekipmanı talep beklentileri açısından izlenmesi gereken bir gösterge.",
+          "source": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/20/caterpillars-35-3-month-downturn-this-sell-side-firm-predicts-90-returns-from-here-with-another-close-behind/",
+          "published": "2026-11-20",
+          "importance": 1,
+          "tags": [
+            "Caterpillar",
+            "Ağır makine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turkiye-makine",
+      "title": "Türkiye Makine Sektörü",
+      "icon": "🇹🇷",
+      "brief": "MİB verileri iç pazarda daralmaya işaret ediyor; İzmir'de yeni makine fabrikası yatırımı.",
+      "items": [
+        {
+          "title": "MİB ilk 'Türkiye Makine Sanayii Göstergeleri' bültenini yayımladı: üretim ilk 9 ayda %5,8 geriledi",
+          "summary": "Makina İmalatçıları Birliği'ne göre makine üretimi Eylül'de yıllık %3,7, ilk dokuz ayda %5,8 düştü; Ekim kapasite kullanımı %64,7 ile imalat ortalamasının ~10 puan altında. %51,4'lük ticari kredi faizleri ve nitelikli işgücü kaybı yatırımları baskılıyor — yeni makine projelerinin bütçelenmesi açısından zayıf sinyal.",
+          "source": "MİB",
+          "url": "https://mib.org.tr/makina-imalatcilari-birligi-turkiye-makine-sanayii-gostergeleri-bultenini-yayimlamaya-basladi/",
+          "published": "2026-11-18",
+          "importance": 3,
+          "tags": [
+            "MİB",
+            "Üretim",
+            "Kapasite"
+          ]
+        },
+        {
+          "title": "Makfry Group, İzmir Kemalpaşa'da 300 milyon TL'lik yeni makine üretim tesisi kuruyor",
+          "summary": "50 ülkeye ihracat yapan endüstriyel mutfak/kızartma ekipmanı üreticisi, makine üretimini yeni tesise taşıyarak kapasite ve ihracatı artırmayı hedefliyor; inşaat başladı. Gıda makinelerinde yerli yatırımın sürdüğünü gösteriyor.",
+          "source": "Ekonomim",
+          "url": "https://www.ekonomim.com/sehirler/makfry-grouptan-300-milyon-tllik-yeni-uretim-tesisi-yatirimi-haberi-932249",
+          "published": "2026-11-19",
+          "importance": 2,
+          "tags": [
+            "Yatırım",
+            "İzmir",
+            "Gıda makineleri"
+          ]
+        }
+      ]
+    }
+  ]
+}
