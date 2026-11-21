@@ -1,0 +1,213 @@
+{
+  "date": "2026-11-20",
+  "generated_at": "2026-11-21T03:35:00+03:00",
+  "verified_by": "opus",
+  "headline": "Türkiye'de makine ve ekipman imalatı Kasım'da %64,1 kapasite kullanımıyla en zayıf sektörler arasında; Formnext 2026'da eklemeli imalat seri üretime yöneliyor.",
+  "categories": [
+    {
+      "id": "ai-mekanik-tasarim",
+      "title": "Yapay Zeka × Mekanik Tasarım",
+      "icon": "🤖",
+      "brief": "CAD'de yapay zekâ tartışması büyüyor; somut araçlar henüz erken aşamada.",
+      "items": [
+        {
+          "title": "DEVELOP3D: Yapay zekâ CAD için bir dönüm noktası mı?",
+          "summary": "DEVELOP3D yazarı Stephen Holmes, yapay zekânın yarattığı sarsıntının tasarımcı ve mühendislere nihayet ihtiyaç duydukları araçları getirebileceğini, ancak ani bir devrim beklemek için neden olmadığını savunuyor. Inventor/AutoCAD kullanıcıları için AI'nin iş akışına ne kadar hızlı gireceğine dair dengeli bir değerlendirme.",
+          "source": "DEVELOP3D",
+          "url": "https://develop3d.com/opinion/comment/a-turning-point-for-cad",
+          "published": "2026-11-18",
+          "importance": 2,
+          "tags": [
+            "CAD",
+            "AI",
+            "Görüş"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cad-yazilim",
+      "title": "CAD / CAM / CAE Yazılımları",
+      "icon": "🖥️",
+      "brief": "Autodesk tarafında ödül ve finansal takvim haberleri öne çıktı.",
+      "items": [
+        {
+          "title": "Autodesk Forma Building Design, Architectural Record'dan 'Kategorisinin En İyisi' ödülü aldı",
+          "summary": "Autodesk'in bulut tabanlı Forma Building Design ürünü Architectural Record tarafından kategorisinin en iyisi seçildi. Autodesk ayrıca 3. çeyrek (mali 2027) sonuçlarını 24 Kasım'da açıklayacak; AI ve bulut yatırımlarına dair ipuçları Inventor/AutoCAD yol haritası için takip edilmeli.",
+          "source": "Autodesk News",
+          "url": "https://adsknews.autodesk.com/en/",
+          "published": "2026-11-19",
+          "importance": 1,
+          "tags": [
+            "Autodesk",
+            "Forma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endustriyel-tasarim",
+      "title": "Endüstriyel Tasarım",
+      "icon": "✏️",
+      "brief": "Tasarım ödülleri ve kompakt ürün tasarımları gündemde.",
+      "items": [
+        {
+          "title": "BLT Built Design Awards 2026 kazananları 50'den fazla ülkeden",
+          "summary": "Dünya Tasarım Örgütü (WDO), BLT Built Design Awards 2026 kazananlarının 50'yi aşkın ülkeden geldiğini duyurdu. Ödüllü projeler, güncel ürün ve mekân tasarımı trendlerini görmek için iyi bir referans.",
+          "source": "World Design Organization",
+          "url": "https://wdo.org/",
+          "published": "2026-11-20",
+          "importance": 2,
+          "tags": [
+            "Ödül",
+            "Tasarım"
+          ]
+        },
+        {
+          "title": "Core77 haftalık özeti: doğrusal saat ve küçük parçalar için motorlu eğe başlıkları",
+          "summary": "Core77'nin 16-20 Kasım haftalık derlemesinde ilerleme çubuğu şeklinde bir 'Linear Clock' ve küçük parça işçiliği için motorlu metal eğe başlıkları öne çıktı. Eğe başlıkları atölye/prototip çalışmalarında el bitirme işlemleri için pratik bir fikir sunuyor.",
+          "source": "Core77",
+          "url": "https://www.core77.com/",
+          "published": "2026-11-20",
+          "importance": 1,
+          "tags": [
+            "Ürün tasarımı",
+            "Atölye"
+          ]
+        },
+        {
+          "title": "ASUS ProArt GR1X: kompakt yapay zekâ masaüstü bilgisayarı",
+          "summary": "Yanko Design, ASUS'un içerik üreticilerine yönelik kompakt AI masaüstü ProArt GR1X'ini inceledi. Küçük hacimde yüksek işlem gücü sunan tasarım, CAD/render iş istasyonu seçeneklerine yeni bir alternatif olabilir.",
+          "source": "Yanko Design",
+          "url": "https://www.yankodesign.com/",
+          "published": "2026-11-19",
+          "importance": 1,
+          "tags": [
+            "Donanım",
+            "İş istasyonu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imalata-hazirlik",
+      "title": "İmalata Hazırlık & Üretim Teknolojileri",
+      "icon": "🏭",
+      "brief": "Formnext 2026 (Frankfurt) eklemeli imalatta haftanın ana gündemi oldu.",
+      "items": [
+        {
+          "title": "Formnext Awards 2026 sahiplerini buldu: e-atıktan bakır tozu, hat içi filament kurutucu",
+          "summary": "Formnext fuarında 19 Kasım'da düzenlenen törende altı ödül FlexCycle, Thought3D, sallea, cAIclone, Maya Kaplan ve Michael Kraemer'e verildi. Elektronik atığı bakır toza dönüştüren proje ve hat içi filament kurutucu öne çıkan yenilikler arasında.",
+          "source": "3DPrinting.com",
+          "url": "https://3dprinting.com/news/formnext-awards-2026-honor-e-waste-copper-powder-inline-filament-drying-and-a-fully-3d-printed-bra",
+          "published": "2026-11-19",
+          "importance": 2,
+          "tags": [
+            "Formnext",
+            "3D baskı"
+          ]
+        },
+        {
+          "title": "Formnext 2026 2. gün: eklemeli imalat 24,2 milyar dolarlık sektör oldu",
+          "summary": "3DPrint.com'un fuar raporuna göre eklemeli imalat 24,2 milyar dolarlık bir pazar; ancak çok sayıda firmanın pazar payı için yarıştığı vurgulanıyor. Büyük format yazıcılar endüstriyel seri üretime yöneliyor — prototip ve fikstür üretimi için 3D baskıyı değerlendirenler için önemli.",
+          "source": "3DPrint.com",
+          "url": "https://3dprint.com/337344/formnext-2026-day-two-release-me",
+          "published": "2026-11-19",
+          "importance": 2,
+          "tags": [
+            "Formnext",
+            "Eklemeli imalat"
+          ]
+        },
+        {
+          "title": "Metal toz yatağı füzyonu (LPBF) için çok düşük maliyetli bir seçenek geliyor",
+          "summary": "Fabbaloo, metal lazer toz yatağı füzyonu ile 3D baskıda çok daha ucuz bir sistemin yolda olduğunu bildirdi. Metal eklemeli imalatın KOBİ'ler için erişilebilir hale gelmesi, tasarımda topoloji optimizasyonlu parçaların önünü açabilir. (Ayrıntılar kaynakta teyit edilmeli.)",
+          "source": "Fabbaloo",
+          "url": "https://www.fabbaloo.com/",
+          "published": "2026-11-19",
+          "importance": 1,
+          "tags": [
+            "Metal 3D baskı",
+            "LPBF"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "makine-sektoru",
+      "title": "Makine Sektörü (Dünya)",
+      "icon": "⚙️",
+      "brief": "Otomasyon yatırımları ve satın almalar hız kazanıyor.",
+      "items": [
+        {
+          "title": "Rockwell Automation, otonom mobil robot üreticisi AGILOX'u satın alıyor",
+          "summary": "Rockwell Automation, Avusturyalı otonom mobil robot (AMR) üreticisi AGILOX'u satın almak için anlaştı. Fabrika içi malzeme taşımada AMR'ların yaygınlaşması, makine ve hat tasarımında robot entegrasyonunu daha da önemli kılıyor.",
+          "source": "Robotics 24/7",
+          "url": "https://www.robotics247.com/article/rockwell-automation-to-acquire-agilox",
+          "published": "2026-11-18",
+          "importance": 2,
+          "tags": [
+            "Robotik",
+            "Satın alma"
+          ]
+        },
+        {
+          "title": "General Motors, Kuzey Amerika fabrikalarında otomasyonu 2028'e kadar %20 artırmayı hedefliyor",
+          "summary": "Reuters'ın aktardığına göre GM, robotik ve diğer otomasyon sistemlerini Kuzey Amerika tesislerinde 2028'e kadar %20 artırmayı planlıyor. Otomotiv tarafındaki bu talep, özel makine ve fikstür tasarımı yapan firmalar için iş hacmi anlamına geliyor.",
+          "source": "Ayoka Manufacturing Daily Briefing (Reuters)",
+          "url": "https://ayokasystems.com/news/ayoka-daily-briefing-2026-11-17/",
+          "published": "2026-11-17",
+          "importance": 1,
+          "tags": [
+            "Otomasyon",
+            "Otomotiv"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turkiye-makine",
+      "title": "Türkiye Makine Sektörü",
+      "icon": "🇹🇷",
+      "brief": "Kasım kapasite verileri makine imalatında zayıf talebe işaret ediyor.",
+      "items": [
+        {
+          "title": "TCMB: Makine ve ekipman imalatı Kasım'da %64,1 ile en düşük kapasite kullanımına sahip sektörler arasında",
+          "summary": "TCMB'nin Kasım verilerine göre imalat sanayinde kapasite kullanım oranı 0,2 puan azalarak %74,1'e geriledi; makine ve ekipman imalatı %64,1 ile en düşük oranlı sektörler arasında yer aldı. Sektörde talebin zayıf seyrettiğini gösteriyor.",
+          "source": "YatırımX",
+          "url": "https://www.yatirimx.com.tr/ekonomi/tcmb-acikladi-kasim-2026-kapasite-kullanim-orani-geriledi/28487",
+          "published": "2026-11-20",
+          "importance": 3,
+          "tags": [
+            "Kapasite",
+            "TCMB"
+          ]
+        },
+        {
+          "title": "Kocaeli'de makine sektörü kapasite endeksinde ilk sırada",
+          "summary": "Kocaeli sanayisinin Kasım tablosunda kapasite kullanımı %71'e çıktı; makine sektörü 99 endeks değeriyle bölgede birinci oldu. Türkiye genelindeki gerilemeye karşın Kocaeli'deki makine üreticileri güçlü seyrediyor.",
+          "source": "Kocaeli Denge",
+          "url": "https://www.kocaelidenge.com/haber/29195028/kocaeli-sanayisinde-kasim-tablosu-kapasite-kullanimi-yuzde-71e-cikti-turkiye-geriledi-otomotiv-ve-metal-kaybetti",
+          "published": "2026-11-20",
+          "importance": 2,
+          "tags": [
+            "Kocaeli",
+            "Kapasite"
+          ]
+        },
+        {
+          "title": "Manisa kalıp ve makine imalatında küresel lige ilerliyor",
+          "summary": "Manisa'daki kalıp ve makine üreticilerinin küresel pazarlara açılma çabalarını ele alan haber, bölgenin üretim kabiliyetindeki artışa dikkat çekiyor. (Ayrıntılar kaynakta teyit edilmeli.)",
+          "source": "Tekreferans",
+          "url": "https://tekreferans.com/haber/manisa-kalip-ve-makine-imalatinda-kuresel-lige-ilerliyor",
+          "published": "2026-11-20",
+          "importance": 1,
+          "tags": [
+            "Manisa",
+            "Kalıp"
+          ]
+        }
+      ]
+    }
+  ]
+}

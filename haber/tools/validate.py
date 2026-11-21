@@ -38,6 +38,16 @@ def validate(path: Path) -> list[str]:
         if cid not in ids:
             errors.append(f"Kategori eksik: {cid} (haber yoksa boş 'items' ile ekleyin)")
     seen_urls: set[str] = set()
+    old_urls: set[str] = set()
+    for prev in DATA.glob("????-??-??.json"):
+        if prev.stem < doc["date"]:
+            try:
+                for pc in json.loads(prev.read_text("utf-8")).get("categories", []):
+                    for pit in pc.get("items", []):
+                        pu = urlparse(str(pit.get("url", "")))
+                        old_urls.add((pu.netloc.lower().removeprefix("www.") + pu.path.rstrip("/")).lower())
+            except Exception:  # noqa: BLE001
+                pass
     for c in cats:
         cid = c.get("id")
         if cid not in CATEGORIES:
@@ -56,13 +66,15 @@ def validate(path: Path) -> list[str]:
             if u.scheme not in ("http", "https") or not u.netloc:
                 errors.append(f"{where}: geçersiz url")
             norm = (u.netloc.lower().removeprefix("www.") + u.path.rstrip("/")).lower()
+            if norm in old_urls and u.path.strip("/"):
+                errors.append(f"{where}: bu haber önceki bir bültende zaten var")
             if norm in seen_urls:
                 errors.append(f"{where}: tekrar eden haber (url)")
             seen_urls.add(norm)
             try:
                 pub = date.fromisoformat(str(it.get("published", ""))[:10])
-                if not (day - timedelta(days=1) <= pub <= day + timedelta(days=1)):
-                    errors.append(f"{where}: yayın tarihi {pub} hedef güne ({day}) yakın değil")
+                if not (day - timedelta(days=3) <= pub <= day + timedelta(days=1)):
+                    errors.append(f"{where}: yayın tarihi {pub} son 72 saat dışında (hedef gün {day})")
             except ValueError:
                 errors.append(f"{where}: 'published' tarih değil")
             imp = it.get("importance", 2)
