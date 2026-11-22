@@ -15,6 +15,16 @@ Dil: Türkçe, anlaşılır, mühendislik terimleri doğru (gerekirse İngilizce
    `python3 -c` ile çıkarıp oku; birim tutarlılığı, büyüklük mertebesi (ör. kW, N·m, devir, ivme), formül doğruluğu,
    emniyet katsayıları ve sonuç yorumlarını denetle. Hatalı değerleri doğrudan JSON'da düzelt. SVG/3B modeli tek tek okuma;
    doğrulayıcı geçiyorsa yeterli.
+5b. **Makine Profesörü teyidi (zorunlu):** `anthropic-skills:makine-profesoru` skill'ini yükle (Skill aracı) ve her tasarımın
+   kritik sonuçlarını skill'in betikleriyle bağımsız olarak yeniden hesapla:
+   - hidrolik → `scripts/hidrolik_silindir.py`, pnömatik → `scripts/pnomatik_silindir.py`
+   - motor/redüktör (konveyör, kaldırma, yürüyüş, vidalı mil, döner tabla) → `scripts/motor_reduktor.py <alt komut>`
+   - rulman L10h, mil çapı, kiriş sehimi → `scripts/muhendislik_araclari.py rulman|mil|kiris`
+   - betiği olmayan hesaplar (kam, titreşim, ön yük, rijitlik vb.) → kısa Python ile bağımsız tekrar
+   Betik çıktısını `grep` ile kısalt (token tasarrufu). Farkları düzelt; sonuçları her tasarıma şu alanla yaz:
+   `"review": {"by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)", "status": "Teyit edildi | Teyit edildi (1 not) | Düzeltildi",
+   "checks": [{"item": "...", "method": "betik/komut veya yöntem", "result": "bulunan değer ve tasarımla karşılaştırma", "ok": true|false}],
+   "notes": ["profesör notu: güvenlik, standart, daha iyi seçim önerisi"]}` (en az 2 check). `verified_by`: "opus + makine profesörü".
 6. `python3 haber/tools/tasarim.py dogrula D` GEÇERLİ → `haber/tasarim/parca/` klasörünü sil (commit etme),
    yalnızca `haber/tasarim/D.json` ve `haber/tasarim/index.json` commit et ("Tasarımlar: D") ve push et.
 

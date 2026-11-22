@@ -209,6 +209,10 @@
       ${(x.components || []).length ? `<section class="box"><h3>🔩 Bileşenler</h3><ul class="comp">${x.components.map((c) => `<li><b>${esc(c.name)}</b> — ${fmt(c.role)}</li>`).join("")}</ul></section>` : ""}
       ${(x.specs || []).length ? `<section class="box"><h3>📋 Tasarım parametreleri</h3><table class="kv">${x.specs.map((s) => `<tr><td>${esc(s.k)}</td><td>${esc(s.v)}</td></tr>`).join("")}</table></section>` : ""}
       <section class="box"><h3>📐 Mühendislik analizi</h3>${(x.analysis || []).map(calcHtml).join("")}${figs.slice(1).map(figHtml).join("")}</section>
+      ${x.review ? `<section class="box rev"><h3>🎓 Profesör teyidi <span class="rs">${esc(x.review.status)}</span></h3>
+        <p style="font-size:13px;color:var(--muted)">${esc(x.review.by)}</p>
+        ${(x.review.checks || []).map((c) => `<div class="step"><div class="lb">${c.ok ? "✅" : "🔧"} <b>${esc(c.item)}</b></div><div class="nt">${esc(c.method)}</div><div style="font-size:14px">${fmt(c.result)}</div></div>`).join("")}
+        ${(x.review.notes || []).map((n) => `<div class="cmt">${fmt(n)}</div>`).join("")}</section>` : ""}
       <section class="box pros"><h3>✅ Avantajlar</h3><ul class="pc">${(x.advantages || []).map((a) => `<li>${fmt(a)}</li>`).join("")}</ul></section>
       <section class="box cons"><h3>⚠️ Dezavantajlar</h3><ul class="pc">${(x.disadvantages || []).map((a) => `<li>${fmt(a)}</li>`).join("")}</ul></section>
       ${x.example ? `<section class="box"><h3>🏭 Örnek uygulama</h3>${paras(x.example)}</section>` : ""}

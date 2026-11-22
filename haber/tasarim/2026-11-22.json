@@ -1,7 +1,7 @@
 {
  "date": "2026-11-22",
  "generated_at": "2026-11-22T09:28:23+00:00",
- "verified_by": "opus",
+ "verified_by": "opus + makine profesörü",
  "designs": [
   {
    "id": "konik-makarali-tekerlek",
@@ -737,6 +737,40 @@
       "color": "#d9dee3",
       "metal": false
      }
+    ]
+   },
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Teyit edildi",
+    "checks": [
+     {
+      "item": "Rulman A ömrü L10h",
+      "method": "muhendislik_araclari.py rulman (C=70 kN, P=17.658 N, 70,7 d/dk, makaralı)",
+      "result": "98,6 milyon devir / 23.243 saat — tasarımla aynı",
+      "ok": true
+     },
+     {
+      "item": "Rulman B ömrü (yük durumu 2)",
+      "method": "muhendislik_araclari.py rulman (C=55 kN, P=13.244 N)",
+      "result": "115,1 milyon devir / 27.138 saat — tasarımla aynı",
+      "ok": true
+     },
+     {
+      "item": "Yürüme direnci",
+      "method": "motor_reduktor.py yuruyus (6 t, 1,11 m/s, Ø300, f=2,25 mm PU, flanşsız)",
+      "result": "942 N — tasarımdaki 920 N ile uyumlu (%2)",
+      "ok": true
+     },
+     {
+      "item": "Motor seçimi",
+      "method": "motor_reduktor.py yuruyus (kalkış kontrolü)",
+      "result": "Sürekli güç 1,1 kW; tasarımdaki 2,36 kW 0,2 m/s² ivmedeki tepe güçtür",
+      "ok": true
+     }
+    ],
+    "notes": [
+     "Doğrudan yol vermede (DOL) motor torku ~1,6·M_N olduğundan araba ~0,76 m/s² ile kalkar; PU tekerlekte kayma ve yük devrilmesi riski. **Frekans sürücüsü (rampa ≥ 5 s)** ile 0,2 m/s² hedefi tutulur ve motor 1,5–2,2 kW'a iner.",
+     "8 sa/gün çalışma için rulman hedef ömrü 12.000–20.000 saattir; 23.000 saat yeterli."
     ]
    }
   },
@@ -1719,6 +1753,45 @@
       }
      }
     ]
+   },
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Teyit edildi",
+    "checks": [
+     {
+      "item": "Yay sertliği ve doğal frekans",
+      "method": "Python: k = M·ω_n²",
+      "result": "154,2 N/mm, yay başına 38,6 N/mm, f_n = 6,25 Hz — aynı",
+      "ok": true
+     },
+     {
+      "item": "Dengesizlik kuvveti ve genlik",
+      "method": "Python: m_u·r = M·A·(r²−1)/r²",
+      "result": "m_u·r = 0,1406 kg·m → F0 = 3.470 N, A = 1,50 mm (tasarımda 0,14'e yuvarlanmış: 3.454 N, fark %0,5)",
+      "ok": true
+     },
+     {
+      "item": "Fırlatma katsayısı",
+      "method": "Python: Γz = A·ω²·sinβ/g",
+      "result": "1,89 — parçalar sıçrayarak ilerler (1 < Γz < 3,3 aralığı uygun)",
+      "ok": true
+     },
+     {
+      "item": "Zemine iletilen kuvvet",
+      "method": "Python: geçirgenlik T (ζ=0,05, r=4)",
+      "result": "T = 0,072 → 249 N — aynı",
+      "ok": true
+     },
+     {
+      "item": "Yay teli sertliği",
+      "method": "Python: k = G·d⁴/(8·D³·n)",
+      "result": "38,5 N/mm — aynı",
+      "ok": true
+     }
+    ],
+    "notes": [
+     "Kalkış/duruşta rezonanstan (6,25 Hz) geçerken genlik kısa süreli büyür; tasarımdaki ±8 mm lastik tamponlar ve sürücü fren rampası bu yüzden önemlidir."
+    ]
    }
   },
   {
@@ -2678,6 +2751,33 @@
       "label": "Ürün (karton)"
      }
     ]
+   },
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Teyit edildi (1 öneri)",
+    "checks": [
+     {
+      "item": "Sikloidal hareket",
+      "method": "Python: v = 2hω/β, a = 2πhω²/β², j = 4π²hω³/β³",
+      "result": "0,360 m/s · 6,79 m/s² · 256 m/s³ — aynı",
+      "ok": true
+     },
+     {
+      "item": "En büyük basınç açısı",
+      "method": "Python: 1.200 noktalı tarama, R_p = 50 mm",
+      "result": "24,3° < 30° — aynı",
+      "ok": true
+     },
+     {
+      "item": "Yay gerilmesi",
+      "method": "Python: τ = K_w·8FD/(πd³)",
+      "result": "K_w = 1,184, τ₂ = 371 MPa — aynı",
+      "ok": true
+     }
+    ],
+    "notes": [
+     "120 d/dk sürekli çalışmada yay yılda ~10⁸ çevrim görür; Δτ ≈ 294 MPa bu ömür için sınırdadır. **Bilyalı dövülmüş (shot peened) VD-SiCr yay teli** veya d = 2,8 mm tel ile gerilmeyi düşürmek önerilir."
+    ]
    }
   },
   {
@@ -3521,6 +3621,39 @@
       }
      }
     ]
+   },
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Düzeltildi",
+    "checks": [
+     {
+      "item": "Rulman ömrü",
+      "method": "muhendislik_araclari.py rulman (C=34 kN, P=782 N, 4000 d/dk, bilyalı)",
+      "result": "82.190 milyon devir / 342.456 saat — aynı",
+      "ok": true
+     },
+     {
+      "item": "Mil konsol sehimi",
+      "method": "Python: δ = F·a³/(3EI)",
+      "result": "2,43 µm — aynı",
+      "ok": true
+     },
+     {
+      "item": "Radyal rijitlik",
+      "method": "Mühendislik kontrolü",
+      "result": "Ajan k_r ≈ 2·k_a almıştı (25° için geçerli); 15°'de k_r ≈ 6·k_a. Uç rijitliği 104 → 206 N/µm olarak düzeltildi",
+      "ok": false
+     },
+     {
+      "item": "d_m·n hız kontrolü",
+      "method": "Mühendislik kontrolü",
+      "result": "Formülde azami devir (10.000 d/dk) kullanıldığı açıkça belirtildi; çalışma devrinde 310.000",
+      "ok": false
+     }
+    ],
+    "notes": [
+     "Ömür bu iş milinde belirleyici değildir; seçim kriteri rijitlik, ısıl ön yük artışı ve gres ömrüdür."
+    ]
    }
   },
   {
@@ -4297,6 +4430,34 @@
        }
       }
      }
+    ]
+   },
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Teyit edildi (1 not)",
+    "checks": [
+     {
+      "item": "Piston çapı",
+      "method": "hidrolik_silindir.py (34,8 kN, 125 bar, η_hm 0,9)",
+      "result": "D = 62,8 → standart Ø63 mm — aynı",
+      "ok": true
+     },
+     {
+      "item": "Pompa debisi ve motor gücü",
+      "method": "hidrolik_silindir.py (7,3 mm/s, 10 bar kayıp)",
+      "result": "Silindir başına 1,4 L/dk ve 0,36 kW → iki silindir 2,8 L/dk ve 0,72 kW; tasarımdaki 2,74 L/dk / 0,75 kW ile uyumlu",
+      "ok": true
+     },
+     {
+      "item": "Mil burkulması",
+      "method": "hidrolik_silindir.py (Euler 2, L = 631 mm, ν = 3,5)",
+      "result": "Ø28 mil yeterli (44,9 kN izin); tasarımdaki Ø40 mil fazlasıyla emniyetli (S = 17,7)",
+      "ok": true
+     }
+    ],
+    "notes": [
+     "Ø63/40 yerine standart Ø63/28 silindir daha hafif ve ucuzdur; Ø40 mil yalnızca yanal darbe riski varsa tercih edilmeli.",
+     "Kaldırma platformları EN 1570-1 kapsamındadır; hesaplar eğitim amaçlıdır, gerçek uygulama yetkili mühendis onayı gerektirir."
     ]
    }
   }

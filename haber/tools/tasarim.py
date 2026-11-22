@@ -70,6 +70,9 @@ def check_design(x: dict, where: str, errors: list[str]) -> None:
         if not f.get("caption"):
             errors.append(f"{where}.figures[{i}]: caption eksik")
         check_svg(str(f.get("svg", "")), f"{where}.figures[{i}]", errors)
+    rv = x.get("review")
+    if not isinstance(rv, dict) or not rv.get("status") or not isinstance(rv.get("checks"), list) or len(rv["checks"]) < 2:
+        errors.append(f"{where}: 'review' (profesör teyidi: status + en az 2 check) eksik")
     m = x.get("model3d")
     if not isinstance(m, dict) or not isinstance(m.get("parts"), list) or len(m["parts"]) < 3:
         errors.append(f"{where}: model3d.parts en az 3 parça olmalı")
