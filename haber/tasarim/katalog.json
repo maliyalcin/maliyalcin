@@ -1,0 +1,254 @@
+[
+ {
+  "id": "vidali-mil-lineer-eksen",
+  "title": "Bilyalı vidalı mil tahrikli lineer eksen",
+  "components": "Servo motor, kaplin, bilyalı vidalı mil, sabit-serbest rulman yataklama, iki lineer ray ve araba",
+  "application": "CNC tabla / hassas konumlama"
+ },
+ {
+  "id": "trapez-mil-kaldirma",
+  "title": "Trapez vidalı mil ile dikey kaldırma tablası",
+  "components": "Redüktörlü motor, trapez mil, bronz somun, otoblokaj, kılavuz miller",
+  "application": "Kendiliğinden kilitlenen kaldırma platformu"
+ },
+ {
+  "id": "kayis-lineer-eksen",
+  "title": "Triger kayışlı uzun stroklu lineer eksen",
+  "components": "Step/servo motor, triger kasnak, AT/HTD kayış, gergi, ray-araba",
+  "application": "Portal robot / pick&place"
+ },
+ {
+  "id": "kremayer-portal",
+  "title": "Kremayer-pinyon tahrikli portal eksen",
+  "components": "Servo, planet redüktör, helis kremayer-pinyon, lineer ray",
+  "application": "Uzun stroklu portal kesim makinesi"
+ },
+ {
+  "id": "zincir-konveyor",
+  "title": "Zincir dişli tahrikli palet konveyör",
+  "components": "Redüktörlü motor, zincir dişliler, rulolu zincir, gergi, yataklar",
+  "application": "Palet taşıma hattı"
+ },
+ {
+  "id": "bantli-konveyor",
+  "title": "Tamburlu bantlı konveyör",
+  "components": "Tambur motor veya redüktör+tambur, bant, avare rulolar, gergi tamburu",
+  "application": "Koli taşıma bandı"
+ },
+ {
+  "id": "rulolu-konveyor-zincirli",
+  "title": "Zincirle birbirine bağlı tahrikli rulolu konveyör",
+  "components": "Motor-redüktör, çift dişli rulolar, zincir halkaları",
+  "application": "Ağır yük rulolu hat"
+ },
+ {
+  "id": "dondurme-tablasi",
+  "title": "Sonsuz vida redüktörlü döner tabla (indeksleme)",
+  "components": "Sonsuz vida-karşı çark, motor, çapraz makaralı rulman, endeks pimi",
+  "application": "Montaj istasyonu döner tablası"
+ },
+ {
+  "id": "kam-indeksleyici",
+  "title": "Silindirik kam ile hassas indeksleme",
+  "components": "Kam, makaralı takipçi, çıkış flanşı, motor",
+  "application": "Ambalaj makinesi adım tahriki"
+ },
+ {
+  "id": "pnomatik-silindir-kaldirma",
+  "title": "Pnömatik silindirli kaldırma/itme ünitesi",
+  "components": "Çift etkili silindir, kılavuz miller, lineer burçlar, valf",
+  "application": "Hat üzerinde parça ayırıcı/itici"
+ },
+ {
+  "id": "hidrolik-pres",
+  "title": "Hidrolik silindirli pres",
+  "components": "Hidrolik silindir, pompa-motor, valf bloğu, pres gövdesi, kılavuz kolonlar",
+  "application": "Sac şekillendirme presi"
+ },
+ {
+  "id": "makas-lift",
+  "title": "Hidrolik makas kaldırma platformu",
+  "components": "Makas kolları, hidrolik silindir, mafsal pimleri, platform",
+  "application": "Bakım/yükleme platformu"
+ },
+ {
+  "id": "alt-destekli-mil-araba",
+  "title": "Alt destekli mil (supported rail) ve açık burçlu araba",
+  "components": "Alt destekli miller, açık lineer burçlar, araba, vidalı/kayışlı tahrik",
+  "application": "Uzun stroklu ekonomik lineer eksen"
+ },
+ {
+  "id": "profil-ray-araba-hesabi",
+  "title": "Profil ray–araba sisteminde moment ve ömür hesabı",
+  "components": "Profil ray, bilyalı arabalar, yük konumu, moment kolları",
+  "application": "Konsol yüklü kızak"
+ },
+ {
+  "id": "rulman-yataklama-sabit-serbest",
+  "title": "Sabit–serbest rulman yataklamalı mil",
+  "components": "Sabit rulman (çift sıra/eğik bilyalı), serbest rulman, mil, kasnak/dişli",
+  "application": "Tahrik mili yataklaması"
+ },
+ {
+  "id": "egik-bilyali-cift-rulman",
+  "title": "Eğik bilyalı rulman çifti (O/X düzen) ile iş mili",
+  "components": "Eğik bilyalı rulmanlar, ön yük somunu, mil, gövde",
+  "application": "Takım tezgâhı iş mili"
+ },
+ {
+  "id": "konik-makarali-tekerlek",
+  "title": "Konik makaralı rulmanlı tekerlek göbeği",
+  "components": "Konik makaralı rulman çifti, aks, göbek, ön yük ayarı",
+  "application": "Ağır yük arabası tekerleği"
+ },
+ {
+  "id": "rulman-yatak-ucgen-flans",
+  "title": "Hazır rulman yatakları (UCP/UCF) ile tahrik mili",
+  "components": "UCP/UCF yataklar, mil, kasnak, kama",
+  "application": "Konveyör tahrik mili"
+ },
+ {
+  "id": "kayis-kasnak-v",
+  "title": "V-kayış-kasnak güç aktarımı",
+  "components": "Motor, V-kasnaklar, V-kayışlar, motor gergi kızağı",
+  "application": "Fan/pompa tahriki"
+ },
+ {
+  "id": "triger-kayis-oran",
+  "title": "Triger kayışla hız düşürme kademesi",
+  "components": "Motor, küçük/büyük triger kasnak, kayış, gergi",
+  "application": "Senkron hız düşürme"
+ },
+ {
+  "id": "helis-disli-redukto",
+  "title": "İki kademeli helis dişli redüktör",
+  "components": "Helis dişliler, ara mil, rulmanlar, gövde",
+  "application": "Genel amaçlı redüktör"
+ },
+ {
+  "id": "planet-redukto",
+  "title": "Planet dişli redüktör",
+  "components": "Güneş, planet, çember dişli, taşıyıcı, servo",
+  "application": "Servo eksen redüktörü"
+ },
+ {
+  "id": "konik-disli-aci-aktarimi",
+  "title": "Konik dişli ile 90° güç aktarımı",
+  "components": "Konik dişli çifti, miller, rulmanlar",
+  "application": "Açılı tahrik kutusu"
+ },
+ {
+  "id": "sonsuz-vida-otoblokaj",
+  "title": "Sonsuz vida redüktörde verim ve otoblokaj",
+  "components": "Sonsuz vida, karşı çark (bronz), motor",
+  "application": "Kapı/bariyer tahriki"
+ },
+ {
+  "id": "zincir-disli-cift-sira",
+  "title": "Çift sıra zincirli ağır tahrik",
+  "components": "Çift sıra zincir dişliler, zincir, gergi",
+  "application": "Ağır yük kaldırma tahriki"
+ },
+ {
+  "id": "vinc-tamburu",
+  "title": "Halat tamburlu vinç tahriki",
+  "components": "Motor, fren, redüktör, halat tamburu, halat, kanca makarası",
+  "application": "Köprülü vinç kaldırma"
+ },
+ {
+  "id": "kaldirma-zincirli-asansor",
+  "title": "Zincirli dikey yük asansörü (karşı ağırlıklı)",
+  "components": "Motor-redüktör, zincir dişliler, zincir, karşı ağırlık, kılavuz",
+  "application": "Kat arası yük asansörü"
+ },
+ {
+  "id": "krank-biyel",
+  "title": "Krank-biyel mekanizmalı ileri-geri hareket",
+  "components": "Krank, biyel, piston/kızak, volan, motor",
+  "application": "Pres/pompa mekanizması"
+ },
+ {
+  "id": "cenevre-mekanizmasi",
+  "title": "Malta haçı (Cenevre) adım mekanizması",
+  "components": "Tahrik diski + pim, Malta haçı, mil",
+  "application": "Aralıklı adım hareketi"
+ },
+ {
+  "id": "eksantrik-titresim",
+  "title": "Eksantrik kütleli titreşimli besleyici",
+  "components": "Dengesiz kütleli motor, yaylar, oluk",
+  "application": "Titreşimli parça besleyici"
+ },
+ {
+  "id": "servo-dogrudan-tahrik",
+  "title": "Doğrudan tahrikli (direct drive) döner eksen",
+  "components": "Tork motoru, çapraz makaralı rulman, enkoder",
+  "application": "Yüksek dinamikli döner tabla"
+ },
+ {
+  "id": "lineer-motor-eksen",
+  "title": "Lineer motorlu yüksek hızlı eksen",
+  "components": "Lineer motor (bobin+mıknatıs yolu), raylar, cetvel",
+  "application": "Yüksek hızlı pick&place"
+ },
+ {
+  "id": "kavrama-fren-unitesi",
+  "title": "Elektromanyetik kavrama-fren ile start-stop tahrik",
+  "components": "Motor, kavrama-fren ünitesi, volan, kasnak",
+  "application": "Kesme/kesikli tahrik"
+ },
+ {
+  "id": "hidrolik-motor-vinc",
+  "title": "Hidrolik motorlu tambur/çekici",
+  "components": "Hidrolik motor, planet redüktör, fren, tambur",
+  "application": "Mobil vinç/çekici"
+ },
+ {
+  "id": "pnomatik-doner-aktuator",
+  "title": "Pnömatik döner aktüatör (kremayer-pinyonlu)",
+  "components": "Çift piston, kremayer, pinyon, dayama vidaları",
+  "application": "Vana/kapak döndürme"
+ },
+ {
+  "id": "pnomatik-tutucu",
+  "title": "Pnömatik paralel tutucu (gripper)",
+  "components": "Pnömatik piston, kama/kol mekanizması, çeneler",
+  "application": "Robot tutucu"
+ },
+ {
+  "id": "cift-vidali-senkron-kaldirma",
+  "title": "İki vidalı mili senkron tahrik eden kaldırma sistemi",
+  "components": "Motor, açı redüktörleri (kriko), bağlantı milleri, vidalı kaldırma krikoları",
+  "application": "Çok noktalı senkron kaldırma"
+ },
+ {
+  "id": "teleskopik-eksen",
+  "title": "Teleskopik lineer eksen (çift strok)",
+  "components": "Raylar, araba, kayış veya kremayer, makara mekanizması",
+  "application": "Depo çatal mekanizması"
+ },
+ {
+  "id": "kaplin-secimi",
+  "title": "Esnek kaplin ile motor–mil bağlantısı ve hizasızlık",
+  "components": "Motor, kaplin (çeneli/körüklü/disk), mil, yataklar",
+  "application": "Servo-vidalı mil bağlantısı"
+ },
+ {
+  "id": "volan-enerji",
+  "title": "Volan ile enerji depolama ve pres çevrimi",
+  "components": "Volan, kavrama, krank, motor",
+  "application": "Mekanik eksantrik pres"
+ },
+ {
+  "id": "kam-takipci-dogrusal",
+  "title": "Disk kam ile doğrusal takipçi hareketi",
+  "components": "Disk kam, makaralı takipçi, yay, kılavuz",
+  "application": "Ambalaj makinesi itici"
+ },
+ {
+  "id": "dikey-eksen-fren-karsi-agirlik",
+  "title": "Dikey vidalı eksende frenli motor ve dengeleme",
+  "components": "Frenli servo, vidalı mil, gaz yay/karşı ağırlık",
+  "application": "Z ekseni düşme emniyeti"
+ }
+]
