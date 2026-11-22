@@ -1,0 +1,209 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-23T00:40:00+03:00",
+  "verified_by": "opus",
+  "headline": "Türkiye makine ihracatı 10 ayda 23,7 milyar $ ile değerde rekor kırdı ama miktar %6,2 düştü; Siemens SPS 2026'da PLC kodu yazan üretken YZ ajanını tanıtıyor.",
+  "categories": [
+    {
+      "id": "ai-mekanik-tasarim",
+      "title": "Yapay Zeka × Mekanik Tasarım",
+      "icon": "🤖",
+      "brief": "Akademide LLM ajanları büyük parametrik CAD modellerini simülasyonla optimize etmeye başladı.",
+      "items": [
+        {
+          "title": "Yapay zekâ ajanları, bin+ CAD parametreli ve doğrusal olmayan simülasyonlu parçaları yeniden tasarlayabiliyor",
+          "summary": "19 Kasım 2026'da arXiv'e yüklenen çalışma, LLM tabanlı ajanların öğrenilmiş mühendislik bilgisini simülasyon verisiyle birleştirerek bin'den fazla CAD parametresini ayarlayıp geçerli ve gerçekten iyileştirilmiş tasarımlara ulaştığını bildiriyor. Parametrik CAD ile çalışan makine tasarımcıları için, ajan destekli tasarım optimizasyonunun gerçek ölçekli parçalara ulaştığını gösteren bir işaret. Henüz hakem değerlendirmesinden geçmemiş bir ön baskı; bulgular ticari araçlarda doğrulanmış değil.",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26003",
+          "published": "2026-11-19",
+          "importance": 2,
+          "tags": [
+            "ajan",
+            "parametrik CAD",
+            "simülasyon",
+            "araştırma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cad-yazilim",
+      "title": "CAD / CAM / CAE Yazılımları",
+      "icon": "🖥️",
+      "brief": "Autodesk Fusion ve Netfabb metal LPBF yazıcılarla doğrudan entegre oluyor.",
+      "items": [
+        {
+          "title": "Mastrex ve Autodesk: Fusion ve Netfabb, MX serisi metal 3D yazıcılara entegre ediliyor",
+          "summary": "Mastrex, LPBF tabanlı MX serisi metal yazıcıları için Autodesk Fusion ve Netfabb uyumluluğu getirmek üzere Autodesk ile iş birliği duyurdu. Uyumluluk geliştirme ve entegrasyon sonrası mevcut MX portföyüne gelecek, yani henüz kullanıma hazır değil. Fusion ile tasarım yapıp Netfabb ile baskı hazırlığı ve simülasyon yapan mühendisler için küçük atölyelerde metal eklemeli imalata giriş yolunu kolaylaştırıyor.",
+          "source": "GlobeNewswire / DailyCAD/CAM",
+          "url": "https://www.globenewswire.com/news-release/2026/11/22/3407933/0/en/mastrex-and-autodesk-make-metal-3d-printing-more-accessible.html",
+          "published": "2026-11-21",
+          "importance": 2,
+          "tags": [
+            "eklemeli imalat",
+            "LPBF",
+            "Autodesk Fusion",
+            "Netfabb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endustriyel-tasarim",
+      "title": "Endüstriyel Tasarım",
+      "icon": "✏️",
+      "brief": "Günlük ürünlerde mekanizma odaklı konsept tasarımlar.",
+      "items": [
+        {
+          "title": "Starship esinli kalemtıraş konsepti: talaşlar için ayrı çekmece",
+          "summary": "Deli markası için tasarlanan otomatik kalemtıraş konseptinde kalem öne girer, talaşlar kesicinin altındaki çekmeceye düşer; beş uç ayarı ve 6-8 mm giriş aralığı belirtiliyor. Yanko Design çekmecenin talaşı dökmeden çıkabilmesini zayıf nokta olarak eleştiriyor. Küçük bir masaüstü ürününde atık toplama, tolerans ve servis erişimi gibi mekanik detayların form diliyle nasıl birleştirildiğini gösteren bir örnek.",
+          "source": "Yanko Design",
+          "url": "https://www.yankodesign.com/2026/11/20/this-starship-inspired-pencil-sharpener-concept-gives-shavings-their-own-drawer/",
+          "published": "2026-11-20",
+          "importance": 1,
+          "tags": [
+            "ürün tasarımı",
+            "konsept",
+            "masaüstü ürün"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imalata-hazirlik",
+      "title": "İmalata Hazırlık & Üretim Teknolojileri",
+      "icon": "🏭",
+      "brief": "Formnext sonrası eğilimler ve CNC'de çevrim/enerji optimizasyonu.",
+      "items": [
+        {
+          "title": "Formnext 2026 değerlendirmesi: daha büyük metal yazıcılar, daha küçük seramik yazıcılar, otomasyon ve yapay zekâ",
+          "summary": "3Druck'un Formnext 2026 sonrası özeti, fuarın ana eğilimlerini büyük hacimli metal sistemler, kompakt seramik yazıcılar, süreç otomasyonu ve AI olarak topluyor. Parça tasarlarken eklemeli imalatın hangi ölçek ve malzemelerde seri üretime yaklaştığını görmek için pratik bir referans.",
+          "source": "3Druck",
+          "url": "https://3druck.com/en/industry-2/that-was-formnext-2026-larger-metal-3d-printers-smaller-ceramic-printers-automation-ai-and-more-27166091/",
+          "published": "2026-11-20",
+          "importance": 2,
+          "tags": [
+            "Formnext",
+            "eklemeli imalat",
+            "otomasyon",
+            "AI"
+          ]
+        },
+        {
+          "title": "VERICUT Optimizer titanyum işlemede çevrim süresini %25, enerji kullanımını %20 azalttı",
+          "summary": "MTDCNC haftalık özetine göre bir titanyum işleme gösteriminde VERICUT Optimizer takım tutulumunu analiz edip ilerleme hızlarını ayarlayarak işleme süresini yaklaşık %25, enerji tüketimini %20 düşürdü. Sonuç tek bir üretici gösterimine dayanıyor, genelleştirilmemeli. CAM sonrası G-kod optimizasyonu ile çevrim süresi kazanmak isteyen programcılar için ilgi çekici.",
+          "source": "MTDCNC",
+          "url": "https://mtdcnc.com/uncategorised/mtdcnc/30-manufacturing-videos-in-one-week-mtdcnc-week-in-review-21-november-2026/",
+          "published": "2026-11-21",
+          "importance": 2,
+          "tags": [
+            "CNC",
+            "CAM",
+            "G-kod optimizasyonu",
+            "titanyum"
+          ]
+        },
+        {
+          "title": "Seco, alüminyum frezelemede güç tüketimini düşüren freze takımlarını duyurdu",
+          "summary": "Modern Machine Shop'ta 20 Kasım tarihli habere göre Seco'nun yeni freze takımları alüminyum işlemede makine güç talebini azaltıyor. Daha düşük mil gücü ihtiyacı, daha küçük tahrik ve daha verimli tezgâh tasarımı veya mevcut tezgâhlarda daha yüksek talaş kaldırma anlamına gelebilir.",
+          "source": "Modern Machine Shop",
+          "url": "https://www.mmsonline.com/news",
+          "published": "2026-11-20",
+          "importance": 1,
+          "tags": [
+            "talaşlı imalat",
+            "kesici takım",
+            "Seco",
+            "alüminyum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "makine-sektoru",
+      "title": "Makine Sektörü (Dünya)",
+      "icon": "⚙️",
+      "brief": "SPS 2026 (24-26 Kasım) öncesi otomasyon devlerinden üretken YZ ve hareket kontrol duyuruları.",
+      "items": [
+        {
+          "title": "Siemens SPS 2026'da Eigen Engineering Agent ve Simatic AX Logic Control Engineering'i tanıtacak",
+          "summary": "Siemens, 24-26 Kasım'daki SPS Nürnberg'de Hall 11'de endüstriyel yapay zekâ odaklı çıkış yapacak; üretken YZ tabanlı Eigen Engineering Agent PLC kodlama, HMI görselleştirme ve cihaz konfigürasyonu işlerini üstlenecek. Simatic AX Logic Control Engineering'in dünya çapında çıkışı ve portföyün AB Siber Dayanıklılık Yasası'na Aralık 2027'ye kadar hazır olacağı duyurusu bekleniyor. Makine tasarımcısı için kontrol yazılımı mühendisliği süresini ve yasal uyum yükünü doğrudan etkileyen gelişmeler.",
+          "source": "Siemens Press / Automation-Fair",
+          "url": "https://press.siemens.com/global/en/event/siemens-sps-fair-2026",
+          "published": "2026-11-21",
+          "importance": 3,
+          "tags": [
+            "SPS 2026",
+            "Siemens",
+            "endüstriyel yapay zekâ",
+            "PLC",
+            "otomasyon"
+          ]
+        },
+        {
+          "title": "ABB ve Beckhoff SPS 2026 öncesi hareket kontrol ve PC tabanlı kontrol vitrinlerini hazırladı",
+          "summary": "ABB Hall 4'te Novolink dijital motor kontrol ürünü ve Crealizer sürücü yazılım platformunu, YZ destekli kestirimci bakımla birlikte gösterecek. Beckhoff ise Hall 7'de TwinCAT ile PLC, hareket, güvenlik, HMI, görüntü işleme ve YZ'yi tek açık PC tabanlı sistemde birleştirecek. Fuar ziyareti planlayan makine tasarımcıları için sürücü ve kontrol mimarisi seçimlerinde önizleme niteliğinde.",
+          "source": "drivesweb.com / Industry EMEA",
+          "url": "https://www.industryemea.com/news/117589-pc-based-control-unifies-automation-functions-at-sps-2026",
+          "published": "2026-11-20",
+          "importance": 2,
+          "tags": [
+            "SPS 2026",
+            "ABB",
+            "Beckhoff",
+            "sürücü",
+            "hareket kontrol"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turkiye-makine",
+      "title": "Türkiye Makine Sektörü",
+      "icon": "🇹🇷",
+      "brief": "Makine ihracatı değerde rekor, miktarda düşüşte; CBAM yeni maliyet baskısı.",
+      "items": [
+        {
+          "title": "Makine ihracatı 10 ayda %0,8 artışla rekor 23,7 milyar dolara ulaştı; miktar %6,2 geriledi",
+          "summary": "MAİB verilerine göre serbest bölgeler dahil makine ihracatı Ocak-Ekim 2026'da 23,7 milyar dolar oldu; kilogram başı birim fiyat 8,7 dolara yükselirken ihracat miktarı %6,2 düştü. Almanya (2,9 milyar dolar) ve ABD (%27 artışla yaklaşık 2 milyar dolar) öne çıkarken en büyük ürün grubu içten yanmalı motorlar (2,1 milyar dolar) oldu. Tasarımcı için işaret: değer artışı hacimden değil katma değerli ürün karmasından geliyor.",
+          "source": "Ekonomim",
+          "url": "https://www.ekonomim.com/ekonomi/ocak-ekim-donemi-makine-ihracati-237-milyar-dolar-haberi-932602",
+          "published": "2026-11-21",
+          "importance": 3,
+          "tags": [
+            "ihracat",
+            "MAİB",
+            "makine sanayi"
+          ]
+        },
+        {
+          "title": "AB'nin sınırda karbon düzenlemesi makine sektörünü zorluyor",
+          "summary": "MAİB Başkanı Sevda Kayhan Yılmaz, AB'nin sınırda karbon düzenlemesinin (CBAM) makine ihracatçıları için maliyet riski oluşturduğuna dikkat çekti. Çelik ve döküm ağırlıklı ürünlerde karbon ayak izi hesabı ve düşük karbonlu malzeme seçimi tasarım aşamasında önem kazanıyor.",
+          "source": "Ekonomi Politikası",
+          "url": "https://ekonomipolitikasi.com.tr/abnin-sinirda-karbon-duzenlemesi-makine-sektorunu-zorluyor/",
+          "published": "2026-11-21",
+          "importance": 2,
+          "tags": [
+            "CBAM",
+            "AB",
+            "ihracat",
+            "sürdürülebilirlik"
+          ]
+        },
+        {
+          "title": "Makine ve aksamları ihracatı Ekim'de yaklaşık 954,5 milyon dolar; yıllık %10,5 düşüş",
+          "summary": "TİM'in Ekim 2026 sektörel verilerine göre makine ve aksamları ihracatı yaklaşık 954,5 milyon dolara geriledi. MAİB'in konsolide (serbest bölge dahil) rakamlarıyla kapsam farkı olduğundan doğrudan karşılaştırılmamalı; ancak ay bazında zayıflama sektörde talep baskısına işaret ediyor.",
+          "source": "Star",
+          "url": "https://www.star.com.tr/ekonomi/turkiyenin-ihracatinda-tarihi-rakam-ekim-ayinda-zirvenin-sahibi-belli-oldu-haber-2050922/",
+          "published": "2026-11-20",
+          "importance": 1,
+          "tags": [
+            "TİM",
+            "ihracat",
+            "Ekim verisi"
+          ]
+        }
+      ]
+    }
+  ]
+}
