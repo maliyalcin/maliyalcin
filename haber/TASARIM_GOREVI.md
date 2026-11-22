@@ -23,6 +23,7 @@ Verilen katalog öğesi için **gerçekçi, somut ölçülü bir örnek tasarım
 0,5 m/s, 1 m/s² ivme") ve aşağıdaki JSON'u **tek dosya** olarak
 `haber/tasarim/parca/D/<id>.json` yoluna yaz (Write aracı; klasörü gerekirse `mkdir -p` ile oluştur).
 Sonra `python3 -c "import json;json.load(open('<yol>'))"` ile JSON'un geçerli olduğunu kontrol et.
+Yardımcı betik yazarsan adını `<id>_gen.py` yap (paralel ajanlarla dosya çakışmasın); `haber/` altına betik bırakma.
 Yanıt olarak yalnızca 2-3 satırlık özet döndür (dosya içeriğini geri yazma).
 
 ```json

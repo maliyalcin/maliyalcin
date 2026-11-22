@@ -2,8 +2,8 @@
 // Birimler mm. Parça tipleri: box, cylinder, tube, gear, screw, belt, sphere.
 // Hareket: anim.spin {rpm} (parçanın kendi ekseni etrafında), anim.slide {axis, amp, period}.
 (() => {
-  const THREE_URL = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js";
-  const ORBIT_URL = "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js";
+  const THREE_URL = "vendor/three.min.js";
+  const ORBIT_URL = "vendor/OrbitControls.js";
 
   function load(src) {
     return new Promise((ok, no) => {
