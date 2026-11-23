@@ -1,0 +1,192 @@
+{
+  "date": "2026-11-23",
+  "generated_at": "2026-11-24T00:50:00+03:00",
+  "verified_by": "opus",
+  "headline": "MEEXX Bursa Makine Fuarı 25-28 Kasım'da kapılarını açıyor; Rockwell yatırımcı gününde robotik ve yapay zekâya odaklanarak marj hedefini %25'e yükseltti.",
+  "categories": [
+    {
+      "id": "ai-mekanik-tasarim",
+      "title": "Yapay Zeka × Mekanik Tasarım",
+      "icon": "🤖",
+      "brief": "Avrupa'da otomotiv devleri üretim konseptlerini kurulumdan önce YZ ve dijital ikizde test ediyor.",
+      "items": [
+        {
+          "title": "Avrupalı üreticiler mühendislik ve üretimde yapay zekâ ile dijital ikizi yaygınlaştırıyor",
+          "summary": "Siemens, Mercedes-Benz, Audi ve Volkswagen'in simülasyon ve dijital ikizi ekipman fiziksel olarak kurulmadan önce üretim konseptlerini test etmek için kullandığı bildiriliyor; Audi batarya üretim tesislerinin dijital ikizlerini örnek veriyor. Tasarım kararlarının üretim hattı üzerinde sanal olarak doğrulanması, imalata hazırlık sürecinin erkene çekildiğini gösteriyor.",
+          "source": "Robotics & Automation News",
+          "url": "https://roboticsandautomationnews.com/2026/11/22/european-manufacturers-expand-use-of-ai-and-digital-twins-in-engineering-and-production/107469/",
+          "published": "2026-11-22",
+          "importance": 2,
+          "tags": [
+            "dijital ikiz",
+            "simülasyon",
+            "üretimde AI"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cad-yazilim",
+      "title": "CAD / CAM / CAE Yazılımları",
+      "icon": "🖥️",
+      "brief": "Autodesk 24 Kasım'da çeyrek sonuçlarını açıklıyor.",
+      "items": [
+        {
+          "title": "Autodesk 3. çeyrek (FY2027) sonuçlarını 24 Kasım'da açıklıyor: beklentiler 2,13 milyar $ gelir",
+          "summary": "Autodesk'in FY2027 3. çeyrek sonuçları 24 Kasım'da piyasa kapanışından sonra açıklanacak; analistlerin beklentisi hisse başına yaklaşık 3,07 $ kâr ve 2,13 milyar $ gelir. Şirketin Ağustos'ta verdiği rehberlik 2,125-2,140 milyar $ gelir aralığında ve MaintainX satın almasının ikinci yarıda yaklaşık 60 milyon $ gelir katması bekleniyor. Inventor/AutoCAD/Fusion kullanan ekipler için fiyatlandırma, yapay zekâ yatırımı ve ürün yol haritası sinyalleri açısından izlenmeli.",
+          "source": "Daily Political (MarketBeat) / Autodesk yatırımcı ilişkileri",
+          "url": "https://dailypolitical.com/2026/11/21/autodesk-adsk-projected-to-announce-earnings-on-tuesday.html",
+          "published": "2026-11-21",
+          "importance": 2,
+          "tags": [
+            "Autodesk",
+            "çeyrek sonuçları",
+            "Inventor",
+            "AutoCAD",
+            "Fusion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endustriyel-tasarim",
+      "title": "Endüstriyel Tasarım",
+      "icon": "✏️",
+      "brief": "Kompakt, mekanik hissi öne çıkan tüketici ürünleri.",
+      "items": [
+        {
+          "title": "Kasım 2026'nın en iyi 5 teknoloji gadget'ı: CD çalar, kapsül kamera, alarmlı ses makinesi",
+          "summary": "Yanko Design'ın 23 Kasım derlemesi Syitren R400 CD çalar, 55 dolarlık analog tarzı kapsül kamera ve Divoom FlowToo alarm saati/ses makinesini öne çıkarıyor. Tüketici elektroniğinde mekanik his, kompakt kasa ve retro form eğilimlerini takip eden tasarımcılar için hızlı bir referans.",
+          "source": "Yanko Design",
+          "url": "https://www.yankodesign.com/2026/11/23/5-best-tech-gadgets-of-november-2026/",
+          "published": "2026-11-23",
+          "importance": 1,
+          "tags": [
+            "tasarım derlemesi",
+            "tüketici elektroniği",
+            "form"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imalata-hazirlik",
+      "title": "İmalata Hazırlık & Üretim Teknolojileri",
+      "icon": "🏭",
+      "brief": "Kaynakta hümanoid ve kobot otomasyonu yaygınlaşıyor.",
+      "items": [
+        {
+          "title": "Persona AI, kaynakçı hümanoidlerini eğitim için Kore'ye gönderiyor",
+          "summary": "ABD'li robot üreticisi Persona AI, HD Hyundai ile tersane kaynağı için geliştirdiği hümanoidi 2026 sonu civarında ticari kullanıma yaklaştırıyor; robotlar Kore'de eğitilecek. Hareket kabiliyeti zorlu koşullarda hâlâ açık bir sorun. Kaynaklı konstrüksiyon tasarlayan mühendis için, robotun erişebileceği kaynak dikişi ve fikstür geometrisinin ileride tasarım kısıtı olacağının işareti.",
+          "source": "Seoul Economic Daily",
+          "url": "https://en.sedaily.com/world/2026/11/20/us-robot-maker-sends-welding-humanoids-to-korea-for-training",
+          "published": "2026-11-20",
+          "importance": 2,
+          "tags": [
+            "kaynak",
+            "robotik",
+            "hümanoid"
+          ]
+        },
+        {
+          "title": "Güvenlik çiti üreticisi rutin kaynakları kaynak kobotlarına devretti",
+          "summary": "The Fabricator'ın haberine göre bir çit imalatçısı SwitchWeld kobotlarıyla tekrarlayan kaynak işlerini otomatikleştirip kaynakçıları daha karmaşık işlere kaydırıyor. Düşük adet, yüksek çeşitlilikte üretimde kobot kaynağı yaygınlaşıyor; parçaları standart dikiş tipleri ve kolay erişilebilir birleşimlerle tasarlamak DFM açısından avantaj sağlıyor.",
+          "source": "The Fabricator",
+          "url": "https://thefabricator.com/thewelder/article/automationrobotics/marine-veteran-brings-welding-cobots-to-security-fencing",
+          "published": "2026-11-21",
+          "importance": 2,
+          "tags": [
+            "kaynak",
+            "kobot",
+            "DFM",
+            "sac metal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "makine-sektoru",
+      "title": "Makine Sektörü (Dünya)",
+      "icon": "⚙️",
+      "brief": "Robotik yatırımları rekor seviyede; Rockwell marj hedefini yükseltti.",
+      "items": [
+        {
+          "title": "Rockwell Automation yatırımcı gününde marj hedefini yükseltti: robotik ve yapay zekâ öne çıkıyor",
+          "summary": "Rockwell, uzun vadeli işletme marjı hedefini yaklaşık %25'e çıkardı; Intelligent Devices için %22-25, Software & Control için %35-37 aralıkları belirlendi. Şirket büyümeyi AMR (AGILOX), FactoryTalk Conductor gibi yapay zekâ ajan platformları ve NVIDIA ortaklığı üzerinden kurguluyor. Makine tasarımcısı için otomasyon tedarikçilerinin yatırım önceliğinin donanımdan yazılım ve ajan tabanlı mühendisliğe kaydığını gösteriyor.",
+          "source": "MarketBeat / TradingView",
+          "url": "https://marketbeat.com/instant-alerts/event-rockwell-automation-raises-margin-target-bets-on-robots-and-ai-at-investor-day-2026-11-20/",
+          "published": "2026-11-20",
+          "importance": 2,
+          "tags": [
+            "Rockwell",
+            "otomasyon",
+            "yapay zeka",
+            "AMR"
+          ]
+        },
+        {
+          "title": "F-Prime: 2026'da robotik yatırımı rekor 60,7 milyar dolara ulaşacak, ancak risk uyarısı var",
+          "summary": "F-Prime'ın State of Robotics 2026 raporu, robotik fonlamasının 60,7 milyar dolara varacağını öngörüyor. Fonlama az sayıda mega turda yoğunlaşıyor ve halka açık robotik şirketleri zayıf performans gösteriyor. Makine üreticileri için robot ve otomasyon tedarik zincirinde sermayenin nereye aktığını ve kırılganlık riskini anlamada önemli bir gösterge.",
+          "source": "Robotics & Automation News",
+          "url": "https://roboticsandautomationnews.com/2026/11/22/robotics-investment-set-to-reach-60-7-billion-in-2026-but-funding-boom-raises-concerns/107478",
+          "published": "2026-11-22",
+          "importance": 2,
+          "tags": [
+            "robotik",
+            "yatırım",
+            "pazar verisi"
+          ]
+        },
+        {
+          "title": "Multiway Robotics CeMAT Asia 2026'da tekerlekli insansı robot ve otonom forklift sistemlerini tanıttı",
+          "summary": "Shenzhen merkezli Multiway Robotics, Şanghay'daki CeMAT Asia fuarında tekerlekli bir insansı robot dahil beş otonom malzeme taşıma sistemi sergiledi. İç lojistik otomasyonunda otonom forklift ve mobil robotların yaygınlaşması, hat besleme ve malzeme akışı tasarımını doğrudan etkiliyor.",
+          "source": "Robotics & Automation News",
+          "url": "https://roboticsandautomationnews.com/2026/11/22/multiway-robotics-showcases-wheeled-humanoid-and-autonomous-forklifts-at-cemat-asia-2026/107492",
+          "published": "2026-11-22",
+          "importance": 1,
+          "tags": [
+            "intralojistik",
+            "AMR",
+            "fuar",
+            "CeMAT Asia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turkiye-makine",
+      "title": "Türkiye Makine Sektörü",
+      "icon": "🇹🇷",
+      "brief": "Bursa'da MEEXX fuarı yaklaşıyor; yeni proje bazlı teşvik kararı yayımlandı.",
+      "items": [
+        {
+          "title": "MEEXX BURSA Makine ve Teknolojileri Fuarı 25-28 Kasım'da Bursa Fuar Merkezi'nde",
+          "summary": "MİB ve BTSO desteğiyle KFA Fuarcılık tarafından düzenlenen fuar; sac işleme, metal işleme takım tezgahları ve otomasyon teknolojilerini kapsıyor. Üretim hatlarında dijitalleşme, robotik uygulamalar, veri toplama ve enerji verimliliği çözümleri öne çıkacak; makine tasarımcıları için yerli tezgah ve otomasyon tedarikçilerini görmek açısından fırsat.",
+          "source": "MİB / KFA Fuarcılık",
+          "url": "https://mib.org.tr/en/meexx-en/",
+          "published": "2026-11-23",
+          "importance": 3,
+          "tags": [
+            "fuar",
+            "Bursa",
+            "takım tezgahı",
+            "otomasyon"
+          ]
+        },
+        {
+          "title": "Resmi Gazete'de 2026/112 sayılı proje bazlı yatırım teşvik kararı yayımlandı",
+          "summary": "Bir danışmanlık kaynağına göre 21 Kasım 2026 tarihli Resmi Gazete'de yayımlanan karar, yüksek teknoloji yatırımlarına kurumlar vergisi indirimi ve KDV istisnası getiriyor. Bilgi tek bir ikincil kaynaktan geliyor; makine ve teçhizat yatırımı planlayan üreticiler resmi metinden doğrulamalı.",
+          "source": "Müşavirler Kulübü",
+          "url": "https://musavirlerkulubu.com.tr/makale/sanayi-bakanligi-2026112-sayili-proje-bazli-yatirim-tesvik-karari-ve-uygulama-rehberi",
+          "published": "2026-11-21",
+          "importance": 2,
+          "tags": [
+            "teşvik",
+            "Resmi Gazete",
+            "yatırım"
+          ]
+        }
+      ]
+    }
+  ]
+}
