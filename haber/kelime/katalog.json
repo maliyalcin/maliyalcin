@@ -1,0 +1,1017 @@
+[
+{
+"id": "kama",
+"term": "Kama",
+"category": "Makine elemanları"
+},
+{
+"id": "kamali-mil-spline",
+"term": "Kamalı mil (spline)",
+"category": "Makine elemanları"
+},
+{
+"id": "segman",
+"term": "Segman",
+"category": "Makine elemanları"
+},
+{
+"id": "pim",
+"term": "Pim",
+"category": "Makine elemanları"
+},
+{
+"id": "burc",
+"term": "Burç",
+"category": "Makine elemanları"
+},
+{
+"id": "rulman",
+"term": "Rulman",
+"category": "Makine elemanları"
+},
+{
+"id": "rulman-yatagi-ucp-ucf",
+"term": "Rulman yatağı (UCP/UCF)",
+"category": "Makine elemanları"
+},
+{
+"id": "kece-simering",
+"term": "Keçe (simering)",
+"category": "Makine elemanları"
+},
+{
+"id": "o-ring",
+"term": "O-ring",
+"category": "Makine elemanları"
+},
+{
+"id": "kaplin",
+"term": "Kaplin",
+"category": "Makine elemanları"
+},
+{
+"id": "kavrama",
+"term": "Kavrama",
+"category": "Makine elemanları"
+},
+{
+"id": "fren",
+"term": "Fren",
+"category": "Makine elemanları"
+},
+{
+"id": "basma-yayi",
+"term": "Basma yayı",
+"category": "Makine elemanları"
+},
+{
+"id": "tabak-yay-belleville",
+"term": "Tabak yay (Belleville)",
+"category": "Makine elemanları"
+},
+{
+"id": "saplama",
+"term": "Saplama",
+"category": "Makine elemanları"
+},
+{
+"id": "civata-on-yuku",
+"term": "Cıvata ön yükü",
+"category": "Makine elemanları"
+},
+{
+"id": "emniyet-somunu",
+"term": "Emniyet somunu",
+"category": "Makine elemanları"
+},
+{
+"id": "konik-sikma-elemani",
+"term": "Konik sıkma elemanı",
+"category": "Makine elemanları"
+},
+{
+"id": "rot-basi",
+"term": "Rot başı",
+"category": "Makine elemanları"
+},
+{
+"id": "kardan-mafsali",
+"term": "Kardan mafsalı",
+"category": "Makine elemanları"
+},
+{
+"id": "kilavuz-kolon",
+"term": "Kılavuz kolon",
+"category": "Makine elemanları"
+},
+{
+"id": "lineer-burc",
+"term": "Lineer burç",
+"category": "Makine elemanları"
+},
+{
+"id": "conta",
+"term": "Conta",
+"category": "Makine elemanları"
+},
+{
+"id": "pul",
+"term": "Pul",
+"category": "Makine elemanları"
+},
+{
+"id": "percin",
+"term": "Perçin",
+"category": "Makine elemanları"
+},
+{
+"id": "gergi-makarasi",
+"term": "Gergi makarası",
+"category": "Makine elemanları"
+},
+{
+"id": "kasnak",
+"term": "Kasnak",
+"category": "Makine elemanları"
+},
+{
+"id": "zincir-dislisi",
+"term": "Zincir dişlisi",
+"category": "Makine elemanları"
+},
+{
+"id": "kremayer",
+"term": "Kremayer",
+"category": "Makine elemanları"
+},
+{
+"id": "eksantrik-mil",
+"term": "Eksantrik mil",
+"category": "Makine elemanları"
+},
+{
+"id": "akma-dayanimi",
+"term": "Akma dayanımı",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "cekme-dayanimi",
+"term": "Çekme dayanımı",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "elastisite-modulu",
+"term": "Elastisite modülü",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "poisson-orani",
+"term": "Poisson oranı",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "von-mises-gerilmesi",
+"term": "Von Mises gerilmesi",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "gerilme-yigilmasi",
+"term": "Gerilme yığılması",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "centik-etkisi",
+"term": "Çentik etkisi",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "yorulma-dayanimi",
+"term": "Yorulma dayanımı",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "s-n-egrisi",
+"term": "S-N eğrisi",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "emniyet-katsayisi",
+"term": "Emniyet katsayısı",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "burkulma",
+"term": "Burkulma",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "sehim",
+"term": "Sehim",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "alan-atalet-momenti",
+"term": "Alan atalet momenti",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "kutupsal-atalet-momenti",
+"term": "Kutupsal atalet momenti",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "egilme-momenti-diyagrami",
+"term": "Eğilme momenti diyagramı",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "burulma-gerilmesi",
+"term": "Burulma gerilmesi",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "sunme-creep",
+"term": "Sünme (creep)",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "mohr-cemberi",
+"term": "Mohr çemberi",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "asal-gerilme",
+"term": "Asal gerilme",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "hertz-temas-gerilmesi",
+"term": "Hertz temas gerilmesi",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "rezonans",
+"term": "Rezonans",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "dogal-frekans",
+"term": "Doğal frekans",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "sonum",
+"term": "Sönüm",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "rijitlik",
+"term": "Rijitlik",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "tokluk",
+"term": "Tokluk",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "suneklik",
+"term": "Süneklik",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "kalinti-gerilme",
+"term": "Kalıntı gerilme",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "goodman-diyagrami",
+"term": "Goodman diyagramı",
+"category": "Mukavemet ve analiz"
+},
+{
+"id": "tornalama",
+"term": "Tornalama",
+"category": "İmalat teknikleri"
+},
+{
+"id": "frezeleme",
+"term": "Frezeleme",
+"category": "İmalat teknikleri"
+},
+{
+"id": "raybalama",
+"term": "Raybalama",
+"category": "İmalat teknikleri"
+},
+{
+"id": "honlama",
+"term": "Honlama",
+"category": "İmalat teknikleri"
+},
+{
+"id": "taslama",
+"term": "Taşlama",
+"category": "İmalat teknikleri"
+},
+{
+"id": "lepleme",
+"term": "Lepleme",
+"category": "İmalat teknikleri"
+},
+{
+"id": "broslama",
+"term": "Broşlama",
+"category": "İmalat teknikleri"
+},
+{
+"id": "tel-erozyon",
+"term": "Tel erozyon",
+"category": "İmalat teknikleri"
+},
+{
+"id": "dalma-erozyon",
+"term": "Dalma erozyon",
+"category": "İmalat teknikleri"
+},
+{
+"id": "lazer-kesim",
+"term": "Lazer kesim",
+"category": "İmalat teknikleri"
+},
+{
+"id": "plazma-kesim",
+"term": "Plazma kesim",
+"category": "İmalat teknikleri"
+},
+{
+"id": "su-jeti-ile-kesme",
+"term": "Su jeti ile kesme",
+"category": "İmalat teknikleri"
+},
+{
+"id": "abkant-bukum",
+"term": "Abkant büküm",
+"category": "İmalat teknikleri"
+},
+{
+"id": "derin-cekme",
+"term": "Derin çekme",
+"category": "İmalat teknikleri"
+},
+{
+"id": "sivama-metal-spinning",
+"term": "Sıvama (metal spinning)",
+"category": "İmalat teknikleri"
+},
+{
+"id": "dovme",
+"term": "Dövme",
+"category": "İmalat teknikleri"
+},
+{
+"id": "kum-dokum",
+"term": "Kum döküm",
+"category": "İmalat teknikleri"
+},
+{
+"id": "hassas-dokum",
+"term": "Hassas döküm",
+"category": "İmalat teknikleri"
+},
+{
+"id": "enjeksiyon-kaliplama",
+"term": "Enjeksiyon kalıplama",
+"category": "İmalat teknikleri"
+},
+{
+"id": "ekstruzyon",
+"term": "Ekstrüzyon",
+"category": "İmalat teknikleri"
+},
+{
+"id": "toz-metalurjisi",
+"term": "Toz metalurjisi",
+"category": "İmalat teknikleri"
+},
+{
+"id": "mig-mag-kaynagi",
+"term": "MIG/MAG kaynağı",
+"category": "İmalat teknikleri"
+},
+{
+"id": "tig-kaynagi",
+"term": "TIG kaynağı",
+"category": "İmalat teknikleri"
+},
+{
+"id": "punta-kaynagi",
+"term": "Punta kaynağı",
+"category": "İmalat teknikleri"
+},
+{
+"id": "surtunme-karistirma-kaynagi",
+"term": "Sürtünme karıştırma kaynağı",
+"category": "İmalat teknikleri"
+},
+{
+"id": "eklemeli-imalat",
+"term": "Eklemeli imalat",
+"category": "İmalat teknikleri"
+},
+{
+"id": "kumlama",
+"term": "Kumlama",
+"category": "İmalat teknikleri"
+},
+{
+"id": "anodizasyon",
+"term": "Anodizasyon",
+"category": "İmalat teknikleri"
+},
+{
+"id": "bilyali-dovme-shot-peening",
+"term": "Bilyalı dövme (shot peening)",
+"category": "İmalat teknikleri"
+},
+{
+"id": "kilavuz-cekme",
+"term": "Kılavuz çekme",
+"category": "İmalat teknikleri"
+},
+{
+"id": "ovalama-ile-dis-acma",
+"term": "Ovalama ile diş açma",
+"category": "İmalat teknikleri"
+},
+{
+"id": "g-kodu",
+"term": "G-kodu",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "m-kodu",
+"term": "M-kodu",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "is-mili-spindle",
+"term": "İş mili (spindle)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "ayna-chuck",
+"term": "Ayna (chuck)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "pens-collet",
+"term": "Pens (collet)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "gezer-punta",
+"term": "Gezer punta",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "takim-magazini",
+"term": "Takım magazini",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "takim-tutucu-bt-hsk",
+"term": "Takım tutucu (BT/HSK)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "takim-boy-ofseti",
+"term": "Takım boy ofseti",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "is-parcasi-sifiri-g54",
+"term": "İş parçası sıfırı (G54)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "kesme-hizi",
+"term": "Kesme hızı",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "ilerleme-hizi",
+"term": "İlerleme hızı",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "talas-derinligi",
+"term": "Talaş derinliği",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "talas-kaldirma-orani",
+"term": "Talaş kaldırma oranı",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "5-eksen-isleme",
+"term": "5 eksen işleme",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "bilyali-vidali-mil",
+"term": "Bilyalı vidalı mil",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "enkoder",
+"term": "Enkoder",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "kapali-cevrim-kontrol",
+"term": "Kapalı çevrim kontrol",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "yatay-isleme-merkezi",
+"term": "Yatay işleme merkezi",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "torna-freze-merkezi",
+"term": "Torna-freze merkezi",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "kayar-otomat-isvicre-tipi",
+"term": "Kayar otomat (İsviçre tipi)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "kesici-uc-insert",
+"term": "Kesici uç (insert)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "talas-kirici",
+"term": "Talaş kırıcı",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "tirlama-chatter",
+"term": "Tırlama (chatter)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "dokunmatik-prob",
+"term": "Dokunmatik prob",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "takim-omru-taylor",
+"term": "Takım ömrü (Taylor)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "sogutma-sivisi-mql",
+"term": "Soğutma sıvısı (MQL)",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "climb-ve-konvansiyonel-frezeleme",
+"term": "Climb ve konvansiyonel frezeleme",
+"category": "Takım tezgâhları ve CNC"
+},
+{
+"id": "parametrik-modelleme",
+"term": "Parametrik modelleme",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "skec-kisiti",
+"term": "Skeç kısıtı",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "ozellik-agaci-feature-tree",
+"term": "Özellik ağacı (feature tree)",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "montaj-kisiti",
+"term": "Montaj kısıtı",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "ilogic",
+"term": "iLogic",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "ipart",
+"term": "iPart",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "sac-metal-acinimi",
+"term": "Sac metal açınımı",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "k-faktoru",
+"term": "K faktörü",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "kesit-gorunusu",
+"term": "Kesit görünüşü",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "malzeme-listesi-bom",
+"term": "Malzeme listesi (BOM)",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "takim-yolu",
+"term": "Takım yolu",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "post-processor",
+"term": "Post-processor",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "adaptif-kaba-isleme",
+"term": "Adaptif kaba işleme",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "sonlu-elemanlar-analizi-fea",
+"term": "Sonlu elemanlar analizi (FEA)",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "mesh-ag-yapisi",
+"term": "Mesh (ağ yapısı)",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "sinir-kosulu",
+"term": "Sınır koşulu",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "mesh-yakinsamasi",
+"term": "Mesh yakınsaması",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "modal-analiz",
+"term": "Modal analiz",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "cfd",
+"term": "CFD",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "topoloji-optimizasyonu",
+"term": "Topoloji optimizasyonu",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "uretken-tasarim-generative-design",
+"term": "Üretken tasarım (generative design)",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "dijital-ikiz",
+"term": "Dijital ikiz",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "step-formati",
+"term": "STEP formatı",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "pdm-vault",
+"term": "PDM (Vault)",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "cakisma-kontrolu-interference",
+"term": "Çakışma kontrolü (interference)",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "dinamik-simulasyon",
+"term": "Dinamik simülasyon",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "yuzey-modelleme",
+"term": "Yüzey modelleme",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "cerceve-olusturucu-frame-generator",
+"term": "Çerçeve oluşturucu (frame generator)",
+"category": "CAD/CAM/CAE"
+},
+{
+"id": "tolerans",
+"term": "Tolerans",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "alistirma-gecme",
+"term": "Alıştırma (geçme)",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "delik-esas-sistemi",
+"term": "Delik esas sistemi",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "bosluklu-gecme",
+"term": "Boşluklu geçme",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "siki-gecme",
+"term": "Sıkı geçme",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "h7-g6",
+"term": "H7/g6",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "gd-t",
+"term": "GD&T",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "datum-referans",
+"term": "Datum (referans)",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "duzlemsellik",
+"term": "Düzlemsellik",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "diklik",
+"term": "Diklik",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "konum-toleransi",
+"term": "Konum toleransı",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "salgi-runout",
+"term": "Salgı (runout)",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "yuzey-puruzlulugu-ra",
+"term": "Yüzey pürüzlülüğü (Ra)",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "tolerans-zinciri",
+"term": "Tolerans zinciri",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "dfm",
+"term": "DFM",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "dfa",
+"term": "DFA",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "poka-yoke",
+"term": "Poka-yoke",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "fikstur",
+"term": "Fikstür",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "montaj-boslugu",
+"term": "Montaj boşluğu",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "maksimum-malzeme-kosulu-mmc",
+"term": "Maksimum malzeme koşulu (MMC)",
+"category": "Tolerans ve mekanik tasarım"
+},
+{
+"id": "su-verme",
+"term": "Su verme",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "temperleme",
+"term": "Temperleme",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "normalizasyon",
+"term": "Normalizasyon",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "gerilim-giderme-tavi",
+"term": "Gerilim giderme tavı",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "sementasyon",
+"term": "Sementasyon",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "nitrurleme",
+"term": "Nitrürleme",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "induksiyonla-sertlestirme",
+"term": "İndüksiyonla sertleştirme",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "rockwell-sertligi-hrc",
+"term": "Rockwell sertliği (HRC)",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "s235-yapi-celigi",
+"term": "S235 yapı çeliği",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "c45-islah-celigi",
+"term": "C45 ıslah çeliği",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "42crmo4",
+"term": "42CrMo4",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "paslanmaz-celik-304-316",
+"term": "Paslanmaz çelik 304/316",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "aluminyum-6061-7075",
+"term": "Alüminyum 6061 / 7075",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "bronz",
+"term": "Bronz",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "pom-delrin",
+"term": "POM (Delrin)",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "poliamid-kestamid",
+"term": "Poliamid (kestamid)",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "lamel-grafitli-dokme-demir-gg25",
+"term": "Lamel grafitli dökme demir (GG25)",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "takim-celigi-1-2379",
+"term": "Takım çeliği 1.2379",
+"category": "Malzeme ve ısıl işlem"
+},
+{
+"id": "reduksiyon-orani",
+"term": "Redüksiyon oranı",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "servis-faktoru",
+"term": "Servis faktörü",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "atalet-orani",
+"term": "Atalet oranı",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "tork",
+"term": "Tork",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "guc-kw",
+"term": "Güç (kW)",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "mekanik-verim",
+"term": "Mekanik verim",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "bosluk-backlash",
+"term": "Boşluk (backlash)",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "on-yuk-preload",
+"term": "Ön yük (preload)",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "kritik-devir",
+"term": "Kritik devir",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "trapez-hareket-profili",
+"term": "Trapez hareket profili",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "sarsinti-jerk",
+"term": "Sarsıntı (jerk)",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "planet-disli",
+"term": "Planet dişli",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "helis-disli",
+"term": "Helis dişli",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "modul-disli",
+"term": "Modül (dişli)",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "kavrama-acisi",
+"term": "Kavrama açısı",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "otoblokaj",
+"term": "Otoblokaj",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "frekans-konvertoru",
+"term": "Frekans konvertörü",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "step-motor",
+"term": "Step motor",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "lineer-motor",
+"term": "Lineer motor",
+"category": "Tahrik ve hareket"
+},
+{
+"id": "servo-motor",
+"term": "Servo motor",
+"category": "Tahrik ve hareket"
+}
+]

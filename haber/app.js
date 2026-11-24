@@ -33,7 +33,8 @@
   }
 
   // ---------------- Durum ----------------
-  const lists = { haber: { days: [], pos: 0, loaded: false }, tasarim: { days: [], pos: 0, loaded: false } };
+  const lists = { haber: { days: [], pos: 0, loaded: false }, tasarim: { days: [], pos: 0, loaded: false }, kelime: { days: [], pos: 0, loaded: false } };
+  const IDX = { haber: "data/index.json", tasarim: "tasarim/index.json", kelime: "kelime/index.json" };
   let tab = "haber";
   let detail = null; // {date, id}
   let viewer = null;
@@ -42,7 +43,7 @@
     const L = lists[kind];
     if (L.loaded) return L;
     try {
-      L.days = (await getJSON(kind === "haber" ? "data/index.json" : "tasarim/index.json")).days || [];
+      L.days = (await getJSON(IDX[kind])).days || [];
     } catch {
       L.days = [];
     }
@@ -256,20 +257,138 @@
     return loaded[src];
   }
 
+  // ---------------- Günün Kelimeleri ----------------
+  const wordCache = {};
+  async function getWordDay(d) {
+    if (!wordCache[d]) wordCache[d] = await getJSON(`kelime/${d}.json`);
+    return wordCache[d];
+  }
+  const isKnown = (id) => { try { return localStorage.getItem("bildim:" + id) === "1"; } catch { return false; } };
+  const shiftDay = (d, n) => { const t = new Date(d + "T12:00:00Z"); t.setUTCDate(t.getUTCDate() - n); return t.toISOString().slice(0, 10); };
+
+  function flipCard(w, d) {
+    return `<div class="flip" data-flip><div class="in">
+      <div class="f">${isKnown(w.id) ? '<span class="ok">✓</span>' : ""}<span class="chip">${esc(w.category)}</span><b>${esc(w.term)}</b><i>${esc(w.en)}</i></div>
+      <div class="b">${esc(w.short)}<a href="#/kelime/${esc(d)}/${esc(w.id)}">Detaylı öğren ›</a></div></div></div>`;
+  }
+  function bindFlips() {
+    main.querySelectorAll("[data-flip]").forEach((c) => (c.onclick = (e) => { if (e.target.tagName !== "A") c.classList.toggle("on"); }));
+  }
+
+  async function showWordList() {
+    const L = await loadIndex("kelime");
+    if (!L.days.length) {
+      setHeader("Henüz kelime yok", false);
+      main.innerHTML = `<div class="state"><b>İlk 6 kelime bu gece hazırlanacak</b>Her gece 00:00–08:00 arasında yenilenir.</div>`;
+      return;
+    }
+    const d = L.days[L.pos];
+    setHeader(fmtDay(d), true);
+    main.innerHTML = '<div class="state">Yükleniyor…</div>';
+    let doc;
+    try { doc = await getWordDay(d); } catch {
+      main.innerHTML = `<div class="state"><b>Bu gün açılamadı</b>İnternet bağlantınızı kontrol edin.</div>`;
+      return;
+    }
+    // Aralıklı tekrar: 1, 3 ve 7 gün önceki kelimeler
+    const rev = [];
+    for (const n of [1, 3, 7]) {
+      const pd = shiftDay(d, n);
+      if (L.days.includes(pd)) { try { rev.push({ n, d: pd, doc: await getWordDay(pd) }); } catch {} }
+    }
+    const knownCount = doc.words.filter((w) => isKnown(w.id)).length;
+    main.innerHTML = `
+      <p class="hint2">Önce kelimeye bakıp anlamını tahmin et, sonra karta dokunup çevir. Bildiklerin ✓ ile işaretlenir (${knownCount}/${doc.words.length}).</p>
+      <div class="wgrid">${doc.words.map((w) => flipCard(w, d)).join("")}</div>
+      <a class="btn" href="#/kelime/${esc(d)}/test">🧠 Günün testi (${doc.words.length} soru)</a>
+      ${rev.length ? `<h3 class="sec">🔁 Tekrar zamanı</h3><p class="hint2">Unutmamak için 1, 3 ve 7 gün önce öğrendiklerin yeniden karşında.</p>
+        ${rev.map((r) => `<p class="hint2"><b>${r.n} gün önce</b> · ${esc(fmtDay(r.d))}</p><div class="wgrid">${r.doc.words.map((w) => flipCard(w, r.d)).join("")}</div>`).join("")}` : ""}
+      <footer>kontrol: ${esc(doc.verified_by || "")}</footer>`;
+    bindFlips();
+  }
+
+  function quizHtml(w, i) {
+    const q = w.quiz;
+    return `<div class="qz" data-q="${i}" data-a="${q.answer}"><div class="lb"><b>${esc(q.q)}</b></div>
+      ${q.options.map((o, j) => `<button class="opt" data-o="${j}">${String.fromCharCode(65 + j)}) ${esc(o)}</button>`).join("")}
+      <div class="why cmt">${fmt(q.why)}</div></div>`;
+  }
+  function bindQuiz(onAnswer) {
+    main.querySelectorAll(".qz").forEach((box) => {
+      box.querySelectorAll(".opt").forEach((b) => (b.onclick = () => {
+        if (box.classList.contains("done")) return;
+        box.classList.add("done");
+        const a = +box.dataset.a, o = +b.dataset.o;
+        box.querySelectorAll(".opt")[a].classList.add("right");
+        if (o !== a) b.classList.add("wrong");
+        onAnswer && onAnswer(o === a);
+      }));
+    });
+  }
+
+  async function showWord(d, id) {
+    setHeader(fmtDay(d), false);
+    let w;
+    try { w = (await getWordDay(d)).words.find((e) => e.id === id); } catch {}
+    if (!w) { main.innerHTML = `<div class="state"><b>Kelime bulunamadı</b><a href="#/kelime">Listeye dön</a></div>`; return; }
+    main.innerHTML = `
+      <a class="back" href="#/kelime">‹ Günün kelimeleri</a>
+      <div class="dhead"><span class="chip">${esc(w.category)}</span><h2>${esc(w.term)}</h2><p><i>${esc(w.en)}</i></p></div>
+      <div class="hook"><b>Tek cümlede:</b> ${fmt(w.short)}</div>
+      ${w.figure ? figHtml(w.figure) : ""}
+      <section class="box"><h3>📖 Nedir?</h3>${paras(w.explanation)}</section>
+      <section class="box"><h3>🪝 Hafıza kancası</h3><p>${fmt(w.mnemonic)}</p></section>
+      <section class="box"><h3>🧺 Günlük hayattan benzetme</h3><p>${fmt(w.analogy)}</p></section>
+      <section class="box"><h3>🏭 Atölyede / Inventor'da</h3><p>${fmt(w.example)}</p></section>
+      <section class="box"><h3>🔤 Kökeni</h3><p>${fmt(w.etymology)}</p></section>
+      <section class="box cons"><h3>⚠️ Sık karıştırılan</h3><ul class="pc">${(w.confusions || []).map((c) => `<li><b>${esc(c.term)}:</b> ${fmt(c.diff)}</li>`).join("")}</ul></section>
+      <section class="box"><h3>🔗 İlişkili kelimeler</h3><div class="tags">${(w.related || []).map((r) => `<span>${esc(r)}</span>`).join("")}</div></section>
+      <section class="box"><h3>✏️ Kendini dene</h3>${quizHtml(w, 0)}</section>
+      <button class="known" id="known">${isKnown(w.id) ? "✓ Biliyorum (geri al)" : "Bunu öğrendim ✓"}</button>`;
+    window.scrollTo(0, 0);
+    bindQuiz();
+    $("known").onclick = () => {
+      try { isKnown(w.id) ? localStorage.removeItem("bildim:" + w.id) : localStorage.setItem("bildim:" + w.id, "1"); } catch {}
+      $("known").textContent = isKnown(w.id) ? "✓ Biliyorum (geri al)" : "Bunu öğrendim ✓";
+    };
+  }
+
+  async function showWordTest(d) {
+    setHeader(fmtDay(d), false);
+    let doc;
+    try { doc = await getWordDay(d); } catch { main.innerHTML = '<div class="state"><b>Açılamadı</b></div>'; return; }
+    let right = 0, answered = 0;
+    main.innerHTML = `<a class="back" href="#/kelime">‹ Günün kelimeleri</a><h2 style="margin:6px 2px 4px">🧠 Günün testi</h2>
+      <p class="hint2">Kelimenin ne olduğunu değil, ne işe yaradığını ölçen sorular. Doğru bildiklerin otomatik ✓ alır.</p>
+      ${doc.words.map((w, i) => `<section class="box"><span class="chip">${esc(w.term)}</span>${quizHtml(w, i)}</section>`).join("")}
+      <div class="score" id="score"></div>`;
+    window.scrollTo(0, 0);
+    const boxes = [...main.querySelectorAll(".qz")];
+    boxes.forEach((box, i) => box.querySelectorAll(".opt").forEach((b) => b.addEventListener("click", () => {
+      if (!box.classList.contains("done") && +b.dataset.o === doc.words[i].quiz.answer) { try { localStorage.setItem("bildim:" + doc.words[i].id, "1"); } catch {} }
+    })));
+    bindQuiz((ok) => {
+      answered++; if (ok) right++;
+      if (answered === doc.words.length) $("score").textContent = `Sonuç: ${right}/${doc.words.length} ${right === doc.words.length ? "🎉" : "— yanlışları detay sayfasından tekrar et"}`;
+    });
+  }
+
   // ---------------- Yönlendirme ----------------
   async function route() {
     if (viewer) { viewer.dispose(); viewer = null; }
     const parts = location.hash.replace(/^#\/?/, "").split("/");
-    tab = parts[0] === "tasarim" ? "tasarim" : "haber";
-    $("t-haber").classList.toggle("on", tab === "haber");
-    $("t-tasarim").classList.toggle("on", tab === "tasarim");
+    tab = ["tasarim", "kelime"].includes(parts[0]) ? parts[0] : "haber";
+    ["haber", "tasarim", "kelime"].forEach((t) => $("t-" + t).classList.toggle("on", tab === t));
     try { localStorage.setItem("sonSekme", tab); } catch {}
     if (tab === "tasarim" && parts[1] && parts[2]) {
       detail = { date: parts[1], id: parts[2] };
       await showDesign(parts[1], parts[2]);
+    } else if (tab === "kelime" && parts[1] && parts[2]) {
+      detail = null;
+      parts[2] === "test" ? await showWordTest(parts[1]) : await showWord(parts[1], parts[2]);
     } else {
       detail = null;
-      tab === "tasarim" ? await showDesignList() : await showNews();
+      tab === "tasarim" ? await showDesignList() : tab === "kelime" ? await showWordList() : await showNews();
       window.scrollTo(0, 0);
     }
   }

@@ -126,6 +126,34 @@
   .chat .past a { color: var(--muted); }
   .rev h3 .rs { font-size: 12px; font-weight: 700; color: #fff; background: var(--good); border-radius: 99px; padding: 2px 9px; vertical-align: 2px; margin-left: 6px; }
   .rev .cmt { margin-top: 8px; }
+  /* Kelimeler */
+  .wgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .flip { perspective: 900px; height: 150px; cursor: pointer; }
+  .flip .in { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
+  .flip.on .in { transform: rotateY(180deg); }
+  .flip .f, .flip .b { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+    border-radius: 14px; border: 1px solid var(--line); padding: 12px; display: flex; flex-direction: column; justify-content: center; }
+  .flip .f { background: var(--card); text-align: center; }
+  .flip .f b { font-size: 16px; line-height: 1.25; }
+  .flip .f i { font-style: normal; color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+  .flip .f .chip { align-self: center; font-size: 10.5px; }
+  .flip .b { background: var(--accent-soft); transform: rotateY(180deg); font-size: 13.5px; line-height: 1.35; overflow: hidden; }
+  .flip .b a { color: var(--accent); font-weight: 700; text-decoration: none; margin-top: 6px; font-size: 13px; }
+  .flip .ok { position: absolute; top: 8px; right: 10px; color: var(--good); font-weight: 800; }
+  .hint2 { font-size: 13px; color: var(--muted); margin: 0 2px 10px; }
+  h3.sec { margin: 22px 2px 10px; font-size: 16.5px; }
+  a.btn { display: block; text-align: center; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none;
+    padding: 12px; border-radius: 12px; margin-top: 14px; }
+  .hook { background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 10px; padding: 10px 12px; font-size: 15px; }
+  .qz .opt { display: block; width: 100%; text-align: left; border: 1px solid var(--line); background: var(--bg); color: var(--text);
+    border-radius: 10px; padding: 10px 12px; margin-top: 8px; font: inherit; font-size: 14.5px; }
+  .qz .opt.right { background: var(--good-soft); border-color: var(--good); }
+  .qz .opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+  .qz .why { display: none; margin-top: 8px; font-size: 14px; }
+  .qz.done .why { display: block; }
+  .known { width: 100%; margin-top: 12px; border: 1px solid var(--good); color: var(--good); background: var(--good-soft);
+    border-radius: 10px; padding: 11px; font: inherit; font-weight: 700; }
+  .score { text-align: center; font-size: 18px; font-weight: 800; margin: 16px 0 4px; }
   a.back { display: inline-block; color: var(--accent); text-decoration: none; font-weight: 600; margin-bottom: 4px; }
 </style>
 </head>
@@ -138,7 +166,8 @@
   </div>
   <nav class="tabs">
     <a href="#/haber" id="t-haber">📰 Haberler</a>
-    <a href="#/tasarim" id="t-tasarim">⚙️ Tasarım Analizleri</a>
+    <a href="#/tasarim" id="t-tasarim">⚙️ Tasarım</a>
+    <a href="#/kelime" id="t-kelime">📚 Kelimeler</a>
   </nav>
 </header>
 <main id="main"><div class="state">Yükleniyor…</div></main>

@@ -1,5 +1,5 @@
 // Uygulama kabuğunu önbelleğe alır; haberleri önce ağdan, bağlantı yoksa önbellekten gösterir.
-const CACHE = "bulten-v2";
+const CACHE = "bulten-v3";
 const SHELL = ["./", "index.html", "app.js", "viewer3d.js", "vendor/three.min.js", "vendor/OrbitControls.js", "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {
