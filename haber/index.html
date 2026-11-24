@@ -128,7 +128,7 @@
   .rev .cmt { margin-top: 8px; }
   /* Kelimeler */
   .wgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .flip { perspective: 900px; height: 150px; cursor: pointer; }
+  .flip { perspective: 900px; height: 170px; cursor: pointer; }
   .flip .in { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
   .flip.on .in { transform: rotateY(180deg); }
   .flip .f, .flip .b { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden;
@@ -137,7 +137,7 @@
   .flip .f b { font-size: 16px; line-height: 1.25; }
   .flip .f i { font-style: normal; color: var(--muted); font-size: 12.5px; margin-top: 4px; }
   .flip .f .chip { align-self: center; font-size: 10.5px; }
-  .flip .b { background: var(--accent-soft); transform: rotateY(180deg); font-size: 13.5px; line-height: 1.35; overflow: hidden; }
+  .flip .b { background: var(--accent-soft); transform: rotateY(180deg); font-size: 12.5px; line-height: 1.35; overflow-y: auto; justify-content: flex-start; padding: 10px; }
   .flip .b a { color: var(--accent); font-weight: 700; text-decoration: none; margin-top: 6px; font-size: 13px; }
   .flip .ok { position: absolute; top: 8px; right: 10px; color: var(--good); font-weight: 800; }
   .hint2 { font-size: 13px; color: var(--muted); margin: 0 2px 10px; }
