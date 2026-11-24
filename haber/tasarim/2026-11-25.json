@@ -4785,7 +4785,7 @@
     ],
     "notes": [
      "UCP yataklarda ömrü rulman değil **sızdırmazlık ve gres** belirler; tozlu konveyör ortamında üçlü dudaklı keçeli veya kapaklı yatak seçin, yağlama nipeli erişilebilir olsun.",
-     "Uzun milde iki UCP yatak hizasızlığı tolere eder (küresel dış bilezik), ama sabit-serbest ayrımı yoktur: ısıl uzamada eksenel yük oluşmaması için bir yatağın setuskuru gevşek bırakılmamalı — bunun yerine bir taraf genişletilmiş iç bilezikli (eksenel serbest) seçilmeli."
+     "İki UCP yatak küresel dış bilezikleri sayesinde açısal hizasızlığı tolere eder, ancak ikisi de setuskurla mile kilitlendiği için sabit-serbest ayrımı yoktur. Uzun veya ısınan millerde ısıl uzama eksenel yük yaratmasın diye **bir tarafta eksenel kaymaya izin veren genleşme tipi yatak gövdesi** kullanın."
     ]
    }
   }
