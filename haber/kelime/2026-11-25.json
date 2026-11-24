@@ -1,0 +1,320 @@
+{
+ "date": "2026-11-25",
+ "generated_at": "2026-11-24T22:39:05+00:00",
+ "verified_by": "opus",
+ "words": [
+  {
+   "id": "lazer-kesim",
+   "term": "Lazer kesim",
+   "en": "Laser cutting",
+   "category": "İmalat teknikleri",
+   "short": "Lazer kesim, yüksek yoğunluklu bir lazer ışınının malzemeyi lokal olarak eritip/yakıp buharlaştırması ve yardımcı gazın bu malzemeyi kesikten atmasıyla, CNC kontrollü ve temassız biçimde parça kesme yöntemidir.",
+   "explanation": [
+    "Lazer ışını (sac işlemede genelde fiber lazer; CO2 lazer ise daha çok kalın/organik malzemede) bir mercekle çok küçük bir noktaya odaklanır. Nokta çapı onda bir milimetre mertebesindedir; bu yüzden güç yoğunluğu malzemeyi çok hızlı ısıtıp eritmeye yeter. Kesme başlığındaki nozuldan ışınla aynı eksende yardımcı gaz üflenir.",
+    "Gazın görevi malzemeye göre değişir. Oksijen, yumuşak çelikte (S235, S355) yanma reaksiyonuyla ek ısı üretir; kesim hızlıdır ama kenarda ince oksit tabakası kalır. Azot, paslanmaz çelik ve alüminyumda oksitlenmeyi önler; kenar parlak ve boyaya/kaynağa hazır olur ama gaz tüketimi ve maliyet yüksektir.",
+    "Kesik genişliği (kerf) tipik olarak 0,1-0,4 mm'dir ve sac kalınlığı, gaz ve nozula göre değişir. Ölçü doğruluğu genelde ±0,1 mm civarındadır. Isıdan etkilenen bölge dar olduğundan çarpılma plazmaya göre azdır.",
+    "Sayısal mini örnek: 3 mm kalınlıkta S235 saç levhadan 100 x 50 mm parça, 6 kW fiber lazerle dakikada birkaç metre hızla kesilir. Kerf 0,2 mm ise ışın merkez hattı konturun 0,1 mm dışından gider; bu telafiyi lazer yazılımı yapar, çizimde yapılmaz."
+   ],
+   "analogy": "Büyüteçle güneş ışığını kağıda odaklayıp kağıdı yakmaya benzer; fakat nokta çok daha küçük ve güçlüdür, üstüne bir de 'üfleyici' (gaz) yanık artığı hemen süpürür. Kalem değil, ışık bir bıçak gibi ilerler.",
+   "mnemonic": "LAZER = 'Isıyı Lazım Olan Noktaya Zerk et': Işık nokta atışı yapar, gaz temizler. Kalınlık arttıkça hız düşer: 'kalın = yavaş'.",
+   "etymology": "LASER, İngilizce 'Light Amplification by Stimulated Emission of Radiation' (uyarılmış ışıma ile ışık kuvvetlendirmesi) kısaltmasıdır; 1960'larda ortaya çıkmış, endüstride sac kesimi 1970'lerden itibaren yaygınlaşmıştır. Türkçede 'lazer' olarak aynen kullanılır.",
+   "example": "Inventor'da 4 mm'lik S355 braket için Sheet Metal ortamında Flat Pattern oluşturup DXF olarak dışa aktarırsınız. Delik çapı 3 mm'ye (< sac kalınlığı) düşerse kesim kalitesiz olur; kural olarak delik çapını en az sac kalınlığı kadar (burada ≥ 4 mm), parça arası boşluğu ise yaklaşık 1-2 kalınlık bırakırsınız. Lazer operatörü DXF'i nesting programına alıp kerf telafisini kendisi uygular.",
+   "confusions": [
+    {
+     "term": "Plazma kesim",
+     "diff": "Plazma elektrik arkıyla kesen, kalın saca uygun, kenar kalitesi ve doğruluğu lazerden düşük, daha ucuz bir yöntemdir; lazer ince-orta sacta daha hassastır."
+    },
+    {
+     "term": "Su jeti kesim",
+     "diff": "Su jeti ısı kullanmaz, aşındırıcı kumlu yüksek basınçlı suyla keser; ısıl çarpılma olmaz ama lazerden yavaştır ve kenar daha pürüzlü olabilir."
+    },
+    {
+     "term": "Oksijenli (alev) kesim",
+     "diff": "Alev kesimde ısı yakıt gazı alevinden gelir ve yalnız karbon çeliği keser; lazerde ısı kaynağı odaklı ışındır ve çok daha dar kesik verir."
+    }
+   ],
+   "related": [
+    "Kerf (kesik genişliği)",
+    "Nesting (yerleşim)",
+    "Flat pattern (açınım)",
+    "Plazma kesim",
+    "Isıdan etkilenen bölge"
+   ],
+   "figure": {
+    "caption": "Odaklanmış lazer ışını ve yardımcı gaz sacı keser; kesik genişliği kerf olarak kalır, erimiş metal gazla atılır.",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<rect width=\"400\" height=\"240\" fill=\"#ffffff\"/>\n<text x=\"200\" y=\"16\" text-anchor=\"middle\" fill=\"#1f2a37\" font-weight=\"bold\">Lazer kesim: kesit görünüşü</text>\n<rect x=\"40\" y=\"150\" width=\"140\" height=\"30\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<rect x=\"220\" y=\"150\" width=\"140\" height=\"30\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<text x=\"110\" y=\"169\" text-anchor=\"middle\" fill=\"#ffffff\">Sac (parça)</text>\n<text x=\"290\" y=\"169\" text-anchor=\"middle\" fill=\"#ffffff\">Sac (fire)</text>\n<polygon points=\"190,30 210,30 204,60 196,60\" fill=\"#1f2a37\"/>\n<text x=\"250\" y=\"45\" fill=\"#1f2a37\">Kesme başlığı (nozul)</text>\n<polygon points=\"196,60 204,60 201,150 199,150\" fill=\"#e8711a\" opacity=\"0.8\"/>\n<line x1=\"200\" y1=\"62\" x2=\"200\" y2=\"150\" stroke=\"#e8711a\" stroke-width=\"2\"/>\n<text x=\"212\" y=\"100\" fill=\"#e8711a\" font-weight=\"bold\">Lazer ışını + yardımcı gaz</text>\n<line x1=\"180\" y1=\"200\" x2=\"220\" y2=\"200\" stroke=\"#1f2a37\"/>\n<line x1=\"180\" y1=\"194\" x2=\"180\" y2=\"206\" stroke=\"#1f2a37\"/>\n<line x1=\"220\" y1=\"194\" x2=\"220\" y2=\"206\" stroke=\"#1f2a37\"/>\n<text x=\"200\" y=\"222\" text-anchor=\"middle\" fill=\"#1f2a37\">Kerf (kesik genişliği) ≈ 0,1-0,4 mm</text>\n<line x1=\"20\" y1=\"150\" x2=\"20\" y2=\"180\" stroke=\"#1f2a37\"/>\n<text x=\"16\" y=\"168\" text-anchor=\"end\" fill=\"#1f2a37\">t</text>\n<path d=\"M200,150 C 150,120 120,110 90,100\" fill=\"none\" stroke=\"#e8711a\" stroke-width=\"1.5\" marker-end=\"url(#a)\"/>\n<text x=\"40\" y=\"95\" fill=\"#1f2a37\">Erimiş metal</text>\n<text x=\"40\" y=\"108\" fill=\"#1f2a37\">gazla aşağı atılır</text>\n</svg>"
+   },
+   "quiz": {
+    "q": "Paslanmaz çelik parçanın kenarı kaynak ve boyaya hazır, oksitsiz ve parlak olmalı. Lazer kesimde hangi yardımcı gaz tercih edilir?",
+    "options": [
+     "Oksijen, çünkü yanma ısısıyla kesimi hızlandırır",
+     "Azot, çünkü oksitlenmeyi önleyip temiz kenar verir",
+     "Hava, çünkü her malzemede oksidi tamamen engeller",
+     "Gaz kullanılmaz, ışın tek başına yeterlidir"
+    ],
+    "answer": 1,
+    "why": "Azot inert davranır, kesik yüzeyinde oksit oluşmasını engeller ve parlak, kaynağa hazır kenar verir. Oksijen kenarda oksit bırakır; gazsız kesimde erimiş metal kesikten atılamaz."
+   }
+  },
+  {
+   "id": "rot-basi",
+   "term": "Rot başı",
+   "en": "Rod end (otomotivde: tie rod end)",
+   "category": "Makine elemanları",
+   "short": "Rot başı, küresel mafsal yapısı sayesinde çok yönlü açısal harekete izin verirken çekme-itme kuvvetini ileten, dişli gövdesiyle boy ayarı yapılabilen bağlantı elemanıdır; makinede en çok silindir mil uçlarında, otomotivde rot milinin ucunda kullanılır.",
+   "explanation": [
+    "Rot başı, bir küresel pimin (rotil) sfer biçimli yuva içinde dönebildiği bir mafsaldır. Pim yuvada üç eksende açısal olarak salınabilir; öteleme serbestliği yoktur. Bu sayede bağlandığı iki parça birbirine göre eğilip dönse de kuvvet iletimi sürer. Pim konik gövdeyle muylu koluna somunla sabitlenir.",
+    "Makine tasarımında rot başı denince çoğunlukla **DIN ISO 12240-4 mafsallı rot başı (rod end)** anlaşılır: pnömatik/hidrolik silindir mil ucuna vidalanır, silindir ile bağlandığı kol arasındaki açısal hizasızlığı alır, böylece silindir mili eğilme yükünden korunur. Kendinden yağlamalı (PTFE astarlı) veya gresörlüklü tipleri vardır; seçimde statik yük sayısı C0, dinamik yük C ve izin verilen salınım açısı katalogdan kontrol edilir.",
+    "Otomotivde direksiyon kremayerinden gelen rot mili ile süspansiyondaki muylu kolunu bağlar; direksiyon hareketini tekerleğe iletir. Rot başının arka kısmı dişlidir ve rot miline vidalanır, kontra somunla kilitlenir. Dişi çevirmek rotun toplam boyunu değiştirir; bu da ön düzen ayarının (toe, ön kapanıklık) yapıldığı yerdir.",
+    "Hesap örneği: M14x1,5 dişte bir tam tur boyu 1,5 mm değiştirir. Ayar için rot başını 2 tur çevirirseniz o taraftaki rot boyu 3 mm değişir. Bu yüzden iki yanda simetrik ayar yapılır ve sonra kontra somun sıkılır.",
+    "Rot başı aşınırsa pim ile yuva arasında boşluk oluşur; direksiyonda boşluk, çıtlama ve düzensiz lastik aşınması görülür. Toz körüğü yırtılırsa yağ kaçar, kir girer ve ömür kısalır."
+   ],
+   "analogy": "Omuz eklemi gibidir: kolunuz (rot mili) omuza (muylu) bağlıdır, ama top-yuva yapısı sayesinde kolunuzu her yöne çevirirsiniz. Dişli kısım ise kolun boyunu ayarlayan bir teleskop kolu gibidir.",
+   "mnemonic": "ROT BAŞI = 'Rotası Başa getiren': direksiyonun rotasını (yönünü) tekerleğe taşıyan baş. Küre içinde pim: 'topun içinde çivi, her yöne dönüyor'.",
+   "etymology": "'Rot' kısaltması Fransızca 'rotule' (küresel mafsal) sözcüğünden gelir; rotule da Latince 'rotula' (küçük tekerlek) kökenlidir. Türkçede 'rotil' mafsalı, 'rot' ise buna bağlanan çubuğu anlatır. İngilizce karşılığı 'tie rod end'dir (bağlama çubuğu ucu).",
+   "example": "Bir hafif ticari aracın ön düzen ayarında sol ve sağ rot başları ikişer tur (toplam 3 mm) çevrilerek toe değeri ayarlanır. Inventor'da bir direksiyon düzeneği modellerken rot başı için standart M14x1,5 dişli bir içerik merkezi parçası kullanıp mil ucuyla 'Insert' kısıtı verirsiniz; küresel mafsal hareketini serbest bırakmak için pimi mafsal kısıtıyla (Ball joint) bağlarsınız.",
+   "confusions": [
+    {
+     "term": "Rotil",
+     "diff": "Rotil küresel mafsalın kendisidir ve süspansiyon salıncağında yük taşıyıcı olarak da kullanılır; rot başı ise direksiyon rotunun ucundaki, dişli gövdeli mafsal tertibatıdır."
+    },
+    {
+     "term": "Rot mili",
+     "diff": "Rot mili kremayerden gelen uzun çubuktur; rot başı ona vidalanan uç elemanıdır."
+    },
+    {
+     "term": "Rulman",
+     "diff": "Rulman dönme hareketini düşük sürtünmeyle sağlar; rot başı ise çok eksenli açısal salınım sağlar ve dönme için tasarlanmamıştır."
+    }
+   ],
+   "related": [
+    "Rotil",
+    "Rot mili",
+    "Direksiyon kremayeri",
+    "Ön düzen (toe)",
+    "Küresel mafsal"
+   ],
+   "figure": {
+    "caption": "Rot başının kesiti: küresel pim yuvada her yöne salınır; dişli gövde rot miline vidalanıp kontra somunla kilitlenir.",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<rect width=\"400\" height=\"240\" fill=\"#ffffff\"/>\n<text x=\"200\" y=\"16\" text-anchor=\"middle\" fill=\"#1f2a37\" font-weight=\"bold\">Rot başı: kesit</text>\n<rect x=\"20\" y=\"105\" width=\"130\" height=\"30\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<text x=\"85\" y=\"124\" text-anchor=\"middle\" fill=\"#ffffff\">Dişli gövde (M14x1,5)</text>\n<rect x=\"150\" y=\"100\" width=\"22\" height=\"40\" fill=\"#ffffff\" stroke=\"#1f2a37\"/>\n<text x=\"161\" y=\"92\" text-anchor=\"middle\" fill=\"#1f2a37\">Kontra somun</text>\n<path d=\"M172,95 L215,85 A55,55 0 1 1 215,155 L172,145 Z\" fill=\"#dfe7ee\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<circle cx=\"235\" cy=\"120\" r=\"28\" fill=\"#ffffff\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<circle cx=\"235\" cy=\"120\" r=\"22\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<rect x=\"229\" y=\"40\" width=\"12\" height=\"82\" fill=\"#e8711a\" stroke=\"#1f2a37\"/>\n<text x=\"250\" y=\"60\" fill=\"#e8711a\" font-weight=\"bold\">Küresel pim (rotil)</text>\n<path d=\"M205,48 A40,40 0 0 0 270,48\" fill=\"none\" stroke=\"#e8711a\" stroke-width=\"1.5\" marker-end=\"url(#a)\"/>\n<text x=\"285\" y=\"85\" fill=\"#1f2a37\">Her yöne</text>\n<text x=\"285\" y=\"98\" fill=\"#1f2a37\">açısal salınım</text>\n<text x=\"235\" y=\"178\" text-anchor=\"middle\" fill=\"#1f2a37\">Yuva (sfer yatak)</text>\n<text x=\"85\" y=\"160\" text-anchor=\"middle\" fill=\"#1f2a37\">Rot miline vidalanır</text>\n<line x1=\"20\" y1=\"205\" x2=\"150\" y2=\"205\" stroke=\"#1f2a37\" marker-end=\"url(#a)\"/>\n<text x=\"85\" y=\"222\" text-anchor=\"middle\" fill=\"#1f2a37\">Çevirme: 1 tur = 1,5 mm boy değişimi</text>\n</svg>"
+   },
+   "quiz": {
+    "q": "Rot başı M14x1,5 dişli ve sağ dişlidir. Toe ayarında bir taraftaki rot başı 4 tur çevrilirse o taraftaki rot boyu yaklaşık ne kadar değişir?",
+    "options": [
+     "1,5 mm",
+     "4 mm",
+     "6 mm",
+     "14 mm"
+    ],
+    "answer": 2,
+    "why": "Bir tam turda boy değişimi diş adımı kadardır: 1,5 mm. 4 tur x 1,5 mm = 6 mm. 14 mm dişin nominal çapıdır, adımla karıştırılmamalıdır."
+   }
+  },
+  {
+   "id": "kesit-gorunusu",
+   "term": "Kesit görünüşü",
+   "en": "Section view",
+   "category": "CAD/CAM/CAE",
+   "short": "Kesit görünüşü, parçanın bir düzlemle hayalen kesilip ön kısmının atılmasıyla iç yapısının (delik, boşluk, et kalınlığı) görünür kılındığı ve kesilen malzemenin 45° ince çizgilerle tarandığı görünüştür.",
+   "explanation": [
+    "Dıştan bakıldığında iç boşluklar, kademeli delikler ve cidar kalınlıkları kesikli çizgilerle (gizli kenar) anlatılır; bu çizgiler karmaşık parçada okunmaz hale gelir. Kesit görünüşte parça bir kesit düzlemiyle hayalen ikiye ayrılır, gözlemciye yakın yarı atılır ve geriye kalan yüzey gerçek çizgilerle çizilir.",
+    "Kesit düzlemi, ana görünüşte kalın uçlu ince nokta-çizgi (kesit çizgisi) ile gösterilir; uçlarına bakış yönünü belirten oklar ve büyük harfler (A-A, B-B) konur. Kesilen malzeme yüzeyi ISO 128-50'ye göre 45° eğimli, eşit aralıklı ince sürekli çizgilerle taranır; delik gibi boşluklar taranmaz. Aynı parçanın tüm kesitlerinde tarama yönü ve aralığı aynı kalır.",
+    "Başlıca türler: tam kesit (parça boydan boya kesilir), yarım kesit (simetrik parçada yarısı kesit, yarısı dış görünüş), kısmi (yerel) kesit, kademeli kesit (birden çok paralel düzlem) ve döndürülmüş kesit. Kural: mil, kama, vida, perçin, pim ve nervür gibi parçalar boyuna doğrultuda kesilirse taranmaz; enine kesilirse taranır.",
+    "Sayısal örnek: 120 mm yüksekliğinde, 40 mm kalınlığında bir plakada Ø60 mm geçiş deliği vardır. A-A kesitinde plaka 40 mm genişliğinde bir dikdörtgen olarak görünür; üstteki 30 mm ve alttaki 30 mm'lik et kısımları taranır, ortadaki 60 mm'lik bölüm boş bırakılır."
+   ],
+   "analogy": "Ekmeği ortadan bıçakla kesip yarısını masadan kaldırmak gibi düşün: dilimin kesilen yüzeyinde ekmeğin içi (gözenekler, boşluklar) açıkça görünür. Tarama, o kesilen yüzeyin kaşar gibi gri renkli 'kesilmiş malzeme' damgasıdır.",
+   "mnemonic": "KESİT: Kes, Eski ön kısmı At, Sonra Yüzeyi Tara. Tarama = sadece kesilen malzeme, boşluk asla.",
+   "etymology": "İngilizce 'section' sözcüğü Latince 'sectio' (kesme, bölme; secare = kesmek) kökünden gelir. Teknik resimde 'kesmek' anlamı korunarak 'section view' denir; Türkçede 'kesit' de aynı kök anlamı taşır.",
+   "example": "Inventor'da bir flanş parçasının çizim sayfasında Place Views panelinden Section komutuyla ön görünüş üzerine dikey kesit çizgisi çizersin; Inventor A-A kesitini 45° tarama ile üretir. AutoCAD'de aynısını elle yapıyorsan kesit çizgisini çizip HATCH komutunda ANSI31 desenini 1:1 ölçekte, 45° açıyla seçersin. Ø60 mm deliğin içi taranmaz, 30 mm'lik et kısımları taranır.",
+   "confusions": [
+    {
+     "term": "Kısmi (yerel) kesit",
+     "diff": "Tam kesit parçayı bütünüyle keser; kısmi kesit yalnızca ilgilenilen bölgeyi kırık çizgiyle sınırlayarak gösterir."
+    },
+    {
+     "term": "Gizli kenar (kesikli çizgi) gösterimi",
+     "diff": "Gizli kenar iç hatları kesikli çizgiyle tahmin ettirir; kesit ise parçayı gerçekten keserek iç hatları sürekli çizgiyle ve taramayla gösterir."
+    },
+    {
+     "term": "Detay görünüşü",
+     "diff": "Detay görünüşü küçük bir bölgeyi büyütür; kesit ise büyütme değil iç yapıyı açığa çıkarma amacı taşır."
+    }
+   ],
+   "related": [
+    "Tarama (hatch)",
+    "Gizli kenar",
+    "Yarım kesit"
+   ],
+   "figure": {
+    "caption": "Solda plakanın ön görünüşü ve A-A kesit çizgisi; sağda A-A kesiti: malzeme 45° taranır, Ø60 delik boş kalır.",
+    "svg": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif' font-size='11'><rect x='0' y='0' width='400' height='240' fill='#ffffff'/><text x='95' y='20' text-anchor='middle' fill='#1f2a37' font-weight='bold'>Ön görünüş</text><rect x='20' y='50' width='150' height='120' fill='none' stroke='#1f2a37' stroke-width='2'/><circle cx='95' cy='110' r='30' fill='none' stroke='#1f2a37' stroke-width='2'/><line x1='55' y1='110' x2='135' y2='110' stroke='#1f2a37' stroke-width='0.8' stroke-dasharray='8 3 2 3'/><line x1='95' y1='35' x2='95' y2='185' stroke='#e8711a' stroke-width='2.5' stroke-dasharray='10 4 2 4'/><polygon points='95,38 112,32 112,44' fill='#e8711a'/><polygon points='95,182 112,176 112,188' fill='#e8711a'/><text x='84' y='36' fill='#e8711a' font-weight='bold'>A</text><text x='84' y='196' fill='#e8711a' font-weight='bold'>A</text><text x='95' y='215' text-anchor='middle' fill='#e8711a'>Kesit çizgisi (A-A) ve bakış yönü</text><line x1='185' y1='110' x2='235' y2='110' stroke='#e8711a' stroke-width='2'/><polygon points='241,110 231,105 231,115' fill='#e8711a'/><text x='290' y='20' text-anchor='middle' fill='#1f2a37' font-weight='bold'>A-A kesiti</text><rect x='260' y='50' width='40' height='120' fill='none' stroke='#1f2a37' stroke-width='2'/><rect x='261' y='81' width='38' height='58' fill='#ffffff' stroke='none'/><line x1='260' y1='80' x2='300' y2='80' stroke='#1f2a37' stroke-width='2'/><line x1='260' y1='140' x2='300' y2='140' stroke='#1f2a37' stroke-width='2'/><line x1='260' y1='57' x2='267' y2='50' stroke='#4a90c2' stroke-width='1'/><line x1='260' y1='64' x2='274' y2='50' stroke='#4a90c2' stroke-width='1'/><line x1='260' y1='71' x2='281' y2='50' stroke='#4a90c2' stroke-width='1'/><line x1='260' y1='78' x2='288' y2='50' stroke='#4a90c2' stroke-width='1'/><line x1='265' y1='80' x2='295' y2='50' stroke='#4a90c2' stroke-width='1'/><line x1='272' y1='80' x2='300' y2='52' stroke='#4a90c2' stroke-width='1'/><line x1='279' y1='80' x2='300' y2='59' stroke='#4a90c2' stroke-width='1'/><line x1='286' y1='80' x2='300' y2='66' stroke='#4a90c2' stroke-width='1'/><line x1='293' y1='80' x2='300' y2='73' stroke='#4a90c2' stroke-width='1'/><line x1='260' y1='147' x2='267' y2='140' stroke='#4a90c2' stroke-width='1'/><line x1='260' y1='154' x2='274' y2='140' stroke='#4a90c2' stroke-width='1'/><line x1='260' y1='161' x2='281' y2='140' stroke='#4a90c2' stroke-width='1'/><line x1='260' y1='168' x2='288' y2='140' stroke='#4a90c2' stroke-width='1'/><line x1='265' y1='170' x2='295' y2='140' stroke='#4a90c2' stroke-width='1'/><line x1='272' y1='170' x2='300' y2='142' stroke='#4a90c2' stroke-width='1'/><line x1='279' y1='170' x2='300' y2='149' stroke='#4a90c2' stroke-width='1'/><line x1='286' y1='170' x2='300' y2='156' stroke='#4a90c2' stroke-width='1'/><line x1='293' y1='170' x2='300' y2='163' stroke='#4a90c2' stroke-width='1'/><text x='320' y='68' fill='#4a90c2'>45° tarama</text><text x='320' y='80' fill='#4a90c2'>(kesilen malzeme)</text><text x='320' y='114' fill='#1f2a37'>Delik: boşluk,</text><text x='320' y='126' fill='#1f2a37'>taranmaz</text><text x='280' y='215' text-anchor='middle' fill='#1f2a37'>Kesit düzlemi atılan ön kısım yok sayılır</text></svg>"
+   },
+   "quiz": {
+    "q": "Bir miline açılan kama yuvasına takılı kama, mil ekseni boyunca kesildiği bir kesit görünüşünde nasıl çizilir?",
+    "options": [
+     "Mil ile aynı yönde 45° taranır",
+     "Kama taranmaz, yalnızca konturu çizilir",
+     "Mile ters yönde 45° taranır",
+     "Kesit düzleminden hariç tutulur ve hiç çizilmez"
+    ],
+    "answer": 1,
+    "why": "Kama, vida, perçin, pim ve nervür gibi parçalar boyuna kesildiğinde taranmaz; aksi halde tek bir dolu blok gibi okunurlar. Kontur çizilir, tarama yapılmaz."
+   }
+  },
+  {
+   "id": "hertz-temas-gerilmesi",
+   "term": "Hertz temas gerilmesi",
+   "en": "Hertzian contact stress",
+   "category": "Mukavemet ve analiz",
+   "short": "Hertz temas gerilmesi, eğri yüzeyli iki elastik cismin yük altında çok küçük bir alanda temas etmesiyle oluşan, yüzeyde ve hemen altında çok yüksek olan lokal basınç ve gerilmedir.",
+   "explanation": [
+    "Düz yüzeyler gibi geniş alanla değil de bilye-bilezik, dişli çark yan yüzü veya makara-ray gibi eğri yüzeylerle temas ettiğinde yük teorik olarak bir noktaya (küre) veya çizgiye (silindir) iner. Cisimler elastik olduğu için temas yerinde küçük bir yassılaşma alanı oluşur ve basınç bu dar alana yoğunlaşır. Heinrich Hertz bu problemi 1881'de elastisite teorisiyle çözmüştür.",
+    "Paralel iki silindir (çizgi teması) için temas yarı genişliği b = √(4·F·R* / (π·L·E*)), maksimum basınç p_max = 2F / (π·b·L) dir. Burada F yük (N), L temas boyu (mm), R* eşdeğer yarıçap (1/R* = 1/R1 + 1/R2), E* eşdeğer elastisite modülü (MPa) olup 1/E* = (1−ν1²)/E1 + (1−ν2²)/E2 şeklinde bulunur. Basınç dağılımı yarım elips biçimindedir ve merkezde maksimumdur. Çizgi temasında p_max, F'nin karekökü ile orantılıdır (F iki katına çıkarsa p_max yaklaşık 1,41 katına çıkar).",
+    "Önemli nokta: maksimum kayma gerilmesi yüzeyde değil, yüzeyin altında (çizgi temasında yaklaşık 0,78·b derinlikte) oluşur. Bu nedenle rulman ve dişlilerde yorulma çatlakları yüzey altında başlar ve çukurcuk (pitting) olarak yüzeye çıkar. Bu yüzden temas yüzeyleri sertleştirilir (örneğin 58-62 HRC) ve sertleştirme derinliği buna göre seçilir.",
+    "Sayısal örnek: çelik (E = 210 GPa, ν = 0,3) R = 25 mm'lik makara, düz çelik yüzeye L = 20 mm boyunca F = 10 kN ile basıyor. E* ≈ 115 385 MPa, R* = 25 mm bulunur. b = √(4·10000·25 / (π·20·115385)) ≈ 0,37 mm, yani temas genişliği yaklaşık 0,74 mm. p_max = 2·10000 / (π·0,37·20) ≈ 857 MPa. Aynı yük 25 mm'lik alana yayılsaydı basınç yaklaşık 20 MPa olurdu."
+   ],
+   "analogy": "Topuklu ayakkabı (stiletto) ile spor ayakkabı farkı: aynı kişi, ama topuk ucu çok küçük alana bastığı için zemini delip geçer. Eğri yüzeyler birbirine yüklenince 'topuk ucu' etkisi yaşanır; yük aynı, alan çok küçük, basınç devasa.",
+   "mnemonic": "HERTZ = 'Hırçın Eğri Remzi Temasta Zorlar': eğri yüzeyler dar alanda temas edince basınç hırçınlaşır. Ayrıca Hertz'in gerilmesi dar nokta, çok basınç.",
+   "etymology": "Alman fizikçi Heinrich Rudolf Hertz'in (1857-1894) 1881'de yayımladığı 'Über die Berührung fester elastischer Körper' (katı elastik cisimlerin teması üzerine) çalışmasından gelir. 'Temas' Fransızca 'contact' kökenlidir; sektörde problemin kurucusu olan Hertz'in adı verilir.",
+   "example": "Inventor'da bir kam mekanizması tasarlıyorsun: R = 25 mm'lik çelik makara, 20 mm genişliğinde kam yüzeyine 10 kN ile basıyor. Hertz hesabı p_max ≈ 857 MPa verir. Kam malzemesi için izin verilen temas gerilmesi (örneğin sertleştirilmiş çelikte 1000-1500 MPa mertebesi) ile karşılaştırıp makara yarıçapını veya kam genişliğini ayarlarsın. Inventor Stress Analysis'te temas bölgesinde ağı sıklaştırmazsan gerçek tepe gerilmesini kaçırırsın.",
+   "confusions": [
+    {
+     "term": "Eğilme gerilmesi",
+     "diff": "Eğilme gerilmesi kesit boyunca doğrusal dağılır ve parçanın tamamını ilgilendirir; Hertz gerilmesi ise yalnızca temas bölgesinde ve çok lokal oluşur."
+    },
+    {
+     "term": "Ezilme (yatak) basıncı",
+     "diff": "Ezilme basıncı yük/izdüşüm alanı gibi basit ortalama bir değerdir; Hertz basıncı ise elastik şekil değiştirmeyle oluşan elips dağılımın tepe değeridir."
+    },
+    {
+     "term": "Von Mises gerilmesi",
+     "diff": "Von Mises, çok eksenli gerilme halini tek eşdeğer değere indirgeyen bir akma ölçütüdür; Hertz ise o gerilme halinin temas probleminde nasıl oluştuğunu hesaplayan teoridir."
+    }
+   ],
+   "related": [
+    "Pitting (çukurcuklanma)",
+    "Eşdeğer elastisite modülü",
+    "Yüzey sertleştirme"
+   ],
+   "figure": {
+    "caption": "Makara düz yüzeye bastığında dar bir temas bandı oluşur; basınç yarım elips dağılır, maksimum kayma gerilmesi yüzeyin altındadır.",
+    "svg": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif' font-size='11'><rect x='0' y='0' width='400' height='240' fill='#ffffff'/><line x1='200' y1='4' x2='200' y2='16' stroke='#e8711a' stroke-width='2.5'/><polygon points='200,26 194,14 206,14' fill='#e8711a'/><text x='210' y='18' fill='#e8711a' font-weight='bold'>F (yük)</text><circle cx='200' cy='75' r='45' fill='#eef3f8' stroke='#1f2a37' stroke-width='2'/><text x='200' y='78' text-anchor='middle' fill='#1f2a37'>Rulman makarası</text><rect x='30' y='120' width='340' height='100' fill='#f4f6f8' stroke='#1f2a37' stroke-width='2'/><text x='60' y='210' fill='#1f2a37'>Düz yüzey (bilezik / kam)</text><path d='M 170 120 A 30 45 0 0 0 230 120 Z' fill='#e8711a' fill-opacity='0.35' stroke='#e8711a' stroke-width='2'/><line x1='170' y1='116' x2='230' y2='116' stroke='#e8711a' stroke-width='3'/><line x1='170' y1='108' x2='230' y2='108' stroke='#1f2a37' stroke-width='1'/><text x='250' y='112' fill='#1f2a37'>2b = temas genişliği (abartılı)</text><line x1='200' y1='120' x2='200' y2='165' stroke='#1f2a37' stroke-width='1' stroke-dasharray='3 2'/><text x='206' y='160' fill='#1f2a37'>p_max</text><circle cx='200' cy='143' r='4' fill='#4a90c2' stroke='#1f2a37'/><text x='250' y='147' fill='#4a90c2'>maks. kayma: yüzey altı (~0,78b)</text><text x='250' y='170' fill='#e8711a'>Basınç dağılımı: yarım elips</text><text x='250' y='185' fill='#1f2a37'>p_max = 2F / (π·b·L)</text></svg>"
+   },
+   "quiz": {
+    "q": "Çizgi temasında bir makara-kam çiftinde yük F iki katına çıkarılırsa (diğer her şey sabit) maksimum Hertz basıncı p_max yaklaşık kaç katına çıkar?",
+    "options": [
+     "2 katına",
+     "4 katına",
+     "√2 ≈ 1,41 katına",
+     "Değişmez"
+    ],
+    "answer": 2,
+    "why": "Çizgi temasında b ∝ √F ve p_max = 2F/(π·b·L) olduğundan p_max ∝ F/√F = √F. Yük 2 katına çıkınca basınç yalnızca √2 ≈ 1,41 katına çıkar; çünkü temas alanı da yükle birlikte büyür."
+   }
+  },
+  {
+   "id": "guc-kw",
+   "term": "Güç (kW)",
+   "en": "Power (kilowatt)",
+   "category": "Tahrik ve hareket",
+   "short": "Güç, birim zamanda yapılan iştir (P = iş / süre); 1 kW = 1000 W = 1000 J/s.",
+   "explanation": [
+    "Güç, bir işin ne kadar hızlı yapıldığını söyler. Aynı yükü aynı yüksekliğe kaldırmak aynı işi gerektirir; ama süre kısaldıkça gereken güç artar. Birimi watt (W); makinede kilowatt (kW) kullanılır.",
+    "Doğrusal harekette P = F · v (N · m/s = W). Dönel harekette P = M · ω; ω = 2π·n/60 olduğundan P[kW] = M[N·m] · n[dev/dk] / 9550.",
+    "Mini örnek 1: 1000 kg yük 10 m yüksekliğe 20 s'de çıkarılırsa F = 9810 N, iş = 98,1 kJ, P = 98,1/20 ≈ 4,9 kW. 10 s'de çıkarılırsa 9,8 kW gerekir.",
+    "Mini örnek 2: Motor milinde M = 95,5 N·m ve n = 1500 dev/dk ise P = 95,5·1500/9550 = 15 kW. Eski birimler: 1 PS ≈ 0,7355 kW, 1 HP ≈ 0,746 kW."
+   ],
+   "analogy": "Bir havuzu doldurmak: su miktarı iştir, musluğun debisi güçtür. Aynı havuzu 10 dakikada dolduran musluk, 20 dakikada dolduran musluktan iki kat güçlüdür.",
+   "mnemonic": "Güç = Güzel hızlı iş: iş / zaman. kW'daki k 'kilo' yani bin: 1 kW = bin watt.",
+   "etymology": "Watt birimi, buhar makinesini geliştiren İskoç mühendis James Watt'tan gelir. 'Kilo' Yunanca khilioi (bin) kökünden; kilowatt = 1000 watt. Türkçe 'güç' İngilizce 'power', Fransızca 'puissance' karşılığıdır.",
+   "example": "Inventor'da bir konveyör tasarlıyorsun: 2000 N çekme kuvveti, 0,5 m/s bant hızı. P = 2000·0,5 = 1000 W = 1 kW. Verim 0,85 ve emniyet payı ile motor ≈ 1,5 kW seçilir.",
+   "confusions": [
+    {
+     "term": "Tork (N·m)",
+     "diff": "Tork dönme etkisinin büyüklüğüdür, güç ise torkun devirle çarpımıdır; yüksek torklu yavaş bir motor düşük güçlü olabilir."
+    },
+    {
+     "term": "Enerji / iş (kWh, kJ)",
+     "diff": "Enerji toplam yapılan iştir, güç ise o işin yapılma hızıdır; kWh enerji birimidir, kW güç birimidir."
+    },
+    {
+     "term": "Beygir gücü (HP/PS)",
+     "diff": "Aynı büyüklüğün eski birimidir; 1 PS ≈ 0,7355 kW, 1 HP ≈ 0,746 kW."
+    }
+   ],
+   "related": [
+    "Tork",
+    "Devir (dev/dk)",
+    "Verim",
+    "Redüktör"
+   ],
+   "figure": {
+    "caption": "Aynı iş (1000 kg, 10 m) yarı sürede yapılırsa güç iki katına çıkar.",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<text x=\"200\" y=\"20\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1f2a37\">Aynı yük, aynı yükseklik, farklı sürede</text>\n<line x1=\"20\" y1=\"215\" x2=\"380\" y2=\"215\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<line x1=\"100\" y1=\"215\" x2=\"100\" y2=\"55\" stroke=\"#1f2a37\" stroke-width=\"2\"/><line x1=\"300\" y1=\"215\" x2=\"300\" y2=\"55\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<rect x=\"80\" y=\"180\" width=\"40\" height=\"35\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/><rect x=\"280\" y=\"180\" width=\"40\" height=\"35\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<text x=\"100\" y=\"202\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">1000 kg</text><text x=\"300\" y=\"202\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">1000 kg</text>\n<line x1=\"140\" y1=\"175\" x2=\"140\" y2=\"65\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a)\"/><line x1=\"340\" y1=\"175\" x2=\"340\" y2=\"65\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a)\"/>\n<text x=\"150\" y=\"125\" font-size=\"12\" fill=\"#1f2a37\">10 m</text><text x=\"350\" y=\"125\" font-size=\"12\" fill=\"#1f2a37\">10 m</text>\n<text x=\"100\" y=\"42\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1f2a37\">20 s → 4,9 kW</text><text x=\"300\" y=\"42\" font-size=\"13\" text-anchor=\"middle\" fill=\"#e8711a\" font-weight=\"bold\">10 s → 9,8 kW</text>\n<text x=\"200\" y=\"235\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">İş aynı (98,1 kJ); güç = iş / süre</text></svg>"
+   },
+   "quiz": {
+    "q": "Bir motor milinde 191 N·m tork ve 1000 dev/dk devir ölçülüyor. Yaklaşık mil gücü nedir?",
+    "options": [
+     "2 kW",
+     "10 kW",
+     "20 kW",
+     "200 kW"
+    ],
+    "answer": 2,
+    "why": "P[kW] = M·n/9550 = 191·1000/9550 = 20 kW."
+   }
+  },
+  {
+   "id": "siki-gecme",
+   "term": "Sıkı geçme",
+   "en": "Interference fit (press fit)",
+   "category": "Tolerans ve mekanik tasarım",
+   "short": "Sıkı geçme, milin deliğinden her zaman büyük olduğu (negatif boşluk, sıkılık) geçmedir; parçalar sürtünmeyle birbirine kilitlenir.",
+   "explanation": [
+    "Mil ve delik ölçüleri öyle seçilir ki en küçük mil bile en büyük delikten büyüktür. Montajda ya preslenir ya da göbek ısıtılır / mil soğutulur. Birleşince yüzeyde basınç oluşur ve bu basıncın sürtünmesi tork ve eksenel kuvvet iletir; kama gerekmeyebilir.",
+    "ISO 286 sisteminde delik tabanlı H7/p6, H7/s6, H7/u6 sıkı geçmelerdir; H7/n6 geçiş geçmesinin sıkı ucundadır. Harf ilerledikçe (p, s, u) sıkılık artar.",
+    "Mini örnek: Ø40 H7/s6. Delik +25/0 µm, mil +59/+43 µm. En küçük sıkılık = 43−25 = 18 µm, en büyük sıkılık = 59−0 = 59 µm.",
+    "Isıtarak montaj: ΔT = δ/(α·d). Çelik α ≈ 11,5·10⁻⁶ 1/K, d = 40 mm için 1 K'de 0,0046 mm genleşir. Göbeği yaklaşık 170 K ısıtmak 0,078 mm kazandırır; 0,059 mm sıkılığı aşıp boşluk bırakır."
+   ],
+   "analogy": "Parmağına dar bir yüzük takmak gibi: yüzük parmaktan küçük olsaydı sıcak suyla genişletip takardın; soğuyunca parmağı sımsıkı sarar.",
+   "mnemonic": "SIKI = Sıkılık Kalıcı: mil Her zaman İri. H7/s6'daki s = 'sıkı' diye hatırla.",
+   "etymology": "İngilizce 'interference fit': mil ile delik fiziksel olarak birbirine 'girer' (interfere) yani çakışır. 'Press fit' presle takılmasından gelir. Türkçe 'sıkı geçme' DIN/ISO geçme sınıflarının karşılığıdır.",
+   "example": "Inventor'da Ø40 mili Ø40 H7 delikli göbeğe sıkı geçireceksin. Resimde Ø40 H7/s6 yazarsın; atölye göbeği ≈190 °C'ye ısıtıp mili takar, soğuyunca 18–59 µm sıkılık oluşur.",
+   "confusions": [
+    {
+     "term": "Boşluklu geçme (H7/g6)",
+     "diff": "Mil her zaman delikten küçüktür, parçalar serbestçe kayar veya döner."
+    },
+    {
+     "term": "Geçişli geçme (H7/k6)",
+     "diff": "Ölçülere göre ya hafif boşluk ya hafif sıkılık çıkar; sökülebilir hassas konumlandırma içindir."
+    },
+    {
+     "term": "Kamalı bağlantı",
+     "diff": "Tork şekil kilidiyle iletilir; sıkı geçmede ise yüzey sürtünmesiyle iletilir."
+    }
+   ],
+   "related": [
+    "ISO 286 toleransları",
+    "Delik tabanlı sistem",
+    "Alt ve üst sapma",
+    "Kama bağlantısı"
+   ],
+   "figure": {
+    "caption": "Önce mil delikten büyüktür; birleşince yüzey basıncı oluşur.",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<text x=\"100\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1f2a37\">Önce: montaj öncesi</text><text x=\"300\" y=\"20\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1f2a37\">Sonra: birleşmiş</text>\n<rect x=\"30\" y=\"40\" width=\"140\" height=\"50\" fill=\"none\" stroke=\"#1f2a37\" stroke-width=\"2\"/><rect x=\"30\" y=\"150\" width=\"140\" height=\"50\" fill=\"none\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<circle cx=\"100\" cy=\"115\" r=\"25\" fill=\"#4a90c2\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<text x=\"100\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Mil Ø40,043..59</text>\n<text x=\"100\" y=\"75\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Delik Ø40,000..025</text>\n<text x=\"100\" y=\"135\" font-size=\"1\" fill=\"#1f2a37\"> </text>\n<line x1=\"100\" y1=\"95\" x2=\"100\" y2=\"140\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a)\"/>\n<text x=\"100\" y=\"225\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Mil &gt; delik: sıkılık</text>\n<rect x=\"250\" y=\"70\" width=\"100\" height=\"100\" fill=\"none\" stroke=\"#1f2a37\" stroke-width=\"2\"/><circle cx=\"300\" cy=\"120\" r=\"30\" fill=\"#4a90c2\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<line x1=\"270\" y1=\"120\" x2=\"250\" y2=\"120\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a)\"/><line x1=\"330\" y1=\"120\" x2=\"350\" y2=\"120\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a)\"/>\n<text x=\"300\" y=\"195\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Yüzey basıncı + sürtünme</text><text x=\"300\" y=\"212\" font-size=\"11\" text-anchor=\"middle\" fill=\"#e8711a\">tork iletir (kamasız)</text></svg>"
+   },
+   "quiz": {
+    "q": "Ø40 H7/s6 geçmede (delik +25/0 µm, mil +59/+43 µm) en küçük sıkılık nedir?",
+    "options": [
+     "59 µm",
+     "25 µm",
+     "0 µm",
+     "18 µm"
+    ],
+    "answer": 3,
+    "why": "En küçük sıkılık = en küçük mil − en büyük delik = 43 − 25 = 18 µm."
+   }
+  }
+ ]
+}
