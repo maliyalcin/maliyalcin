@@ -1,0 +1,4793 @@
+{
+ "date": "2026-11-25",
+ "generated_at": "2026-11-24T22:13:33+00:00",
+ "verified_by": "opus + makine profesörü",
+ "designs": [
+  {
+   "id": "hidrolik-pres",
+   "title": "Hidrolik silindirli pres",
+   "category": "Hidrolik",
+   "summary": "400 kN presleme kuvvetli, 4 kolonlu, tek silindirli hidrolik sac şekillendirme presi: silindir, pompa-motor grubu, valf bloğu ve kılavuz kolonlar birlikte boyutlandırılır.",
+   "chat_context": "Senaryo: 400 kN (≈40 ton) sac şekillendirme presi, strok 500 mm. Ø160/Ø110 silindir 210 bar'da 401 kN üretir; hareketli kütle 1200 kg. 25 cm³/dev değişken debili pompa ve 7,5 kW (1450 d/dk) motor ile yaklaşma 28,5 mm/s, presleme 10 mm/s, dönüş 54,1 mm/s; çevrim ≈ 38 s. 4 adet Ø80 42CrMo4 kolon (Ø80 kılavuz ve çekme elemanı) ve 800×250 kutu kesitli traversler; traverse sehimi 0,047 mm, kolon uzaması 0,15 mm. Denge valfi ağırlığı tutar, 250 L tank ve 1 s'lik dekompresyon kademesi vardır.",
+   "principle": [
+    "Pres, Pascal ilkesine dayanır: elektrik motoru değişken debili pompayı sürer, pompa yağa basınç verir ve piston alanıyla çarpılan basınç silindirde kuvvet oluşturur (F = p·A). 210 bar basınç Ø160 mm piston üzerinde yaklaşık 400 kN kuvvet üretir; kuvvet kızak plakasına, oradan üst kalıba ve sac parçaya iletilir.",
+    "Çevrimin ilk aşamasında yön valfi kapak tarafını pompaya bağlar. Kızak plakası ve üst kalıp ağırlıklarıyla iner; kol tarafındaki yağ denge (counterbalance) valfinden geçerek tanka boşalır, böylece iniş kontrollü olur. Yaklaşma yaklaşık 28 mm/s hızla yapılır, bu sırada basınç çok düşüktür.",
+    "Kalıp saca temas edince basınç yükselir; pompa basınç kompanzasyonu ile debiyi düşürerek yaklaşık 10 mm/s presleme hızı sağlar ve 210 bar'a kadar basınç artar. Motor gücü yalnızca presleme debisi kadar yağı bu basınca çıkarır (≈5 kW mil gücü). Kuvvet 4 kolon üzerinden alt ve üst traverslere iletilir; kolonlar çekme, traversler eğilme taşır.",
+    "Presleme sonunda önce kısa bir bekleme yapılır, sonra kademeli dekompresyon valfi sıkışmış yağı yaklaşık 1 s içinde boşaltarak basıncı sıfıra indirir (vuruntu ve gürültüyü önler). Ardından yön valfi kol tarafını pompaya, kapak tarafını ön dolum valfi üzerinden tanka bağlar ve kızak yaklaşık 54 mm/s ile yukarı döner.",
+    "Kızak, kolonlar üzerindeki bronz/kompozit burçlarla yönlendirilir; eksantrik yük kolonlarda eğilme momenti oluşturur. Emniyet valfi 230 bar'da devreye girerek aşırı basıncı sınırlar, tank ise yağı soğutur ve filtreler."
+   ],
+   "components": [
+    {
+     "name": "Hidrolik silindir Ø160/Ø110×500",
+     "role": "Çift etkili, flanşlı, krom kaplı kollu; 400 kN presleme kuvvetini ve 500 mm stroku sağlar"
+    },
+    {
+     "name": "Pompa-motor grubu",
+     "role": "25 cm³/dev değişken debili eksenel pistonlu pompa ve 7,5 kW, 1450 d/dk elektrik motoru; basınç kompanzasyonu ile enerji tasarrufu"
+    },
+    {
+     "name": "Valf bloğu",
+     "role": "Yön valfi, denge valfi, ön dolum/dekompresyon valfi ve emniyet valfi (230 bar) tek blokta; sızdırmaz ve kompakt"
+    },
+    {
+     "name": "Pres gövdesi (üst ve alt travers)",
+     "role": "800×250 mm kutu kesitli kaynaklı S355 travers; silindiri taşır, kuvveti kolonlara aktarır, sehimi 0,05 mm'nin altında tutar"
+    },
+    {
+     "name": "Kılavuz kolonlar Ø80 (4 adet)",
+     "role": "42CrMo4+QT, M72×4 diş; hem çekme bağlantısı hem kızak kılavuzu; burçlarla yatay hassasiyet sağlar"
+    },
+    {
+     "name": "Kızak plakası ve burçlar",
+     "role": "Üst kalıbı taşır; kolonlar üzerinde bronz/kompozit burçlarla yönlendirilir"
+    },
+    {
+     "name": "Yağ tankı 250 L",
+     "role": "Yağ deposu, ısı dağıtımı, filtre ve seviye göstergesi"
+    }
+   ],
+   "specs": [
+    {
+     "k": "Presleme kuvveti",
+     "v": "401 kN (210 bar)"
+    },
+    {
+     "k": "Silindir / kol çapı",
+     "v": "Ø160 / Ø110 mm"
+    },
+    {
+     "k": "Strok",
+     "v": "500 mm"
+    },
+    {
+     "k": "Hızlar (yaklaşma / presleme / dönüş)",
+     "v": "28,5 / 10 / 54,1 mm/s"
+    },
+    {
+     "k": "Çalışma / emniyet / test basıncı",
+     "v": "210 / 230 / 375 bar"
+    },
+    {
+     "k": "Pompa debisi",
+     "v": "34,4 L/dk (25 cm³/dev, 1450 d/dk)"
+    },
+    {
+     "k": "Elektrik motoru",
+     "v": "7,5 kW, 4 kutuplu, 1450 d/dk"
+    },
+    {
+     "k": "Hareketli kütle",
+     "v": "1200 kg"
+    },
+    {
+     "k": "Kolonlar",
+     "v": "4 × Ø80 mm, 42CrMo4+QT, M72×4"
+    },
+    {
+     "k": "Travers sehimi (tam yükte)",
+     "v": "0,047 mm"
+    },
+    {
+     "k": "Tank hacmi",
+     "v": "250 L"
+    },
+    {
+     "k": "Çevrim süresi",
+     "v": "37,7 s"
+    }
+   ],
+   "analysis": [
+    {
+     "title": "1. Silindir çapı ve kuvvet",
+     "steps": [
+      {
+       "label": "Gerekli etkin alan",
+       "formula": "A_gerek = F / (p · η_c) = 400 000 / (21·10⁶ · 0,95)",
+       "value": "200,5",
+       "unit": "cm²",
+       "note": "Çalışma basıncı 210 bar, silindir mekanik verimi (conta + kılavuz sürtünmesi) η_c≈0,95"
+      },
+      {
+       "label": "Gerekli piston çapı",
+       "formula": "D_gerek = √(4·A / π) = √(4·200,5 / π) = 15,98 cm",
+       "value": "159,8",
+       "unit": "mm",
+       "note": "En yakın standart çap ISO 3320 serisinden Ø160 mm"
+      },
+      {
+       "label": "Seçilen piston alanı (kapak tarafı)",
+       "formula": "A_k = π/4 · D² = π/4 · 0,160²",
+       "value": "201,06",
+       "unit": "cm²",
+       "note": "Ø160 mm piston"
+      },
+      {
+       "label": "Halka alanı (kol tarafı)",
+       "formula": "A_h = π/4 · (D² − d²) = π/4 · (0,160² − 0,110²)",
+       "value": "106,03",
+       "unit": "cm²",
+       "note": "Piston kolu Ø110 mm (alan oranı φ≈1,90)"
+      },
+      {
+       "label": "Gerçek presleme kuvveti",
+       "formula": "F = p · A_k · η_c = 21·10⁶ · 0,02011 · 0,95",
+       "value": "401,1",
+       "unit": "kN",
+       "note": "≈ 41 ton-kuvvet; hedef 400 kN sağlanır"
+      },
+      {
+       "label": "Tam 400 kN için gereken basınç",
+       "formula": "p = F / (A_k · η_c) = 400 000 / (0,02011 · 0,95)",
+       "value": "209,4",
+       "unit": "bar",
+       "note": "Bu nedenle ayar basıncı 210 bar'ın hemen altındadır"
+      }
+     ],
+     "comment": "Ø160/Ø110 silindir 210 bar'da yaklaşık 400 kN üretir. 250 bar'lık tasarım basıncı seçilerek 1,19 kat basınç yedeği bırakılmıştır (emniyet valfi 230 bar)."
+    },
+    {
+     "title": "2. Hareket profili, debi ve çevrim süresi",
+     "steps": [
+      {
+       "label": "Pompa debisi",
+       "formula": "Q_p = V_g · n · η_v / 1000 = 25 · 1450 · 0,95 / 1000",
+       "value": "34,4",
+       "unit": "L/dk",
+       "note": "Değişken debili, basınç kompanzasyonlu eksenel pistonlu pompa; V_g,max = 25 cm³/dev"
+      },
+      {
+       "label": "Hızlı yaklaşma hızı",
+       "formula": "v_y = Q_p / A_k = 34,4·10⁻³/60 / 0,02011",
+       "value": "28,5",
+       "unit": "mm/s",
+       "note": "Kapak tarafı doldurulur; kol tarafı denge valfinden boşalır"
+      },
+      {
+       "label": "Geri dönüş hızı",
+       "formula": "v_d = Q_p / A_h = 34,4·10⁻³/60 / 0,01060",
+       "value": "54,1",
+       "unit": "mm/s",
+       "note": "Halka alanı küçük olduğu için dönüş yaklaşmadan hızlıdır"
+      },
+      {
+       "label": "Presleme debisi",
+       "formula": "Q_pr = A_k · v_pr = 0,02011 · 0,010",
+       "value": "12,1",
+       "unit": "L/dk",
+       "note": "Şekillendirme hızı 10 mm/s; pompa strokunu azaltır"
+      },
+      {
+       "label": "Hareket süreleri",
+       "formula": "t_y = 400/28,5 ; t_pr = 100/10 ; t_d = 500/54,1",
+       "value": "14,0 / 10,0 / 9,2",
+       "unit": "s",
+       "note": "Yaklaşma 400 mm, presleme 100 mm, dönüş 500 mm"
+      },
+      {
+       "label": "Toplam çevrim süresi",
+       "formula": "t_ç = t_y + t_pr + t_bekleme(2) + t_dekomp.(1) + t_d + geçişler(1,5)",
+       "value": "37,7",
+       "unit": "s",
+       "note": "≈ 95 parça/saat"
+      }
+     ],
+     "comment": "Çevrim süresi presleme ve yaklaşma hızı ile sınırlıdır. Daha yüksek verim için yaklaşmada diferansiyel bağlantı veya ön dolum valfi ile ikinci bir hızlı pompa kademesi eklenebilir."
+    },
+    {
+     "title": "3. Kütle, sürtünme ve denge valfi basıncı",
+     "steps": [
+      {
+       "label": "Hareketli kütlenin ağırlığı",
+       "formula": "W = m · g = 1200 · 9,81",
+       "value": "11,77",
+       "unit": "kN",
+       "note": "Kızak plakası + üst kalıp + piston kolu toplamı 1200 kg"
+      },
+      {
+       "label": "Sürtünme kuvveti",
+       "formula": "F_s = F_conta + μ · H = 1,0 + 0,1 · 5,0",
+       "value": "1,5",
+       "unit": "kN",
+       "note": "Conta sürtünmesi ≈1 kN, burç sürtünmesi μ≈0,1 (yağlı bronz/kompozit burç)"
+      },
+      {
+       "label": "İvmelenme kuvveti (dönüş)",
+       "formula": "a = v_d / t_a = 0,0541 / 0,3 ; F_a = m · a",
+       "value": "217",
+       "unit": "N",
+       "note": "0,3 s'de hız kazanımı; ihmal edilebilir mertebe"
+      },
+      {
+       "label": "Dönüş için gerekli kuvvet",
+       "formula": "F_d = W + F_s + F_a = 11772 + 1500 + 217",
+       "value": "13,49",
+       "unit": "kN",
+       "note": "Silindir yukarı doğru ağırlığı taşır"
+      },
+      {
+       "label": "Dönüş basıncı (kol tarafı)",
+       "formula": "p_d = F_d / A_h = 13489 / 0,01060",
+       "value": "12,7",
+       "unit": "bar",
+       "note": "Hat kayıpları (+4 bar) ile ≈ 16,7 bar"
+      },
+      {
+       "label": "Ağırlığı tutan basınç",
+       "formula": "p_tut = W / A_h = 11772 / 0,01060",
+       "value": "11,1",
+       "unit": "bar",
+       "note": "Denge (counterbalance) valfi ayarı 1,3 · p_tut ≈ 14,4 bar"
+      },
+      {
+       "label": "Yaklaşmada kapak basıncı",
+       "formula": "p_k = (p_dv · A_h − W + F_s) / A_k",
+       "value": "2,5",
+       "unit": "bar",
+       "note": "Çok düşük; yaklaşmada pompa neredeyse yüksüz çalışır"
+      }
+     ],
+     "comment": "Kızak ağırlığı denge valfi olmadan silindiri kontrolsüz indirir. Valf kol tarafında 15 bar civarı karşı basınç tutar, yaklaşma sırasında potansiyel enerji ısıya dönüşür (≈ 4,7 kJ/çevrim)."
+    },
+    {
+     "title": "4. Pompa, elektrik motoru ve tork",
+     "steps": [
+      {
+       "label": "Presleme hidrolik gücü",
+       "formula": "P_h = p · Q = 21·10⁶ · 12,1 · 10⁻³/60",
+       "value": "4,22",
+       "unit": "kW",
+       "note": "210 bar ve 12 L/dk'da"
+      },
+      {
+       "label": "Mil gücü",
+       "formula": "P_mil = P_h / η_t = 4,22 / 0,85",
+       "value": "4,97",
+       "unit": "kW",
+       "note": "Pompa toplam verimi η_t≈0,85"
+      },
+      {
+       "label": "Servis katsayılı güç",
+       "formula": "P_motor = 1,5 · P_mil",
+       "value": "7,45",
+       "unit": "kW",
+       "note": "Seçim: 7,5 kW, 4 kutuplu, 1450 d/dk (IE3) asenkron motor"
+      },
+      {
+       "label": "Pompa tork ihtiyacı",
+       "formula": "T = V_g,eff · Δp / (20π · η_hm) = 8,8 · 210 / (62,83 · 0,90)",
+       "value": "32,5",
+       "unit": "N·m",
+       "note": "V_g,eff = Q_pr·1000/(n·η_v) = 8,76 cm³/dev"
+      },
+      {
+       "label": "Motor nominal torku",
+       "formula": "T_m = P / ω = 7500 / (2π·1450/60)",
+       "value": "49,4",
+       "unit": "N·m",
+       "note": "Pompa torku motor torkunun altında; yedek ≈ %34"
+      },
+      {
+       "label": "Yaklaşma ve dönüş gücü",
+       "formula": "P_y = p_k · Q ; P_d = p_d · Q",
+       "value": "144 / 960",
+       "unit": "W",
+       "note": "Her ikisi de presleme gücünün çok altında"
+      }
+     ],
+     "comment": "Motor tam kuvvette (400 kN) en çok yaklaşık 18 L/dk debi (≈15 mm/s) taşıyabilir. Basınç kompanzasyonu motorun aşırı yüklenmesini engeller; boşta pompa strokunu sıfıra yakın tutarak enerji tasarrufu sağlar."
+    },
+    {
+     "title": "5. Silindir ve piston kolu dayanımı",
+     "steps": [
+      {
+       "label": "Silindir cidarı çevresel gerilmesi",
+       "formula": "σ_θ = p_t · (r_d² + r_i²)/(r_d² − r_i²) = 25 · (100² + 80²)/(100² − 80²)",
+       "value": "113,9",
+       "unit": "MPa",
+       "note": "Tasarım basıncı 250 bar, cidar 20 mm (Ø160/Ø200), Lamé denklemi; ST52/E355 honlanmış boru, R_e≈450 MPa"
+      },
+      {
+       "label": "Emniyet katsayısı (tasarım)",
+       "formula": "S = R_e / σ_θ = 450 / 113,9",
+       "value": "3,95",
+       "unit": "-",
+       "note": "≥ 2,5 hedefi sağlanır"
+      },
+      {
+       "label": "Test basıncında gerilme",
+       "formula": "σ_test = 37,5 · 4,556 (p_t = 1,5 · 250 = 375 bar)",
+       "value": "170,8",
+       "unit": "MPa",
+       "note": "Emniyet katsayısı 2,63"
+      },
+      {
+       "label": "Piston kolu basma gerilmesi",
+       "formula": "σ_k = F / A_kol = 401119 / 9503",
+       "value": "42,2",
+       "unit": "MPa",
+       "note": "A_kol = π/4·110² = 9503 mm²"
+      },
+      {
+       "label": "Narinlik oranı",
+       "formula": "λ = L_k / i = 700 / (d/4) = 700 / 27,5",
+       "value": "25,5",
+       "unit": "-",
+       "note": "λ < 60: Euler uygulanmaz, akma belirleyicidir; kol Ø110 çok sağlam"
+      },
+      {
+       "label": "Euler kritik yükü (referans)",
+       "formula": "F_e = π² · E · I / L_k² = π² · 210 000 · 7186884 / 700²",
+       "value": "30,4",
+       "unit": "MN",
+       "note": "Çalışma yükünün ≈ 76 katı; burkulma kritik değil"
+      },
+      {
+       "label": "Kol emniyet katsayısı",
+       "formula": "S = R_e / σ_k = 450 / 42,2",
+       "value": "10,7",
+       "unit": "-",
+       "note": "Krom kaplı, karbon çeliği kol (C45 +QT)"
+      }
+     ],
+     "comment": "Silindir cidarı yüksek emniyetli; asıl sınırlayıcı faktör flanş vidaları ve dişli bağlantılardır. Kol yüzeyi Ra ≤ 0,2 µm krom kaplama ile contaları korur."
+    },
+    {
+     "title": "6. Kolon, kılavuz ve gövde (traverse) rijitliği",
+     "steps": [
+      {
+       "label": "Kolon çekme yükü",
+       "formula": "F_k = F / 4 = 401119 / 4",
+       "value": "100,3",
+       "unit": "kN",
+       "note": "4 kolon eşit yük taşır (merkezi yük)"
+      },
+      {
+       "label": "Kolon gövde gerilmesi",
+       "formula": "σ_k = F_k / A_g = 100280 / 5027",
+       "value": "19,9",
+       "unit": "MPa",
+       "note": "Ø80 kolon, A = 5027 mm², 42CrMo4+QT (R_e≈650 MPa)"
+      },
+      {
+       "label": "Diş dibi gerilmesi",
+       "formula": "σ_diş = F_k / A_s = 100280 / 3658",
+       "value": "27,4",
+       "unit": "MPa",
+       "note": "M72×4 diş, gerilme alanı A_s≈3658 mm²; ön gerdirme ile titreşim yorulması azaltılır"
+      },
+      {
+       "label": "Eksantrik yük momenti",
+       "formula": "M_e = F · e = 400 000 · 0,05",
+       "value": "20,0",
+       "unit": "kN·m",
+       "note": "Kalıp merkezden e=50 mm kayık (%%12,5 kuralı); 4 burç eşit bölüşür"
+      },
+      {
+       "label": "Kolon eğilme gerilmesi",
+       "formula": "σ_e = (M_e/4) / W = 5000·10³ / (π·80³/32)",
+       "value": "99,5",
+       "unit": "MPa",
+       "note": "Eğilme + çekme toplamı ≈ 119 MPa, emniyet ≈ 5,4"
+      },
+      {
+       "label": "Burç yüzey basıncı",
+       "formula": "p_b = H_b / (d · L_b/2) = 20833 / (80·150)",
+       "value": "1,74",
+       "unit": "MPa",
+       "note": "Burç boyu 300 mm, izin verilen ≈ 5 MPa (kompozit/bronz)"
+      },
+      {
+       "label": "Kolon uzaması",
+       "formula": "ΔL = σ_k · L / E = 19,9 · 1600 / 210 000",
+       "value": "0,152",
+       "unit": "mm",
+       "note": "Kolon serbest boyu 1600 mm"
+      },
+      {
+       "label": "Traverse atalet momenti",
+       "formula": "I = (B·H³ − b·h³)/12 = (800·250³ − 740·190³)/12",
+       "value": "6,19 · 10⁸",
+       "unit": "mm⁴",
+       "note": "Kutu kesit 800×250 mm, et kalınlığı 30 mm, S355"
+      },
+      {
+       "label": "Traverse sehimi",
+       "formula": "δ = F · L³ / (48 · E · I) = 400 000 · 900³ / (48 · 210 000 · 618695000)",
+       "value": "0,047",
+       "unit": "mm",
+       "note": "Mesnet aralığı 900 mm; L/19248 oranı"
+      },
+      {
+       "label": "Traverse eğilme gerilmesi",
+       "formula": "σ = M / W = (F·L/4) / (I / (H/2)) = 90000000 / 4949560",
+       "value": "18,2",
+       "unit": "MPa",
+       "note": "S355 için izin verilen ≈ 237 MPa"
+      }
+     ],
+     "comment": "Gerilmeler düşük; ölçü belirleyici olan rijitliktir. Ram eksantrik yükte kolonlara yaslandığı için kılavuz boyu uzun tutulmalı, kalıp mümkün olduğunca merkezlenmelidir."
+    },
+    {
+     "title": "7. Dekompresyon ve yağ ısınması",
+     "steps": [
+      {
+       "label": "Sıkışan yağ hacmi etkisi",
+       "formula": "ΔV = V₀ · p / K = 12,05 · 10⁻³ · 21·10⁶ / 1,2·10⁹",
+       "value": "0,211",
+       "unit": "L",
+       "note": "V₀ = kapak odası (10,05 L) + hatlar 2 L; etkin hacim modülü K≈1,2 GPa (hava dahil)"
+      },
+      {
+       "label": "Depolanan enerji",
+       "formula": "E = ½ · p · ΔV = 0,5 · 21·10⁶ · 0,211·10⁻³",
+       "value": "2,21",
+       "unit": "kJ",
+       "note": "Ani boşaltılırsa vuruntu/gürültü yapar; kademeli dekompresyon şart"
+      },
+      {
+       "label": "Dekompresyon debisi",
+       "formula": "Q_dek = ΔV / t = 0,211 / 1",
+       "value": "12,7",
+       "unit": "L/dk",
+       "note": "Dekompresyon süresi ≈ 1 s (stroklu kademeli valf)"
+      },
+      {
+       "label": "Çevrim başına yağa verilen ısı",
+       "formula": "E_ısı ≈ E_giriş − W_form + E_dek = 64,7 − 40,1 + 2,2",
+       "value": "26,8",
+       "unit": "kJ",
+       "note": "Preslemede mil gücü 4,97 kW; şekillendirme işi 401 kN · 0,1 m = 40,1 kJ parçaya gider"
+      },
+      {
+       "label": "Ortalama ısı yükü",
+       "formula": "P_ort = E_ısı / t_ç = 26,8 / 37,7",
+       "value": "0,71",
+       "unit": "kW",
+       "note": "Sürekli çalışmada yağı ısıtan güç"
+      },
+      {
+       "label": "Gereken tank hacmi",
+       "formula": "A = P_ort / (k · ΔT) = 711 / (12 · 25) ; V = (A/0,065)^1,5",
+       "value": "220",
+       "unit": "L",
+       "note": "k=12 W/(m²·K), ΔT=25 K (yağ 45–50 °C); seçilen tank 250 L (≥ 7 × Q_p)"
+      }
+     ],
+     "comment": "250 L tank (A≈2,58 m²) yaklaşık 0,77 kW dağıtabilir; ortalama ısı yükü bunun altındadır. Yoğun üretimde yağ-hava soğutucu (≈1 kW) ve termostat önerilir."
+    },
+    {
+     "title": "8. Boru hattı ve sonuç / seçim",
+     "steps": [
+      {
+       "label": "Basınç hattı akış hızı",
+       "formula": "v = Q / A = 34,4·10⁻³/60 / (π/4·0,014²)",
+       "value": "3,73",
+       "unit": "m/s",
+       "note": "Ø20×3 çelik boru (iç Ø14); basınç hattı için < 5 m/s"
+      },
+      {
+       "label": "Kapak hattı (dönüş akışı)",
+       "formula": "v = A_k·v_d / A_boru = 65 L/dk",
+       "value": "2,15",
+       "unit": "m/s",
+       "note": "DN25 hortum/boru; dönüşte kapak yağı ≈ 65 L/dk ön dolum valfinden tanka akar"
+      },
+      {
+       "label": "Emme hattı akış hızı",
+       "formula": "v = Q / (π/4 · 0,032²)",
+       "value": "0,71",
+       "unit": "m/s",
+       "note": "Pompa emişi için < 1 m/s (iç Ø32)"
+      },
+      {
+       "label": "Emniyet valfi ayarı",
+       "formula": "p_em = 1,1 · p_çalışma",
+       "value": "230",
+       "unit": "bar",
+       "note": "Silindir tasarım basıncı 250 bar, test basıncı 375 bar"
+      },
+      {
+       "label": "Seçilen silindir",
+       "formula": "D / d / strok",
+       "value": "160 / 110 / 500",
+       "unit": "mm",
+       "note": "Flanşlı, basınç 250 bar, krom kaplı kol"
+      },
+      {
+       "label": "Seçilen pompa-motor",
+       "formula": "V_g / motor",
+       "value": "25 cm³/dev / 7,5 kW",
+       "unit": "",
+       "note": "Değişken debili eksenel pistonlu pompa + 4 kutuplu IE3 motor"
+      }
+     ],
+     "comment": "Seçilen elemanlar: Ø160/Ø110×500 hidrolik silindir, 25 cm³/dev değişken debili pompa, 7,5 kW motor, 250 L tank, 4 kolon Ø80 42CrMo4, kutu kesitli kaynaklı traverslerle 400 kN preslemeyi 37,7 s çevrimle sağlar."
+    }
+   ],
+   "figures": [
+    {
+     "caption": "Şekil 1 – 4 kolonlu hidrolik presin şematik yan görünüşü: silindir, kızak, kalıplar, kolonlar ve hidrolik güç ünitesi",
+     "svg": "<svg viewBox=\"0 0 480 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\">\n<defs><marker id=\"a1\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker>\n<marker id=\"a2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#1f2a37\"/></marker></defs>\n<rect x=\"0\" y=\"0\" width=\"480\" height=\"300\" fill=\"#f7f9fb\"/>\n<rect x=\"82\" y=\"76\" width=\"16\" height=\"184\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/>\n<rect x=\"302\" y=\"76\" width=\"16\" height=\"184\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/>\n<rect x=\"76\" y=\"68\" width=\"28\" height=\"8\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<rect x=\"296\" y=\"68\" width=\"28\" height=\"8\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<rect x=\"76\" y=\"260\" width=\"28\" height=\"8\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<rect x=\"296\" y=\"260\" width=\"28\" height=\"8\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<rect x=\"70\" y=\"76\" width=\"260\" height=\"24\" fill=\"#8d99a6\" stroke=\"#1f2a37\"/>\n<rect x=\"160\" y=\"8\" width=\"80\" height=\"68\" fill=\"#d7efe5\" stroke=\"#1f2a37\" stroke-width=\"1.5\"/>\n<rect x=\"162\" y=\"30\" width=\"76\" height=\"9\" fill=\"#3b8f6e\" stroke=\"#1f2a37\"/>\n<rect x=\"190\" y=\"39\" width=\"20\" height=\"112\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/>\n<rect x=\"76\" y=\"150\" width=\"248\" height=\"22\" fill=\"#e8711a\" stroke=\"#1f2a37\"/>\n<rect x=\"78\" y=\"146\" width=\"24\" height=\"30\" fill=\"none\" stroke=\"#1f2a37\"/>\n<rect x=\"298\" y=\"146\" width=\"24\" height=\"30\" fill=\"none\" stroke=\"#1f2a37\"/>\n<rect x=\"150\" y=\"172\" width=\"100\" height=\"26\" fill=\"#5b6470\" stroke=\"#1f2a37\"/>\n<line x1=\"135\" y1=\"205\" x2=\"265\" y2=\"205\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<rect x=\"140\" y=\"207\" width=\"120\" height=\"26\" fill=\"#5b6470\" stroke=\"#1f2a37\"/>\n<rect x=\"70\" y=\"233\" width=\"260\" height=\"27\" fill=\"#8d99a6\" stroke=\"#1f2a37\"/>\n<rect x=\"262\" y=\"24\" width=\"52\" height=\"36\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<line x1=\"240\" y1=\"20\" x2=\"262\" y2=\"30\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<line x1=\"240\" y1=\"66\" x2=\"262\" y2=\"54\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<polyline points=\"314,42 395,42 395,190\" fill=\"none\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<rect x=\"365\" y=\"190\" width=\"60\" height=\"34\" fill=\"#2f5d8a\" stroke=\"#1f2a37\"/>\n<rect x=\"355\" y=\"224\" width=\"110\" height=\"50\" fill=\"#d9e8f5\" stroke=\"#1f2a37\"/>\n<line x1=\"400\" y1=\"3\" x2=\"400\" y2=\"3\" stroke=\"#1f2a37\"/>\n<line x1=\"42\" y1=\"105\" x2=\"42\" y2=\"195\" stroke=\"#1f2a37\" stroke-width=\"1.5\" marker-end=\"url(#a2)\"/>\n<line x1=\"200\" y1=\"120\" x2=\"200\" y2=\"150\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a1)\" display=\"none\"/>\n<line x1=\"200\" y1=\"125\" x2=\"200\" y2=\"148\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a1)\"/>\n<text x=\"12\" y=\"212\" fill=\"#1f2a37\">Strok 500</text>\n<text x=\"212\" y=\"122\" fill=\"#e8711a\">F = 400 kN</text>\n<text x=\"170\" y=\"22\" fill=\"#1f2a37\">Silindir</text>\n<text x=\"228\" y=\"162\" fill=\"#1f2a37\" font-size=\"11\" display=\"none\">Kızak</text>\n<text x=\"104\" y=\"166\" fill=\"#1f2a37\" font-size=\"11\">Kızak plakası</text>\n<text x=\"112\" y=\"190\" fill=\"#1f2a37\" font-size=\"11\" display=\"none\">Üst kalıp</text>\n<text x=\"262\" y=\"188\" fill=\"#1f2a37\" font-size=\"11\">Üst kalıp</text>\n<text x=\"270\" y=\"226\" fill=\"#1f2a37\" font-size=\"11\">Alt kalıp</text>\n<text x=\"104\" y=\"96\" fill=\"#1f2a37\" font-size=\"11\">Üst travers</text>\n<text x=\"104\" y=\"252\" fill=\"#1f2a37\" font-size=\"11\">Tabla</text>\n<text x=\"38\" y=\"80\" fill=\"#1f2a37\" font-size=\"11\">Kolon</text>\n<text x=\"264\" y=\"74\" fill=\"#1f2a37\" font-size=\"11\">Valf bloğu</text>\n<text x=\"372\" y=\"211\" fill=\"#ffffff\" font-size=\"11\">Pompa+motor</text>\n<text x=\"388\" y=\"253\" fill=\"#1f2a37\" font-size=\"11\">Tank</text>\n<text x=\"196\" y=\"288\" fill=\"#1f2a37\" font-size=\"11\" text-anchor=\"middle\">Hidrolik pres (4 kolonlu, yan görünüş)</text>\n</svg>"
+    },
+    {
+     "caption": "Şekil 2 – Hız–zaman diyagramı: yaklaşma, presleme, bekleme, dekompresyon ve dönüş",
+     "svg": "<svg viewBox=\"0 0 480 280\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\">\n<rect width=\"480\" height=\"280\" fill=\"#f7f9fb\"/>\n<line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"235\" stroke=\"#1f2a37\"/><line x1=\"50\" y1=\"235\" x2=\"455\" y2=\"235\" stroke=\"#1f2a37\"/>\n<line x1=\"50\" y1=\"95\" x2=\"455\" y2=\"95\" stroke=\"#4a90c2\" stroke-dasharray=\"4 3\"/>\n<line x1=\"50.0\" y1=\"20\" x2=\"50.0\" y2=\"235\" stroke=\"#c9d1d9\" stroke-dasharray=\"2 3\"/>\n<line x1=\"204.6\" y1=\"20\" x2=\"204.6\" y2=\"235\" stroke=\"#c9d1d9\" stroke-dasharray=\"2 3\"/>\n<line x1=\"315.0\" y1=\"20\" x2=\"315.0\" y2=\"235\" stroke=\"#c9d1d9\" stroke-dasharray=\"2 3\"/>\n<line x1=\"337.0\" y1=\"20\" x2=\"337.0\" y2=\"235\" stroke=\"#c9d1d9\" stroke-dasharray=\"2 3\"/>\n<line x1=\"348.1\" y1=\"20\" x2=\"348.1\" y2=\"235\" stroke=\"#c9d1d9\" stroke-dasharray=\"2 3\"/>\n<line x1=\"450.0\" y1=\"20\" x2=\"450.0\" y2=\"235\" stroke=\"#c9d1d9\" stroke-dasharray=\"2 3\"/>\n<polyline points=\"50.0,35.1 204.6,35.1 204.6,74.0 315.0,74.0 315.0,95.0 337.0,95.0 337.0,95.0 348.1,95.0 348.1,208.7 450.0,208.7\" fill=\"none\" stroke=\"#e8711a\" stroke-width=\"2.5\"/>\n<text x=\"50.0\" y=\"250\" text-anchor=\"middle\" fill=\"#1f2a37\">0</text>\n<text x=\"204.6\" y=\"250\" text-anchor=\"middle\" fill=\"#1f2a37\">14,0</text>\n<text x=\"315.0\" y=\"250\" text-anchor=\"middle\" fill=\"#1f2a37\">24,0</text>\n<text x=\"337.0\" y=\"250\" text-anchor=\"middle\" fill=\"#1f2a37\">26,0</text>\n<text x=\"348.1\" y=\"250\" text-anchor=\"middle\" fill=\"#1f2a37\">27,0</text>\n<text x=\"450.0\" y=\"250\" text-anchor=\"middle\" fill=\"#1f2a37\">36,2</text>\n<text x=\"252\" y=\"268\" text-anchor=\"middle\" fill=\"#1f2a37\">Süre t (s)</text>\n<text x=\"8\" y=\"30\" fill=\"#1f2a37\">v (mm/s)</text>\n<text x=\"8\" y=\"99\" fill=\"#1f2a37\">0</text>\n<text x=\"60.0\" y=\"29.1\" fill=\"#1f2a37\">Yaklaşma 28,5 mm/s</text>\n<text x=\"206.6\" y=\"68.0\" fill=\"#1f2a37\">Presleme 10 mm/s</text>\n<text x=\"352.1\" y=\"224.7\" fill=\"#1f2a37\">Dönüş −54,1 mm/s</text>\n<text x=\"285.0\" y=\"82\" fill=\"#1f2a37\" font-size=\"10\">Bekleme + dekomp.</text>\n</svg>"
+    }
+   ],
+   "advantages": [
+    "Strok boyunca tam kuvvet verilebilir; derin çekme ve ağır şekillendirmede mekanik preslere göre avantajlıdır",
+    "Kuvvet ve hız basınç/debi ayarıyla kolayca değiştirilebilir; aşırı yük sigortası valf ile sağlanır",
+    "Alt ölü noktası yoktur; strok sonu serbestçe ayarlanır",
+    "Kompakt silindir, yüksek güç yoğunluğu; kalıp montajı basit"
+   ],
+   "disadvantages": [
+    "Çevrim süresi mekanik preslere göre uzundur (≈ 38 s)",
+    "Yağ ısınması, filtre ve contalar bakım gerektirir; sızıntı riski vardır",
+    "Düşük basınçta enerji kayıpları ve ısınma; soğutucu gerekebilir",
+    "Dekompresyon yönetilmezse vuruntu ve gürültü olur"
+   ],
+   "example": [
+    "Otomotivde ø180 mm çekme zımbasıyla 2 mm DC04 saçtan (R_m≈300 MPa) derin çekme: F ≈ π·d·t·R_m·0,8 = π·180·2·300·0,8 ≈ 271 kN; ek olarak pot tutma kuvveti yaklaşık 40 kN. Toplam yaklaşık 310 kN ile presin 400 kN kapasitesinin %78'i kullanılır. Çevrim 38 s'de saatte yaklaşık 95 parça verir.",
+    "Küçük atölyelerde ise aynı pres, flanş düzeltme, kalibrasyon ve montaj presleme işlerinde ayarlanabilir strok ve kuvvetle çok amaçlı kullanılabilir."
+   ],
+   "design_tips": [
+    "Inventor'da kolon–burç alıştırmasını H7/f7 veya kompozit burç için üretici toleransıyla belirleyin; kolon yüzeyi Ra ≤ 0,8 µm sertleştirilmiş (≥ 55 HRC) olsun",
+    "Traversleri kutu kesit kaynaklı yapıp gerilim giderme tavlamasından sonra işleyin; silindir flanş yüzeyi dikliği ≤ 0,05 mm/m",
+    "Kolon somunlarını tork anahtarı veya hidrolik gerdirme ile ön gerdirin; ön gerdirme dinamik gerilmeyi azaltır",
+    "Silindir seçiminde ISO 6020/6022 ölçülerini, kol malzemesi ve kaplamasını (krom, Ra ≤ 0,2 µm) katalogdan doğrulayın",
+    "Hortum ve boru bağlantıları için kıvrım yarıçapı, titreşim sönümleme ve kolay bakım erişimi bırakın; basınç ölçüm noktaları ekleyin",
+    "Güvenlik: iki el kumandası, ışık perdesi, mekanik mandal ve EN 693 uyumlu kapak/koruyucu öngörün"
+   ],
+   "model3d": {
+    "camera": [
+     1,
+     0.7,
+     1.2
+    ],
+    "anim_scale": 1,
+    "parts": [
+     {
+      "type": "box",
+      "pos": [
+       0,
+       150,
+       0
+      ],
+      "color": "#8d99a6",
+      "size": [
+       1100,
+       250,
+       800
+      ],
+      "label": "Tabla (alt travers)"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       1700,
+       0
+      ],
+      "color": "#8d99a6",
+      "size": [
+       1100,
+       250,
+       800
+      ],
+      "label": "Üst travers"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       -450,
+       925,
+       -300
+      ],
+      "color": "#c9d1d9",
+      "r": 40,
+      "h": 1920,
+      "axis": "y",
+      "label": "Kolon Ø80"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       -450,
+       925,
+       300
+      ],
+      "color": "#c9d1d9",
+      "r": 40,
+      "h": 1920,
+      "axis": "y"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       450,
+       925,
+       -300
+      ],
+      "color": "#c9d1d9",
+      "r": 40,
+      "h": 1920,
+      "axis": "y"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       450,
+       925,
+       300
+      ],
+      "color": "#c9d1d9",
+      "r": 40,
+      "h": 1920,
+      "axis": "y"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       -450,
+       1855,
+       -300
+      ],
+      "color": "#4a90c2",
+      "r": 60,
+      "h": 60,
+      "axis": "y"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       -450,
+       1855,
+       300
+      ],
+      "color": "#4a90c2",
+      "r": 60,
+      "h": 60,
+      "axis": "y"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       450,
+       1855,
+       -300
+      ],
+      "color": "#4a90c2",
+      "r": 60,
+      "h": 60,
+      "axis": "y"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       450,
+       1855,
+       300
+      ],
+      "color": "#4a90c2",
+      "r": 60,
+      "h": 60,
+      "axis": "y"
+     },
+     {
+      "type": "tube",
+      "pos": [
+       0,
+       2175,
+       0
+      ],
+      "color": "#3b8f6e",
+      "r": 100,
+      "ri": 80,
+      "h": 700,
+      "axis": "y",
+      "opacity": 0.5,
+      "label": "Hidrolik silindir"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       0,
+       2545,
+       0
+      ],
+      "color": "#3b8f6e",
+      "r": 100,
+      "h": 40,
+      "axis": "y"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       0,
+       2175,
+       0
+      ],
+      "color": "#2f5d8a",
+      "r": 80,
+      "h": 60,
+      "axis": "y",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 8
+       }
+      },
+      "label": "Piston"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       0,
+       1578,
+       0
+      ],
+      "color": "#c9d1d9",
+      "r": 55,
+      "h": 1194,
+      "axis": "y",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 8
+       }
+      },
+      "label": "Piston kolu Ø110"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       881,
+       0
+      ],
+      "color": "#e8711a",
+      "size": [
+       1000,
+       200,
+       700
+      ],
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 8
+       }
+      },
+      "label": "Kızak plakası"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       806,
+       0
+      ],
+      "color": "#5b6470",
+      "size": [
+       400,
+       150,
+       300
+      ],
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 8
+       }
+      },
+      "label": "Üst kalıp"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       325,
+       0
+      ],
+      "color": "#5b6470",
+      "size": [
+       500,
+       100,
+       350
+      ],
+      "label": "Alt kalıp"
+     },
+     {
+      "type": "tube",
+      "pos": [
+       -450,
+       881,
+       -300
+      ],
+      "color": "#b08d57",
+      "r": 60,
+      "ri": 40,
+      "h": 300,
+      "axis": "y",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 8
+       }
+      }
+     },
+     {
+      "type": "tube",
+      "pos": [
+       -450,
+       881,
+       300
+      ],
+      "color": "#b08d57",
+      "r": 60,
+      "ri": 40,
+      "h": 300,
+      "axis": "y",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 8
+       }
+      }
+     },
+     {
+      "type": "tube",
+      "pos": [
+       450,
+       881,
+       -300
+      ],
+      "color": "#b08d57",
+      "r": 60,
+      "ri": 40,
+      "h": 300,
+      "axis": "y",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 8
+       }
+      }
+     },
+     {
+      "type": "tube",
+      "pos": [
+       450,
+       881,
+       300
+      ],
+      "color": "#b08d57",
+      "r": 60,
+      "ri": 40,
+      "h": 300,
+      "axis": "y",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 8
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       1450,
+       200,
+       0
+      ],
+      "color": "#4a90c2",
+      "size": [
+       700,
+       400,
+       600
+      ],
+      "label": "Yağ tankı 250 L",
+      "opacity": 0.8
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       1500,
+       510,
+       0
+      ],
+      "color": "#2f5d8a",
+      "r": 110,
+      "h": 450,
+      "axis": "x",
+      "label": "Elektrik motoru 7,5 kW"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       1175,
+       510,
+       0
+      ],
+      "color": "#5b6470",
+      "r": 70,
+      "h": 200,
+      "axis": "x",
+      "label": "Pompa 25 cm³/dev",
+      "anim": {
+       "spin": {
+        "rpm": 30
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       420,
+       1950,
+       0
+      ],
+      "color": "#5b6470",
+      "size": [
+       200,
+       250,
+       300
+      ],
+      "label": "Valf bloğu"
+     }
+    ]
+   },
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Teyit edildi (1 kritik not, 2 düzeltme)",
+    "checks": [
+     {
+      "item": "Piston çapı",
+      "method": "hidrolik_silindir.py (400 kN, 210 bar, η_hm 0,9)",
+      "result": "Betik Ø180 öneriyor; tasarımdaki Ø160, %95 verimle 401 kN veriyor ve 209,4 bar gerektiriyor — basınç payı yok",
+      "ok": false
+     },
+     {
+      "item": "Piston kolu burkulması",
+      "method": "hidrolik_silindir.py (Euler 1, L=1.200 mm)",
+      "result": "Ø100 yeterli; tasarımdaki Ø110 uygun",
+      "ok": true
+     },
+     {
+      "item": "Birim hataları",
+      "method": "Opus kontrolü",
+      "result": "'Gerekli piston çapı 0,2 mm' → 159,8 mm; 'Servis katsayılı güç 7451 kW' → 7,45 kW olarak düzeltildi",
+      "ok": false
+     },
+     {
+      "item": "Motor gücü",
+      "method": "hidrolik_silindir.py / Python: P = p·Q/(600·η)",
+      "result": "Presleme 12,1 L/dk × 210 bar → 4,2 kW hidrolik; değişken pompa ile 7,5 kW uygun (sabit pompada hızlı yaklaşma tam basınçta olsaydı 22 kW gerekirdi)",
+      "ok": true
+     }
+    ],
+    "notes": [
+     "**Basınç payı yok:** 400 kN için 209,4 bar gerekiyor; emniyet valfi ~230 bar'a ayarlanacağından silindir sürekli sınırda çalışır. **Ø180 silindir** (≈ 480 kN @ 210 bar) veya 250 bar'lık sistem önerilir.",
+     "Presler EN ISO 16092-3 (hidrolik presler) kapsamındadır: çift el kumandası, ışık perdesi ve düşmeye karşı tutma valfi zorunludur. Hesaplar eğitim amaçlıdır."
+    ]
+   }
+  },
+  {
+   "id": "dikey-eksen-fren-karsi-agirlik",
+   "title": "Dikey vidalı eksende frenli motor ve dengeleme",
+   "category": "Lineer eksen",
+   "summary": "Z ekseninde 60 kg yükü bilyalı vida ile hareket ettiren frenli servo ve çekme tipi gaz yayı ile dengelenmiş düşey eksen tasarımı. Gaz yayı yükü büyük oranda taşır, fren enerji kesintisinde düşmeyi önler.",
+   "chat_context": "60 kg yüklü düşey eksen, strok 500 mm, v = 0,4 m/s, a = 2 m/s². Ø25×10 bilyalı vida doğrudan frenli ör. 0,4 kW servo ile tahrik edilir; 500 N ortalama kuvvetli çekme tipi gaz yayı ağırlığın %85'ini dengeler, artık yük 54-124 N. Tepe tork 1,01 N·m, RMS 0,36 N·m, atalet oranı 4,8. Fren 2,0 N·m; gaz yayı arızasında bile emniyet katsayısı 2,4, durma mesafesi ≈ 47 mm.",
+   "principle": [
+    "Servo motor, esnek kaplin üzerinden Ø25×10 mm bilyalı vidayı doğrudan döndürür. Vidanın dönüşü bilyalı somunda öteleme hareketine çevrilir; somun taşıyıcıya bağlıdır, taşıyıcı iki ray ve dört kılavuz arabasında düşey doğrultuda kayar. Hatve 10 mm olduğundan 2400 dev/dak mil devri 0,4 m/s hıza karşılık gelir.",
+    "Taşıyıcının yanında paralel olarak çekme tipi bir gaz yayı bulunur; yay pistonu taşıyıcıya bağlanır ve yükü yukarı çeker. Yay kuvveti 465-535 N arasında değişir ve yükün ağırlığından (588,6 N) her zaman küçüktür; bu nedenle artık yük daima aşağı yönlüdür ve 54-124 N civarında kalır. Böylece vidalı mil ve motor yalnızca bu artık yük ile ivme kuvvetini taşır.",
+    "Motor miline bağlı yaylı fren, enerji kesilince kapanır. Bilyalı vida kendinden kilitli olmadığından, güç kesildiğinde yük fren olmadan vidayı geri döndürerek düşer. Fren, bu durumda gaz yayı sağlam olsa da arızalı olsa da yükü tutacak şekilde (gaz yayı arızasındaki 0,82 N·m'nin 2,4 katı) seçilmiştir. Normal çalışmada fren yalnızca bekleme ve acil durdurmada devreye girer; servo kapalı çevrimde tutmayı yapar.",
+    "Güç akışı: servo moment üretir → kaplin → vidalı mil (tork = F·P/2πη) → somun eksenel kuvvet → taşıyıcı ve yük. Düşme emniyeti ise iki katmanlıdır: gaz yayı yükün çoğunu mekanik olarak taşır, fren kalan kısmı ve arıza durumunu karşılar."
+   ],
+   "components": [
+    {
+     "name": "Frenli AC servo motor (ör. 0,4 kW)",
+     "role": "Tork üretir; yaylı fren enerji kesilince kapanarak yükü tutar"
+    },
+    {
+     "name": "Esnek körük kaplin",
+     "role": "Sıfır boşluklu tork aktarımı, hizalama hatasını yatağa aktarmaz"
+    },
+    {
+     "name": "Ø25×10 bilyalı vida ve somun",
+     "role": "Dönmeyi doğrusal harekete çevirir; yüksek verim (≈ 0,9), ancak kendinden kilitli değildir"
+    },
+    {
+     "name": "Sabit uç eksenel yatak çifti",
+     "role": "Vida eksenel kuvvetini karşılar; vidayı gerer, burkulmayı önler"
+    },
+    {
+     "name": "Çekme tipi gaz yayı",
+     "role": "Yükün ≈ %85'ini taşır; motor boyutunu ve enerji tüketimini düşürür"
+    },
+    {
+     "name": "Profil ray ve araba (2×2)",
+     "role": "Yükün moment ve yan kuvvetlerini taşır, vidayı radyal yükten korur"
+    },
+    {
+     "name": "Taşıyıcı plaka ve yük",
+     "role": "60 kg toplam hareketli kütle"
+    }
+   ],
+   "specs": [
+    {
+     "k": "Hareketli kütle",
+     "v": "60 kg"
+    },
+    {
+     "k": "Strok",
+     "v": "500 mm"
+    },
+    {
+     "k": "Azami hız",
+     "v": "0,4 m/s"
+    },
+    {
+     "k": "İvme",
+     "v": "2 m/s²"
+    },
+    {
+     "k": "Çevrim süresi",
+     "v": "5,0 s"
+    },
+    {
+     "k": "Vidalı mil",
+     "v": "Ø25 × 10 mm bilyalı vida, L ≈ 700 mm"
+    },
+    {
+     "k": "Mil devri",
+     "v": "2400 dev/dak"
+    },
+    {
+     "k": "Gaz yayı ortalama kuvveti",
+     "v": "500 N (%85 dengeleme)"
+    },
+    {
+     "k": "Artık yük",
+     "v": "54-124 N (aşağı)"
+    },
+    {
+     "k": "Tepe motor torku",
+     "v": "1,01 N·m"
+    },
+    {
+     "k": "RMS tork",
+     "v": "0,36 N·m"
+    },
+    {
+     "k": "Motor",
+     "v": "Ör. 0,4 kW frenli servo"
+    },
+    {
+     "k": "Fren tutma torku",
+     "v": "2,0 N·m (emniyet 2,4)"
+    },
+    {
+     "k": "Atalet oranı",
+     "v": "4,8"
+    },
+    {
+     "k": "Arıza durumu durma mesafesi",
+     "v": "≈ 47 mm"
+    }
+   ],
+   "analysis": [
+    {
+     "title": "1. Yük ve gaz yayı ile dengeleme",
+     "steps": [
+      {
+       "label": "Hareketli yük ağırlığı",
+       "formula": "W = m · g = 60 · 9,81",
+       "value": "588,6",
+       "unit": "N",
+       "note": "Taşıyıcı + takım + yük toplam 60 kg"
+      },
+      {
+       "label": "Gaz yayı ortalama kuvveti",
+       "formula": "F_g,ort = (F_üst + F_alt)/2 = (465 + 535)/2",
+       "value": "500",
+       "unit": "N",
+       "note": "Çekme tipi gaz yayı; ilerlemeli karakteristik 535/465 = 1,15"
+      },
+      {
+       "label": "Dengeleme oranı",
+       "formula": "F_g,ort / W = 500 / 588,6",
+       "value": "84,9",
+       "unit": "%",
+       "note": "Hedef %80-90: tam dengelenmez, fren daima aynı yönde yüklenir"
+      },
+      {
+       "label": "Üst konumda artık yük",
+       "formula": "R_üst = W - F_üst = 588,6 - 465",
+       "value": "123,6",
+       "unit": "N",
+       "note": "En kötü durum: yay en az kuvveti burada verir"
+      },
+      {
+       "label": "Alt konumda artık yük",
+       "formula": "R_alt = W - F_alt = 588,6 - 535",
+       "value": "53,6",
+       "unit": "N",
+       "note": "Artık yük her konumda aşağı yönlüdür (düşme emniyeti için istenen durum)"
+      },
+      {
+       "label": "Statik yük azalması",
+       "formula": "(W - R_üst)/W = (588,6 - 123,6)/588,6",
+       "value": "79,0",
+       "unit": "%",
+       "note": "Vidalı mil ve motor yalnızca artık yükü taşır"
+      }
+     ],
+     "comment": "Gaz yayı yükün yaklaşık %79-91'ini taşır; vidalı mil, motor ve fren artık 54-124 N'luk yükü yönetir. Yay, yükün tamamını yukarı itmez: yay kuvveti her konumda W'den küçük kalır ve sistem yay kaybında da aşağı yönde kararlı kalır."
+    },
+    {
+     "title": "2. Hareket profili ve çevrim süresi",
+     "steps": [
+      {
+       "label": "İvmelenme süresi",
+       "formula": "t_a = v / a = 0,4 / 2",
+       "value": "0,20",
+       "unit": "s",
+       "note": "v = 0,4 m/s, a = 2 m/s²"
+      },
+      {
+       "label": "İvmelenme yolu",
+       "formula": "s_a = v² / (2a) = 0,4² / (2 · 2)",
+       "value": "0,040",
+       "unit": "m",
+       "note": "Yavaşlama yolu aynı"
+      },
+      {
+       "label": "Sabit hız yolu",
+       "formula": "s_c = S - 2·s_a = 0,5 - 2 · 0,04",
+       "value": "0,42",
+       "unit": "m",
+       "note": "Strok S = 500 mm"
+      },
+      {
+       "label": "Sabit hız süresi",
+       "formula": "t_c = s_c / v = 0,42 / 0,4",
+       "value": "1,05",
+       "unit": "s",
+       "note": ""
+      },
+      {
+       "label": "Bir yön hareket süresi",
+       "formula": "t_h = 2·t_a + t_c = 0,4 + 1,05",
+       "value": "1,45",
+       "unit": "s",
+       "note": ""
+      },
+      {
+       "label": "Toplam çevrim",
+       "formula": "T_çev = 2·t_h + 2·t_bekleme = 2 · 1,45 + 2 · 1,05",
+       "value": "5,0",
+       "unit": "s",
+       "note": "Her uçta 1,05 s bekleme (fren devrede olabilir)"
+      },
+      {
+       "label": "Mil devri",
+       "formula": "n = v / P · 60 = 0,4 / 0,010 · 60",
+       "value": "2400",
+       "unit": "dev/dak",
+       "note": "Doğrudan tahrik; redüktör yok"
+      },
+      {
+       "label": "Açısal hız ve ivme",
+       "formula": "ω = 2π·v/P ; α = 2π·a/P",
+       "value": "251,3 rad/s ; 1257 rad/s²",
+       "unit": "",
+       "note": "P = 10 mm/dev"
+      }
+     ],
+     "comment": "Mil 2400 dev/dak ile döner; bu servo motorun nominal 3000 dev/dak değerinin altındadır. Çevrim 5 s olduğundan saatte yaklaşık 720 tam çevrim yapılır."
+    },
+    {
+     "title": "3. Vidalı mil eksenel kuvvetleri ve yük torkları",
+     "steps": [
+      {
+       "label": "Tork dönüşüm katsayısı (ileri)",
+       "formula": "k = P / (2π) = 0,010 / 6,283",
+       "value": "1,592",
+       "unit": "mm/rad",
+       "note": "Bilyalı vida: T = F · k / η"
+      },
+      {
+       "label": "Verim (ileri / geri)",
+       "formula": "η = 0,90 ; η' = 0,88",
+       "value": "0,90 / 0,88",
+       "unit": "",
+       "note": "Yük motoru sürerken (geri sürüş) 0,88 alındı"
+      },
+      {
+       "label": "İvmelenme kuvveti",
+       "formula": "F_a = m · a = 60 · 2",
+       "value": "120",
+       "unit": "N",
+       "note": ""
+      },
+      {
+       "label": "Yukarı ivme / aşağı yavaşlama",
+       "formula": "F = R_üst + m·a = 123,6 + 120",
+       "value": "243,6",
+       "unit": "N",
+       "note": "Vidalı mil üzerindeki en büyük eksenel yük"
+      },
+      {
+       "label": "Sabit hızda",
+       "formula": "F = R_üst",
+       "value": "123,6",
+       "unit": "N",
+       "note": ""
+      },
+      {
+       "label": "Yukarı yavaşlama / aşağı ivme",
+       "formula": "F = R_üst - m·a = 123,6 - 120",
+       "value": "3,6",
+       "unit": "N",
+       "note": "Neredeyse yüksüz faz"
+      },
+      {
+       "label": "Yük torku: yukarı ivme",
+       "formula": "T = F · k / η = 243,6 · 0,001592 / 0,90",
+       "value": "0,431",
+       "unit": "N·m",
+       "note": ""
+      },
+      {
+       "label": "Yük torku: sabit hız (yukarı)",
+       "formula": "T = 123,6 · 0,001592 / 0,90",
+       "value": "0,219",
+       "unit": "N·m",
+       "note": ""
+      },
+      {
+       "label": "Yük torku: sabit hız (aşağı)",
+       "formula": "T = F · k · η' = 123,6 · 0,001592 · 0,88",
+       "value": "0,173",
+       "unit": "N·m",
+       "note": "Yük motoru sürer; motor frenleyici (rejeneratif) çalışır"
+      }
+     ],
+     "comment": "Dengeleme olmasaydı vidalı mil 588,6 ± 120 N taşıyacaktı. Gaz yayı ile en büyük eksenel kuvvet 243,6 N'a düşer; bu kuvvetin 120 N'u saf ivme kuvvetidir ve yük torklarının çoğunu ataletin belirlediği anlamına gelir."
+    },
+    {
+     "title": "4. Atalet ve atalet oranı",
+     "steps": [
+      {
+       "label": "Vidalı mil kütlesi",
+       "formula": "m_s = ρ · π · r² · L = 7850 · π · 0,0125² · 0,70",
+       "value": "2,70",
+       "unit": "kg",
+       "note": "Ø25 mm, 700 mm, tam silindir kabulü"
+      },
+      {
+       "label": "Vidalı mil ataleti",
+       "formula": "J_s = ½ · m_s · r² = 0,5 · 2,70 · 0,0125²",
+       "value": "2,107 ·10⁻⁴",
+       "unit": "kg·m²",
+       "note": ""
+      },
+      {
+       "label": "Yükün motora indirgenmiş ataleti",
+       "formula": "J_y = m · (P/2π)² = 60 · (0,010/6,283)²",
+       "value": "1,520 ·10⁻⁴",
+       "unit": "kg·m²",
+       "note": "Doğrusal kütle vida üzerinden dönel ataletle eşdeğer"
+      },
+      {
+       "label": "Kaplin",
+       "formula": "J_k ≈ 0,2 ·10⁻⁴",
+       "value": "0,200 ·10⁻⁴",
+       "unit": "kg·m²",
+       "note": "Sıfır boşluklu körük kaplin"
+      },
+      {
+       "label": "Toplam yük ataleti",
+       "formula": "J_yük = J_s + J_y + J_k",
+       "value": "3,827 ·10⁻⁴",
+       "unit": "kg·m²",
+       "note": ""
+      },
+      {
+       "label": "Motor rotoru (frenli)",
+       "formula": "J_m (ör. 0,4 kW servo, frenli) ≈ 0,8 ·10⁻⁴",
+       "value": "0,800 ·10⁻⁴",
+       "unit": "kg·m²",
+       "note": "Frenli motorda rotor ataleti frensiz motordan büyüktür"
+      },
+      {
+       "label": "Atalet oranı",
+       "formula": "J_yük / J_m",
+       "value": "4,78",
+       "unit": "",
+       "note": "Önerilen < 5 (hassas konumlama için); sınırda değil"
+      },
+      {
+       "label": "İvmelenme tork bileşeni",
+       "formula": "T_a = (J_yük + J_m) · α = 4,627·10⁻⁴ · 1256,6",
+       "value": "0,581",
+       "unit": "N·m",
+       "note": ""
+      }
+     ],
+     "comment": "Toplam atalet vidalı mil (2,1) ve yük (1,5) ataletlerinden oluşur; ivmelenme torku (0,58 N·m) tepe torkun yarısından fazlasını oluşturur. Atalet oranı 5 altında olduğundan servo ayarı kolaydır ve gaz yayı ataleti artırmaz (yay doğrusal, dönmez)."
+    },
+    {
+     "title": "5. Motor torku, güç ve seçim",
+     "steps": [
+      {
+       "label": "Tepe motor torku",
+       "formula": "T_pik = T_yük,yukarı-ivme + T_a = 0,431 + 0,581",
+       "value": "1,012",
+       "unit": "N·m",
+       "note": "Yukarı ivme fazı"
+      },
+      {
+       "label": "Aşağı yavaşlama torku",
+       "formula": "T = 0,341 + 0,581",
+       "value": "0,923",
+       "unit": "N·m",
+       "note": "Motor yükü tutarak yavaşlatır"
+      },
+      {
+       "label": "Bekleme (tutma) torku",
+       "formula": "T_tut = R_üst · k · η' = 123,6 · 0,001592 · 0,88",
+       "value": "0,173",
+       "unit": "N·m",
+       "note": "Fren devrede değilse motor bunu sürekli verir"
+      },
+      {
+       "label": "Efektif (RMS) tork",
+       "formula": "T_rms = √(Σ T²·t / T_çev)",
+       "value": "0,361",
+       "unit": "N·m",
+       "note": "Tüm fazlar ve iki bekleme dahil"
+      },
+      {
+       "label": "Tepe mekanik güç",
+       "formula": "P_pik = T_pik · ω = 1,012 · 251,3",
+       "value": "254",
+       "unit": "W",
+       "note": "Ortalama güç çok daha düşük"
+      },
+      {
+       "label": "Dengelemesiz durum tepe torku",
+       "formula": "T_pik = (588,6+120)·k/η + T_a",
+       "value": "1,835",
+       "unit": "N·m",
+       "note": "Nominal 1,27 N·m'yi aşar"
+      },
+      {
+       "label": "Dengelemesiz RMS tork",
+       "formula": "T_rms (aynı çevrim)",
+       "value": "0,944",
+       "unit": "N·m",
+       "note": "Yaklaşık 0,75 kW sınıfı motor gerekirdi"
+      },
+      {
+       "label": "Motor seçimi",
+       "formula": "T_n ≥ 1,5 · T_rms ve T_maks ≥ 2 · T_pik",
+       "value": "0,54 / 2,02",
+       "unit": "N·m",
+       "note": "Ör. 0,4 kW, 3000 dev/dak, T_n = 1,27 N·m, T_maks = 3,8 N·m servo (frenli)"
+      }
+     ],
+     "comment": "Gaz yayı sayesinde RMS tork 0,94 N·m yerine 0,36 N·m olur; yaklaşık 0,75 kW yerine 0,4 kW servo yeterlidir. Motor nominal tork bakımından büyük görünür; seçimi atalet oranı (frenli rotor) ve sürücü ayarı belirler."
+    },
+    {
+     "title": "6. Fren seçimi ve düşme emniyeti",
+     "steps": [
+      {
+       "label": "Normal tutma torku",
+       "formula": "T_b,normal = R_üst · k · η' ",
+       "value": "0,173",
+       "unit": "N·m",
+       "note": "Gaz yayı sağlam: fren bu yükü tutar"
+      },
+      {
+       "label": "Gaz yayı arızası durumu",
+       "formula": "T_b,arıza = W · k · η' = 588,6 · 0,001592 · 0,88",
+       "value": "0,824",
+       "unit": "N·m",
+       "note": "Yay sızdırır veya kopar: tüm ağırlık vidaya biner (bilyalı vida kendinden kilitli değildir)"
+      },
+      {
+       "label": "Seçilen fren (yaylı, enerji kesilince kapanan)",
+       "formula": "T_b ≈ 2,0 N·m",
+       "value": "2,0",
+       "unit": "N·m",
+       "note": "Motor miline entegre"
+      },
+      {
+       "label": "Emniyet katsayısı (arıza durumu)",
+       "formula": "S = T_b / T_b,arıza = 2,0 / 0,824",
+       "value": "2,43",
+       "unit": "",
+       "note": "İstenen ≥ 2,0"
+      },
+      {
+       "label": "Fren devreye giriş gecikmesi",
+       "formula": "t_g ≈ 40 ms",
+       "value": "40",
+       "unit": "ms",
+       "note": "Üretici verisi sınıfı: ör. 20-60 ms"
+      },
+      {
+       "label": "Eşdeğer hareketli kütle",
+       "formula": "m_eşd = m + (J_s+J_k+J_m)·(2π/P)² = 60 + 122,7",
+       "value": "182,7",
+       "unit": "kg",
+       "note": "Dönen kütle ataleti öteleme eşdeğeri"
+      },
+      {
+       "label": "Gaz yayı arızalı: serbest düşme mesafesi",
+       "formula": "s₁ = v·t_g + ½·a_s·t_g²  (a_s = 2,84 m/s²)",
+       "value": "18,3",
+       "unit": "mm",
+       "note": ""
+      },
+      {
+       "label": "Gaz yayı arızalı: frenleme mesafesi",
+       "formula": "s₂ = v₁² / (2·a_f), a_f = 4,60 m/s²",
+       "value": "28,7",
+       "unit": "mm",
+       "note": "v₁ = 0,513 m/s"
+      },
+      {
+       "label": "Gaz yayı arızalı: toplam durma mesafesi",
+       "formula": "s = s₁ + s₂",
+       "value": "47,0",
+       "unit": "mm",
+       "note": "Mekanik tampon/limit bu mesafeyi karşılamalı"
+      },
+      {
+       "label": "Gaz yayı sağlam: toplam durma mesafesi",
+       "formula": "s = s₁ + s₂",
+       "value": "29,1",
+       "unit": "mm",
+       "note": "Artık yük 123,6 N"
+      }
+     ],
+     "comment": "Fren, gaz yayı arızasında bile yükü 2,4 katı emniyetle tutar. Enerji kesildiğinde yük yaklaşık 47 mm içinde durur (yay sağlam iken 29 mm). Fren yalnızca tutma ve acil durdurma içindir; normal yavaşlamada kullanılmaz (aşınma). Düşey eksende fren testi (motor kapalı, yük asılı) bakım programına konmalıdır."
+    },
+    {
+     "title": "7. Vidalı mil ve yatak ömrü",
+     "steps": [
+      {
+       "label": "Kritik devir (sabit-basit mesnet)",
+       "formula": "n_k = (3,927² / L²) · (d_r/4)·√(E/ρ) · 60/2π ; d_r = 20,5 mm, L = 650 mm",
+       "value": "9239",
+       "unit": "dev/dak",
+       "note": "Sabit uç eksenel yatak çifti, serbest uç radyal destek"
+      },
+      {
+       "label": "Emniyetli devir",
+       "formula": "n_em = 0,8 · n_k",
+       "value": "7391",
+       "unit": "dev/dak",
+       "note": "Çalışma 2400 dev/dak: oran 32 %"
+      },
+      {
+       "label": "DN değeri",
+       "formula": "d_m · n = 25 · 2400",
+       "value": "60000",
+       "unit": "",
+       "note": "İzin verilen sınırın (≈ 70000-100000) altında"
+      },
+      {
+       "label": "Burkulma yükü (Euler)",
+       "formula": "F_k = π²·E·I / (K·L)² ; K = 0,7",
+       "value": "86,8",
+       "unit": "kN",
+       "note": "En büyük basma 709 N → güvenlik ≈ 122"
+      },
+      {
+       "label": "Kübik ortalama eksenel yük",
+       "formula": "F_m = (Σ F³·n·t / Σ n·t)^(1/3)",
+       "value": "140,0",
+       "unit": "N",
+       "note": "Yalnız hareket fazları"
+      },
+      {
+       "label": "Somun ömrü (dinamik yük C_a ≈ 13 kN)",
+       "formula": "L₁₀ = (C_a / (f_w · F_m))³ · 10⁶ , f_w = 1,5",
+       "value": "2,37 ·10^11",
+       "unit": "dev",
+       "note": "≈ 2374 ·10³ km yol; teorik değer, ömrü yağlama/kirlenme belirler"
+      },
+      {
+       "label": "Pratik ömür",
+       "formula": "L_h = L₁₀ / (dev/çevrim) · T_çev / 3600",
+       "value": "3,30 ·10^06",
+       "unit": "saat",
+       "note": "Hesap yorulma ömrüdür; yağ filmi ve sızdırmazlık fiili sınırdır"
+      },
+      {
+       "label": "Sabit uç rulman çifti (C ≈ 22 kN)",
+       "formula": "L₁₀ = (C / (f_w · F_m))³ · 10⁶",
+       "value": "1,15 ·10^12",
+       "unit": "dev",
+       "note": "Önyükleme ve montaj hatası payı eklenmeli"
+      }
+     ],
+     "comment": "Kritik devir ve burkulma bakımından geniş emniyet vardır; yüklenme çok hafif olduğundan yorulma ömrü pratik olarak sınırsızdır. Ömrü belirleyen: yağlama aralığı, toz/kirlenme ve düşme/ani duruş şoklarıdır (şok katsayısı f_w = 1,5 bu yüzden alındı)."
+    },
+    {
+     "title": "8. Sonuç ve seçim",
+     "steps": [
+      {
+       "label": "Vidalı mil",
+       "formula": "Ø25 × 10 mm hatveli yuvarlanmış bilyalı vida, L ≈ 700 mm",
+       "value": "Ø25×10",
+       "unit": "",
+       "note": "Sabit-basit mesnet, bilyalı somun"
+      },
+      {
+       "label": "Motor",
+       "formula": "Ör. 0,4 kW, 3000 dev/dak, T_n = 1,27 N·m, frenli AC servo",
+       "value": "0,4",
+       "unit": "kW",
+       "note": "Tepe tork 1,01 N·m, RMS 0,36 N·m"
+      },
+      {
+       "label": "Fren",
+       "formula": "Yaylı, enerji kesilince kapanan, ≥ 2,0 N·m",
+       "value": "2,0",
+       "unit": "N·m",
+       "note": "Arıza durumu emniyeti 2,43"
+      },
+      {
+       "label": "Gaz yayı",
+       "formula": "Çekme tipi, 500 N ortalama, strok ≥ 500 mm, ilerleme 1,15",
+       "value": "500",
+       "unit": "N",
+       "note": "Dengeleme %85; gaz yayı 3 ay kaçak kontrolü"
+      },
+      {
+       "label": "Lineer kılavuz",
+       "formula": "2 ray + 4 araba, ör. 25 mm sınıfı profil ray",
+       "value": "2×25",
+       "unit": "",
+       "note": "Moment yükü: yük merkezinin ray düzleminden ofseti"
+      }
+     ],
+     "comment": "Seçilen paket, dikey eksende gaz yayı + frenli servo + bilyalı vida üçlüsüyle hem enerji tüketimini hem de düşme riskini düşürür."
+    }
+   ],
+   "figures": [
+    {
+     "caption": "Dikey eksenin şematik görünüşü: frenli servo, vidalı mil, taşıyıcı ve gaz yayı",
+     "svg": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\"><defs><marker id=\"a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#e8711a\"/></marker></defs><rect width=\"400\" height=\"300\" fill=\"#f7f9fb\"/><rect x=\"40\" y=\"270\" width=\"320\" height=\"10\" fill=\"#8d99a6\"/><rect x=\"40\" y=\"20\" width=\"320\" height=\"10\" fill=\"#8d99a6\"/><rect x=\"150\" y=\"38\" width=\"30\" height=\"48\" fill=\"#2f5d8a\" stroke=\"#1f2a37\"/><rect x=\"150\" y=\"86\" width=\"30\" height=\"14\" fill=\"#b03a2e\" stroke=\"#1f2a37\"/><rect x=\"161\" y=\"100\" width=\"8\" height=\"12\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/><rect x=\"160\" y=\"112\" width=\"10\" height=\"150\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/><line x1=\"55\" y1=\"30\" x2=\"55\" y2=\"270\" stroke=\"#1f2a37\" stroke-width=\"4\"/><line x1=\"345\" y1=\"30\" x2=\"345\" y2=\"270\" stroke=\"#1f2a37\" stroke-width=\"4\"/><rect x=\"55\" y=\"150\" width=\"290\" height=\"24\" fill=\"#e8711a\" stroke=\"#1f2a37\"/><rect x=\"150\" y=\"146\" width=\"30\" height=\"32\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/><rect x=\"250\" y=\"130\" width=\"8\" height=\"140\" fill=\"#3b8f6e\" stroke=\"#1f2a37\"/><rect x=\"252\" y=\"170\" width=\"4\" height=\"100\" fill=\"#c9d1d9\"/><rect x=\"262\" y=\"174\" width=\"6\" height=\"2\" fill=\"#1f2a37\"/><line x1=\"254\" y1=\"150\" x2=\"254\" y2=\"130\" stroke=\"#1f2a37\"/><rect x=\"215\" y=\"200\" width=\"60\" height=\"40\" fill=\"#e8711a\" stroke=\"#1f2a37\" opacity=\"0.8\"/><text x=\"190\" y=\"62\" fill=\"#1f2a37\">Servo motor</text><text x=\"188\" y=\"97\" fill=\"#b03a2e\">Fren</text><text x=\"188\" y=\"205\" fill=\"#1f2a37\">Vidalı mil</text><text x=\"190\" y=\"167\" fill=\"#1f2a37\">Somun</text><text x=\"262\" y=\"262\" fill=\"#1f2a37\">Gaz yayı</text><text x=\"222\" y=\"224\" fill=\"#1f2a37\">Yük</text><text x=\"60\" y=\"140\" fill=\"#1f2a37\">Taşıyıcı</text><text x=\"62\" y=\"288\" fill=\"#1f2a37\">Taban</text><line x1=\"320\" y1=\"230\" x2=\"320\" y2=\"100\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"324\" y=\"170\" fill=\"#e8711a\">Z</text></svg>"
+    },
+    {
+     "caption": "Taşıyıcının serbest cisim diyagramı",
+     "svg": "<svg viewBox=\"0 0 400 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\"><defs><marker id=\"b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#e8711a\"/></marker><marker id=\"c\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#4a90c2\"/></marker></defs><rect width=\"400\" height=\"260\" fill=\"#f7f9fb\"/><rect x=\"140\" y=\"95\" width=\"120\" height=\"70\" fill=\"#e8711a\" opacity=\"0.35\" stroke=\"#1f2a37\"/><text x=\"170\" y=\"135\" fill=\"#1f2a37\">m = 60 kg</text><line x1=\"200\" y1=\"165\" x2=\"200\" y2=\"235\" stroke=\"#1f2a37\" stroke-width=\"3\" marker-end=\"url(#b)\"/><text x=\"208\" y=\"230\" fill=\"#1f2a37\">W = 588,6 N</text><line x1=\"160\" y1=\"95\" x2=\"160\" y2=\"30\" stroke=\"#4a90c2\" stroke-width=\"3\" marker-end=\"url(#c)\"/><text x=\"40\" y=\"45\" fill=\"#4a90c2\">F_g = 465-535 N</text><line x1=\"240\" y1=\"95\" x2=\"240\" y2=\"30\" stroke=\"#1f2a37\" stroke-width=\"3\" marker-end=\"url(#c)\"/><text x=\"248\" y=\"45\" fill=\"#1f2a37\">F_vida = R + m·a</text><text x=\"248\" y=\"62\" fill=\"#1f2a37\">R = 54-124 N</text><text x=\"20\" y=\"250\" fill=\"#1f2a37\">Denge: F_g + F_vida - W = m·a</text></svg>"
+    },
+    {
+     "caption": "Hız-zaman profili (trapez): ivme 0,2 s, sabit hız 1,05 s, yavaşlama 0,2 s",
+     "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\"><rect width=\"400\" height=\"240\" fill=\"#f7f9fb\"/><line x1=\"40\" y1=\"120\" x2=\"380\" y2=\"120\" stroke=\"#1f2a37\"/><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"220\" stroke=\"#1f2a37\"/><polyline points=\"40,120 80,60 200,60 240,120 280,180 360,180\" fill=\"none\" stroke=\"#e8711a\" stroke-width=\"2.5\"/><text x=\"46\" y=\"30\" fill=\"#1f2a37\">v (m/s)</text><text x=\"340\" y=\"112\" fill=\"#1f2a37\">t (s)</text><text x=\"86\" y=\"52\" fill=\"#e8711a\">+0,4 m/s (yukarı)</text><text x=\"250\" y=\"198\" fill=\"#4a90c2\">-0,4 m/s (aşağı)</text><text x=\"44\" y=\"136\" fill=\"#1f2a37\">ta = 0,2 s</text><text x=\"120\" y=\"82\" fill=\"#1f2a37\">tc = 1,05 s</text></svg>"
+    }
+   ],
+   "advantages": [
+    "Gaz yayı sayesinde motor ve sürücü yaklaşık yarı boyuta iner; enerji tüketimi azalır",
+    "Fren enerji kesintisinde yükü tutar; gaz yayı arızasında bile emniyetlidir",
+    "Bilyalı vida yüksek verim ve hassas konumlama sağlar",
+    "Az bakım gerektirir, hareket sessizdir"
+   ],
+   "disadvantages": [
+    "Gaz yayı kuvveti sıcaklığa ve zamana bağlı değişir (±%3 / 10 K, yıllık yaklaşık %1-2 kayıp)",
+    "Bilyalı vida kendinden kilitli değildir; fren zorunludur ve periyodik test gerektirir",
+    "Gaz yayı ek yer, bağlantı noktası ve sızdırmazlık takibi getirir",
+    "Atalet oranı frenli rotor nedeniyle sınıra yakındır"
+   ],
+   "example": [
+    "Bir kutu paketleme makinesinde 60 kg'lık sarma ve etiketleme kafası 500 mm strokla düşey olarak hareket eder. Kafa 0,4 m/s hızla her 5 saniyede bir iner ve çıkar. Gaz yayı kuvveti 500 N olarak seçildiğinden servo yalnızca yaklaşık 0,2-1,0 N·m tork verir; 0,4 kW frenli servo yeterli olur, dengelemesiz durumda yaklaşık 0,75 kW gerekirdi.",
+    "Elektrik kesildiğinde veya acil durdurmada fren devreye girer, yük yaklaşık 47 mm içinde durur; operatör bölgesine inen kısmın emniyeti için mekanik tampon ve ışık perdesi eklenir."
+   ],
+   "design_tips": [
+    "Gaz yayı ağırlığın %80-90'ını dengelemeli; %100'e yakın seçim yükü yukarı kaçırabilir ve fren yükünü artırır",
+    "Gaz yayı bağlantıları küresel mafsallı olmalı; yan yük yay pistonunu bozar. Montajda piston aşağı bakacak şekilde (yağlama için) yerleştir",
+    "Vidayı sabit-basit mesnetle yatakla; sabit uç üstte olsun ki vida çekmede çalışsın ve burkulma riski azalsın",
+    "Fren seçiminde gaz yayı arızasını esas al; fren testi (motor kapalı, yük asılı) bakım planına yaz",
+    "Rotor atalet oranı < 5 olacak şekilde motoru seç; frenli motorlarda rotor ataleti kataloğundan frenli değeri kullan",
+    "Yağlama aralığını ve körük/silecek ile kirlenme korumasını belirle; vida hattına tolerans: eş eksenlilik ≤ 0,02 mm",
+    "Alt ve üst uca mekanik tampon ve donanımsal limit anahtarı koy; yazılım limitleri tek başına yeterli değildir"
+   ],
+   "model3d": {
+    "camera": [
+     1.2,
+     0.6,
+     1.5
+    ],
+    "anim_scale": 1,
+    "parts": [
+     {
+      "type": "box",
+      "pos": [
+       0,
+       10,
+       0
+      ],
+      "size": [
+       300,
+       20,
+       200
+      ],
+      "color": "#8d99a6",
+      "label": "Taban plakası",
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       -110,
+       665,
+       -50
+      ],
+      "size": [
+       20,
+       1290,
+       20
+      ],
+      "color": "#c9d1d9",
+      "label": "Lineer ray",
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       110,
+       665,
+       -50
+      ],
+      "size": [
+       20,
+       1290,
+       20
+      ],
+      "color": "#c9d1d9",
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       585,
+       -20
+      ],
+      "size": [
+       220,
+       30,
+       60
+      ],
+      "color": "#8d99a6",
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       615,
+       0
+      ],
+      "size": [
+       60,
+       30,
+       60
+      ],
+      "color": "#5b6470",
+      "label": "Alt yatak bloğu",
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       1280,
+       0
+      ],
+      "size": [
+       70,
+       60,
+       70
+      ],
+      "color": "#5b6470",
+      "label": "Sabit uç yatak yuvası",
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       1320,
+       0
+      ],
+      "size": [
+       300,
+       20,
+       200
+      ],
+      "color": "#8d99a6",
+      "metal": true
+     },
+     {
+      "type": "screw",
+      "pos": [
+       0,
+       950,
+       0
+      ],
+      "r": 12.5,
+      "length": 700,
+      "pitch": 40,
+      "axis": "y",
+      "color": "#c9d1d9",
+      "label": "Vidalı mil",
+      "anim": {
+       "spin": {
+        "rpm": 30
+       }
+      },
+      "metal": true
+     },
+     {
+      "type": "tube",
+      "pos": [
+       0,
+       900,
+       0
+      ],
+      "r": 22,
+      "ri": 12.5,
+      "h": 50,
+      "axis": "y",
+      "color": "#4a90c2",
+      "label": "Bilyalı somun",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 6
+       }
+      },
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       900,
+       -10
+      ],
+      "size": [
+       50,
+       40,
+       40
+      ],
+      "color": "#e8711a",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 6
+       }
+      },
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       900,
+       -50
+      ],
+      "size": [
+       180,
+       120,
+       40
+      ],
+      "color": "#e8711a",
+      "label": "Taşıyıcı",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 6
+       }
+      },
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       -108,
+       900,
+       -50
+      ],
+      "size": [
+       36,
+       70,
+       50
+      ],
+      "color": "#5b6470",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 6
+       }
+      },
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       108,
+       900,
+       -50
+      ],
+      "size": [
+       36,
+       70,
+       50
+      ],
+      "color": "#5b6470",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 6
+       }
+      },
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       70,
+       900,
+       35
+      ],
+      "size": [
+       30,
+       24,
+       170
+      ],
+      "color": "#e8711a",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 6
+       }
+      },
+      "metal": true
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       900,
+       -120
+      ],
+      "size": [
+       160,
+       100,
+       100
+      ],
+      "color": "#e8711a",
+      "opacity": 0.8,
+      "label": "Yük (60 kg)",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 6
+       }
+      },
+      "metal": true
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       70,
+       300,
+       100
+      ],
+      "r": 20,
+      "h": 560,
+      "axis": "y",
+      "color": "#3b8f6e",
+      "label": "Gaz yayı gövdesi",
+      "metal": true
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       70,
+       650,
+       100
+      ],
+      "r": 8,
+      "h": 700,
+      "axis": "y",
+      "color": "#c9d1d9",
+      "label": "Gaz yayı pistonu",
+      "anim": {
+       "slide": {
+        "axis": "y",
+        "amp": 250,
+        "period": 6
+       }
+      },
+      "metal": true
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       0,
+       1350,
+       0
+      ],
+      "r": 20,
+      "h": 40,
+      "axis": "y",
+      "color": "#5b6470",
+      "label": "Kaplin",
+      "metal": true
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       0,
+       1385,
+       0
+      ],
+      "r": 42,
+      "h": 30,
+      "axis": "y",
+      "color": "#b03a2e",
+      "label": "Fren",
+      "metal": true
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       0,
+       1455,
+       0
+      ],
+      "r": 42,
+      "h": 110,
+      "axis": "y",
+      "color": "#2f5d8a",
+      "label": "Servo motor",
+      "metal": true
+     }
+    ]
+   },
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Teyit edildi",
+    "checks": [
+     {
+      "item": "Fren tutma torku (gaz yayı arızası)",
+      "method": "Python: T = F·P/(2π)·η_geri",
+      "result": "588,6 N × 10 mm → 0,824 N·m; 2,0 N·m fren ile emniyet 2,43 — aynı",
+      "ok": true
+     },
+     {
+      "item": "Vida kritik devri",
+      "method": "Python / tasarım",
+      "result": "2.400 d/dk < %80 × 9.239 — uygun",
+      "ok": true
+     },
+     {
+      "item": "Dengeleme oranı",
+      "method": "Python: F_yay / W",
+      "result": "500 / 588,6 = %85 — aynı",
+      "ok": true
+     }
+    ],
+    "notes": [
+     "Dikey eksenlerde fren tek başına yeterli değildir: ISO 13849'a göre **ikinci kanal (çift fren veya mekanik kilit)** ve periyodik fren testi önerilir.",
+     "Gaz yayı kuvveti sıcaklıkla ±%10 değişir; dengeleme oranı soğuk ortamda düşer — servo tork payı buna göre bırakılmış (tepe 1,01 N·m'ye karşı motor 2,02 N·m)."
+    ]
+   }
+  },
+  {
+   "id": "kayis-lineer-eksen",
+   "title": "Triger kayışlı uzun stroklu lineer eksen",
+   "category": "Lineer eksen",
+   "summary": "1500 mm stroklu, HTD 5M triger kayış ve profil ray kullanan, servo motor+planet redüktör tahrikli portal pick&place X ekseni. 18 kg hareketli kütleyi 2 m/s ve 10 m/s² ile 0,95 s'de taşır.",
+   "chat_context": "Senaryo: portal robot X ekseni, 1500 mm strok, 18 kg hareketli kütle (10 kg yük + 8 kg araba), v = 2 m/s, a = 10 m/s², çevrim 2,9 s. Tahrik: 0,75 kW servo + 3:1 planet redüktör + 20 dişli HTD 5M kasnak (d_p = 31,83 mm), HTD 5M-25 mm kayış (L ≈ 3,7 m, ön gerilim 150 N). Kuvvet 181,8 N, sıkı kol gerilimi 241 N (SF 3,6), tepe motor torku 1,37 N·m, RMS 0,69 N·m, atalet oranı 2,7:1, kayış rijitliğinden doğal frekans ≈ 15 Hz, ivmede elastik uzama ≈ 1,1 mm. Ray: 2 × 15 mm profil ray, 4 blok, ömür > 10⁵ saat.",
+   "principle": [
+    "Servo motor dönme hareketini 3:1 planet redüktör üzerinden tahrik kasnağına iletir. Kasnak 20 dişli HTD 5M olduğundan her devirde 100 mm kayış çeker; 2 m/s hız için kasnak 1200, motor 3600 dev/dk döner.",
+    "Kayış kapalı bir çevrimdir: bir ucu tahrik kasnağından, diğer ucu avare kasnaktan geçer. Arabaya bağlı kelepçe kayışın alt kolunu tutar, böylece kasnağın dönüşü arabanın doğrusal hareketine dönüşür. Dişler kasnak dişlerine kavrandığı için kayma olmaz (pozitif tahrik).",
+    "İvmelenme sırasında kayışın bir kolu gerilir (T_1 = T_ön + F/2), diğeri gevşer (T_2 = T_ön − F/2). Ön gerilim bu yüzden gevşek kolun hiç boşalmayacağı kadar yüksek seçilir; gergi avare kasnak tarafında ayar vidasıyla uygulanır.",
+    "Araba, iki paralel profil ray üzerinde dört bilyalı bloğa oturur. Bloklar düşey yükü, yan yükü ve gripperin konsol momentlerini taşır; kayış yalnızca hareket doğrultusundaki kuvveti iletir.",
+    "Kayış çekme rijitliği vidalı mile göre düşük olduğundan sistem tek eksende yaylı kütle gibi davranır (f_n ≈ 15 Hz). Servo kazancı bu frekansın altında ayarlanır; yüksek hız ve uzun strok bu esnekliğin bedelidir."
+   ],
+   "components": [
+    {
+     "name": "Servo motor (ör. 0,75 kW)",
+     "role": "Tepe 1,37 N·m, RMS 0,69 N·m tork ve 3600 dev/dk hız sağlar; enkoderli geri besleme konumu kapatır."
+    },
+    {
+     "name": "Planet redüktör 3:1",
+     "role": "Atalet oranını 25:1'den 2,7:1'e düşürür, motor devrini ve torkunu kasnağa uyarlar."
+    },
+    {
+     "name": "Tahrik kasnağı (z=20, HTD 5M)",
+     "role": "Dönmeyi kayış çekmesine çevirir; 100 mm/dev avans verir ve 10 diş kavrama sağlar."
+    },
+    {
+     "name": "Avare kasnak + gergi",
+     "role": "Kayışı geri döndürür ve ön gerilimi ayarlar; ayar vidası veya yaylı gergi ile 150 N sağlanır."
+    },
+    {
+     "name": "HTD 5M-25 mm triger kayış",
+     "role": "Pozitif kavramalı, cam elyaf kordlu, 875 N izin verilen çekme taşıyan kayış."
+    },
+    {
+     "name": "Profil ray ve 4 bilyalı blok",
+     "role": "Arabayı ±0,02 mm'ye yakın doğrulukla yönlendirir, düşey ve moment yüklerini taşır."
+    },
+    {
+     "name": "Araba plakası + kayış kelepçesi",
+     "role": "Gripper ve yükü taşır; kayışı arabaya sıkıştırarak kuvvet iletimini sağlar."
+    },
+    {
+     "name": "Alüminyum profil kiriş",
+     "role": "Rayları ve kasnak yataklarını taşıyan ana taşıyıcı; eğilme rijitliği sehimi sınırlar."
+    }
+   ],
+   "specs": [
+    {
+     "k": "Hareketli kütle",
+     "v": "18 kg (10 kg yük + 8 kg araba)"
+    },
+    {
+     "k": "Strok",
+     "v": "1500 mm"
+    },
+    {
+     "k": "Hız / ivme",
+     "v": "2 m/s / 10 m/s²"
+    },
+    {
+     "k": "Hareket süresi",
+     "v": "0,95 s (0,2 + 0,55 + 0,2)"
+    },
+    {
+     "k": "Çevrim süresi",
+     "v": "2,9 s (0,5 s bekleme dahil)"
+    },
+    {
+     "k": "Kayış",
+     "v": "HTD 5M, 25 mm, L ≈ 3,7 m (740 diş)"
+    },
+    {
+     "k": "Kasnak",
+     "v": "20 diş, d_p = 31,83 mm, 100 mm/dev"
+    },
+    {
+     "k": "Ön gerilim / T_1",
+     "v": "150 N / 241 N (SF 3,6)"
+    },
+    {
+     "k": "Motor",
+     "v": "Servo 0,75 kW, anma 2,4 N·m, tepe 7,2 N·m"
+    },
+    {
+     "k": "Redüktör",
+     "v": "Planet 3:1, η = 0,95"
+    },
+    {
+     "k": "Tepe / RMS tork",
+     "v": "1,37 N·m / 0,69 N·m"
+    },
+    {
+     "k": "Atalet oranı",
+     "v": "2,7:1"
+    },
+    {
+     "k": "Doğal frekans",
+     "v": "≈ 15 Hz"
+    },
+    {
+     "k": "Ray",
+     "v": "2 × 15 mm profil ray, 4 blok"
+    }
+   ],
+   "analysis": [
+    {
+     "title": "1. Senaryo ve hareket profili",
+     "steps": [
+      {
+       "label": "Hareketli kütle",
+       "formula": "m = m_yük + m_araba/tutucu = 10 + 8",
+       "value": "18",
+       "unit": "kg",
+       "note": "Gripper, araba plakası, 4 blok, kayış kelepçesi dahil"
+      },
+      {
+       "label": "Strok, hız, ivme",
+       "formula": "S = 1,5 m ; v = 2 m/s ; a = 10 m/s²",
+       "value": "1500 / 2 / 10",
+       "unit": "mm / m/s / m/s²",
+       "note": "Pick&place portal X ekseni"
+      },
+      {
+       "label": "İvmelenme süresi",
+       "formula": "t_a = v / a = 2 / 10",
+       "value": "0,20",
+       "unit": "s"
+      },
+      {
+       "label": "İvmelenme yolu",
+       "formula": "s_a = v² / (2a) = 4 / 20",
+       "value": "0,20",
+       "unit": "m"
+      },
+      {
+       "label": "Sabit hız yolu",
+       "formula": "s_c = S − 2·s_a = 1,5 − 0,4",
+       "value": "1,10",
+       "unit": "m"
+      },
+      {
+       "label": "Sabit hız süresi",
+       "formula": "t_c = s_c / v = 1,1 / 2",
+       "value": "0,55",
+       "unit": "s"
+      },
+      {
+       "label": "Tek hareket süresi",
+       "formula": "t_m = 2·t_a + t_c = 0,4 + 0,55",
+       "value": "0,95",
+       "unit": "s"
+      },
+      {
+       "label": "Çevrim süresi",
+       "formula": "T_çevrim = 2·(t_m + t_bekleme) = 2·(0,95 + 0,5)",
+       "value": "2,90",
+       "unit": "s",
+       "note": "Gidiş-dönüş, her uçta 0,5 s bekleme (alma/bırakma)"
+      }
+     ],
+     "comment": "Trapez hız profili: 0,2 s ivmelenme, 0,55 s sabit hız, 0,2 s yavaşlama. Strokun %27'si ivme/yavaşlamada harcanır; bu yüzden tork talebini ivme belirler."
+    },
+    {
+     "title": "2. Kuvvetler",
+     "steps": [
+      {
+       "label": "Ağırlık",
+       "formula": "W = m · g = 18 · 9,81",
+       "value": "176,6",
+       "unit": "N"
+      },
+      {
+       "label": "Sürtünme kuvveti",
+       "formula": "F_s = μ · W = 0,01 · 176,6",
+       "value": "1,77",
+       "unit": "N",
+       "note": "Bilyalı profil ray blok + salmastra için μ ≈ 0,01 (muhafazakar)"
+      },
+      {
+       "label": "İvmelenme kuvveti",
+       "formula": "F_a = m · a = 18 · 10",
+       "value": "180,0",
+       "unit": "N"
+      },
+      {
+       "label": "İvmelenme fazı etkin kuvveti",
+       "formula": "F_acc = F_a + F_s = 180 + 1,77",
+       "value": "181,77",
+       "unit": "N",
+       "note": "Kayış bu kuvveti iletir"
+      },
+      {
+       "label": "Sabit hız etkin kuvveti",
+       "formula": "F_c = F_s",
+       "value": "1,77",
+       "unit": "N",
+       "note": "Sabit hızda kuvvet ihmal edilebilir; tork sürtünme ve kayış/yatak direncinden gelir"
+      },
+      {
+       "label": "Yavaşlama etkin kuvveti",
+       "formula": "F_dec = F_a − F_s = 180 − 1,77",
+       "value": "178,23",
+       "unit": "N",
+       "note": "Sürtünme yavaşlamaya yardım eder; motor rejeneratif çalışır"
+      },
+      {
+       "label": "Kayış hareketli kütlesi",
+       "formula": "m_k = 0,12 kg/m · L_k = 0,12 · 3,7",
+       "value": "0,44",
+       "unit": "kg",
+       "note": "HTD 5M-25 için yaklaşık lineer kütle; hızla birlikte hareket eder"
+      }
+     ],
+     "comment": "Yatay eksende yerçekimi hareket yönüne dik olduğundan kuvvetin %99'u ivme kaynaklıdır. Hız yerine ivmeyi düşürmek motor ve kayış yükünü doğrudan azaltır."
+    },
+    {
+     "title": "3. Kasnak, kayış geometrisi ve çekme kuvveti",
+     "steps": [
+      {
+       "label": "Kasnak diş sayısı ve hatve",
+       "formula": "z = 20 diş, HTD 5M (p = 5 mm)",
+       "value": "20 / 5",
+       "unit": "diş / mm"
+      },
+      {
+       "label": "Hatve çapı",
+       "formula": "d_p = z · p / π = 20 · 5 / π",
+       "value": "31,83",
+       "unit": "mm"
+      },
+      {
+       "label": "Kasnak devri",
+       "formula": "n = v / (π·d_p) = 2 / 0,1 · 60",
+       "value": "1.200",
+       "unit": "dev/dk",
+       "note": "Kasnak çevresi tam 100 mm (20·5)"
+      },
+      {
+       "label": "Eksenler arası mesafe",
+       "formula": "C = S + 300 mm (araba + kasnak payı)",
+       "value": "1.800",
+       "unit": "mm"
+      },
+      {
+       "label": "Kayış uzunluğu",
+       "formula": "L_k = 2·C + π·d_p = 3600 + 100",
+       "value": "3.700",
+       "unit": "mm",
+       "note": "≈ 740 diş; en yakın standart boy ve gergi ayar payı ile seçilir"
+      },
+      {
+       "label": "Ön gerilim",
+       "formula": "T_ön ≥ F_acc/2 = 91 N ; seçilen T_ön",
+       "value": "150",
+       "unit": "N",
+       "note": "Gevşek kol hiç boşalmasın diye ön gerilim 1,65 · F_acc/2"
+      },
+      {
+       "label": "Sıkı kol gerilimi",
+       "formula": "T_1 = T_ön + F_acc/2 = 150 + 90,9",
+       "value": "240,9",
+       "unit": "N"
+      },
+      {
+       "label": "Gevşek kol gerilimi",
+       "formula": "T_2 = T_ön − F_acc/2 = 150 − 90,9",
+       "value": "59,1",
+       "unit": "N",
+       "note": "T_2 > 0: kayış diş atlamaz, titreşmez"
+      },
+      {
+       "label": "İzin verilen kayış çekmesi",
+       "formula": "T_izin = 35 N/mm · 25 mm",
+       "value": "875",
+       "unit": "N",
+       "note": "Katalog mertebesi, üretici verisiyle doğrulanmalı"
+      },
+      {
+       "label": "Kayış emniyeti",
+       "formula": "SF = T_izin / T_1 = 875 / 240,9",
+       "value": "3,63",
+       "unit": "-",
+       "note": "Hedef ≥ 3"
+      },
+      {
+       "label": "Kavrama dişi",
+       "formula": "z_m = z · θ/360 = 20 · 180/360",
+       "value": "10",
+       "unit": "diş",
+       "note": "Sarım açısı 180°; en az 6 diş gerekir"
+      },
+      {
+       "label": "Diş kesme kapasitesi",
+       "formula": "F_kap = 3 N/(mm·diş) · 25 mm · 10 diş",
+       "value": "750",
+       "unit": "N",
+       "note": "Tasarım yükü 1,8 · 181,8 = 327 N altında kalır"
+      },
+      {
+       "label": "Tasarım kuvveti",
+       "formula": "F_d = K_s · F_acc = 1,8 · 181,8",
+       "value": "327",
+       "unit": "N",
+       "note": "Servo, sık ters dönüş için K_s = 1,8"
+      }
+     ],
+     "comment": "Kayış, çekme ve diş kesme açısından yeterli (SF 3,6; diş kapasitesi 2,3 kat). Ön gerilim, ivme yükünün yarısının üzerinde tutularak gevşek kolun boşalması engellenir."
+    },
+    {
+     "title": "4. Atalet ve atalet oranı",
+     "steps": [
+      {
+       "label": "Kasnak ataleti (tek)",
+       "formula": "J_k = ½·m·r² = ½·0,087·0,016²",
+       "value": "11,1 ·10⁻⁶",
+       "unit": "kg·m²",
+       "note": "Alüminyum kasnak, Ø32 × 40 mm"
+      },
+      {
+       "label": "Yük+kayış ataleti (kasnak miline)",
+       "formula": "J_yük = (m + m_k)·r² = 18,44 · 0,01592²",
+       "value": "4,672 ·10⁻³",
+       "unit": "kg·m²",
+       "note": "r = d_p/2 = 15,92 mm"
+      },
+      {
+       "label": "Toplam atalet (iki kasnak dahil)",
+       "formula": "J_top = J_yük + 2·J_k",
+       "value": "4,694 ·10⁻³",
+       "unit": "kg·m²"
+      },
+      {
+       "label": "Redüktör oranı",
+       "formula": "i",
+       "value": "3",
+       "unit": ":1",
+       "note": "Planet redüktör, η = 0,95"
+      },
+      {
+       "label": "Motor miline indirgenmiş atalet",
+       "formula": "J_ind = J_top / i² = 4,69·10⁻³ / 9",
+       "value": "0,522 ·10⁻³",
+       "unit": "kg·m²"
+      },
+      {
+       "label": "Motor + redüktör rotor ataleti",
+       "formula": "J_m + J_r = 0,17 + 0,02",
+       "value": "0,19 ·10⁻³",
+       "unit": "kg·m²",
+       "note": "Ör. 0,75 kW düşük atalet servo"
+      },
+      {
+       "label": "Atalet oranı",
+       "formula": "J_ind / (J_m+J_r) = 0,522 / 0,190",
+       "value": "2,75",
+       "unit": ":1",
+       "note": "Doğrudan tahrikte (i=1) oran ≈ 25:1 olurdu; hedef ≤ 5:1"
+      }
+     ],
+     "comment": "Atalet oranı 2,7:1 ile servo ayarı kolay ve titreşime yatkın değil. Redüktör olmasaydı oran yaklaşık 25:1 olur, rijitlik ve ayar zorlaşırdı."
+    },
+    {
+     "title": "5. Motor torku, hız ve güç",
+     "steps": [
+      {
+       "label": "Kasnak torku (ivme)",
+       "formula": "T_k = F_acc · r = 181,77 · 0,01592",
+       "value": "2,893",
+       "unit": "N·m"
+      },
+      {
+       "label": "Motor tarafı yük torku",
+       "formula": "T_yük = T_k / (i·η) = 2,893 / (3·0,95)",
+       "value": "1,015",
+       "unit": "N·m"
+      },
+      {
+       "label": "Motor açısal ivmesi",
+       "formula": "α_m = a / r · i = 10 / 0,01592 · 3",
+       "value": "1.885",
+       "unit": "rad/s²"
+      },
+      {
+       "label": "Rotor ivme torku",
+       "formula": "T_rot = (J_m+J_r)·α_m = 1,9·10⁻⁴ · 1885",
+       "value": "0,358",
+       "unit": "N·m"
+      },
+      {
+       "label": "Tepe tork (ivmelenme)",
+       "formula": "T_pk = T_yük + T_rot",
+       "value": "1,37",
+       "unit": "N·m"
+      },
+      {
+       "label": "Sabit hız torku",
+       "formula": "T_c = F_s·r/(i·η) + 0,05",
+       "value": "0,060",
+       "unit": "N·m",
+       "note": "0,05 N·m yatak ve kayış sürtünmesi payı"
+      },
+      {
+       "label": "Yavaşlama torku",
+       "formula": "T_dec = −(F_dec·r·η/i + T_rot)",
+       "value": "-1,26",
+       "unit": "N·m"
+      },
+      {
+       "label": "Motor devri (sabit hız)",
+       "formula": "n_m = n_kasnak · i = 1200 · 3",
+       "value": "3.600",
+       "unit": "dev/dk",
+       "note": "Servo max devri ≥ 4500 dev/dk olmalı"
+      },
+      {
+       "label": "Efektif (RMS) tork",
+       "formula": "T_rms = √(Σ T²·t / T_çevrim)",
+       "value": "0,69",
+       "unit": "N·m",
+       "note": "Bekleme torku 0,03 N·m"
+      },
+      {
+       "label": "Tepe mekanik güç",
+       "formula": "P_pk = T_pk · ω_m = 1,37 · 377",
+       "value": "518",
+       "unit": "W",
+       "note": "Ayrıca ivme sonu: F_acc · v = 364 W kayış gücü"
+      },
+      {
+       "label": "Seçilen servo",
+       "formula": "Anma 2,4 N·m @ 3000 dev/dk, tepe 7,2 N·m",
+       "value": "0,75",
+       "unit": "kW",
+       "note": "ör. 0,75 kW servo motor"
+      },
+      {
+       "label": "Tork emniyeti",
+       "formula": "SF_rms = 2,4 / 0,69 ; SF_pk = 7,2 / 1,37",
+       "value": "3,5 / 5,2",
+       "unit": "-",
+       "note": "İkisi de ≥ 1,5 hedefini sağlıyor"
+      }
+     ],
+     "comment": "Tepe tork talebi anma tork altında kalır; RMS tork anma torkun üçte biri. Daha küçük (0,4 kW) motor tepe için yeterli görünür ancak 3600 dev/dk anma hızı üstünde tork düşer, 0,75 kW güvenli tercihtir."
+    },
+    {
+     "title": "6. Rijitlik, doğal frekans ve konum hatası",
+     "steps": [
+      {
+       "label": "Kayış çekme rijitliği",
+       "formula": "EA = 1,5·10⁵ N",
+       "value": "150000",
+       "unit": "N",
+       "note": "25 mm HTD 5M cam elyaf kord için yaklaşık katalog değeri"
+      },
+      {
+       "label": "En düşük eşdeğer yay sabiti (uç nokta)",
+       "formula": "k = EA·(1/a + 1/(2C−a)), a = C → 2·EA/C",
+       "value": "167",
+       "unit": "N/mm",
+       "note": "Araba tahrik kasnağından en uzakta, iki kol paralel yay"
+      },
+      {
+       "label": "Doğal frekans",
+       "formula": "f_n = (1/2π)·√(k/(m+m_k)) = (1/2π)·√(166667/18,44)",
+       "value": "15,1",
+       "unit": "Hz",
+       "note": "Servo bant genişliği bunun altında kalmalı (< 8 Hz)"
+      },
+      {
+       "label": "İvmede elastik uzama",
+       "formula": "δ = F_acc / k = 181,8 / 166667 · 1000",
+       "value": "1,09",
+       "unit": "mm",
+       "note": "Pick&place için kabul edilebilir; hassas dozaj için ek geri besleme"
+      },
+      {
+       "label": "Ön gerilimden kaynaklı uzama",
+       "formula": "δ_ön ≈ T_ön · C / EA = 150 · 1,8 / 150000 · 1000",
+       "value": "1,80",
+       "unit": "mm",
+       "note": "Montajda gergi ile alınır"
+      }
+     ],
+     "comment": "Kayışlı eksen vidalı mile göre 5-10 kat daha esnektir. 15 Hz'lik doğal frekans yeterlidir ancak servo kazançlarını bu frekansın altında tutmak ve filtre kullanmak gerekir."
+    },
+    {
+     "title": "7. Ray - araba ömrü",
+     "steps": [
+      {
+       "label": "Yük (blok başına, ağırlık)",
+       "formula": "P_w = W/4 = 176,6/4",
+       "value": "44,1",
+       "unit": "N",
+       "note": "4 blok, 2 ray"
+      },
+      {
+       "label": "Yuvarlanma momenti (ofset yük)",
+       "formula": "M_x = m_yük·g·e = 98,1 · 0,20",
+       "value": "19,6",
+       "unit": "N·m",
+       "note": "Gripper 200 mm yanda konsol"
+      },
+      {
+       "label": "Yunuslama momenti (ivme)",
+       "formula": "M_y = F_acc · h = 181,8 · 0,10",
+       "value": "18,2",
+       "unit": "N·m",
+       "note": "Kuvvet ray üstünden 100 mm yukarıda"
+      },
+      {
+       "label": "En yüklü blok",
+       "formula": "P = W/4 + M_x/(2·0,12) + M_y/(2·0,12)",
+       "value": "202",
+       "unit": "N",
+       "note": "Ray aralığı ve blok aralığı 120 mm"
+      },
+      {
+       "label": "Dinamik yük sayısı",
+       "formula": "C (15 mm bilyalı blok, ör.)",
+       "value": "10000",
+       "unit": "N"
+      },
+      {
+       "label": "Ömür (km)",
+       "formula": "L = 50·(C/(f_w·P))³ = 50·(10000/(1,5·201,6))³",
+       "value": "1.807 ·10³",
+       "unit": "km",
+       "note": "f_w = 1,5 darbe katsayısı"
+      },
+      {
+       "label": "Saatlik katedilen mesafe",
+       "formula": "s = 2·S·3600 / T_çevrim",
+       "value": "3,72",
+       "unit": "km/saat"
+      },
+      {
+       "label": "Ömür (saat)",
+       "formula": "L_h = L / s",
+       "value": "485 ·10³",
+       "unit": "saat",
+       "note": "Ray seçimi ömre değil rijitlik/moment taşımaya göre yapılır"
+      }
+     ],
+     "comment": "Hesaplanan ömür fiilen sınırsızdır (>10⁵ saat). 15 mm ray seçimi ömür için değil, moment rijitliği ve kayış gerginlik yüküne dayanıklılık için yapılmıştır; 12 mm ray de teknik olarak yeterlidir."
+    },
+    {
+     "title": "8. Sonuç ve seçim",
+     "steps": [
+      {
+       "label": "Kayış",
+       "formula": "HTD 5M, 25 mm, ~740 diş",
+       "value": "SF 3,6",
+       "unit": "-",
+       "note": "Cam elyaf kord, poliüretan/neopren"
+      },
+      {
+       "label": "Kasnak",
+       "formula": "20 diş HTD 5M, Ø31,83 mm",
+       "value": "1200",
+       "unit": "dev/dk",
+       "note": "Alüminyum, flanşlı"
+      },
+      {
+       "label": "Redüktör",
+       "formula": "Planet, i = 3, η = 0,95",
+       "value": "3:1",
+       "unit": "-",
+       "note": "Çıkış mili radyal yük ≥ 2·T_ön = 300 N kontrol edilmeli"
+      },
+      {
+       "label": "Motor",
+       "formula": "Servo, 0,75 kW, 2,4 N·m anma",
+       "value": "T_pk 1,37",
+       "unit": "N·m",
+       "note": "Atalet oranı 2,7:1"
+      },
+      {
+       "label": "Ray",
+       "formula": "2 × 15 mm profil ray, 4 blok",
+       "value": "> 10⁵",
+       "unit": "saat"
+      },
+      {
+       "label": "Çevrim",
+       "formula": "T = 2,9 s",
+       "value": "2,9",
+       "unit": "s",
+       "note": "Strok 1500 mm, 2 m/s, 10 m/s²"
+      }
+     ],
+     "comment": "Tasarım tüm kriterlerde yeterli emniyet payına sahip. En kritik parametre kayış rijitliği olduğundan konumlama doğruluğu gerekiyorsa lineer cetvel veya daha geniş kayış düşünülmelidir."
+    }
+   ],
+   "figures": [
+    {
+     "caption": "Şekil 1: Triger kayışlı lineer eksenin yan görünüşü: servo + redüktör, kasnaklar, kayış ve ray üzerindeki araba.",
+     "svg": "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\">\n<defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<rect x=\"0\" y=\"0\" width=\"640\" height=\"280\" fill=\"#f7f9fb\"/>\n<rect x=\"60\" y=\"200\" width=\"520\" height=\"26\" fill=\"#8d99a6\" stroke=\"#1f2a37\"/>\n<text x=\"320\" y=\"218\" text-anchor=\"middle\" fill=\"#1f2a37\">Alüminyum profil kiriş + profil ray (2 adet)</text>\n<rect x=\"30\" y=\"100\" width=\"46\" height=\"46\" fill=\"#2f5d8a\" stroke=\"#1f2a37\"/>\n<rect x=\"76\" y=\"108\" width=\"24\" height=\"30\" fill=\"#5b6470\" stroke=\"#1f2a37\"/>\n<text x=\"30\" y=\"92\" fill=\"#1f2a37\">Servo + 3:1</text>\n<circle cx=\"130\" cy=\"123\" r=\"24\" fill=\"#c9d1d9\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<circle cx=\"130\" cy=\"123\" r=\"5\" fill=\"#1f2a37\"/>\n<circle cx=\"510\" cy=\"123\" r=\"24\" fill=\"#c9d1d9\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<circle cx=\"510\" cy=\"123\" r=\"5\" fill=\"#1f2a37\"/>\n<line x1=\"130\" y1=\"99\" x2=\"510\" y2=\"99\" stroke=\"#222\" stroke-width=\"3\"/>\n<line x1=\"130\" y1=\"147\" x2=\"510\" y2=\"147\" stroke=\"#222\" stroke-width=\"3\"/>\n<text x=\"130\" y=\"170\" text-anchor=\"middle\" fill=\"#1f2a37\">Tahrik kasnağı</text>\n<text x=\"130\" y=\"184\" text-anchor=\"middle\" fill=\"#1f2a37\">z = 20, HTD 5M</text>\n<text x=\"510\" y=\"170\" text-anchor=\"middle\" fill=\"#1f2a37\">Avare kasnak</text>\n<text x=\"510\" y=\"184\" text-anchor=\"middle\" fill=\"#1f2a37\">+ gergi</text>\n<text x=\"300\" y=\"86\" text-anchor=\"middle\" fill=\"#1f2a37\">Triger kayış HTD 5M-25 (L = 3,7 m)</text>\n<rect x=\"250\" y=\"142\" width=\"110\" height=\"14\" fill=\"#e8711a\" stroke=\"#1f2a37\"/>\n<rect x=\"250\" y=\"156\" width=\"110\" height=\"10\" fill=\"#e8711a\" stroke=\"#1f2a37\"/>\n<rect x=\"258\" y=\"166\" width=\"26\" height=\"34\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<rect x=\"326\" y=\"166\" width=\"26\" height=\"34\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<text x=\"305\" y=\"236\" text-anchor=\"middle\" fill=\"#1f2a37\">Araba (4 bilyalı blok)</text>\n<rect x=\"360\" y=\"156\" width=\"70\" height=\"44\" fill=\"#e8711a\" opacity=\"0.55\" stroke=\"#1f2a37\"/>\n<text x=\"395\" y=\"183\" text-anchor=\"middle\" fill=\"#1f2a37\">Yük 10 kg</text>\n<line x1=\"250\" y1=\"135\" x2=\"160\" y2=\"135\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#ar)\"/>\n<line x1=\"360\" y1=\"135\" x2=\"450\" y2=\"135\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#ar)\"/>\n<text x=\"305\" y=\"130\" text-anchor=\"middle\" fill=\"#e8711a\">v = 2 m/s</text>\n<line x1=\"130\" y1=\"256\" x2=\"510\" y2=\"256\" stroke=\"#4a90c2\" stroke-width=\"2\"/>\n<line x1=\"130\" y1=\"250\" x2=\"130\" y2=\"262\" stroke=\"#4a90c2\" stroke-width=\"2\"/>\n<line x1=\"510\" y1=\"250\" x2=\"510\" y2=\"262\" stroke=\"#4a90c2\" stroke-width=\"2\"/>\n<text x=\"320\" y=\"272\" text-anchor=\"middle\" fill=\"#4a90c2\">C = 1800 mm (strok 1500 mm)</text>\n</svg>"
+    },
+    {
+     "caption": "Şekil 2: Trapez hız profili: 0,2 s ivmelenme, 0,55 s sabit hız, 0,2 s yavaşlama; toplam 0,95 s ve 1,5 m strok.",
+     "svg": "<svg viewBox=\"0 0 640 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\">\n<defs><marker id=\"ar2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#1f2a37\"/></marker></defs>\n<rect x=\"0\" y=\"0\" width=\"640\" height=\"300\" fill=\"#f7f9fb\"/>\n<line x1=\"70\" y1=\"240\" x2=\"600\" y2=\"240\" stroke=\"#1f2a37\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/>\n<line x1=\"70\" y1=\"240\" x2=\"70\" y2=\"30\" stroke=\"#1f2a37\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/>\n<polygon points=\"70,240 171,80 449,80 550,240\" fill=\"#4a90c2\" fill-opacity=\"0.25\" stroke=\"#4a90c2\" stroke-width=\"3\"/>\n<line x1=\"70\" y1=\"80\" x2=\"171\" y2=\"80\" stroke=\"#1f2a37\" stroke-dasharray=\"4 3\"/>\n<line x1=\"171\" y1=\"80\" x2=\"171\" y2=\"240\" stroke=\"#1f2a37\" stroke-dasharray=\"4 3\"/>\n<line x1=\"449\" y1=\"80\" x2=\"449\" y2=\"240\" stroke=\"#1f2a37\" stroke-dasharray=\"4 3\"/>\n<text x=\"590\" y=\"258\" text-anchor=\"end\" fill=\"#1f2a37\">t (s)</text>\n<text x=\"78\" y=\"42\" fill=\"#1f2a37\">v (m/s)</text>\n<text x=\"62\" y=\"84\" text-anchor=\"end\" fill=\"#e8711a\">2,0</text>\n<text x=\"70\" y=\"258\" text-anchor=\"middle\" fill=\"#1f2a37\">0</text>\n<text x=\"171\" y=\"258\" text-anchor=\"middle\" fill=\"#1f2a37\">0,20</text>\n<text x=\"449\" y=\"258\" text-anchor=\"middle\" fill=\"#1f2a37\">0,75</text>\n<text x=\"550\" y=\"258\" text-anchor=\"middle\" fill=\"#1f2a37\">0,95</text>\n<text x=\"120\" y=\"160\" text-anchor=\"middle\" fill=\"#1f2a37\">ivme</text>\n<text x=\"120\" y=\"174\" text-anchor=\"middle\" fill=\"#1f2a37\">10 m/s²</text>\n<text x=\"310\" y=\"70\" text-anchor=\"middle\" fill=\"#1f2a37\">sabit hız 2 m/s (0,55 s, 1,1 m)</text>\n<text x=\"500\" y=\"160\" text-anchor=\"middle\" fill=\"#1f2a37\">yavaşlama</text>\n<text x=\"500\" y=\"174\" text-anchor=\"middle\" fill=\"#1f2a37\">−10 m/s²</text>\n<text x=\"310\" y=\"150\" text-anchor=\"middle\" fill=\"#1f2a37\">Alan = strok = 1,5 m</text>\n<text x=\"320\" y=\"285\" text-anchor=\"middle\" fill=\"#e8711a\">Tepe motor torku 1,37 N·m (ivme sonu), 0,06 N·m (sabit hız)</text>\n</svg>"
+    }
+   ],
+   "advantages": [
+    "Uzun strokta (birkaç metre) çok düşük maliyet; vidalı mil kritik devir ve burkulma sorunu yok.",
+    "Yüksek hız ve ivme (2-5 m/s) vidalı mile göre kolay; hafif hareketli kütle.",
+    "Pozitif tahrik (diş kavraması) ile kayma yok, ön gerilim doğru verilirse tekrarlanabilirlik iyi.",
+    "Sessiz, yağlama gerektirmez, bakımı basit; kayış değişimi hızlı."
+   ],
+   "disadvantages": [
+    "Kayış esnekliği düşük rijitlik ve titreşim demektir; doğal frekans strokla azalır.",
+    "Yüksek dikey yükte tutma/fren gerekir; kayış dikey eksende emniyetsiz (kopma halinde düşer).",
+    "Kayış ön gerilim ve aşınma ile gevşer, zamanla geri tepme ve konum kayması artar.",
+    "Hassas konumlama (< 0,05 mm) için lineer cetvel veya sonuç tarafı geri besleme gerekir."
+   ],
+   "example": [
+    "Otomotiv yan sanayiinde palet üstünden parçayı CNC tezgâhına yükleyen portal robotun X ekseni: 3 m strok, 15 kg parça, HTD 8M-30 mm kayış, 0,75 kW servo + 5:1 planet redüktör; çevrim süresi 6 s, günlük 3000 parça. Kayış 2 yılda bir değiştirilir.",
+    "Ambalaj hattında koli yerleştirme portalı: 2 m strok, 8 kg yük, 3 m/s hız; kayış rijitliği yetersiz kaldığında lineer cetvel eklenerek konum tekrarlanabilirliği ±0,1 mm'ye getirilmiştir."
+   ],
+   "design_tips": [
+    "Inventor'da kayışı ve kasnakları Content Center veya iPart ile modelleyin; diş sayısı, hatve ve eksenler arası mesafeyi parametrik tutun (C = S + payı). Kayışı kasnaklar arasında kesilmiş yay ile temsil edin.",
+    "Kasnaklarda flanş kullanın: genelde tahrik kasnağında iki, avarede bir flanş; kayışın yana kaymasını önler. Kasnak göbeğinde alıştırma H7/k6, kama veya sıkma bileziği.",
+    "Ön gerilimi sonik ölçerle (frekans) veya yay ölçerle doğrulayın; montaj resminde T_ön ve ölçüm yöntemini yazın. Aşırı gerilim yatak ve redüktör ömrünü kısaltır.",
+    "Kayış kelepçesini arabanın ağırlık merkezi çizgisine yakın tutun; moment oluşturmaz. Kelepçe dişleri kayış dişleriyle uyumlu olsun.",
+    "Rayları tek taraftan (referans) tam yaslayın; ikinci rayı paralellik toleransı (≤ 0,02 mm) ile ayarlayın. Kiriş düzlüğünü ölçüm raporuna ekleyin."
+   ],
+   "model3d": {
+    "camera": [
+     1.1,
+     0.7,
+     1.3
+    ],
+    "anim_scale": 1,
+    "parts": [
+     {
+      "type": "box",
+      "pos": [
+       0,
+       0,
+       0
+      ],
+      "size": [
+       1900,
+       80,
+       100
+      ],
+      "color": "#8d99a6",
+      "label": "Alüminyum profil kiriş"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       45,
+       -30
+      ],
+      "size": [
+       1600,
+       10,
+       15
+      ],
+      "color": "#c9d1d9",
+      "label": "Profil ray"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       45,
+       30
+      ],
+      "size": [
+       1600,
+       10,
+       15
+      ],
+      "color": "#c9d1d9"
+     },
+     {
+      "type": "box",
+      "pos": [
+       -40,
+       60,
+       -30
+      ],
+      "size": [
+       45,
+       22,
+       30
+      ],
+      "color": "#e8711a",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 500,
+        "period": 6
+       }
+      },
+      "label": "Ray bloğu"
+     },
+     {
+      "type": "box",
+      "pos": [
+       -40,
+       60,
+       30
+      ],
+      "size": [
+       45,
+       22,
+       30
+      ],
+      "color": "#e8711a",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 500,
+        "period": 6
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       40,
+       60,
+       -30
+      ],
+      "size": [
+       45,
+       22,
+       30
+      ],
+      "color": "#e8711a",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 500,
+        "period": 6
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       40,
+       60,
+       30
+      ],
+      "size": [
+       45,
+       22,
+       30
+      ],
+      "color": "#e8711a",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 500,
+        "period": 6
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       76,
+       0
+      ],
+      "size": [
+       140,
+       10,
+       130
+      ],
+      "color": "#e8711a",
+      "label": "Araba plakası",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 500,
+        "period": 6
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       88,
+       0
+      ],
+      "size": [
+       80,
+       14,
+       30
+      ],
+      "color": "#5b6470",
+      "label": "Kayış kelepçesi",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 500,
+        "period": 6
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       76,
+       115
+      ],
+      "size": [
+       30,
+       30,
+       100
+      ],
+      "color": "#e8711a",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 500,
+        "period": 6
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       28,
+       150
+      ],
+      "size": [
+       70,
+       70,
+       70
+      ],
+      "color": "#3b8f6e",
+      "label": "Yük 10 kg",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 500,
+        "period": 6
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       -870,
+       70,
+       -27
+      ],
+      "size": [
+       40,
+       80,
+       10
+      ],
+      "color": "#8d99a6"
+     },
+     {
+      "type": "box",
+      "pos": [
+       -870,
+       70,
+       27
+      ],
+      "size": [
+       40,
+       80,
+       10
+      ],
+      "color": "#8d99a6"
+     },
+     {
+      "type": "box",
+      "pos": [
+       870,
+       70,
+       -27
+      ],
+      "size": [
+       40,
+       80,
+       10
+      ],
+      "color": "#8d99a6"
+     },
+     {
+      "type": "box",
+      "pos": [
+       870,
+       70,
+       27
+      ],
+      "size": [
+       40,
+       80,
+       10
+      ],
+      "color": "#8d99a6"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       -870,
+       100,
+       -15
+      ],
+      "r": 6,
+      "h": 100,
+      "axis": "z",
+      "color": "#c9d1d9"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       870,
+       100,
+       0
+      ],
+      "r": 6,
+      "h": 64,
+      "axis": "z",
+      "color": "#c9d1d9"
+     },
+     {
+      "type": "gear",
+      "pos": [
+       -870,
+       100,
+       0
+      ],
+      "r": 16,
+      "teeth": 20,
+      "h": 30,
+      "axis": "z",
+      "color": "#c9d1d9",
+      "label": "Tahrik kasnağı z=20",
+      "anim": {
+       "spin": {
+        "rpm": 30
+       }
+      }
+     },
+     {
+      "type": "gear",
+      "pos": [
+       870,
+       100,
+       0
+      ],
+      "r": 16,
+      "teeth": 20,
+      "h": 30,
+      "axis": "z",
+      "color": "#c9d1d9",
+      "label": "Avare kasnak",
+      "anim": {
+       "spin": {
+        "rpm": 30
+       }
+      }
+     },
+     {
+      "type": "belt",
+      "p1": [
+       -870,
+       100,
+       0
+      ],
+      "p2": [
+       870,
+       100,
+       0
+      ],
+      "r1": 16,
+      "r2": 16,
+      "axis": "z",
+      "t": 2.5,
+      "color": "#222222",
+      "label": "HTD 5M kayış"
+     },
+     {
+      "type": "box",
+      "pos": [
+       -870,
+       100,
+       -62
+      ],
+      "size": [
+       90,
+       90,
+       60
+      ],
+      "color": "#5b6470",
+      "label": "Planet redüktör 3:1"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       -870,
+       100,
+       -152
+      ],
+      "r": 40,
+      "h": 120,
+      "axis": "z",
+      "color": "#2f5d8a",
+      "label": "Servo motor 0,75 kW"
+     }
+    ]
+   },
+   "verified_by": "sonnet (taslak)",
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Teyit edildi (1 not)",
+    "checks": [
+     {
+      "item": "Kasnak ve motor devri",
+      "method": "Python: n = v/(π·d)",
+      "result": "HTD 5M z=20 (d = 31,83 mm), 2 m/s → kasnak 1.200, motor 3.600 d/dk — aynı",
+      "ok": true
+     },
+     {
+      "item": "Kayış gerilimleri",
+      "method": "Python: T1 = ön gerilim + F/2",
+      "result": "150 + 181,8/2 ≈ 241 N; izin 875 N → emniyet 3,6 — aynı",
+      "ok": true
+     },
+     {
+      "item": "Motor tepe torku",
+      "method": "Python: T = F·r/(i·η) + J·α",
+      "result": "1,015 + 0,358 = 1,37 N·m — aynı",
+      "ok": true
+     }
+    ],
+    "notes": [
+     "Motor devri 3.600 d/dk, 0,75 kW servoların tipik 3.000 d/dk nominal devrinin üstünde; çoğu servo 5.000-6.000 d/dk azami devire çıkar ama **katalogdaki hız-tork eğrisinde 3.600 d/dk'daki tepe torkunu kontrol edin**. Alternatif: 2,5:1 redüktör.",
+     "15 Hz doğal frekans uzun kayışlı eksenler için tipiktir; konumlama sonrası salınımı azaltmak için sürücüde titreşim bastırma (notch/vibration suppression) kullanın."
+    ]
+   }
+  },
+  {
+   "id": "lineer-motor-eksen",
+   "title": "Lineer motorlu yüksek hızlı eksen",
+   "category": "Lineer eksen",
+   "summary": "Bobin ve mıknatıs yolundan oluşan doğrudan tahrikli eksen; mekanik dönüştürücü olmadan 2 m/s hız ve 40 m/s² ivmeye çıkar ve yüksek hızlı pick&place çevrimlerinde kullanılır.",
+   "chat_context": "Senaryo: yatay lineer motorlu eksen, hareketli kütle 5,0 kg, strok 400 mm, v = 2 m/s, a = 40 m/s², çevrim 0,62 s (97 çevrim/dk). Demir çekirdekli bobin (F_pik 450 N, F_sür 150 N, K_f 45 N/A), kutup adımı 30 mm, 2 ray + 4 araba (C = 8 kN), 1 µm cetvel. Tepe kuvvet 207 N, RMS 114 N, bakır kaybı 66 W, sargı sıcaklığı ≈99 °C, mıknatıs çekimi ≈1.350 N ray ömrünü belirler.",
+   "principle": [
+    "Lineer motor, döner servo motorun açılıp düzleştirilmiş halidir. Sabit parçada (tek parça yol) dönüşümlü N–S mıknatıslar sıralanır, hareketli parçada ise üç fazlı sargı taşıyan bobin (forcer) bulunur. Sürücü üç faza birbirine 120° kayık akımlar uygular ve bobinde ilerleyen bir manyetik alan oluşur.",
+    "Bu ilerleyen alan mıknatıs yolundaki sabit alanı kovalar; Lorentz kuvveti bobine yol boyunca doğrudan itme verir. Kuvvet F = K_f · I olarak akımla orantılıdır; vidalı mil, kayış veya redüktör bulunmadığı için boşluk, esneklik ve kayma yoktur.",
+    "Hareketli tabla, bobin ve iş parçası bir bütün olarak ray arabalarının üzerinde kayar. Ray arabaları ve profil raylar yalnızca yönlendirir; ayrıca demir çekirdekli bobin ile mıknatıs arasındaki çekim kuvvetini (≈1.400 N) taşır.",
+    "Konum, tablayla birlikte hareket eden okuma kafası ve sabit cetvel ile 1 µm çözünürlükte ölçülür. Servo sürücü konum, hız ve akım döngülerini kapatır; komütasyon için kutup konumu cetvelden alınır.",
+    "Yavaşlamada motor jeneratör gibi çalışır, enerji ara devreye geri döner. Isı bobinde bakır kaybı olarak ortaya çıkar ve tabla yoluyla dağıtılır; bu yüzden etkin (RMS) kuvvet, tepe kuvvetten daha belirleyicidir."
+   ],
+   "components": [
+    {
+     "name": "Lineer motor bobini (forcer)",
+     "role": "Üç fazlı sargı; mıknatıs yoluna tepki olarak itme kuvvetini üretir. Demir çekirdekli tip yüksek kuvvet yoğunluğu verir."
+    },
+    {
+     "name": "Mıknatıs yolu",
+     "role": "Alternatif kutuplu kalıcı mıknatıslar; modüler uzunlukta, strok + bobin boyuna göre seçilir."
+    },
+    {
+     "name": "Profil ray ve arabalar",
+     "role": "Yönlendirme ve çekim kuvvetinin taşınması; ön yüklü bilyeli seri seçilir."
+    },
+    {
+     "name": "Lineer cetvel ve okuma kafası",
+     "role": "1 µm çözünürlüklü konum geri beslemesi; kutup konumu için de kullanılır."
+    },
+    {
+     "name": "Servo sürücü",
+     "role": "Konum, hız ve akım döngüsü; akım sınırı ve sıcaklık izleme."
+    },
+    {
+     "name": "Uç tamponlar",
+     "role": "Arıza ve STO durumunda enerjiyi emen hidrolik damperler."
+    },
+    {
+     "name": "Kablo taşıyıcı",
+     "role": "Hareketli bobine güç ve sinyal kablosu iletir."
+    },
+    {
+     "name": "Tutucu (vakum)",
+     "role": "Parçayı alır ve bırakır; hafif tasarlanır."
+    }
+   ],
+   "specs": [
+    {
+     "k": "Hareketli kütle",
+     "v": "5,0 kg"
+    },
+    {
+     "k": "Strok",
+     "v": "400 mm"
+    },
+    {
+     "k": "Azami hız",
+     "v": "2,0 m/s"
+    },
+    {
+     "k": "İvme",
+     "v": "40 m/s²"
+    },
+    {
+     "k": "Hareket süresi",
+     "v": "0,25 s"
+    },
+    {
+     "k": "Çevrim süresi",
+     "v": "0,62 s"
+    },
+    {
+     "k": "Tepe kuvvet",
+     "v": "207 N"
+    },
+    {
+     "k": "RMS kuvvet",
+     "v": "114 N"
+    },
+    {
+     "k": "Motor (pik/sürekli)",
+     "v": "450 / 150 N"
+    },
+    {
+     "k": "Bakır kaybı",
+     "v": "66 W"
+    },
+    {
+     "k": "Konum çözünürlüğü",
+     "v": "1 µm"
+    },
+    {
+     "k": "Mıknatıs çekimi",
+     "v": "≈1.350 N"
+    }
+   ],
+   "analysis": [
+    {
+     "title": "1. Hareketli kütle ve sabit yükler",
+     "steps": [
+      {
+       "label": "Hareketli toplam kütle",
+       "formula": "m = m_bobin + m_tabla/araba + m_tutucu + m_parça + m_kablo = 1,6 + 1,9 + 0,8 + 0,3 + 0,4",
+       "value": "5,0",
+       "unit": "kg",
+       "note": "Bobin (iç içe sargılı demir çekirdekli), alüminyum tabla, 4 ray arabası, vakum tutucu, 0,3 kg parça, kablo taşıyıcı payı"
+      },
+      {
+       "label": "Ağırlık",
+       "formula": "W = m · g = 5,0 · 9,81",
+       "value": "49,1",
+       "unit": "N",
+       "note": "Eksen yatay; yerçekimi yalnızca ray yüküne etki eder"
+      },
+      {
+       "label": "Manyetik çekim kuvveti (demir çekirdekli bobin)",
+       "formula": "F_çek ≈ 3 · F_pik,motor = 3 · 450",
+       "value": "1.350",
+       "unit": "N",
+       "note": "Demir çekirdekli lineer motorda mıknatıs–çekirdek çekimi tepe itme kuvvetinin yaklaşık 3–5 katıdır; kataloğa göre kesinleştir"
+      },
+      {
+       "label": "Ray sürtünme kuvveti",
+       "formula": "F_s = μ · (W + F_çek) = 0,003 · (49,1 + 1.350)",
+       "value": "4,2",
+       "unit": "N",
+       "note": "Bilyeli profil ray μ≈0,003; çekim kuvveti sürtünmeyi belirgin artırır"
+      },
+      {
+       "label": "Kablo taşıyıcı direnci (tahmini)",
+       "formula": "F_kablo ≈ 3 N",
+       "value": "3,0",
+       "unit": "N",
+       "note": "Esnek kablo zinciri/şerit kablo; hızla az değişir"
+      },
+      {
+       "label": "Toplam sabit direnç",
+       "formula": "F_0 = F_s + F_kablo = 4,2 + 3,0",
+       "value": "7,2",
+       "unit": "N",
+       "note": "İvme kuvvetinin yanında küçük, ancak ısıl hesapta etkisi vardır"
+      }
+     ],
+     "comment": "Hareketli kütleyi küçük tutmak doğrudan ivme kuvvetini ve ısıyı düşürür; her 1 kg tasarruf, 40 m/s² ivmede 40 N daha az tepe kuvvet demektir."
+    },
+    {
+     "title": "2. Hareket profili ve çevrim süresi",
+     "steps": [
+      {
+       "label": "Hızlanma süresi",
+       "formula": "t_a = v / a = 2,0 / 40",
+       "value": "0,050",
+       "unit": "s",
+       "note": "Trapez profil; sarsıntıyı azaltmak için sürücüde S-eğrisi (jerk sınırı) açılabilir"
+      },
+      {
+       "label": "Hızlanma yolu",
+       "formula": "s_a = v² / (2a) = 2,0² / (2 · 40)",
+       "value": "50",
+       "unit": "mm",
+       "note": "Yavaşlama yolu da aynıdır"
+      },
+      {
+       "label": "Sabit hız yolu",
+       "formula": "s_c = s − 2 · s_a = 400 − 2 · 50",
+       "value": "300",
+       "unit": "mm",
+       "note": "Strok 400 mm; v_maks = 2,0 m/s'ye ulaşılıyor"
+      },
+      {
+       "label": "Sabit hız süresi",
+       "formula": "t_c = s_c / v = 0,30 / 2,0",
+       "value": "0,150",
+       "unit": "s",
+       "note": ""
+      },
+      {
+       "label": "Tek hareket süresi",
+       "formula": "t_m = 2 · t_a + t_c = 2 · 0,050 + 0,150",
+       "value": "0,250",
+       "unit": "s",
+       "note": ""
+      },
+      {
+       "label": "Tam çevrim (git–bekle–dön–bekle)",
+       "formula": "T = 2 · (t_m + t_yerleşme) = 2 · (0,25 + 0,06)",
+       "value": "0,62",
+       "unit": "s",
+       "note": "Her uçta 60 ms yerleşme + vakum tutma/bırakma süresi varsayıldı"
+      },
+      {
+       "label": "Çevrim hızı",
+       "formula": "n = 60 / T = 60 / 0,62",
+       "value": "97",
+       "unit": "çevrim/dk",
+       "note": "Pick&place için yüksek hız sınıfı"
+      }
+     ],
+     "comment": "Hareket süresinin %40'ı ivmelenme/yavaşlamadır; çevrimi kısaltmanın en etkili yolu hızı değil ivmeyi (ve dolayısıyla kütle azaltmayı) artırmaktır."
+    },
+    {
+     "title": "3. Kuvvet gereksinimi: tepe ve etkin (RMS)",
+     "steps": [
+      {
+       "label": "İvme kuvveti",
+       "formula": "F_a = m · a = 5,0 · 40",
+       "value": "200",
+       "unit": "N",
+       "note": ""
+      },
+      {
+       "label": "Hızlanma fazı kuvveti (tepe)",
+       "formula": "F_1 = F_a + F_0 = 200 + 7,2",
+       "value": "207,2",
+       "unit": "N",
+       "note": "Motorun karşılaması gereken tepe kuvvet"
+      },
+      {
+       "label": "Sabit hız fazı kuvveti",
+       "formula": "F_2 = F_0",
+       "value": "7,2",
+       "unit": "N",
+       "note": "Yalnızca sürtünme + kablo"
+      },
+      {
+       "label": "Yavaşlama fazı kuvveti",
+       "formula": "F_3 = F_a − F_0 = 200 − 7,2",
+       "value": "192,8",
+       "unit": "N",
+       "note": "Direnç yavaşlamaya yardım eder; büyüklük olarak alınır"
+      },
+      {
+       "label": "Etkin (RMS) kuvvet",
+       "formula": "F_rms = √[ 2·(F_1²·t_a + F_2²·t_c + F_3²·t_a) / T ] = √[ 2·(207,2²·0,050 + 7,2²·0,150 + 192,8²·0,050) / 0,62 ]",
+       "value": "113,8",
+       "unit": "N",
+       "note": "Bekleme süreleri paydada (T) yer aldığı için RMS'i düşürür"
+      },
+      {
+       "label": "Anlık gücün tepesi",
+       "formula": "P_mek = F_1 · v = 207,2 · 2,0",
+       "value": "414",
+       "unit": "W",
+       "note": "Mekanik tepe güç; sürücü ve ara devre boyutu için"
+      }
+     ],
+     "comment": "Sürekli itme kuvveti, RMS değerden en az %20-25 yüksek seçilmeli; tepe kuvvet motorun tepe değerinin yarısından az olmalıdır."
+    },
+    {
+     "title": "4. Motor seçimi ve elektriksel kontrol",
+     "steps": [
+      {
+       "label": "Tepe kuvvet emniyeti",
+       "formula": "S_p = F_pik,motor / F_1 = 450 / 207,2",
+       "value": "2,17",
+       "unit": "",
+       "note": "Hedef ≥ 1,5; tolerans, voltaj düşümü ve ısınma payı"
+      },
+      {
+       "label": "Sürekli kuvvet emniyeti",
+       "formula": "S_c = F_sür,motor / F_rms = 150 / 113,8",
+       "value": "1,32",
+       "unit": "",
+       "note": "Hedef ≥ 1,25 (doğal konveksiyon, 40 °C ortam)"
+      },
+      {
+       "label": "Tepe akım (RMS faz)",
+       "formula": "I_pik = F_1 / K_f = 207,2 / 45",
+       "value": "4,60",
+       "unit": "A",
+       "note": "K_f = 45 N/A (ör. demir çekirdekli bobin için tipik değer)"
+      },
+      {
+       "label": "Etkin akım",
+       "formula": "I_rms = F_rms / K_f = 113,8 / 45",
+       "value": "2,53",
+       "unit": "A",
+       "note": "Motor sürekli akımı 3,33 A, tepe akımı 10,0 A; sürücü ör. 4 A sürekli / 12 A tepe"
+      },
+      {
+       "label": "Elektriksel frekans",
+       "formula": "f_e = v / (2 · τ_p) = 2,0 / (2 · 0,030)",
+       "value": "33,3",
+       "unit": "Hz",
+       "note": "Kutup adımı τ_p = 30 mm (N–S çifti 60 mm)"
+      },
+      {
+       "label": "Ters EMK gerilimi (faz-faz, RMS)",
+       "formula": "U_emk = K_emk · v = 32 · 2,0",
+       "value": "64",
+       "unit": "V",
+       "note": ""
+      },
+      {
+       "label": "Gerekli toplam gerilim",
+       "formula": "U ≈ U_emk + I_pik · R_ff = 64 + 4,60 · 3,0",
+       "value": "78",
+       "unit": "V",
+       "note": "Ara devre 325 V DC (tek faz 230 V doğrultulmuş) ile elde edilebilen ≈190 V faz-faz RMS'in çok altında; yeterli gerilim payı var"
+      }
+     ],
+     "comment": "Hız yükseldikçe ters EMK gerilimi artar; 2 m/s'de gerilim payı yeterli, ancak 4 m/s'in üzerine çıkılacaksa ara devre gerilimi ya da kutup adımı gözden geçirilmelidir."
+    },
+    {
+     "title": "5. Isıl hesap",
+     "steps": [
+      {
+       "label": "Etkin bakır kaybı",
+       "formula": "P_cu = (F_rms / K_m)² = (113,8 / 14)²",
+       "value": "66",
+       "unit": "W",
+       "note": "K_m motor sabiti 14 N/√W (ör. katalog değeri)"
+      },
+      {
+       "label": "Sargı sıcaklık artışı",
+       "formula": "ΔT = P_cu · R_th = 66 · 0,9",
+       "value": "59",
+       "unit": "K",
+       "note": "R_th ≈ 0,9 K/W, tabla ile birlikte doğal konveksiyon"
+      },
+      {
+       "label": "Sargı sıcaklığı",
+       "formula": "T_sargı = T_ort + ΔT = 40 + 59",
+       "value": "99",
+       "unit": "°C",
+       "note": "Sargı sınıfı F için üst sınır ≈120 °C; sıcaklık sensörü (PTC/KTY) ile izlenir"
+      },
+      {
+       "label": "Soğutma gereksinimi",
+       "formula": "T_sargı < 100 °C → ek soğutma gereksiz",
+       "value": "Yok",
+       "unit": "",
+       "note": "Isı bobinden tablaya ve oradan ortama iletilir; tutucu ve payload ısıdan korunmalıdır"
+      }
+     ],
+     "comment": "Isı genleşmesi konum hassasiyetini bozar: tablanın ısınması ve cetvelin ısıl uzaması için 10 K'lık bir değişim yaklaşık 30–35 µm hata verir; ısıdan izole bağlantı gerekir."
+    },
+    {
+     "title": "6. Ray yükü ve ömür",
+     "steps": [
+      {
+       "label": "Ray arabası başına statik yük (çekim + ağırlık)",
+       "formula": "P_0 = (W + F_çek) / 4 = (49,1 + 1.350) / 4",
+       "value": "350",
+       "unit": "N",
+       "note": "Çekim kuvveti ray arabalarını bastırır; ön yüklü seri seçmek gerekir"
+      },
+      {
+       "label": "Devrilme momenti (ivme anında)",
+       "formula": "M = m · a · h = 5,0 · 40 · 0,08",
+       "value": "16",
+       "unit": "N·m",
+       "note": "Ağırlık merkezinin ray üst yüzünden yüksekliği h ≈ 80 mm"
+      },
+      {
+       "label": "Moment kaynaklı ek yük",
+       "formula": "ΔP = M / (4 · 0,06) = 16 / 0,24",
+       "value": "67",
+       "unit": "N",
+       "note": "Araba aralığı 120 mm → her arabaya ±60 mm"
+      },
+      {
+       "label": "Maksimum araba yükü",
+       "formula": "P_maks = P_0 + ΔP = 350 + 67",
+       "value": "416",
+       "unit": "N",
+       "note": ""
+      },
+      {
+       "label": "Nominal ömür (mesafe)",
+       "formula": "L = 50 · (C / P)³ = 50 · (8000 / 416)³",
+       "value": "355 bin",
+       "unit": "km",
+       "note": "C = 8 kN dinamik yük sayısı (ör. 15 mm boyutlu bilyeli ray arabası, ön yüklü)"
+      },
+      {
+       "label": "Yıllık hareket mesafesi",
+       "formula": "2 · s · n · 60 · 16 · 300 / 1000 = 0,8 · 97 · 60 · 16 · 300 / 1000",
+       "value": "22.297",
+       "unit": "km/yıl",
+       "note": "2 vardiya, 300 gün"
+      },
+      {
+       "label": "Ömür",
+       "formula": "L / yıllık = 354.500 / 22.297",
+       "value": "16",
+       "unit": "yıl",
+       "note": "Ömür değil rijitlik ve çekim kuvveti belirleyici; yağlama aralığı ayrıca izlenmeli"
+      }
+     ],
+     "comment": "Demir çekirdekli motorda ray seçimini çekim kuvveti belirler; ironless (demirsiz) bobinde çekim yoktur ve ray yükü ağırlığa iner."
+    },
+    {
+     "title": "7. Acil durdurma ve konum doğruluğu",
+     "steps": [
+      {
+       "label": "Kontrollü acil durma yolu (a = 80 m/s²)",
+       "formula": "s_dur = v² / (2 · a_dur) = 2,0² / (2 · 80)",
+       "value": "25",
+       "unit": "mm",
+       "note": "Gereken kuvvet m·a = 400 N < motor tepe kuvveti 450 N"
+      },
+      {
+       "label": "Mekanik aşırı yol payı",
+       "formula": "s_pay = 30 mm (her iki uç)",
+       "value": "30",
+       "unit": "mm",
+       "note": "25 mm < 30 mm → kontrollü durmada tampona çarpmaz"
+      },
+      {
+       "label": "Güç kesintisinde kinetik enerji (STO)",
+       "formula": "E_k = ½ · m · v² = 0,5 · 5,0 · 2,0²",
+       "value": "10,0",
+       "unit": "J",
+       "note": "Sürtünme çok düşük olduğundan enerji tampona aktarılır"
+      },
+      {
+       "label": "Tampon ortalama kuvveti",
+       "formula": "F_t = E_k / s_t = 10,0 / 0,012",
+       "value": "833",
+       "unit": "N",
+       "note": "12 mm strok hidrolik damper; yapıya tepe ≈1,5× ortalama"
+      },
+      {
+       "label": "Taban tepki sapması",
+       "formula": "δ = F_a / k_taban = 200 / 2·10⁷",
+       "value": "10",
+       "unit": "µm",
+       "note": "Ivme kuvveti tabanı ters yönde iter; sert montaj gerekir"
+      },
+      {
+       "label": "Yapı doğal frekansı",
+       "formula": "f_n = (1/2π) · √(k / m) = (1/2π) · √(1,5·10⁷ / 5,0)",
+       "value": "276",
+       "unit": "Hz",
+       "note": "Servo bant genişliği ≈ f_n / 3 ≈ 90 Hz ile sınırlanmalı"
+      }
+     ],
+     "comment": "Lineer motorda mekanik fren yoktur; yatay eksende acil durumda tampon ve kontrollü durma yeterlidir, dikey eksende ise ayrıca fren/denge elemanı zorunludur."
+    },
+    {
+     "title": "8. Sonuç ve seçim",
+     "steps": [
+      {
+       "label": "Motor",
+       "formula": "F_pik ≥ 207 N, F_sür ≥ 142 N",
+       "value": "450 / 150",
+       "unit": "N (pik / sürekli)",
+       "note": "Demir çekirdekli lineer motor, doğal konveksiyon"
+      },
+      {
+       "label": "Sürücü",
+       "formula": "I_pik = 4,6 A, I_rms = 2,5 A",
+       "value": "4 / 12",
+       "unit": "A (sür./pik)",
+       "note": "Servo sürücü, 325 V DC ara devre"
+      },
+      {
+       "label": "Ray",
+       "formula": "2 ray, 4 araba, bilyeli, ön yüklü, boyut 15",
+       "value": "4",
+       "unit": "araba",
+       "note": "P_maks = 416 N, ömür ≈ 16 yıl"
+      },
+      {
+       "label": "Geri besleme",
+       "formula": "1 µm çözünürlüklü manyetik/optik lineer cetvel",
+       "value": "±2",
+       "unit": "µm tekrarlanırlık",
+       "note": "Cetvel okuma kafası ve hareketli tabla kontrol edilmeli"
+      },
+      {
+       "label": "Tampon",
+       "formula": "Hidrolik damper 12 mm, ≥ 10 J",
+       "value": "10",
+       "unit": "J",
+       "note": ""
+      }
+     ],
+     "comment": "Tasarım 97 çevrim/dk'ya uygun; bakır kaybı ve sargı sıcaklığı sınırın altında; yedek kapasite için ivme 40 → 50 m/s² denemesi yapılabilir."
+    }
+   ],
+   "figures": [
+    {
+     "caption": "Şekil 1: Lineer motorlu eksenin yan görünüş şeması; bobin mıknatıs yolu üzerinde ilerler.",
+     "svg": "<svg viewBox=\"0 0 440 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<rect width=\"440\" height=\"240\" fill=\"#f7f9fb\"/>\n<rect x=\"20\" y=\"190\" width=\"400\" height=\"22\" fill=\"#8d99a6\" stroke=\"#1f2a37\"/>\n<text x=\"220\" y=\"205\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1f2a37\">Taban / Şase</text>\n<rect x=\"60\" y=\"175\" width=\"320\" height=\"15\" fill=\"#5b6470\" stroke=\"#1f2a37\"/>\n<g stroke=\"#1f2a37\"><rect x=\"60\" y=\"165\" width=\"40\" height=\"10\" fill=\"#c0392b\"/><rect x=\"100\" y=\"165\" width=\"40\" height=\"10\" fill=\"#2f5d8a\"/><rect x=\"140\" y=\"165\" width=\"40\" height=\"10\" fill=\"#c0392b\"/><rect x=\"180\" y=\"165\" width=\"40\" height=\"10\" fill=\"#2f5d8a\"/><rect x=\"220\" y=\"165\" width=\"40\" height=\"10\" fill=\"#c0392b\"/><rect x=\"260\" y=\"165\" width=\"40\" height=\"10\" fill=\"#2f5d8a\"/><rect x=\"300\" y=\"165\" width=\"40\" height=\"10\" fill=\"#c0392b\"/><rect x=\"340\" y=\"165\" width=\"40\" height=\"10\" fill=\"#2f5d8a\"/></g>\n<text x=\"60\" y=\"155\" font-size=\"11\" fill=\"#1f2a37\">Mıknatıs yolu (N–S)</text>\n<rect x=\"150\" y=\"125\" width=\"100\" height=\"32\" fill=\"#2f5d8a\" stroke=\"#1f2a37\"/>\n<text x=\"200\" y=\"145\" font-size=\"12\" text-anchor=\"middle\" fill=\"#ffffff\">Bobin</text>\n<rect x=\"120\" y=\"105\" width=\"160\" height=\"18\" fill=\"#e8711a\" stroke=\"#1f2a37\"/>\n<text x=\"200\" y=\"118\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1f2a37\">Tabla</text>\n<rect x=\"125\" y=\"125\" width=\"18\" height=\"40\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/><rect x=\"257\" y=\"125\" width=\"18\" height=\"40\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<rect x=\"30\" y=\"165\" width=\"340\" height=\"0\" fill=\"none\"/>\n<rect x=\"165\" y=\"75\" width=\"70\" height=\"30\" fill=\"#e8711a\" stroke=\"#1f2a37\"/>\n<text x=\"200\" y=\"94\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Tutucu</text>\n<rect x=\"190\" y=\"52\" width=\"20\" height=\"23\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/>\n<text x=\"200\" y=\"44\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Parça</text>\n<rect x=\"305\" y=\"105\" width=\"60\" height=\"12\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/>\n<text x=\"335\" y=\"100\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Cetvel</text>\n<line x1=\"282\" y1=\"115\" x2=\"305\" y2=\"115\" stroke=\"#1f2a37\" stroke-dasharray=\"3,2\"/>\n<text x=\"235\" y=\"180\" font-size=\"11\" fill=\"#1f2a37\"> </text>\n<rect x=\"30\" y=\"165\" width=\"26\" height=\"25\" fill=\"#5b6470\" stroke=\"#1f2a37\"/><rect x=\"384\" y=\"165\" width=\"26\" height=\"25\" fill=\"#5b6470\" stroke=\"#1f2a37\"/>\n<text x=\"43\" y=\"232\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Tampon</text>\n<text x=\"397\" y=\"232\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Tampon</text>\n<text x=\"105\" y=\"158\" font-size=\"11\" fill=\"#1f2a37\" transform=\"translate(0,28)\">Ray</text>\n<line x1=\"150\" y1=\"40\" x2=\"90\" y2=\"40\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#a)\"/>\n<line x1=\"250\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#a)\"/>\n<text x=\"220\" y=\"20\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1f2a37\">Lineer motorlu eksen (yan görünüş)</text>\n</svg>"
+    },
+    {
+     "caption": "Şekil 2: Trapez hız profili; 2 m/s, 40 m/s² ve 60 ms yerleşme ile çevrim 0,62 s.",
+     "svg": "<svg viewBox=\"0 0 440 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\">\n<defs><marker id=\"b\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#1f2a37\"/></marker></defs>\n<rect width=\"440\" height=\"240\" fill=\"#f7f9fb\"/>\n<line x1=\"50\" y1=\"190\" x2=\"410\" y2=\"190\" stroke=\"#1f2a37\" marker-end=\"url(#b)\"/>\n<line x1=\"50\" y1=\"190\" x2=\"50\" y2=\"25\" stroke=\"#1f2a37\" marker-end=\"url(#b)\"/>\n<text x=\"415\" y=\"205\" font-size=\"12\" text-anchor=\"end\" fill=\"#1f2a37\">t (s)</text>\n<text x=\"55\" y=\"22\" font-size=\"12\" fill=\"#1f2a37\">v (m/s)</text>\n<polyline points=\"50,190 90,70 210,70 250,190 290,190 330,70 370,70 410,190\" fill=\"none\" stroke=\"#e8711a\" stroke-width=\"3\"/>\n<line x1=\"50\" y1=\"70\" x2=\"410\" y2=\"70\" stroke=\"#4a90c2\" stroke-dasharray=\"4,3\"/>\n<text x=\"30\" y=\"74\" font-size=\"11\" text-anchor=\"end\" fill=\"#1f2a37\">2,0</text>\n<text x=\"70\" y=\"140\" font-size=\"11\" fill=\"#1f2a37\">t_a = 0,05</text>\n<text x=\"150\" y=\"62\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">t_c = 0,15 s</text>\n<text x=\"270\" y=\"180\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">yerleşme 0,06</text>\n<text x=\"150\" y=\"215\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1f2a37\">İleri hareket 0,25 s</text>\n<text x=\"350\" y=\"215\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1f2a37\">Dönüş 0,25 s</text>\n<text x=\"220\" y=\"235\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1f2a37\">Çevrim T = 0,62 s</text>\n</svg>"
+    },
+    {
+     "caption": "Şekil 3: Hızlanma fazı serbest cisim diyagramı; itme kuvveti ve manyetik çekim.",
+     "svg": "<svg viewBox=\"0 0 440 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\">\n<defs><marker id=\"c\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<rect width=\"440\" height=\"240\" fill=\"#f7f9fb\"/>\n<rect x=\"120\" y=\"100\" width=\"200\" height=\"50\" fill=\"#e8711a\" stroke=\"#1f2a37\"/>\n<text x=\"220\" y=\"130\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1f2a37\">m = 5,0 kg</text>\n<rect x=\"80\" y=\"170\" width=\"280\" height=\"14\" fill=\"#8d99a6\" stroke=\"#1f2a37\"/>\n<line x1=\"220\" y1=\"150\" x2=\"220\" y2=\"205\" stroke=\"#4a90c2\" stroke-width=\"2\" marker-end=\"url(#c)\"/>\n<text x=\"228\" y=\"210\" font-size=\"11\" fill=\"#1f2a37\">Çekim + ağırlık ≈ 1.400 N</text>\n<line x1=\"120\" y1=\"125\" x2=\"50\" y2=\"125\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#c)\"/>\n<text x=\"50\" y=\"115\" font-size=\"12\" fill=\"#1f2a37\">F = 207 N</text>\n<line x1=\"320\" y1=\"125\" x2=\"390\" y2=\"125\" stroke=\"#1f2a37\" stroke-width=\"2\" marker-end=\"url(#c)\"/>\n<text x=\"390\" y=\"115\" font-size=\"12\" text-anchor=\"end\" fill=\"#1f2a37\">a = 40 m/s²</text>\n<text x=\"220\" y=\"25\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1f2a37\">Serbest cisim diyagramı (hızlanma fazı)</text>\n</svg>"
+    }
+   ],
+   "advantages": [
+    "Mekanik dönüştürücü yok; boşluk ve esneklik olmadığı için yüksek rijitlik ve hızlı yerleşme",
+    "Yüksek ivme ve hız (3–5 g, 5 m/s'ye kadar)",
+    "Sürtünme kaynaklı aşınma çok düşük; bakım yalnızca ray yağlaması",
+    "Uzun stroklarda vidalı mil kritik devir sorunu yok; modül ekleyerek uzatılabilir",
+    "Konum çözünürlüğü yalnızca cetvele bağlı (µm altı mümkün)"
+   ],
+   "disadvantages": [
+    "Maliyet; mıknatıs yolu ve servo sürücü pahalıdır",
+    "Demir çekirdekli tipte büyük çekim kuvveti ray ömrünü ve montaj rijitliğini zorlar",
+    "Isınma konum hassasiyetini bozar; ısıl yönetim gerekir",
+    "Mekanik fren yok; dikey eksende ayrı güvenlik elemanı şart",
+    "Güçlü mıknatıslar nedeniyle montajda yaralanma ve talaş çekme riski"
+   ],
+   "example": [
+    "Bir akıllı telefon ekranı katmanlama hattında, vakum tutuculu lineer motorlu eksen 150 mm × 60 mm cam parçaları 400 mm uzaklıktan alıp 0,6 s çevrim ile bırakır. Hareketli kütle ≈5 kg, hız 2 m/s, tekrarlanırlık ±2 µm olup saatte 5.800 parça işlenir.",
+    "Aynı eksen yarı iletken paketleme hattında yonga alma/koyma işinde 3 m/s'ye kadar çıkarılabilir; hava yatağı ve demirsiz bobinle çekim kuvveti ortadan kalkar, ancak tepe kuvvet düşer."
+   ],
+   "design_tips": [
+    "Montaj yüzeyi düzlüğünü 0,02 mm/m içinde tut; bobin–mıknatıs hava aralığı (ör. 0,8 mm) için ayar şimi/mastar kullan.",
+    "Mıknatıs yolunu önce tek taraflı ray tabanına bağla; montajda çekim kuvveti nedeniyle özel kılavuz/ayırıcı kullan.",
+    "Ray taban yüzeylerine H7/g6 pozisyonlama kenarları aç; kenar yüksekliği ≥ ray yükseklik toleransı.",
+    "Isı kaynağı olan bobini tablaya ısıl köprü olmadan monte et; cetvel ve okuma kafasını ısıdan uzak tut.",
+    "Uç tamponları kontrollü durma mesafesinin ötesine yerleştir; STO için enerjiyi hesapla.",
+    "Kablo taşıyıcıyı bobinle aynı eksende ve düşük sürtünmeli seç; kabloyu bobin sargısına paralel bırakma.",
+    "Inventor'da ray, araba ve bobin mate'lerini 'Insert' kısıtıyla bağla; hava aralığı ölçüsünü parametrik tut.",
+    "Servo ayarında yapının f_n değerini ölç; bant genişliğini f_n/3 ile sınırla."
+   ],
+   "model3d": {
+    "camera": [
+     1,
+     0.7,
+     1.2
+    ],
+    "anim_scale": 1,
+    "parts": [
+     {
+      "type": "box",
+      "pos": [
+       0,
+       0,
+       0
+      ],
+      "size": [
+       700,
+       20,
+       200
+      ],
+      "color": "#8d99a6",
+      "label": "Taban / şase"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       13,
+       0
+      ],
+      "size": [
+       600,
+       6,
+       66
+      ],
+      "color": "#5b6470",
+      "label": "Arka demir levha"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       19,
+       0
+      ],
+      "size": [
+       600,
+       6,
+       60
+      ],
+      "color": "#c0392b",
+      "label": "Mıknatıs yolu"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       16,
+       -75
+      ],
+      "size": [
+       640,
+       12,
+       15
+      ],
+      "color": "#c9d1d9",
+      "label": "Ray"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       16,
+       75
+      ],
+      "size": [
+       640,
+       12,
+       15
+      ],
+      "color": "#c9d1d9"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       16,
+       -100
+      ],
+      "size": [
+       620,
+       3,
+       10
+      ],
+      "color": "#2ecc71",
+      "label": "Lineer cetvel"
+     },
+     {
+      "type": "box",
+      "pos": [
+       -340,
+       30,
+       0
+      ],
+      "size": [
+       16,
+       40,
+       100
+      ],
+      "color": "#5b6470",
+      "label": "Uç tampon"
+     },
+     {
+      "type": "box",
+      "pos": [
+       340,
+       30,
+       0
+      ],
+      "size": [
+       16,
+       40,
+       100
+      ],
+      "color": "#5b6470"
+     },
+     {
+      "type": "box",
+      "pos": [
+       -60,
+       33,
+       -75
+      ],
+      "size": [
+       50,
+       22,
+       32
+      ],
+      "color": "#4a90c2",
+      "label": "Ray arabası",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 200,
+        "period": 3
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       60,
+       33,
+       -75
+      ],
+      "size": [
+       50,
+       22,
+       32
+      ],
+      "color": "#4a90c2",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 200,
+        "period": 3
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       -60,
+       33,
+       75
+      ],
+      "size": [
+       50,
+       22,
+       32
+      ],
+      "color": "#4a90c2",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 200,
+        "period": 3
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       60,
+       33,
+       75
+      ],
+      "size": [
+       50,
+       22,
+       32
+      ],
+      "color": "#4a90c2",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 200,
+        "period": 3
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       49,
+       0
+      ],
+      "size": [
+       200,
+       10,
+       230
+      ],
+      "color": "#e8711a",
+      "label": "Tabla",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 200,
+        "period": 3
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       34,
+       0
+      ],
+      "size": [
+       140,
+       20,
+       56
+      ],
+      "color": "#2f5d8a",
+      "label": "Bobin (demir çekirdekli)",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 200,
+        "period": 3
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       32,
+       -100
+      ],
+      "size": [
+       24,
+       24,
+       14
+      ],
+      "color": "#222222",
+      "label": "Okuma kafası",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 200,
+        "period": 3
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       79,
+       0
+      ],
+      "size": [
+       40,
+       50,
+       40
+      ],
+      "color": "#e8711a",
+      "label": "Tutucu gövdesi",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 200,
+        "period": 3
+       }
+      }
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       0,
+       114,
+       0
+      ],
+      "r": 10,
+      "h": 20,
+      "axis": "y",
+      "color": "#3b8f6e",
+      "label": "Vakum tutucu",
+      "anim": {
+       "slide": {
+        "axis": "x",
+        "amp": 200,
+        "period": 3
+       }
+      }
+     }
+    ]
+   },
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Teyit edildi",
+    "checks": [
+     {
+      "item": "Tepe ve etkin kuvvet",
+      "method": "Python: F = m·a + F_sürtünme; F_rms = √(ΣF²t/T)",
+      "result": "207 N tepe, 113,8 N RMS — aynı",
+      "ok": true
+     },
+     {
+      "item": "Manyetik çekim kuvveti",
+      "method": "Mühendislik kontrolü",
+      "result": "1.350 N çekim, ray yükünü ağırlıktan ~27 kat fazla belirliyor — ray seçimi buna göre yapılmış",
+      "ok": true
+     },
+     {
+      "item": "Isıl kontrol",
+      "method": "Python: ΔT = P_Cu / (h·A)",
+      "result": "66 W bakır kaybı, 99 °C sargı (sınıf F için uygun)",
+      "ok": true
+     }
+    ],
+    "notes": [
+     "Demir çekirdekli lineer motorlarda montajda mıknatıs yolu güçlü çeker: montaj aparatı ve manyetik alan uyarısı (kalp pili) gereklidir."
+    ]
+   }
+  },
+  {
+   "id": "rulman-yatak-ucgen-flans",
+   "title": "Hazır rulman yatakları (UCP/UCF) ile tahrik mili",
+   "category": "Rulman yataklama",
+   "summary": "Konveyör tahrik tamburunun mili, iki hazır UCP ayaklı yatakla taşınır; set vida ile kilitlenen iç bilezik ve küresel dış bilezik montajı ve hizalamayı kolaylaştırır.",
+   "chat_context": "Senaryo: bant çekme kuvveti F_u = 1800 N, bant hızı 0,76 m/s, tambur Ø250 x 400 mm, tambur 58,0 dev/dk. Mil C45, 45/50/55 mm kademeli, yataklar arası 600 mm, iki UCP yatak (d = 50 mm, ör. UCP210). Bant gerginlikleri T1 = 2.552 N, T2 = 752 N; yatak yükü 1.848 N; mil torku 225 N·m; maks. eğilme momenti 370 N·m; mil gerilmesi 25,6 MPa; sehim 0,18 mm. Tahrik 2,2 kW motor, i = 25 dişli kutusu, esnek kaplin ve 14x9 kama.",
+   "principle": [
+    "Motor 1450 dev/dk ile döner; i = 25 oranlı dişli kutusu devri 58,0 dev/dk'ya düşürür ve torku yaklaşık 333 N·m çıkışa yükseltir. Esnek kaplin, çıkış miline kamayla bağlı tahrik milini döndürür ve eksen kaçıklığı ile darbeleri sönümler.",
+    "Mil, tambura kamalı veya kilitleme elemanlı göbek ile bağlıdır. Tambur ile bant arasındaki sürtünme (Euler-Eytelwein) bant çekme kuvvetini üretir: sıkı kol T₁ = 2.552 N, gevşek kol T₂ = 752 N. İki kolun toplamı ve tambur ağırlığı mili eğilmeye zorlar.",
+    "Mil yükü iki UCP yatağa aktarılır. UCP yatakta küresel dış bilezikli UC rulman, dökme demir ayaklı gövde içinde döner; böylece mil eğimi ve gövde hizasızlığı rulmanın ömrünü kısaltmaz. İç bilezik set vida veya eksantrik bilezikle milde tutulur.",
+    "Bir yatak sabit (aksiyal yönü tutan), diğeri serbest bırakılır; ısıl uzama ve imalat toleransı serbest yatakta karşılanır. Yataklar şase üzerine iki cıvata ile bağlanır; yatay bant çekmesi için konumlandırma pimi veya yan dayanak önerilir.",
+    "UCF (kare/üçgen flanşlı) yatak, yatak yükü şase duvarının yüzüne dik geldiğinde tercih edilir; UCP ise yükün tabana bastığı durumda daha uygundur."
+   ],
+   "components": [
+    {
+     "name": "UCP ayaklı yatak (2 adet)",
+     "role": "Mili şaseye bağlar; küresel dış bilezik eksen kaçıklığını karşılar, hazır gresli ve contalı olduğundan bakım kolaydır."
+    },
+    {
+     "name": "UCF flanşlı yatak (alternatif)",
+     "role": "Yükün şase duvarına dik geldiği tasarımlarda kare veya üçgen flanşla yüze monte edilir."
+    },
+    {
+     "name": "Tahrik mili (C45)",
+     "role": "Torku iletir, tamburu taşır; yorulma emniyeti için 45/50/55 mm kademeli."
+    },
+    {
+     "name": "Tahrik tamburu (kasnak)",
+     "role": "Lastik kaplı çelik tambur; bant ile sürtünmeyle çekme kuvveti üretir."
+    },
+    {
+     "name": "Kama (DIN 6885, 14x9)",
+     "role": "Mil ile kaplin yarımı arasında torku iletir; küçük boyutlu ve ucuz."
+    },
+    {
+     "name": "Esnek kaplin",
+     "role": "Dişli kutusu çıkışını mile bağlar; hizasızlık ve darbeyi sönümler."
+    },
+    {
+     "name": "Motor ve dişli kutusu",
+     "role": "2,2 kW motor, i = 25 dişli kutusu; gerekli devir ve torku sağlar."
+    }
+   ],
+   "specs": [
+    {
+     "k": "Bant çekme kuvveti F_u",
+     "v": "1800 N"
+    },
+    {
+     "k": "Bant hızı",
+     "v": "0,76 m/s"
+    },
+    {
+     "k": "Tambur",
+     "v": "Ø250 x 400 mm, ≈ 40 kg"
+    },
+    {
+     "k": "Tambur devri",
+     "v": "58,0 dev/dk"
+    },
+    {
+     "k": "Mil torku",
+     "v": "225 N·m"
+    },
+    {
+     "k": "Yataklar arası mesafe",
+     "v": "600 mm"
+    },
+    {
+     "k": "Yatak yükü (her biri)",
+     "v": "1.848 N"
+    },
+    {
+     "k": "Maks. eğilme momenti",
+     "v": "370 N·m"
+    },
+    {
+     "k": "Mil çapları",
+     "v": "45 / 50 / 55 mm (C45)"
+    },
+    {
+     "k": "Yatak",
+     "v": "UCP, d = 50 mm, C ≈ 35 kN"
+    },
+    {
+     "k": "Kama",
+     "v": "DIN 6885, 14 x 9 x 70"
+    },
+    {
+     "k": "Motor / dişli kutusu",
+     "v": "2,2 kW, 4 kutuplu / i = 25"
+    }
+   ],
+   "analysis": [
+    {
+     "title": "1. Hız, güç ve tork (tahrik tamburu)",
+     "steps": [
+      {
+       "label": "Tambur devri",
+       "formula": "n_d = n_m / i = 1450 / 25",
+       "value": "58,0",
+       "unit": "dev/dk",
+       "note": "4 kutuplu motor, i = 25 dişli kutusu"
+      },
+      {
+       "label": "Bant hızı",
+       "formula": "v = π · D · n_d / 60 = π · 0,25 · 58,0 / 60",
+       "value": "0,759",
+       "unit": "m/s",
+       "note": "Tambur çapı D = 250 mm"
+      },
+      {
+       "label": "Mil gücü",
+       "formula": "P = F_u · v = 1800 · 0,759",
+       "value": "1,37",
+       "unit": "kW",
+       "note": "F_u: bandı çeken etkin çevre kuvveti"
+      },
+      {
+       "label": "Motor gücü",
+       "formula": "P_m = P / η_r = 1,37 / 0,92",
+       "value": "1,49",
+       "unit": "kW",
+       "note": "Helisel-konik dişli kutusu verimi η_r ≈ 0,92"
+      },
+      {
+       "label": "Mil torku",
+       "formula": "T = F_u · D / 2 = 1800 · 0,125",
+       "value": "225",
+       "unit": "N·m",
+       "note": "Tambur ve mil bu torku iletir"
+      }
+     ],
+     "comment": "Gerekli güç yaklaşık 1,45 kW; hizmet katsayısı ve kalkış için 2,2 kW motor ön seçildi. Mil torku 225 N·m olup tüm mil ve kama hesaplarının girdisidir."
+    },
+    {
+     "title": "2. Bant gerginlikleri (Euler-Eytelwein)",
+     "steps": [
+      {
+       "label": "Kavrama faktörü",
+       "formula": "e^(μα) = e^(0,35 · 3,49)",
+       "value": "3,39",
+       "unit": "-",
+       "note": "Lastik kaplı tambur μ ≈ 0,35, sarma açısı α = 200° (3,49 rad)"
+      },
+      {
+       "label": "Sıkı kol gerginliği",
+       "formula": "T₁ = F_u · e^(μα)/(e^(μα) − 1) = 1800 · 3,39 / 2,39",
+       "value": "2.552",
+       "unit": "N",
+       "note": "Tahrik tamburuna giren kol"
+      },
+      {
+       "label": "Gevşek kol gerginliği",
+       "formula": "T₂ = T₁ − F_u = 2.552 − 1800",
+       "value": "752",
+       "unit": "N",
+       "note": "Kaymayı önlemek için T₂ bu değerin altına düşmemeli"
+      },
+      {
+       "label": "Tamburdaki bant bileşkesi",
+       "formula": "F_b ≈ T₁ + T₂ = 2.552 + 752",
+       "value": "3.304",
+       "unit": "N",
+       "note": "Kollar yaklaşık paralel kabul edildi (güvenli taraf)"
+      },
+      {
+       "label": "Tambur ağırlığı",
+       "formula": "W_d = m_d · g = 40 · 9,81",
+       "value": "392",
+       "unit": "N",
+       "note": "Tambur kabuğu + yan diskler + göbekler ≈ 40 kg"
+      }
+     ],
+     "comment": "Toplam mil yükü bant bileşkesi ile tambur ağırlığının toplamıdır. Bant kolları paralel olmadığında bileşke küçülür; paralel kabul etmek yatak yükünü yüksek tahmin eder."
+    },
+    {
+     "title": "3. Yatak tepkileri ve mil eğilme momenti",
+     "steps": [
+      {
+       "label": "Toplam radyal yük",
+       "formula": "F_r = F_b + W_d = 3.304 + 392",
+       "value": "3.697",
+       "unit": "N",
+       "note": "Tambur genişliği boyunca yayılı yük, tambur yataklar arasında ortada"
+      },
+      {
+       "label": "Yatak tepkisi",
+       "formula": "R_A = R_B = F_r / 2 = 3.697 / 2",
+       "value": "1.848",
+       "unit": "N",
+       "note": "Simetrik yerleşim; yataklar arası L = 600 mm"
+      },
+      {
+       "label": "Maksimum eğilme momenti",
+       "formula": "M = F_r·L/4 − F_r·B/8 = 3.697·0,6/4 − 3.697·0,4/8",
+       "value": "369,7",
+       "unit": "N·m",
+       "note": "B = 400 mm tambur genişliği (yayılı yük düzeltmesi)"
+      },
+      {
+       "label": "Eşdeğer moment",
+       "formula": "M_e = √(M² + 0,75·T²) = √(369,7² + 0,75·225²)",
+       "value": "417,9",
+       "unit": "N·m",
+       "note": "Von Mises tipi birleşik yükleme; dönen mil için tam değişken eğilme"
+      }
+     ],
+     "comment": "Eğilme momenti tambur ortasında maksimumdur. Mil dönerken eğilme gerilmesi tam değişken olduğundan yorulma esas alınır, statik akma değil."
+    },
+    {
+     "title": "4. Mil çapı, sehim ve yatak eğimi",
+     "steps": [
+      {
+       "label": "Gereken çap",
+       "formula": "d ≥ (32·M_e / (π·σ_izin))^(1/3) = (32·417,9 / (π·35·10⁶))^(1/3)",
+       "value": "49,5",
+       "unit": "mm",
+       "note": "C45 için kama yuvası ve çentik etkisi dahil σ_izin ≈ 35 MPa (yorulma)"
+      },
+      {
+       "label": "Tambur oturma kesitinde eğilme gerilmesi",
+       "formula": "d_s = 55 mm seçildi → σ = 32·M_e/(π·d_s³)",
+       "value": "25,6",
+       "unit": "MPa",
+       "note": "35 MPa sınırının altında; emniyet ≈ 1,37"
+      },
+      {
+       "label": "Mil sehimi",
+       "formula": "y = F_r·L³ / (48·E·I) ; I = π·d⁴/64 = 44,92·10⁻⁸ m⁴",
+       "value": "0,18",
+       "unit": "mm",
+       "note": "Orta noktada tekil yük kabulü ile üst sınır; E = 210 GPa"
+      },
+      {
+       "label": "Mesnet eğimi",
+       "formula": "θ = F_r·L² / (16·E·I)",
+       "value": "0,051",
+       "unit": "°",
+       "note": "UC rulmanının kendini ayarlama kapasitesi (≈ ±2°) çok altında"
+      }
+     ],
+     "comment": "Mil yataklarda 50 mm, tambur oturma bölgesinde 55 mm, kaplin ucunda 45 mm olarak kademelendirildi. Sehim ve eğim değerleri küçük olduğundan UCP yataklarının küresel dış bileziği eksen kaçıklığını rahatça karşılar."
+    },
+    {
+     "title": "5. Kama bağlantısı (kaplin ucu)",
+     "steps": [
+      {
+       "label": "Çevre kuvveti",
+       "formula": "F_t = 2·T / d = 2·225 / 0,045",
+       "value": "10.000",
+       "unit": "N",
+       "note": "Kaplin ucu d = 45 mm, DIN 6885 kama 14×9"
+      },
+      {
+       "label": "Yüzey basıncı",
+       "formula": "p = F_t / ((h/2)·(l − b)) = 10.000 / (4,5·56)",
+       "value": "39,7",
+       "unit": "MPa",
+       "note": "Çelik göbek için p_izin ≈ 90-100 MPa; l = 70 mm"
+      },
+      {
+       "label": "Kama kesme gerilmesi",
+       "formula": "τ = F_t / (b·(l − b)) = 10.000 / (14·56)",
+       "value": "12,8",
+       "unit": "MPa",
+       "note": "τ_izin ≈ 60 MPa; büyük emniyet"
+      },
+      {
+       "label": "Mil burulma gerilmesi",
+       "formula": "τ_s = 16·T / (π·d³)",
+       "value": "12,6",
+       "unit": "MPa",
+       "note": "Kama yuvası çentik etkisi için yeterli pay var"
+      }
+     ],
+     "comment": "Kama bağlantısı aşırı yük altında bile yeterlidir; asıl sınır esnek kaplinin nominal torkudur."
+    },
+    {
+     "title": "6. Rulman ömrü ve bağlantı cıvataları",
+     "steps": [
+      {
+       "label": "Rulman yükü",
+       "formula": "P = R = 1.848 N (aksiyal yük yok)",
+       "value": "1.848",
+       "unit": "N",
+       "note": "UC210 benzeri, d = 50 mm; dinamik yük sayısı C ≈ 35 kN (katalogdan doğrulanmalı)"
+      },
+      {
+       "label": "Temel ömür",
+       "formula": "L10 = (C/P)³ = (35000/1.848)³",
+       "value": "6.789",
+       "unit": "milyon dev",
+       "note": "Bilyalı rulman, üs 3"
+      },
+      {
+       "label": "Ömür saati",
+       "formula": "L10h = L10·10⁶ / (60·n) = 6.789·10⁶ / (60·58,0)",
+       "value": "1.951",
+       "unit": "bin saat",
+       "note": "Teorik değer çok yüksek; pratik ömrü conta ve gres belirler"
+      },
+      {
+       "label": "Şoklu yük (×1,5) ile ömür",
+       "formula": "P_eq = 1,5·R = 2.773 N",
+       "value": "578",
+       "unit": "bin saat",
+       "note": "Darbeli yükleme güvenli kabulü ile"
+      },
+      {
+       "label": "Taban cıvata gerilmesi",
+       "formula": "τ = (R/2) / A_s = 924 / 157 (M16, 8.8)",
+       "value": "5,9",
+       "unit": "MPa",
+       "note": "Yatak başına 2 cıvata; yatay bant çekmesi için ayrıca konumlandırma pimi önerilir"
+      }
+     ],
+     "comment": "Rulman, mil çapı yüzünden gereğinden büyük seçilmiştir; ömür ihmal edilebilir. Kritik nokta bilye ömrü değil, set vida kilitlemenin zamanla gevşemesi ve contanın korunmasıdır."
+    },
+    {
+     "title": "7. Dinamik kontrol ve motor/dişli kutusu",
+     "steps": [
+      {
+       "label": "Rampa ivmesi",
+       "formula": "a = v / t = 0,759 / 3",
+       "value": "0,253",
+       "unit": "m/s²",
+       "note": "Frekans invertörü ile 3 s yumuşak kalkış"
+      },
+      {
+       "label": "Bant ivmelenme kuvveti",
+       "formula": "F_a = m·a = 600·0,253",
+       "value": "152",
+       "unit": "N",
+       "note": "Bant + yük hareketli kütlesi ≈ 600 kg; F_u'nun %8'i"
+      },
+      {
+       "label": "Tambur atalet momenti",
+       "formula": "J_d ≈ 0,8·m_d·r² = 0,8·40·0,125²",
+       "value": "0,50",
+       "unit": "kg·m²",
+       "note": "Tambur ve mil için yaklaşık"
+      },
+      {
+       "label": "Açısal ivme torku",
+       "formula": "T_j = J_d·ω/t = 0,50·6,07/3",
+       "value": "1,01",
+       "unit": "N·m",
+       "note": "Ihmal edilebilir; yük torku belirleyici"
+      },
+      {
+       "label": "Dişli kutusu çıkış torku",
+       "formula": "T_out = T_motor·i·η = 14,49·25·0,92",
+       "value": "333",
+       "unit": "N·m",
+       "note": "2,2 kW, 1450 dev/dk motor; servis katsayısı = 1,48"
+      }
+     ],
+     "comment": "Kalkış ivmesi küçüktür; asıl yük sürtünme kaynaklı F_u kuvvetidir. Servis katsayısı 1,4 sınırının üzerinde kaldığı için 2,2 kW motor ve yaklaşık 340 N·m nominal çıkış torklu dişli kutusu yeterlidir."
+    },
+    {
+     "title": "8. Sonuç ve seçim",
+     "steps": [
+      {
+       "label": "Yataklama",
+       "formula": "2 adet UCP (ör. d = 50 mm); biri sabit, biri serbest",
+       "value": "1.848",
+       "unit": "N/yatak",
+       "note": "Set vida veya eksantrik bilezikle mil kilitleme"
+      },
+      {
+       "label": "Mil",
+       "formula": "C45, 45/50/55 mm kademeli, h7",
+       "value": "25,6",
+       "unit": "MPa",
+       "note": "σ_izin = 35 MPa"
+      },
+      {
+       "label": "Tahrik",
+       "formula": "2,2 kW motor, i = 25, esnek kaplin, kama 14×9",
+       "value": "333",
+       "unit": "N·m",
+       "note": "Servis katsayısı 1,48"
+      },
+      {
+       "label": "Bant hızı",
+       "formula": "Tasarım değeri",
+       "value": "0,76",
+       "unit": "m/s",
+       "note": "F_u = 1800 N"
+      }
+     ],
+     "comment": "Seçilen elemanlar standart katalog ürünleridir; yatak, kaplin ve dişli kutusunun nominal değerleri üretici kataloğundan teyit edilmelidir."
+    }
+   ],
+   "figures": [
+    {
+     "caption": "Şekil 1. Tahrik milinin üstten şematik görünüşü: motor, redüktör, kaplin, iki UCP yatak ve tambur.",
+     "svg": "<svg viewBox=\"0 0 560 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<rect width=\"560\" height=\"250\" fill=\"#f7f9fb\"/>\n<rect x=\"190\" y=\"75\" width=\"110\" height=\"90\" fill=\"#e8711a\" fill-opacity=\"0.25\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<text x=\"245\" y=\"125\" text-anchor=\"middle\" fill=\"#1f2a37\">Tambur Ø250</text>\n<rect x=\"60\" y=\"116\" width=\"400\" height=\"8\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/>\n<rect x=\"150\" y=\"98\" width=\"20\" height=\"44\" fill=\"#4a90c2\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<rect x=\"320\" y=\"98\" width=\"20\" height=\"44\" fill=\"#4a90c2\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<rect x=\"140\" y=\"146\" width=\"40\" height=\"12\" fill=\"#8d99a6\" stroke=\"#1f2a37\"/>\n<rect x=\"310\" y=\"146\" width=\"40\" height=\"12\" fill=\"#8d99a6\" stroke=\"#1f2a37\"/>\n<text x=\"160\" y=\"180\" text-anchor=\"middle\" fill=\"#1f2a37\">UCP (sabit)</text>\n<text x=\"330\" y=\"180\" text-anchor=\"middle\" fill=\"#1f2a37\">UCP (serbest)</text>\n<rect x=\"385\" y=\"110\" width=\"30\" height=\"20\" fill=\"#5b6470\" stroke=\"#1f2a37\"/>\n<text x=\"400\" y=\"104\" text-anchor=\"middle\" fill=\"#1f2a37\">Kaplin</text>\n<rect x=\"415\" y=\"95\" width=\"60\" height=\"50\" fill=\"#5b6470\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<text x=\"445\" y=\"124\" text-anchor=\"middle\" fill=\"#fff\">Redüktör</text>\n<rect x=\"475\" y=\"102\" width=\"70\" height=\"36\" fill=\"#2f5d8a\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<text x=\"510\" y=\"124\" text-anchor=\"middle\" fill=\"#fff\">Motor</text>\n<rect x=\"372\" y=\"113\" width=\"14\" height=\"14\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/>\n<text x=\"378\" y=\"104\" text-anchor=\"middle\" fill=\"#1f2a37\" font-size=\"11\">kama</text>\n<line x1=\"190\" y1=\"205\" x2=\"300\" y2=\"205\" stroke=\"#1f2a37\"/><text x=\"245\" y=\"222\" text-anchor=\"middle\" fill=\"#1f2a37\" font-size=\"11\">B = 400</text>\n<line x1=\"160\" y1=\"238\" x2=\"330\" y2=\"238\" stroke=\"#1f2a37\"/><text x=\"245\" y=\"248\" text-anchor=\"middle\" fill=\"#1f2a37\" font-size=\"11\">L = 600</text>\n<line x1=\"245\" y1=\"70\" x2=\"245\" y2=\"30\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a)\"/>\n<text x=\"258\" y=\"40\" fill=\"#e8711a\">F_b = 3304 N (bant)</text>\n<text x=\"20\" y=\"30\" fill=\"#1f2a37\" font-size=\"13\">Üstten görünüş: UCP yataklı tahrik mili</text>\n</svg>"
+    },
+    {
+     "caption": "Şekil 2. Milin serbest cisim diyagramı ve eğilme momenti dağılımı.",
+     "svg": "<svg viewBox=\"0 0 560 280\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\">\n<defs><marker id=\"b\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<rect width=\"560\" height=\"280\" fill=\"#f7f9fb\"/>\n<text x=\"20\" y=\"22\" fill=\"#1f2a37\" font-size=\"13\">Mil: yükleme ve eğilme momenti diyagramı</text>\n<rect x=\"80\" y=\"100\" width=\"400\" height=\"10\" fill=\"#c9d1d9\" stroke=\"#1f2a37\"/>\n<polygon points=\"80,110 70,128 90,128\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<polygon points=\"480,110 470,128 490,128\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<line x1=\"170\" y1=\"52\" x2=\"170\" y2=\"98\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#b)\"/>\n<line x1=\"230\" y1=\"52\" x2=\"230\" y2=\"98\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#b)\"/>\n<line x1=\"290\" y1=\"52\" x2=\"290\" y2=\"98\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#b)\"/>\n<line x1=\"350\" y1=\"52\" x2=\"350\" y2=\"98\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#b)\"/>\n<line x1=\"170\" y1=\"50\" x2=\"390\" y2=\"50\" stroke=\"#e8711a\" stroke-width=\"2\"/>\n<text x=\"280\" y=\"42\" text-anchor=\"middle\" fill=\"#e8711a\">F_r = 3696 N (tambur boyunca)</text>\n<line x1=\"80\" y1=\"190\" x2=\"80\" y2=\"132\" stroke=\"#4a90c2\" stroke-width=\"2\" marker-end=\"url(#b)\"/>\n<line x1=\"480\" y1=\"190\" x2=\"480\" y2=\"132\" stroke=\"#4a90c2\" stroke-width=\"2\" marker-end=\"url(#b)\"/>\n<text x=\"80\" y=\"206\" text-anchor=\"middle\" fill=\"#1f2a37\">R_A = 1848 N</text>\n<text x=\"480\" y=\"206\" text-anchor=\"middle\" fill=\"#1f2a37\">R_B = 1848 N</text>\n<text x=\"280\" y=\"224\" text-anchor=\"middle\" fill=\"#1f2a37\" font-size=\"11\">L = 600 mm (yataklar arası)</text>\n<line x1=\"80\" y1=\"232\" x2=\"480\" y2=\"232\" stroke=\"#1f2a37\"/>\n<polygon points=\"80,270 480,270 400,240 160,240\" fill=\"#4a90c2\" fill-opacity=\"0.35\" stroke=\"#1f2a37\"/>\n<text x=\"280\" y=\"258\" text-anchor=\"middle\" fill=\"#1f2a37\">M_maks = 370 N·m (ortada)</text>\n</svg>"
+    },
+    {
+     "caption": "Şekil 3. UCP (ayaklı) yatağın kesiti; küresel dış bilezik kendini ayarlar, set vida iç bileziği milde tutar.",
+     "svg": "<svg viewBox=\"0 0 560 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\">\n<rect width=\"560\" height=\"240\" fill=\"#f7f9fb\"/>\n<text x=\"20\" y=\"22\" fill=\"#1f2a37\" font-size=\"13\">UCP yatak: kesit ve set vida kilitlemesi</text>\n<rect x=\"120\" y=\"180\" width=\"320\" height=\"22\" fill=\"#8d99a6\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<path d=\"M200,180 L200,100 A80,80 0 0 1 360,100 L360,180 Z\" fill=\"#8d99a6\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<circle cx=\"280\" cy=\"100\" r=\"48\" fill=\"#c9d1d9\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<circle cx=\"280\" cy=\"100\" r=\"28\" fill=\"#f7f9fb\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<line x1=\"280\" y1=\"100\" x2=\"280\" y2=\"60\" stroke=\"#1f2a37\"/>\n<text x=\"296\" y=\"94\" fill=\"#1f2a37\" font-size=\"11\">mil d = 50</text>\n<rect x=\"272\" y=\"42\" width=\"16\" height=\"14\" fill=\"#e8711a\" stroke=\"#1f2a37\"/>\n<text x=\"296\" y=\"54\" fill=\"#e8711a\" font-size=\"11\">set vida</text>\n<text x=\"280\" y=\"38\" text-anchor=\"middle\" fill=\"#1f2a37\" font-size=\"11\">gres nipeli (üstte)</text>\n<text x=\"280\" y=\"226\" text-anchor=\"middle\" fill=\"#1f2a37\" font-size=\"11\">2 x M16 taban cıvatası, H = 62 mm</text>\n<text x=\"150\" y=\"140\" fill=\"#1f2a37\" font-size=\"11\">küresel dış bilezik</text>\n<text x=\"395\" y=\"100\" fill=\"#1f2a37\" font-size=\"11\">iç bilezik</text>\n</svg>"
+    }
+   ],
+   "advantages": [
+    "Rulman ve gövde hazır birimdir; yatak yuvası işlemek, rulmanı pres etmek gerekmez.",
+    "Küresel dış bilezik hizasızlığı (≈ ±2°) tolere eder; şase imalatı ucuzlar.",
+    "Set vida ile milde kilitleme, mil üzerinde omuz veya segman gerektirmez.",
+    "Gresli ve contalı; bakım aralığı uzun, yedek parça bulunması kolay.",
+    "UCP/UCF ve çeşitli iç çaplar standarttır; değiştirilebilirlik yüksektir."
+   ],
+   "disadvantages": [
+    "Set vida kilitlemesi darbeli ve ters dönüşlü yüklerde gevşeyebilir; mil yüzeyini bozar.",
+    "Dökme demir gövde şok yüke ve yüksek sıcaklığa sınırlı dayanır.",
+    "Yüksek hızlı veya hassas uygulamalar için uygun değildir (ses, titreşim, düşük hassasiyet).",
+    "Yatay çekme kuvvetleri UCP taban cıvatalarını kesmeye zorlar; pim veya dayanak gerekir."
+   ],
+   "example": [
+    "Bir paketleme hattında 12 m uzunluğunda, 400 mm genişliğinde konveyör 0,76 m/s hızla çalışır. Tahrik tamburu iki UCP210 yatağa oturur; 2,2 kW motor ve i = 25 dişli kutusu kullanılır. Yatak başına yaklaşık 1,85 kN yük gelir; yatak ömrü teorik olarak çok yüksektir, pratikte 5-7 yılda bir gres tazelemesi yeterlidir.",
+    "Gıda tesislerinde aynı çözüm paslanmaz gövdeli ve contalı yataklarla yapılır; yıkama suyuna karşı çift dudaklı conta ve paslanmaz mil seçilir."
+   ],
+   "design_tips": [
+    "Mil toleransını h7 (ağır yükte h6) seç; UC rulman iç bileziğinin milde kolay kayması için mil yüzey pürüzlülüğü Ra 1,6 olsun.",
+    "Set vidaların milde işlenmiş küçük bir kamaya veya düz yüzeye oturması, vidanın mili oyup gevşemesini engeller.",
+    "Taban cıvata deliklerini oval aç, hizalamadan sonra konumlandırma pimi ile sabitle.",
+    "Sabit yatağı tahrik tarafına, serbest yatağı karşı tarafa koy; serbest yatakta aksiyal boşluk bırak.",
+    "Gres nipelinin erişilebilir olmasını Inventor montajında kontrol et; yatak ile tambur arasında en az 20 mm boşluk bırak.",
+    "Katalogdan C, C0 ve izin verilen devir değerlerini mutlaka doğrula; kaplin için nominal tork ve hizasızlık sınırlarına bak."
+   ],
+   "model3d": {
+    "camera": [
+     1,
+     0.7,
+     1.3
+    ],
+    "anim_scale": 1,
+    "parts": [
+     {
+      "type": "box",
+      "pos": [
+       250,
+       -100,
+       0
+      ],
+      "color": "#8d99a6",
+      "size": [
+       1300,
+       20,
+       420
+      ]
+     },
+     {
+      "type": "box",
+      "pos": [
+       -300,
+       -65,
+       0
+      ],
+      "color": "#8d99a6",
+      "size": [
+       100,
+       50,
+       300
+      ]
+     },
+     {
+      "type": "box",
+      "pos": [
+       300,
+       -65,
+       0
+      ],
+      "color": "#8d99a6",
+      "size": [
+       100,
+       50,
+       300
+      ]
+     },
+     {
+      "type": "box",
+      "pos": [
+       -300,
+       -20,
+       0
+      ],
+      "color": "#8d99a6",
+      "size": [
+       200,
+       40,
+       340
+      ],
+      "label": "Taşıyıcı şase"
+     },
+     {
+      "type": "box",
+      "pos": [
+       300,
+       -20,
+       0
+      ],
+      "color": "#8d99a6",
+      "size": [
+       200,
+       40,
+       340
+      ]
+     },
+     {
+      "type": "box",
+      "pos": [
+       -300,
+       10,
+       0
+      ],
+      "color": "#3b5568",
+      "size": [
+       55,
+       20,
+       275
+      ]
+     },
+     {
+      "type": "box",
+      "pos": [
+       300,
+       10,
+       0
+      ],
+      "color": "#3b5568",
+      "size": [
+       55,
+       20,
+       275
+      ],
+      "label": "UCP yatak ayağı"
+     },
+     {
+      "type": "tube",
+      "pos": [
+       -300,
+       62,
+       0
+      ],
+      "color": "#4a5560",
+      "r": 62,
+      "ri": 26,
+      "h": 44,
+      "axis": "x",
+      "label": "Yatak gövdesi"
+     },
+     {
+      "type": "tube",
+      "pos": [
+       300,
+       62,
+       0
+      ],
+      "color": "#4a5560",
+      "r": 62,
+      "ri": 26,
+      "h": 44,
+      "axis": "x"
+     },
+     {
+      "type": "tube",
+      "pos": [
+       -300,
+       62,
+       0
+      ],
+      "color": "#c9d1d9",
+      "r": 40,
+      "ri": 25,
+      "h": 52,
+      "axis": "x",
+      "label": "Rulman iç bileziği"
+     },
+     {
+      "type": "tube",
+      "pos": [
+       300,
+       62,
+       0
+      ],
+      "color": "#c9d1d9",
+      "r": 40,
+      "ri": 25,
+      "h": 52,
+      "axis": "x"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       50,
+       62,
+       0
+      ],
+      "color": "#c9d1d9",
+      "r": 25,
+      "h": 800,
+      "axis": "x",
+      "label": "Tahrik mili",
+      "anim": {
+       "spin": {
+        "rpm": 20
+       }
+      }
+     },
+     {
+      "type": "tube",
+      "pos": [
+       0,
+       62,
+       0
+      ],
+      "color": "#e8711a",
+      "r": 125,
+      "ri": 122,
+      "h": 400,
+      "axis": "x",
+      "opacity": 0.6,
+      "label": "Tahrik tamburu",
+      "anim": {
+       "spin": {
+        "rpm": 20
+       }
+      }
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       -190,
+       62,
+       0
+      ],
+      "color": "#e8711a",
+      "r": 122,
+      "h": 15,
+      "axis": "x",
+      "anim": {
+       "spin": {
+        "rpm": 20
+       }
+      }
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       190,
+       62,
+       0
+      ],
+      "color": "#e8711a",
+      "r": 122,
+      "h": 15,
+      "axis": "x",
+      "anim": {
+       "spin": {
+        "rpm": 20
+       }
+      }
+     },
+     {
+      "type": "tube",
+      "pos": [
+       0,
+       62,
+       0
+      ],
+      "color": "#222222",
+      "r": 128,
+      "ri": 125,
+      "h": 360,
+      "axis": "x",
+      "opacity": 0.85,
+      "label": "Bant sarması",
+      "anim": {
+       "spin": {
+        "rpm": 20
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       395,
+       87,
+       0
+      ],
+      "color": "#e8c07a",
+      "size": [
+       70,
+       10,
+       14
+      ],
+      "label": "Kama 14x9"
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       420,
+       62,
+       0
+      ],
+      "color": "#5b6470",
+      "r": 60,
+      "h": 90,
+      "axis": "x",
+      "label": "Esnek kaplin",
+      "anim": {
+       "spin": {
+        "rpm": 20
+       }
+      }
+     },
+     {
+      "type": "box",
+      "pos": [
+       560,
+       62,
+       0
+      ],
+      "color": "#5b6470",
+      "size": [
+       180,
+       160,
+       200
+      ],
+      "label": "Dişli kutusu"
+     },
+     {
+      "type": "box",
+      "pos": [
+       560,
+       -54,
+       0
+      ],
+      "color": "#8d99a6",
+      "size": [
+       180,
+       72,
+       200
+      ]
+     },
+     {
+      "type": "cylinder",
+      "pos": [
+       775,
+       62,
+       0
+      ],
+      "color": "#2f5d8a",
+      "r": 75,
+      "h": 260,
+      "axis": "x",
+      "label": "Elektrik motoru"
+     },
+     {
+      "type": "box",
+      "pos": [
+       775,
+       -51,
+       0
+      ],
+      "color": "#8d99a6",
+      "size": [
+       260,
+       78,
+       150
+      ]
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       190,
+       330
+      ],
+      "color": "#222222",
+      "size": [
+       360,
+       6,
+       660
+      ],
+      "opacity": 0.7,
+      "label": "Konveyör bandı (üst kol)"
+     },
+     {
+      "type": "box",
+      "pos": [
+       0,
+       -66,
+       330
+      ],
+      "color": "#222222",
+      "size": [
+       360,
+       6,
+       660
+      ],
+      "opacity": 0.7
+     }
+    ]
+   },
+   "review": {
+    "by": "Makine Profesörü skill'i (hesap betikleri + bağımsız Python hesabı)",
+    "status": "Teyit edildi (etiket düzeltmesi)",
+    "checks": [
+     {
+      "item": "Euler-Eytelwein kavrama",
+      "method": "Python: e^(μα), μ=0,35, α=200°",
+      "result": "3,39 → T1 = 2.553 N, T2 = 753 N — aynı",
+      "ok": true
+     },
+     {
+      "item": "Rulman ömrü",
+      "method": "muhendislik_araclari.py rulman (C=35,1 kN, P=1.848 N, 58 d/dk)",
+      "result": "L10h ≈ 1,97 milyon saat — aynı",
+      "ok": true
+     },
+     {
+      "item": "Kama bağlantısı",
+      "method": "Python: F = 2T/d",
+      "result": "225 N·m, Ø45 → 10.000 N — aynı",
+      "ok": true
+     }
+    ],
+    "notes": [
+     "UCP yataklarda ömrü rulman değil **sızdırmazlık ve gres** belirler; tozlu konveyör ortamında üçlü dudaklı keçeli veya kapaklı yatak seçin, yağlama nipeli erişilebilir olsun.",
+     "Uzun milde iki UCP yatak hizasızlığı tolere eder (küresel dış bilezik), ama sabit-serbest ayrımı yoktur: ısıl uzamada eksenel yük oluşmaması için bir yatağın setuskuru gevşek bırakılmamalı — bunun yerine bir taraf genişletilmiş iç bilezikli (eksenel serbest) seçilmeli."
+    ]
+   }
+  }
+ ]
+}
