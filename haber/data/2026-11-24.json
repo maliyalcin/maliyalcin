@@ -1,0 +1,205 @@
+{
+  "date": "2026-11-24",
+  "generated_at": "2026-11-25T00:45:00+03:00",
+  "verified_by": "opus",
+  "headline": "Sanayi Bakanlığı sanayi tipi insansı robot projelerine %50 hibe çağrısı açtı (son başvuru 31 Aralık); Autodesk çeyrekte %17 büyüdü.",
+  "categories": [
+    {
+      "id": "ai-mekanik-tasarim",
+      "title": "Yapay Zeka × Mekanik Tasarım",
+      "icon": "🤖",
+      "brief": "Siemens'in mühendislik ajanı KOBİ pazarına açılıyor.",
+      "items": [
+        {
+          "title": "Siemens, Eigen Engineering Agent'ı Hindistan'daki imalat KOBİ'leri için kullanıma sundu",
+          "summary": "Siemens, PLC kodlama, HMI görselleştirme ve cihaz konfigürasyonu gibi otomasyon mühendisliği işlerini otonom yürüten Eigen Engineering Agent'ı Hindistan pazarına açtı; şirket 16'dan fazla müşteriyle pilot yaptığını belirtiyor. Makine tasarımcısı için önemi, makine üreticilerinin kontrol ve otomasyon mühendisliği süresini kısaltabilecek ajan tabanlı araçların KOBİ ölçeğine inmesi.",
+          "source": "Digital IT News (itvarnews)",
+          "url": "https://itvarnews.techplusmedia.com/2026/11/23/siemens-launches-eigen-engineering-agent-for-indias-manufacturing-smes/",
+          "published": "2026-11-23",
+          "importance": 1,
+          "tags": [
+            "Siemens",
+            "mühendislik ajanı",
+            "otomasyon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cad-yazilim",
+      "title": "CAD / CAM / CAE Yazılımları",
+      "icon": "🖥️",
+      "brief": "Autodesk güçlü çeyrek sonuçları açıkladı; AutoCAD geliri %11 arttı.",
+      "items": [
+        {
+          "title": "Autodesk 2027 mali yılı 3. çeyrek sonuçlarını açıkladı: gelir %17 artışla 2,16 milyar dolar",
+          "summary": "Autodesk, 24 Kasım'da açıkladığı çeyrekte geliri yıllık %17 (sabit kurda %14) artışla 2,16 milyar dolara taşıdı; AutoCAD ve AutoCAD LT geliri %11 artışla 525 milyon dolar oldu. Şirket yıllık gelir ve faturalama beklentisinin orta noktasını yükseltti. AutoCAD/Inventor kullanan bir makine tasarımcısı için ürün yatırımlarının ve AI odaklı yol haritasının süreceğine işaret ediyor.",
+          "source": "Autodesk / PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/autodesk-inc-announces-fiscal-2027-third-quarter-results-302949762.html",
+          "published": "2026-11-24",
+          "importance": 2,
+          "tags": [
+            "Autodesk",
+            "AutoCAD",
+            "çeyrek sonuçları"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endustriyel-tasarim",
+      "title": "Endüstriyel Tasarım",
+      "icon": "✏️",
+      "brief": "Küçük hacimde çok işlevli mekanizma tasarımı.",
+      "items": [
+        {
+          "title": "Kasım 2026'nın en iyi 5 EDC tasarımı: tek kadranlı beş fonksiyonlu GEO çoklu aleti öne çıkıyor",
+          "summary": "Yanko Design'ın 24 Kasım tarihli derlemesinde Invento Design'ın GEO döner çoklu aleti, tek kadran arkasına beş aleti sığdırmasıyla öne çıkıyor. Küçük hacimde mekanizma paketleme ve el aleti ergonomisi açısından mekanik tasarımcılar için ilham verici örnekler içeriyor.",
+          "source": "Yanko Design",
+          "url": "https://www.yankodesign.com/2026/11/24/5-best-edc-designs-of-november-2026/",
+          "published": "2026-11-24",
+          "importance": 1,
+          "tags": [
+            "EDC",
+            "el aleti",
+            "mekanizma",
+            "ürün tasarımı"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imalata-hazirlik",
+      "title": "İmalata Hazırlık & Üretim Teknolojileri",
+      "icon": "🏭",
+      "brief": "SPS 2026'da makine görmesi dijital ikizle buluşuyor; beş eksen yatırımları sürüyor.",
+      "items": [
+        {
+          "title": "AXYZ, yalıtımlı metal paneller için dikey CNC makinesi VERTEX IMP'yi tanıttı",
+          "summary": "Köpük çekirdekli yalıtımlı metal panellerin her iki çelik yüzünü aynı anda işleyen dikey bir CNC makinesi duyuruldu. Panel ve cephe işleyen üreticiler için ayrı kesim/frezeleme adımlarını tek operasyonda birleştirme ve parça tasarımında imalat toleranslarını buna göre düşünme açısından ilgi çekici.",
+          "source": "GlobeNewswire / Manila Times",
+          "url": "https://manilatimes.net/2026/11/24/tmt-newswire/globenewswire/axyz-introduces-vertex-imp-a-vertical-cnc-machine-for-insulated-metal-panel-processing/2477302",
+          "published": "2026-11-24",
+          "importance": 2,
+          "tags": [
+            "CNC",
+            "panel işleme",
+            "yeni makine"
+          ]
+        },
+        {
+          "title": "Libra Industries Ohio tesisine 5 milyon dolara kadar yatırım yapıyor: Okuma beş eksen merkezleri ve robotik yükleme",
+          "summary": "Şirket, Dayton tesisinde robotik yükleyicili beş eksenli dikey işleme merkezleri dahil yedi Okuma makinesi alarak kapasite ve otomasyonunu artırıyor. Fason imalatçıların beş eksen ve otomasyona yöneldiğini gösteriyor; tasarımcı için tek bağlamada işlenebilir, robotla beslemeye uygun parça tasarımının önemini vurguluyor.",
+          "source": "Electronics Media",
+          "url": "https://electronicsmedia.info/2026/11/24/advanced-cnc-machining-capabilities",
+          "published": "2026-11-24",
+          "importance": 2,
+          "tags": [
+            "CNC",
+            "beş eksen",
+            "otomasyon"
+          ]
+        },
+        {
+          "title": "MVTec, SPS 2026'da makine görmesi ile dijital ikizi birlikte gösteriyor",
+          "summary": "Nürnberg'deki SPS 2026 fuarında (24-26 Kasım) MVTec, simüle edilmiş kamera, lens, aydınlatma ve test nesnesiyle makine görmesi yazılımının dijital ikiz içinde çalışmasını sergiliyor. Görsel kalite kontrol sistemlerinin fiziksel kurulumdan önce sanal ortamda doğrulanabilmesi, hat tasarımı ve devreye alma süresi için önem taşıyor. Yayın tarihi fuar başlangıcına göre yaklaşık verilmiştir.",
+          "source": "MVTec",
+          "url": "https://www.mvtec.com/application-areas/press-room/press-releases/article/at-sps-2026-mvtec-will-showcase-how-machine-vision-and-digital-twins-work-together",
+          "published": "2026-11-24",
+          "importance": 2,
+          "tags": [
+            "SPS 2026",
+            "dijital ikiz",
+            "makine görmesi",
+            "kalite kontrol"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "makine-sektoru",
+      "title": "Makine Sektörü (Dünya)",
+      "icon": "⚙️",
+      "brief": "SPS ve bauma CHINA'da yapay zekâ destekli otomasyon ve otonom iş makineleri.",
+      "items": [
+        {
+          "title": "Schneider Electric SPS 2026'da EcoStruxure Automation Expert'in yeni sürümünü tanıtıyor",
+          "summary": "Üretici bağımsız, yazılım tanımlı otomasyon platformunun yeni sürümü çevrim içi değişiklik (online change) ve yüksek erişilebilirlik özellikleri ekliyor. Hall 1, stand 540'ta gösterilecek. Makine tasarımcısı için PLC'den bağımsız, nesne tabanlı kontrol mimarilerine geçişin yönünü gösteriyor.",
+          "source": "Manufacturing Tomorrow",
+          "url": "https://www.manufacturingtomorrow.com/news/2026/11/22/schneider-electric-turns-industrial-intelligence-into-action-at-sps-2026/28637",
+          "published": "2026-11-22",
+          "importance": 2,
+          "tags": [
+            "SPS 2026",
+            "otomasyon",
+            "PLC",
+            "yazılım tanımlı"
+          ]
+        },
+        {
+          "title": "FANUC SPS 2026'da sesle kontrollü otomasyon ve CNC için fiziksel yapay zekâ gösterecek",
+          "summary": "FANUC, 24-26 Kasım'daki SPS fuarında sesli komutla çalışan otomasyon ve otonom CNC proses analizi yapan fiziksel yapay zekâ demolarını sergileyecek. Takım tezgâhı-robot entegrasyonu ve proses izleme tasarlayan mühendisler için yapay zekânın kontrolör seviyesine inişini gösteriyor.",
+          "source": "MTDCNC",
+          "url": "https://mtdcnc.com/news/fanuc-uk-ltd/fanuc-to-showcase-automation-technologies-at-sps-2026",
+          "published": "2026-11-24",
+          "importance": 2,
+          "tags": [
+            "SPS 2026",
+            "FANUC",
+            "CNC",
+            "robotik"
+          ]
+        },
+        {
+          "title": "SANY bauma CHINA 2026'da otonom iş makineleri ve yapay zekâ odaklı robotik vizyonunu sundu",
+          "summary": "SANY, Şanghay'da 24-27 Kasım'da süren bauma CHINA'da otonom lastikli yükleyici ve kabinsiz otonom maden kamyonu sergiliyor; kendisini yapay zekâ-yerel bir robotik şirketi olarak konumlandırıyor. Ağır iş makinelerinde otonomi ve kabinsiz tasarım, hidrolik ve yapısal tasarım gereksinimlerini değiştiriyor.",
+          "source": "PR Newswire",
+          "url": "https://prnewswire.com/il/news-releases/sany-advances-toward-an-ai-native-robotics-future-at-bauma-china-2026-302949365.html",
+          "published": "2026-11-24",
+          "importance": 2,
+          "tags": [
+            "bauma CHINA",
+            "iş makineleri",
+            "otonom",
+            "SANY"
+          ]
+        },
+        {
+          "title": "Zoomlion bauma CHINA 2026'da 60'tan fazla yapay zekâ ve yeni enerji teknolojisi sergileyecek",
+          "summary": "Zoomlion, akıllı üretim, akıllı ürün ve uygulama senaryoları etrafında kurguladığı standında robotik ve yeni enerjili ekipmanları tanıtıyor. Çin'li iş makinesi üreticilerinin elektrifikasyon ve otonomi hızı, rekabet ve tedarikçi seçimi açısından izlenmeli.",
+          "source": "The Machine Maker",
+          "url": "https://themachinemaker.com/news/zoomlion-to-showcase-ai-powered-machinery-and-robotics-at-bauma-china-2026",
+          "published": "2026-11-24",
+          "importance": 1,
+          "tags": [
+            "bauma CHINA",
+            "Zoomlion",
+            "elektrifikasyon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turkiye-makine",
+      "title": "Türkiye Makine Sektörü",
+      "icon": "🇹🇷",
+      "brief": "Sanayi Bakanlığı insansı robot projelerine %50 hibe veriyor.",
+      "items": [
+        {
+          "title": "Sanayi Bakanlığı'ndan sanayi uygulamaları için insansı robot geliştirme çağrısı: proje bütçesinin %50'si hibe",
+          "summary": "Bakan Kacır, sanayi uygulamalarına yönelik insansı robot geliştirme çağrısı açıldığını duyurdu; proje bütçelerinin %50'si hibe olarak karşılanacak ve başvurular 31 Aralık 2026'ya kadar rip.sanayi.gov.tr üzerinden alınacak. Çağrı, yapay zekâ destekli robot çözümlerinin sanayide yaygınlaşmasını ve kritik bileşenlerde dışa bağımlılığın azalmasını hedefliyor; aktüatör, redüktör, sensör ve mekanik tasarım yetkinliği olan makine firmaları ve tasarımcılar için doğrudan fırsat. Çağrının Teknoloji Odaklı Sanayi Hamlesi ile bağlantısı yalnızca tek bir rehber yazısında geçiyor, teyit edilmemiştir.",
+          "source": "Anadolu Ajansı / Takvim",
+          "url": "https://www.aa.com.tr/tr/bilim-teknoloji/bakan-kacir-sanayi-uygulamalari-icin-insansi-robot-gelistirme-cagrisi-actiklarini-bildirdi/4134184",
+          "published": "2026-11-23",
+          "importance": 2,
+          "tags": [
+            "teşvik",
+            "insansı robot",
+            "yapay zeka",
+            "hibe"
+          ]
+        }
+      ]
+    }
+  ]
+}
