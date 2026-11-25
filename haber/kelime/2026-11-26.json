@@ -1,0 +1,311 @@
+{
+ "date": "2026-11-26",
+ "generated_at": "2026-11-25T22:39:04+00:00",
+ "verified_by": "opus",
+ "words": [
+  {
+   "id": "mesh-yakinsamasi",
+   "term": "Mesh yakınsaması",
+   "en": "Mesh convergence",
+   "category": "CAD/CAM/CAE",
+   "short": "Mesh yakınsaması, ağ (mesh) sıklaştırıldıkça sonucun (gerilme, yer değiştirme) artık anlamlı değişmeyip sabit bir değere oturmasıdır; sonucun ağ boyutundan bağımsız olduğunu gösterir.",
+   "explanation": [
+    "Sonlu elemanlar analizinde parçayı küçük elemanlara böleriz. Eleman ne kadar iri olursa çözüm o kadar kaba olur; ağı sıklaştırdıkça sonuç gerçek değere yaklaşır. Ağ yakınsaması çalışması: aynı modeli 3-4 farklı ağ boyutuyla çözüp ilgilendiğin değeri (örneğin maksimum von Mises gerilmesi) karşılaştırmaktır.",
+    "Sayısal örnek: Bir braket için eleman boyutu 10 mm iken maksimum gerilme 182 MPa, 5 mm iken 205 MPa, 2,5 mm iken 214 MPa, 1,25 mm iken 216 MPa çıkıyor. Değişimler: (205-182)/182 = %12,6; (214-205)/205 = %4,4; (216-214)/214 = %0,9. Değişim %2'nin altına indiği için 1,25 mm ağı yakınsamış kabul edilir.",
+    "Dikkat: Yakınsama doğruluk demek değildir. Sonuç ağdan bağımsız olabilir ama sınır koşulu veya malzeme yanlışsa yine yanlıştır. Ayrıca keskin köşe ve tekil noktalarda (nokta yük, içbükey keskin köşe) gerilme ağ inceldikçe sonsuza gider, yakınsamaz; bu bölgeye yuvarlatma (fillet) ekle ya da oradaki değere güvenme.",
+    "Pratik kural: ağı yalnızca ilgilendiğin kritik bölgede sıklaştır (yerel ağ inceltme); tüm modeli sıklaştırmak çözüm süresini gereksiz artırır."
+   ],
+   "analogy": "Bir daireyi çokgenle çizmeye benzer: 6 kenarlı çokgen daireye hiç benzemez, 24 kenarlıda fark azalır, 96 kenarlıda gözle ayırt edemezsin. Kenar sayısını artırmanın sonucu artık değiştirmediği an yakınsamadır.",
+   "mnemonic": "MESH = Merak Ettiğin Sayı Hâlâ değişiyor mu? Değişmiyorsa yakınsadı; değişiyorsa ağı sıklaştır.",
+   "etymology": "Mesh: İngilizce 'ağ, file'; convergence: Latince 'convergere' (con- birlikte + vergere eğilmek), 'bir noktaya doğru birleşmek'. FEA'da çözümün tek bir değere doğru birleşmesi anlamında kullanılır.",
+   "example": "Inventor Stress Analysis'te 8 mm kalınlıklı bir S355 braketin delik kenarındaki gerilmesine bakıyorsun. Ağ ayarında Average Element Size'ı 0,10 -> 0,05 -> 0,025 (model boyutuna oranla) düşürüp her seferinde maksimum von Mises değerini not ediyorsun; iki ardışık çözüm arası %2'nin altına inince durup raporuna 'ağ yakınsaması sağlandı' yazıyorsun. Akma sınırı 355 MPa ile 216 MPa karşılaştırıldığında emniyet katsayısı 355/216 ≈ 1,64.",
+   "confusions": [
+    {
+     "term": "Zaman adımı yakınsaması",
+     "diff": "Mesh yakınsaması ağ boyutuyla ilgilidir; doğrusal olmayan çözücünün iterasyon yakınsaması (kuvvet/yer değiştirme toleransı) ise ağdan bağımsız, çözüm algoritmasıyla ilgilidir."
+    },
+    {
+     "term": "Mesh kalitesi",
+     "diff": "Kalite eleman şeklinin (çarpıklık, en-boy oranı) iyiliğidir; yakınsama ise sonucun ağ sıklığına duyarsızlaşmasıdır; ikisi ayrı kontrollerdir."
+    },
+    {
+     "term": "Doğrulama (validation)",
+     "diff": "Yakınsama sayısal çözümün ağdan bağımsızlığını gösterir; doğrulama ise sonucun gerçekle (deney, el hesabı) uyuştuğunu gösterir."
+    }
+   ],
+   "related": [
+    "Sonlu elemanlar yöntemi",
+    "Von Mises gerilmesi",
+    "Gerilme yığılması",
+    "Eleman tipi (tetra/hekza)"
+   ],
+   "figure": {
+    "caption": "Eleman boyutu küçüldükçe maksimum gerilme 182 -> 205 -> 214 -> 216 MPa olur; değişim %12,6 -> %4,4 -> %0,9'a düşer, eğri düzleşir: yakınsama.",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\"><line x1=\"50\" y1=\"200\" x2=\"370\" y2=\"200\" stroke=\"#1f2a37\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"30\" x2=\"50\" y2=\"200\" stroke=\"#1f2a37\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"51\" x2=\"370\" y2=\"51\" stroke=\"#4a90c2\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><text x=\"262\" y=\"44\" fill=\"#4a90c2\">gerçek değere yaklaşıyor (~217)</text><polyline points=\"80,182 160,96 240,62 320,55\" fill=\"none\" stroke=\"#e8711a\" stroke-width=\"2.5\"/><circle cx=\"80\" cy=\"182\" r=\"5\" fill=\"#e8711a\"/><circle cx=\"160\" cy=\"96\" r=\"5\" fill=\"#e8711a\"/><circle cx=\"240\" cy=\"62\" r=\"5\" fill=\"#e8711a\"/><circle cx=\"320\" cy=\"55\" r=\"5\" fill=\"#e8711a\"/><text x=\"62\" y=\"172\" fill=\"#1f2a37\">182</text><text x=\"142\" y=\"86\" fill=\"#1f2a37\">205</text><text x=\"222\" y=\"52\" fill=\"#1f2a37\">214</text><text x=\"302\" y=\"76\" fill=\"#1f2a37\">216</text><text x=\"62\" y=\"216\" fill=\"#1f2a37\">10 mm</text><text x=\"142\" y=\"216\" fill=\"#1f2a37\">5 mm</text><text x=\"218\" y=\"216\" fill=\"#1f2a37\">2,5 mm</text><text x=\"298\" y=\"216\" fill=\"#1f2a37\">1,25 mm</text><text x=\"130\" y=\"234\" fill=\"#1f2a37\">Eleman boyutu (küçülen ağ →)</text><text x=\"8\" y=\"22\" fill=\"#1f2a37\">Maks. gerilme (MPa)</text><text x=\"100\" y=\"140\" fill=\"#e8711a\">+%12,6</text><text x=\"180\" y=\"105\" fill=\"#e8711a\" dx=\"14\">+%4,4</text><text x=\"262\" y=\"95\" fill=\"#e8711a\">+%0,9</text></svg>"
+   },
+   "quiz": {
+    "q": "Maksimum gerilme ağ boyutları 8, 4, 2 ve 1 mm için sırasıyla 150, 170, 176 ve 178 MPa çıkmıştır. Kabul ölçütü 'ince ağ sonucu bir öncekinden %2'den az farklıysa yakınsamış sayılır' ise hangi ağ ilk kez yeterlidir?",
+    "options": [
+     "8 mm",
+     "4 mm",
+     "2 mm",
+     "1 mm"
+    ],
+    "answer": 3,
+    "why": "Değişimler: 8->4 mm: 20/150 = %13,3; 4->2 mm: 6/170 = %3,5; 2->1 mm: 2/176 = %1,1. Değişimin ilk kez %2'nin altına indiği ağ 1 mm'dir."
+   }
+  },
+  {
+   "id": "egilme-momenti-diyagrami",
+   "term": "Eğilme momenti diyagramı",
+   "en": "Bending moment diagram",
+   "category": "Mukavemet ve analiz",
+   "short": "Eğilme momenti diyagramı, bir kirişin boyunca her kesitte oluşan iç eğilme momentinin (N·m veya kN·m) kiriş ekseni boyunca çizilmiş grafiğidir; en tehlikeli kesiti gösterir.",
+   "explanation": [
+    "Kirişe yük gelince her kesit kendinden bir tarafı dengeleyen bir iç moment taşır: M(x). Bu değeri x konumuna karşı çizersen eğilme momenti diyagramı olur. Diyagramın en büyük ordinatı Mmax, kirişin en çok zorlandığı kesittir ve eğilme gerilmesi σ = M·c / I (MPa = N/mm²) ile bu kesitte kontrol edilir.",
+    "Temel bağıntı: kesme kuvveti V, momentin türevidir (dM/dx = V). Dolayısıyla kesme kuvvetinin sıfır olduğu yerde moment maksimum (veya minimum) olur. Tekil yük altında diyagram doğrusal (üçgen), yayılı yük altında parabolik olur; mesnet noktalarında basit mesnetli kirişte M = 0'dır.",
+    "Sayısal örnek 1: L = 4 m basit mesnetli kiriş, ortasında P = 10 kN. Mesnet tepkisi R = 5 kN, Mmax = P·L/4 = 10·4/4 = 10 kN·m (ortada). Örnek 2: aynı kiriş, q = 5 kN/m yayılı yük: toplam yük 20 kN, R = 10 kN, Mmax = q·L²/8 = 5·16/8 = 10 kN·m (ortada).",
+    "Konsol kirişte (bir ucu ankastre) uçtaki P yükü için moment duvarda maksimumdur: Mmax = P·L; serbest uçta sıfırdır. Momenti kiriş çekme tarafına çizmek yaygın bir kuraldır; çelik kirişte çatlak/yorulma başlangıcını bu tarafta ararsın."
+   ],
+   "analogy": "Bir cetveli iki ucundan tutup ortasına bastırdığını düşün: ortası en çok bükülür, uçlar hiç bükülmez. Diyagram, cetvelin her noktasındaki 'bükülme şiddetini' gösteren bir tepe grafiği gibidir.",
+   "mnemonic": "M'nin eğimi V'dir: kesme kuvveti sıfıra düşünce moment tepe yapar (V=0 -> Mmax).",
+   "etymology": "Moment: Latince 'momentum' (hareket, ağırlık eden etki; 'movimentum'dan); bending: İngilizce 'bükülme'; diagram: Yunanca 'diagramma' (çizilmiş şekil). Türkçede 'eğilme' = bükülme, 'moment' = kuvvetin kol ile çarpımı.",
+   "example": "Atölyede 6 m açıklıklı bir çelik taşıyıcı kirişe 4 kN/m yayılı yük (ör. sac paketleri) bindirdiğinde Inventor Frame Analysis'te moment diyagramı ortada tepe yapar; Mmax = 4·36/8 = 18 kN·m. IPE 200 için W = 194 cm³ ise σ = 18·10⁶ N·mm / 194·10³ mm³ ≈ 93 MPa, S235 akma sınırının (235 MPa) çok altındadır.",
+   "confusions": [
+    {
+     "term": "Kesme kuvveti diyagramı",
+     "diff": "Kesme kuvveti diyagramı kesitteki makaslama kuvvetini (kN) gösterir; moment diyagramı ise eğilme etkisini (kN·m) gösterir ve kesme kuvvetinin integralidir."
+    },
+    {
+     "term": "Burulma momenti",
+     "diff": "Eğilme momenti eksene dik eksen etrafında bükerken, burulma momenti kiriş ekseni etrafında döndürür (tork)."
+    },
+    {
+     "term": "Atalet momenti (I)",
+     "diff": "Eğilme momenti yükten gelen iç etkidir (kN·m); atalet momenti kesitin geometrik direncidir (mm⁴)."
+    }
+   ],
+   "related": [
+    "Kesme kuvveti diyagramı",
+    "Eğilme gerilmesi",
+    "Atalet momenti",
+    "Mukavemet momenti (W)"
+   ],
+   "figure": {
+    "caption": "Basit mesnetli, yayılı yüklü kiriş: moment mesnetlerde sıfır, ortada (kesme kuvvetinin sıfır olduğu yerde) Mmax = qL²/8 olan parabol.",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\"><defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"8\" orient=\"auto\"><path d=\"M0,0 L4,8 L8,0 z\" fill=\"#e8711a\"/></marker></defs><rect x=\"60\" y=\"56\" width=\"280\" height=\"8\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/><g stroke=\"#e8711a\" stroke-width=\"1.5\" marker-end=\"url(#a)\"><line x1=\"80\" y1=\"24\" x2=\"80\" y2=\"52\"/><line x1=\"120\" y1=\"24\" x2=\"120\" y2=\"52\"/><line x1=\"160\" y1=\"24\" x2=\"160\" y2=\"52\"/><line x1=\"200\" y1=\"24\" x2=\"200\" y2=\"52\"/><line x1=\"240\" y1=\"24\" x2=\"240\" y2=\"52\"/><line x1=\"280\" y1=\"24\" x2=\"280\" y2=\"52\"/><line x1=\"320\" y1=\"24\" x2=\"320\" y2=\"52\"/></g><line x1=\"70\" y1=\"22\" x2=\"330\" y2=\"22\" stroke=\"#e8711a\" stroke-width=\"1.5\"/><text x=\"338\" y=\"26\" fill=\"#e8711a\">q</text><polygon points=\"60,64 50,82 70,82\" fill=\"none\" stroke=\"#1f2a37\" stroke-width=\"1.5\"/><polygon points=\"340,64 330,82 350,82\" fill=\"none\" stroke=\"#1f2a37\" stroke-width=\"1.5\"/><circle cx=\"340\" cy=\"86\" r=\"4\" fill=\"none\" stroke=\"#1f2a37\"/><text x=\"38\" y=\"98\" fill=\"#1f2a37\">A</text><text x=\"346\" y=\"104\" fill=\"#1f2a37\">B</text><text x=\"190\" y=\"98\" fill=\"#1f2a37\">L</text><line x1=\"60\" y1=\"130\" x2=\"340\" y2=\"130\" stroke=\"#1f2a37\" stroke-width=\"1.5\"/><path d=\"M60,130 Q200,270 340,130 Z\" fill=\"#e8711a\" fill-opacity=\"0.25\" stroke=\"#e8711a\" stroke-width=\"2.5\"/><line x1=\"200\" y1=\"130\" x2=\"200\" y2=\"200\" stroke=\"#1f2a37\" stroke-dasharray=\"4,3\"/><text x=\"206\" y=\"168\" fill=\"#1f2a37\">Mmax = qL²/8</text><text x=\"206\" y=\"182\" fill=\"#1f2a37\">(V = 0 noktası)</text><text x=\"64\" y=\"124\" fill=\"#1f2a37\">M = 0 (mesnet)</text><text x=\"262\" y=\"124\" fill=\"#1f2a37\">M = 0 (mesnet)</text><text x=\"130\" y=\"226\" fill=\"#4a90c2\">Moment çekme tarafına (alta) çizilir</text></svg>"
+   },
+   "quiz": {
+    "q": "L = 6 m basit mesnetli bir kirişe q = 4 kN/m düzgün yayılı yük etkiyor. Maksimum eğilme momenti ve yeri nedir?",
+    "options": [
+     "12 kN·m, mesnette",
+     "36 kN·m, ortada",
+     "18 kN·m, ortada",
+     "72 kN·m, mesnette"
+    ],
+    "answer": 2,
+    "why": "Mmax = q·L²/8 = 4·36/8 = 18 kN·m ve kesme kuvvetinin sıfır olduğu orta noktada oluşur. 12 kN·m mesnet tepkisidir (kN, moment değil), 36 ve 72 yanlış formül sonuçlarıdır; mesnette moment sıfırdır."
+   }
+  },
+  {
+   "id": "fikstur",
+   "term": "Fikstür",
+   "en": "Fixture",
+   "category": "Tolerans ve mekanik tasarım",
+   "short": "Fikstür, iş parçasını işleme veya montaj sırasında doğru konumda tutan ve bağlayan, ancak takımı yönlendirmeyen özel tasarım aparatıdır.",
+   "explanation": [
+    "Fikstür iş parçasını makine tezgahında veya kaynak masasında tekrarlanabilir biçimde konumlar (yerleştirir) ve kıskaçlarla (bağlama) sabitler. Her parça aynı yere oturduğu için ölçüler seri imalatta tutarlı kalır.",
+    "Konumlama genellikle 3-2-1 prensibiyle yapılır: taban düzleminde 3 nokta (3 serbestlik derecesini alır), yan yüzeyde 2 nokta (2 serbestlik derecesi), uç yüzeyde 1 nokta (1 serbestlik derecesi). Toplam 6 serbestlik derecesi (3 öteleme + 3 dönme) engellenir. Fazla nokta eklemek parçayı aşırı kısıtlar (hiperstatik) ve eğilmeye yol açar.",
+    "Bağlama kuvveti, kesme kuvvetine karşı parçayı kaydırmayacak kadar büyük, parçayı deforme etmeyecek kadar küçük olmalıdır. Basit emniyet kontrolü: sürtünme katsayısı µ = 0,15 ve kesme kuvveti 600 N ise gereken toplam bağlama kuvveti F ≥ 600 / 0,15 = 4000 N olur; emniyet katsayısı 2 ile yaklaşık 8000 N seçilir.",
+    "Fikstür takımı yönlendirmez. Yönlendirmeyi yapan, matkap burcu içeren aparat kalıptır (jig). Pratikte iki terim sık karıştırılır."
+   ],
+   "analogy": "Fikstür, kuyumcunun yüzük taşını işlerken sıkıca kavrayan mengenesi gibidir; yüzüğü hep aynı açıda tutar, işi yapan alet ise ayrıdır.",
+   "mnemonic": "FİKS-tür: parçayı FİKSler (sabitler). Fikstür = FİKS + tür; kımıldamasın diye.",
+   "etymology": "İngilizce fixture sözcüğünden gelir; Latince figere (sabitlemek, çakmak) köküne dayanır. Sektörde parçayı 'sabitleyen aparat' anlamında kullanılır.",
+   "example": "CNC dik işleme merkezinde 120x80x40 mm alüminyum bir gövdenin 12 adet M6 deliği işlenecek. Taban plakasına 3 dayama pimi, yan yüzeye 2 pim, uç yüzeye 1 pim yerleştirilir; iki adet el kıskacı ile 120 mm'lik parça sıkılır. Inventor'da fikstür montajı, iş parçasının 0,02 mm tekrarlanabilirliğe uygun olarak modellenir.",
+   "confusions": [
+    {
+     "term": "Jig (kılavuz aparat)",
+     "diff": "Jig takımı (matkap ucu gibi) burçla yönlendirir; fikstür yalnızca parçayı konumlar ve sabitler, takımı yönlendirmez."
+    },
+    {
+     "term": "Mengene",
+     "diff": "Mengene genel amaçlı bağlama elemanıdır; fikstür belirli bir parça için özel tasarlanmış, konum referansları olan aparattır."
+    },
+    {
+     "term": "Kalıp",
+     "diff": "Kalıp parçaya şekil verir; fikstür şekil vermez, sadece tutar."
+    }
+   ],
+   "related": [
+    "Jig",
+    "3-2-1 konumlama prensibi",
+    "Serbestlik derecesi",
+    "Referans yüzey"
+   ],
+   "figure": {
+    "caption": "Fikstürde iş parçası: tabanda 3 dayama noktası, yanda dayama ve üstten kıskaç kuvveti (F)",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<rect x=\"40\" y=\"170\" width=\"320\" height=\"16\" fill=\"#4a90c2\"/>\n<text x=\"46\" y=\"200\" fill=\"#1f2a37\">Fikstür tabanı</text>\n<rect x=\"110\" y=\"110\" width=\"150\" height=\"60\" fill=\"#fff\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<text x=\"140\" y=\"145\" fill=\"#1f2a37\">İş parçası</text>\n<rect x=\"90\" y=\"140\" width=\"20\" height=\"30\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<text x=\"40\" y=\"132\" fill=\"#1f2a37\">Dayama (2-1)</text>\n<rect x=\"150\" y=\"170\" width=\"12\" height=\"0\" fill=\"#4a90c2\"/>\n<circle cx=\"130\" cy=\"170\" r=\"5\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<circle cx=\"230\" cy=\"170\" r=\"5\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<circle cx=\"180\" cy=\"170\" r=\"5\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<text x=\"130\" y=\"222\" fill=\"#1f2a37\">3 nokta: taban (3)</text>\n<line x1=\"185\" y1=\"30\" x2=\"185\" y2=\"105\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a)\"/>\n<text x=\"195\" y=\"45\" fill=\"#e8711a\">Kıskaç kuvveti F</text>\n<line x1=\"330\" y1=\"140\" x2=\"265\" y2=\"140\" stroke=\"#e8711a\" stroke-width=\"3\" marker-end=\"url(#a)\"/>\n<text x=\"285\" y=\"128\" fill=\"#e8711a\">Kesme</text>\n<text x=\"285\" y=\"158\" fill=\"#e8711a\">kuvveti</text>\n</svg>"
+   },
+   "quiz": {
+    "q": "Bir iş parçasının 6 serbestlik derecesini kısıtlamak için 3-2-1 prensibinde yan yüzeyde kaç konumlama noktası kullanılır?",
+    "options": [
+     "1",
+     "2",
+     "3",
+     "6"
+    ],
+    "answer": 1,
+    "why": "3-2-1 prensibinde taban düzleminde 3, yan yüzeyde 2, uç yüzeyde 1 nokta kullanılır; toplam 6 nokta 6 serbestlik derecesini engeller."
+   }
+  },
+  {
+   "id": "s235-yapi-celigi",
+   "term": "S235 yapı çeliği",
+   "en": "S235 structural steel",
+   "category": "Malzeme ve ısıl işlem",
+   "short": "S235, EN 10025-2 standardında tanımlı, minimum akma dayanımı 235 MPa olan (t ≤ 16 mm için) genel amaçlı alaşımsız yapı çeliğidir.",
+   "explanation": [
+    "Kısaltmadaki S 'structural' (yapı çeliği), 235 ise nominal kalınlık 16 mm'ye kadar olan ürünler için minimum akma dayanımını MPa (N/mm²) cinsinden gösterir. Standart EN 10025-2'dir (alaşımsız yapı çelikleri).",
+    "Sonraki harfler darbe tokluğunu belirtir: JR 27 J değerini +20 °C'de, J0 0 °C'de, J2 -20 °C'de sağlar. En yaygın kalite S235JR'dir (malzeme numarası 1.0038); eski adı St37-2'dir.",
+    "Tipik özellikler: çekme dayanımı Rm = 360-510 MPa, elastiklik modülü E ≈ 210 GPa, yoğunluk ≈ 7850 kg/m³. Karbon oranı düşüktür (yaklaşık %0,17-0,20 en çok), bu yüzden kaynağa çok uygundur ve ısıl işlemle sertleştirilmez.",
+    "Sayısal örnek: 20 mm çapında S235 yuvarlak çubuğun kesit alanı yaklaşık 314 mm²'dir. Akma sınırına yakın taşıyabileceği çekme kuvveti yaklaşık 314 x 235 = 73,8 kN olur; tasarımda emniyet katsayısı uygulanır."
+   ],
+   "analogy": "S235, çelik dünyasının 'iş tulumu' gibidir: sıradan, ucuz, her yerde bulunur; ama yüksek yük için güçlü bir spor ekipmanı gibi değildir.",
+   "mnemonic": "S = Structural, 235 = 235 MPa akma; 'Saplama 235' diye düşün: 235'in altında esner, üstünde kalıcı biçim değiştirir.",
+   "etymology": "S, İngilizce 'Structural steel' (yapı çeliği) sözünden; sayı akma dayanımı. Eski Alman DIN adlandırması St37 idi (37 kgf/mm² çekme dayanımı).",
+   "example": "Atölyede 6 mm kalınlığında S235JR sacdan 500x300 mm makine şasi plakası lazerle kesilip kaynaklanıyor. Inventor'da malzeme olarak Steel, Mild seçilir; yoğunluk 7,85 g/cm³ olduğundan plaka kütlesi yaklaşık 0,5 x 0,3 x 0,006 x 7850 = 7,07 kg çıkar.",
+   "confusions": [
+    {
+     "term": "S355",
+     "diff": "S355'in minimum akma dayanımı 355 MPa'dır; S235'ten yaklaşık %50 daha dayanıklı ve daha pahalıdır."
+    },
+    {
+     "term": "C45",
+     "diff": "C45 orta karbonlu, ısıl işlemle sertleştirilebilen makine çeliğidir; S235 ise düşük karbonlu yapı çeliğidir ve sertleştirilmez."
+    },
+    {
+     "term": "S235JR ile S235J2",
+     "diff": "JR 27 J'u +20 °C'de, J2 ise -20 °C'de sağlar; J2 düşük sıcaklıkta daha toktur."
+    }
+   ],
+   "related": [
+    "EN 10025-2",
+    "S355",
+    "Akma dayanımı",
+    "Çekme dayanımı"
+   ],
+   "figure": {
+    "caption": "S235 için gerilme-uzama eğrisi: akma sınırı en az 235 MPa, çekme dayanımı 360-510 MPa",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#1f2a37\"/></marker></defs>\n<line x1=\"50\" y1=\"200\" x2=\"50\" y2=\"25\" stroke=\"#1f2a37\" stroke-width=\"2\" marker-end=\"url(#a)\"/>\n<line x1=\"50\" y1=\"200\" x2=\"380\" y2=\"200\" stroke=\"#1f2a37\" stroke-width=\"2\" marker-end=\"url(#a)\"/>\n<text x=\"8\" y=\"20\" fill=\"#1f2a37\">Gerilme (MPa)</text>\n<text x=\"300\" y=\"220\" fill=\"#1f2a37\">Uzama</text>\n<path d=\"M50,200 L100,95 L130,90 L200,80 L260,70 L300,85\" fill=\"none\" stroke=\"#4a90c2\" stroke-width=\"3\"/>\n<line x1=\"20\" y1=\"95\" x2=\"100\" y2=\"95\" stroke=\"#e8711a\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n<text x=\"105\" y=\"112\" fill=\"#e8711a\">ReH ≥ 235 MPa</text>\n<line x1=\"20\" y1=\"70\" x2=\"260\" y2=\"70\" stroke=\"#e8711a\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n<text x=\"150\" y=\"62\" fill=\"#e8711a\">Rm = 360-510 MPa</text>\n<circle cx=\"300\" cy=\"85\" r=\"4\" fill=\"#1f2a37\"/>\n<text x=\"305\" y=\"105\" fill=\"#1f2a37\">kopma</text>\n<text x=\"55\" y=\"150\" fill=\"#1f2a37\">elastik</text>\n<text x=\"55\" y=\"165\" fill=\"#1f2a37\">E=210 GPa</text>\n<text x=\"150\" y=\"130\" fill=\"#1f2a37\">plastik bölge</text>\n</svg>"
+   },
+   "quiz": {
+    "q": "Kalınlığı 10 mm olan bir S235JR plaka için aşağıdakilerden hangisi doğrudur?",
+    "options": [
+     "Minimum akma dayanımı 355 MPa'dır",
+     "Minimum akma dayanımı 235 MPa'dır",
+     "Isıl işlemle 235 HRC sertliğe getirilir",
+     "Standardı EN 10088'dir"
+    ],
+    "answer": 1,
+    "why": "S235'teki 235 sayısı, 16 mm'ye kadar kalınlıklarda minimum akma dayanımını (MPa) gösterir; standart EN 10025-2'dir."
+   }
+  },
+  {
+   "id": "climb-ve-konvansiyonel-frezeleme",
+   "term": "Climb ve konvansiyonel frezeleme",
+   "en": "Climb (down) milling and conventional (up) milling",
+   "category": "Takım tezgâhları ve CNC",
+   "short": "Climb frezelemede takım dönüş yönü ile parçanın ilerleme yönü kesme noktasında aynıdır ve talaş kalından inceye gider; konvansiyonelde zıttır ve talaş inceden kalına gider.",
+   "explanation": [
+    "Freze çakısı dönerken her diş malzemeye girer. Takımın kesme noktasındaki hızı ile parçanın o noktadaki ilerleme yönü aynı yöndeyse buna climb (aşağı, eşyönlü) frezeleme denir. Diş malzemeye kalın talaşla girer, ince talaşla çıkar. Kuvvet parçayı tezgâh yüzeyine bastırır, yüzey kalitesi iyidir, takım ömrü uzundur.",
+    "Konvansiyonel (yukarı, zıt yönlü) frezelemede yön zıttır: diş sıfır kalınlıkta girer, kalın talaşla çıkar. Başlangıçta diş kesmek yerine bir miktar sürter, malzemeyi pekleştirir, ısı üretir. Kuvvet parçayı yukarı kaldırmaya çalışır. Avantajı: tezgâhta vida boşluğu (backlash) varsa güvenle çalışır, dökümün sert kabuğunda diş yavaş girer.",
+    "CNC tezgâhlarda bilyalı vida ve boşluksuz sistem sayesinde varsayılan tercih climb'dir. Boşluklu eski tezgâhta climb, takımı parçaya çekip fırlatabilir ve takım kırılır.",
+    "Sayısal örnek: Ø20 mm, 4 dişli freze, Vc = 150 m/min, fz = 0,05 mm/diş. Devir n = 1000·Vc/(π·D) = 1000·150/(π·20) ≈ 2387 dev/dak. İlerleme vf = fz·z·n = 0,05·4·2387 ≈ 477 mm/dak. Aynı değerler her iki yönde kullanılır; fark talaşın nasıl oluştuğundadır."
+   ],
+   "analogy": "Ekmek bıçağı: ekmeği masaya doğru bastırarak keserseniz (climb) ekmek yerinde kalır. Bıçağı yukarı doğru çekerek keserseniz (konvansiyonel) ekmeği kaldırmaya çalışırsınız.",
+   "mnemonic": "CLIMB = tırman: diş malzemeye tırmanıp kalın girer. Konvansiyonel = konuşkan eski usul: önce sürter, sonra keser.",
+   "etymology": "Climb İngilizce 'tırmanmak'; diş malzemeye tırmanır gibi kalın girer. Conventional 'geleneksel': eski elle işlenen tezgâhlarda vida boşluğu yüzünden bu yön kullanılırdı. Down milling / up milling ise parçanın üzerinde takımın bastırma yönünü anlatır.",
+   "example": "Inventor HSM'de Ø20 mm parmak frezeyle 100 mm genişliğinde çelik cep işlerken yan duvarda 'Climb' seçilir; ürettiği G-kodda ilerleme 477 mm/dak. Finişte yüzey Ra 1,6 µm istenirse climb tercih edilir, eski manuel tezgâhta ise konvansiyonel kullanılır.",
+   "confusions": [
+    {
+     "term": "Yüz frezeleme ve çevre frezeleme",
+     "diff": "Bunlar takım türü/yüzey tipidir; climb/konvansiyonel ise talaşın giriş yönü ile ilgilidir ve her ikisinde de görülür."
+    },
+    {
+     "term": "Boşluk (backlash)",
+     "diff": "Vida ve somun arasındaki ölü hareket; climb frezelemede takımı parçaya çekerek bu boşluğu tehlikeye çevirir."
+    }
+   ],
+   "related": [
+    "Talaş kalınlığı",
+    "Bilyalı vida",
+    "Backlash",
+    "Kesme hızı"
+   ],
+   "figure": {
+    "caption": "Climb ve konvansiyonel frezelemede takım dönüşü, ilerleme yönü ve talaş kalınlığının değişimi",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<text x=\"100\" y=\"16\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#1f2a37\">Climb (aynı yön)</text>\n<text x=\"300\" y=\"16\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#1f2a37\">Konvansiyonel (zıt yön)</text>\n<rect x=\"10\" y=\"150\" width=\"180\" height=\"50\" fill=\"#e6edf3\" stroke=\"#1f2a37\"/>\n<rect x=\"210\" y=\"150\" width=\"180\" height=\"50\" fill=\"#e6edf3\" stroke=\"#1f2a37\"/>\n<circle cx=\"100\" cy=\"100\" r=\"40\" fill=\"none\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<circle cx=\"300\" cy=\"100\" r=\"40\" fill=\"none\" stroke=\"#1f2a37\" stroke-width=\"2\"/>\n<path d=\"M120,66 A40,40 0 0 1 140,100\" fill=\"none\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#a)\"/>\n<path d=\"M280,66 A40,40 0 0 0 260,100\" fill=\"none\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#a)\"/>\n<path d=\"M60,140 Q100,148 140,150 L140,140 Q100,140 60,135 z\" fill=\"#4a90c2\" opacity=\"0.8\"/>\n<path d=\"M260,150 Q300,148 340,140 L340,150 z\" fill=\"#4a90c2\" opacity=\"0.8\"/>\n<text x=\"55\" y=\"132\" fill=\"#1f2a37\">kalın</text><text x=\"128\" y=\"136\" fill=\"#1f2a37\">ince</text>\n<text x=\"255\" y=\"132\" fill=\"#1f2a37\">ince</text><text x=\"338\" y=\"136\" fill=\"#1f2a37\">kalın</text>\n<line x1=\"30\" y1=\"215\" x2=\"170\" y2=\"215\" stroke=\"#4a90c2\" stroke-width=\"2\" marker-end=\"url(#a)\"/>\n<line x1=\"230\" y1=\"215\" x2=\"370\" y2=\"215\" stroke=\"#4a90c2\" stroke-width=\"2\" marker-end=\"url(#a)\"/>\n<text x=\"100\" y=\"232\" text-anchor=\"middle\" fill=\"#1f2a37\">ilerleme (parça takıma doğru)</text>\n<text x=\"300\" y=\"232\" text-anchor=\"middle\" fill=\"#1f2a37\">ilerleme</text>\n<text x=\"100\" y=\"52\" text-anchor=\"middle\" fill=\"#e8711a\">talaş kalın→ince</text>\n<text x=\"300\" y=\"52\" text-anchor=\"middle\" fill=\"#e8711a\">talaş ince→kalın</text>\n</svg>"
+   },
+   "quiz": {
+    "q": "Boşluğu (backlash) fazla, eski bir manuel freze tezgâhında dökümün sert kabuğunu işleyeceksiniz. Hangi yöntem daha güvenlidir?",
+    "options": [
+     "Climb frezeleme",
+     "Konvansiyonel frezeleme",
+     "Fark etmez, ikisi de aynı",
+     "Önce hızı iki katına çıkarıp climb"
+    ],
+    "answer": 1,
+    "why": "Konvansiyonelde kesme kuvveti tabla hareketine karşı çalışır, boşluk alınmış olur; climb'de takım parçayı çekip tabla sıçrar ve takım kırılabilir."
+   }
+  },
+  {
+   "id": "derin-cekme",
+   "term": "Derin çekme",
+   "en": "Deep drawing",
+   "category": "İmalat teknikleri",
+   "short": "Derin çekme, düz sac plakanın zımba ile kalıp boşluğuna çekilerek kesilmeden kap (kutu) şekline getirilmesidir.",
+   "explanation": [
+    "Düz bir sac plaka (blank) pot tutucu ile kalıp üzerine sıkılır, zımba plakayı kalıp boşluğuna iter. Plakanın dış kısmı (flanş) merkeze doğru akar ve kabın yan duvarına dönüşür. Malzeme kesilmez, plastik olarak akar.",
+    "Çekme oranı β = D0/d (D0 plaka çapı, d zımba çapı). Tek çekmede çoğu çelik için β yaklaşık 1,8–2,0 ile sınırlıdır; üstünde dip kopar. Daha derin kap için çok adımlı (redraw) çekme ve ara tavlama gerekir.",
+    "Pot tutucu kuvveti kritiktir: azsa flanş buruşur, fazlaysa malzeme akamaz ve yırtılır. Kalıp radyusu genelde 4–10 kat sac kalınlığıdır, zımba-kalıp boşluğu ise yaklaşık 1,1–1,2 kat sac kalınlığıdır.",
+    "Sayısal örnek: Ø60 mm, h = 40 mm silindirik kap, t = 1 mm sac. Plaka çapı D0 = √(d² + 4·d·h) = √(3600 + 9600) = √13200 ≈ 115 mm. β = 115/60 ≈ 1,92; tek çekmede sınıra yakın, güvenli olmak için ikinci adım düşünülür."
+   ],
+   "analogy": "Düz bir mendili parmağınızla bardağa bastırırsanız kenarlar kıvrılarak bardağın içine akar; kıvrılmayı elinizle tutarsanız buruşmaz. Elinizin tutuşu pot tutucudur.",
+   "mnemonic": "DERİN ÇEKME = plakayı delikten içeri ÇEK: kesme yok, akış var. β büyükse dip kopar: 'β 2'yi geçme'.",
+   "etymology": "İngilizce deep drawing: draw 'çekmek' (tel çekme ile aynı kök), deep ise kabın çapına göre derin olması. Sektörde sac şekillendirmede kesmenin değil çekmenin ana mekanizma olduğunu vurgular.",
+   "example": "Inventor Sheet Metal'de Ø60×40 mm kap çizildikten sonra kalıp tasarımında Ø115 mm plaka, 1 mm sac için 1,1 mm boşluk ve 6 mm kalıp radyusu verilir; 1,92 değerindeki β nedeniyle sac kalitesi DC04 gibi derin çekme çeliği seçilir.",
+   "confusions": [
+    {
+     "term": "Bükme",
+     "diff": "Bükme tek eksende açı verir; derin çekmede sac her yönden akarak kap oluşturur."
+    },
+    {
+     "term": "Sıvama (spinning)",
+     "diff": "Sıvamada sac döner ve takımla bastırılır; derin çekmede sac sabit, zımba kalıba iter."
+    }
+   ],
+   "related": [
+    "Pot tutucu",
+    "Çekme oranı",
+    "Redraw",
+    "Kalıp radyusu"
+   ],
+   "figure": {
+    "caption": "Derin çekme öncesi plaka ve sonrası kalıp içinde oluşan kap, zımba, flanş ve pot tutucu",
+    "svg": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#e8711a\"/></marker></defs>\n<text x=\"100\" y=\"16\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#1f2a37\">Önce</text>\n<text x=\"300\" y=\"16\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#1f2a37\">Sonra</text>\n<rect x=\"60\" y=\"40\" width=\"80\" height=\"10\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<rect x=\"30\" y=\"52\" width=\"140\" height=\"10\" fill=\"#e6edf3\" stroke=\"#1f2a37\"/>\n<rect x=\"30\" y=\"64\" width=\"140\" height=\"10\" fill=\"#e6edf3\" stroke=\"#1f2a37\" opacity=\"0\"/>\n<text x=\"100\" y=\"95\" text-anchor=\"middle\" fill=\"#1f2a37\">Zımba d ve plaka D0</text>\n<line x1=\"60\" y1=\"55\" x2=\"140\" y2=\"55\" stroke=\"#e8711a\" stroke-width=\"0\"/>\n<text x=\"100\" y=\"35\" text-anchor=\"middle\" fill=\"#e8711a\">zımba</text>\n<text x=\"30\" y=\"120\" fill=\"#1f2a37\">D0 = 115 mm</text>\n<text x=\"30\" y=\"135\" fill=\"#1f2a37\">d = 60 mm</text>\n<text x=\"30\" y=\"150\" fill=\"#e8711a\">β = D0/d = 1,92</text>\n<path d=\"M230,60 L240,60 L240,170 L280,170 L280,60 L330,60 L330,70 L290,70 L290,180 L230,180 z\" fill=\"none\"/>\n<rect x=\"255\" y=\"55\" width=\"70\" height=\"125\" fill=\"none\" stroke=\"#1f2a37\"/>\n<path d=\"M265,60 L265,170 L315,170 L315,60\" fill=\"none\" stroke=\"#e8711a\" stroke-width=\"3\"/>\n<line x1=\"265\" y1=\"60\" x2=\"235\" y2=\"60\" stroke=\"#e8711a\" stroke-width=\"3\"/>\n<line x1=\"315\" y1=\"60\" x2=\"345\" y2=\"60\" stroke=\"#e8711a\" stroke-width=\"3\"/>\n<rect x=\"268\" y=\"25\" width=\"44\" height=\"20\" fill=\"#4a90c2\" stroke=\"#1f2a37\"/>\n<line x1=\"290\" y1=\"45\" x2=\"290\" y2=\"62\" stroke=\"#e8711a\" stroke-width=\"2\" marker-end=\"url(#a)\"/>\n<text x=\"290\" y=\"21\" text-anchor=\"middle\" fill=\"#1f2a37\">zımba</text>\n<text x=\"225\" y=\"55\" text-anchor=\"end\" fill=\"#1f2a37\">flanş</text>\n<text x=\"350\" y=\"75\" fill=\"#1f2a37\">pot tutucu</text>\n<text x=\"338\" y=\"120\" fill=\"#1f2a37\">h = 40 mm</text>\n<text x=\"290\" y=\"205\" text-anchor=\"middle\" fill=\"#1f2a37\">kalıp (matris) içine çekilmiş kap</text>\n<text x=\"290\" y=\"222\" text-anchor=\"middle\" fill=\"#e8711a\">flanş incelip duvara akar</text>\n</svg>"
+   },
+   "quiz": {
+    "q": "Ø60 mm zımba ile tek çekmede β = 2,2 isteniyor. Plaka çapı ne olmalıdır ve sonuç ne olur?",
+    "options": [
+     "132 mm; dip kopma riski yüksek, ara adım gerekir",
+     "132 mm; sorunsuz çekilir",
+     "27 mm; sorunsuz çekilir",
+     "60 mm; kap oluşmaz"
+    ],
+    "answer": 0,
+    "why": "D0 = β·d = 2,2·60 = 132 mm. Tek çekmede sınır yaklaşık 1,8–2,0 olduğundan dip kopar; iki adımlı çekme ve ara tavlama gerekir."
+   }
+  }
+ ]
+}
