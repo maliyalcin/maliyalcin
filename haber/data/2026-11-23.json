@@ -2,7 +2,7 @@
   "date": "2026-11-23",
   "generated_at": "2026-11-24T00:50:00+03:00",
   "verified_by": "opus",
-  "headline": "MEEXX Bursa Makine Fuarı 25-28 Kasım'da kapılarını açıyor; Rockwell yatırımcı gününde robotik ve yapay zekâya odaklanarak marj hedefini %25'e yükseltti.",
+  "headline": "Rockwell yatırımcı gününde robotik ve yapay zekâya odaklanarak marj hedefini %25'e yükseltti. (Düzeltme: MEEXX Bursa fuarının ertelendiği bildirildi.)",
   "categories": [
     {
       "id": "ai-mekanik-tasarim",
@@ -160,17 +160,16 @@
       "brief": "Bursa'da MEEXX fuarı yaklaşıyor; yeni proje bazlı teşvik kararı yayımlandı.",
       "items": [
         {
-          "title": "MEEXX BURSA Makine ve Teknolojileri Fuarı 25-28 Kasım'da Bursa Fuar Merkezi'nde",
-          "summary": "MİB ve BTSO desteğiyle KFA Fuarcılık tarafından düzenlenen fuar; sac işleme, metal işleme takım tezgahları ve otomasyon teknolojilerini kapsıyor. Üretim hatlarında dijitalleşme, robotik uygulamalar, veri toplama ve enerji verimliliği çözümleri öne çıkacak; makine tasarımcıları için yerli tezgah ve otomasyon tedarikçilerini görmek açısından fırsat.",
+          "title": "DÜZELTME: MEEXX Bursa Makine Fuarı (25-28 Kasım) ertelendi",
+          "summary": "Bu haberin ilk sürümünde fuarın 25-28 Kasım'da yapılacağı yazıyordu. Dijital Haber'in 23 Ekim tarihli haberine göre organizatör KFA Fuarcılık yetkilisi fuarın ertelendiğini doğruladı; yeni tarih açıklanmadı. Fuar sayfaları hâlâ eski tarihi gösterdiğinden katılım planı yapacaksanız KFA'nın resmi duyurusunu takip edin.",
           "source": "MİB / KFA Fuarcılık",
           "url": "https://mib.org.tr/en/meexx-en/",
           "published": "2026-11-23",
-          "importance": 3,
+          "importance": 2,
           "tags": [
-            "fuar",
-            "Bursa",
-            "takım tezgahı",
-            "otomasyon"
+            "Düzeltme",
+            "Fuar",
+            "Bursa"
           ]
         },
         {

@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-26T00:45:00+03:00",
+  "verified_by": "opus",
+  "headline": "Japonya'da takım tezgâhı siparişleri Ekim'de %42,5 artarak 16 aydır yükselişini sürdürdü. Düzeltme: MEEXX Bursa fuarının ertelendiği bildirildi (23 Kasım bülteni güncellendi).",
+  "categories": [
+    {
+      "id": "ai-mekanik-tasarim",
+      "title": "Yapay Zeka × Mekanik Tasarım",
+      "icon": "🤖",
+      "brief": "Metinden ve eskizden 3B model üreten araçlar yaygınlaşıyor.",
+      "items": [
+        {
+          "title": "Maxon Plus: Cinema 4D'ye metinden 3B model üreten yapay zekâ araçları ve ajan lisansları geliyor",
+          "summary": "Maxon, aylık 10 dolardan başlayan Maxon Plus aboneliğiyle metin, eskiz veya görselden malzemeli 3B model üreten Model Generator'ı (Rodin altyapılı) duyurdu; yapay zekâ özellikleri tamamen kapatılabiliyor. Araç sanat/görselleştirme odaklı ve parametrik CAD değil. Makine tasarımcısı için konsept form ve sunum görselleştirme tarafında text-to-3D akışının nereye gittiğini göstermesi açısından ilgi çekici.",
+          "source": "Creative Bloq",
+          "url": "https://www.creativebloq.com/news/every-3d-artist-should-have-an-ai-assistant-maxon-says-as-it-launches-new-tools-and-agentic-licences",
+          "published": "2026-11-23",
+          "importance": 1,
+          "tags": [
+            "text-to-3D",
+            "Cinema 4D",
+            "üretken yapay zekâ",
+            "konsept tasarım"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cad-yazilim",
+      "title": "CAD / CAM / CAE Yazılımları",
+      "icon": "🖥️",
+      "brief": "",
+      "items": []
+    },
+    {
+      "id": "endustriyel-tasarim",
+      "title": "Endüstriyel Tasarım",
+      "icon": "✏️",
+      "brief": "Yük güvenliği ve robotla üretim odaklı ürün fikirleri.",
+      "items": [
+        {
+          "title": "Load Choker: yük bağlamayı hızlandıran ve güvenli kılan Avustralya buluşu",
+          "summary": "Core77, kamyon yüklerini sabitlerken kayış altından geçirilen ve EN 12195-2'ye göre test edilen bir 'load choker' aksesuarını tanıttı. Üretici 2500 kg yük kapasitesi ve 50 mm kayışla uyumluluk belirtiyor. Makine tasarımcısı için basit bir mekanik parçanın kullanım hızını ve güvenliği nasıl artırdığına iyi bir örnek.",
+          "source": "Core77",
+          "url": "https://www.core77.com/posts/145995/The-Load-Choker-An-Australian-Invention-That-Makes-Tie-Down-Faster-and-Safer",
+          "published": "2026-11-24",
+          "importance": 2,
+          "tags": [
+            "ürün tasarımı",
+            "ergonomi",
+            "mekanik",
+            "yük bağlama"
+          ]
+        },
+        {
+          "title": "MIT Media Lab InSituWear: robot kol, giysiyi doğrudan vücut etrafına örüyor",
+          "summary": "designboom'a göre MIT Media Lab, endüstriyel robot kolun değiştirilebilir tek ve çok iğneli uçlarla ince plastik lifleri kişinin kolu veya eli çevresine yerleştirdiği, kesme ve dikiş gerektirmeyen bir üretim sistemi geliştirdi. Robot kol uç aparatı tasarımı ve kişiye özel üretim açısından makine tasarımcıları için ilham verici.",
+          "source": "designboom",
+          "url": "https://www.designboom.com/technology/mit-media-lab-robotic-motion-weave-clothing-body-insituwear-textile/",
+          "published": "2026-11-24",
+          "importance": 1,
+          "tags": [
+            "robotik",
+            "üretim",
+            "uç aparat",
+            "konsept"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imalata-hazirlik",
+      "title": "İmalata Hazırlık & Üretim Teknolojileri",
+      "icon": "🏭",
+      "brief": "CAM yazılımında delik ve 5 eksen otomasyonu; masaüstü CNC ve robotik kaynak yatırımları.",
+      "items": [
+        {
+          "title": "SolidCAM 2026 SP3: delik işleme otomasyonu, 5 eksen ve HSM artık malzeme iyileştirmeleri",
+          "summary": "Servis paketi delik işleme otomasyonunu, 5 eksenli işlemeyi ve HSM rest machining'i geliştiriyor; amaç havada kesme süresini ve çevrim sürelerini azaltmak. Inventor/SolidWorks tabanlı CAM kullanan imalata hazırlık ekipleri için programlama süresini kısaltabilecek pratik güncellemeler içeriyor.",
+          "source": "Solid Solutions",
+          "url": "https://solidsolutions.co.uk/solidcam-2026-sp3-practical-improvements-for-faster-safer-cam-programming",
+          "published": "2026-11-25",
+          "importance": 2,
+          "tags": [
+            "CNC",
+            "CAM",
+            "SolidCAM",
+            "5 eksen"
+          ]
+        },
+        {
+          "title": "TIME'ın 2026 En İyi Buluşları listesindeki NestWorks C500 masaüstü CNC siparişe açıldı",
+          "summary": "Entegre NestStudio CAM paketiyle gelen masaüstü CNC, 24 Kasım'da resmi mağazadan 6.499 dolara satışa sunuldu ve Formnext'te de sergilendi. Prototip ve küçük parça işleme için atölye içi hızlı imalat seçeneklerini değerlendiren tasarımcılar açısından, CAD'den makineye kısa yol sunması bakımından dikkate değer.",
+          "source": "PR Newswire / Manila Times",
+          "url": "https://www.manilatimes.net/2026/11/25/tmt-newswire/pr-newswire/nestworks-c500-the-desktop-cnc-named-in-times-best-inventions-of-2026-available-to-order/2477661",
+          "published": "2026-11-25",
+          "importance": 1,
+          "tags": [
+            "CNC",
+            "masaüstü CNC",
+            "CAM",
+            "prototipleme"
+          ]
+        },
+        {
+          "title": "Affordable Robotic & Automation, robotik kaynak hatları için yaklaşık 47,69 crore rupilik sipariş aldı",
+          "summary": "Hint firması iki yerli müşteriden robotik kaynak hatları için toplam yaklaşık 47,69 crore rupi değerinde sipariş aldığını duyurdu. Kaynak hücrelerinin hat bazında otomasyona geçişinin yaygınlaştığını gösteren bir piyasa sinyali; ürün tasarımında kaynak erişimi ve tekrarlanabilirlik açısından hatırlatıcı.",
+          "source": "EquityBulls",
+          "url": "https://equitybulls.com/news/379552/affordable-robotic-automation-receives-purchase-orders",
+          "published": "2026-11-25",
+          "importance": 1,
+          "tags": [
+            "kaynak",
+            "robotik kaynak",
+            "otomasyon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "makine-sektoru",
+      "title": "Makine Sektörü (Dünya)",
+      "icon": "⚙️",
+      "brief": "Japonya takım tezgâhı siparişleri güçlü; SPS'te KOBİ'lere yönelik kontrol çözümleri.",
+      "items": [
+        {
+          "title": "Japonya takım tezgâhı siparişleri Ekim'de %42,5 arttı; 16 aydır yükseliş sürüyor",
+          "summary": "JMTBA verilerine göre Ekim ön siparişleri yıllık yaklaşık %42,5 artışla 204,4 milyar yene ulaştı; yurt içi siparişler %46,5, dış talep ise %44,1 yükseldi. Artışta Asya'daki yapay zekâ kaynaklı yatırım talebi öne çıkıyor. Tezgâh tedarikçileri için teslim süreleri ve fiyatlar açısından talep sinyali; not: kaynaklar yayın tarihinde (11 vs 25 Kasım) çelişiyor.",
+          "source": "Matrix News",
+          "url": "https://web.matrixnews.in/news/lz7rbp5vvbr7i/japans-october-machine-tool-orders-rise-42-percent-on-ai-demand",
+          "published": "2026-11-25",
+          "importance": 3,
+          "tags": [
+            "sektör verisi",
+            "takım tezgâhı",
+            "Japonya"
+          ]
+        },
+        {
+          "title": "HUCEEN, SPS Nürnberg'de KOBİ'lere yönelik uygun maliyetli kontrol çözümleriyle ilk kez yer aldı",
+          "summary": "HUCEEN fuarda NV500 kontrolör, E200 Smart serisi küçük PLC ve H7-1200 kompakt PLC'yi tanıttı (Hall 10, stand 413). Avrupalı büyük markalara alternatif arayan makine üreticileri için düşük maliyetli kontrol seçeneği oluşturuyor.",
+          "source": "Newspatrolling",
+          "url": "https://newspatrolling.com/huceen-debuts-at-sps-nuremberg-empowering-smes-with-cost-effective-industrial-control-solutions/",
+          "published": "2026-11-24",
+          "importance": 2,
+          "tags": [
+            "SPS 2026",
+            "PLC",
+            "otomasyon"
+          ]
+        },
+        {
+          "title": "Weidmüller SPS 2026'da açık IIoT ekosistemini ve SNAP IN bağlantı teknolojisini sergiliyor",
+          "summary": "Weidmüller, u-mation portföyü etrafında açık bir IIoT ekosistemi ve pano içi kablolama için SNAP IN bağlantı teknolojisini gösteriyor (Hall 9, stand 351). Pano tasarımı ve montaj süresini kısaltmak isteyen makine tasarımcıları için ilgili.",
+          "source": "Ecosistema Startup",
+          "url": "https://ecosistemastartup.com/weidmuller-mostrara-en-sps-2026-su-ecosistema-iiot-abierto/",
+          "published": "2026-11-24",
+          "importance": 1,
+          "tags": [
+            "SPS 2026",
+            "IIoT",
+            "pano"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turkiye-makine",
+      "title": "Türkiye Makine Sektörü",
+      "icon": "🇹🇷",
+      "brief": "",
+      "items": []
+    }
+  ]
+}
